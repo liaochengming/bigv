@@ -1,0 +1,655 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta charset="utf-8"><meta property="qc:admins" content="10210420621156375"><meta name="renderer" content="webkit"><title>数据哥 - 雪球</title><script>var _write = document.write;
+var write = function (str) {
+  SNB = window.SNB || {};
+  if (_write.apply) {
+    SNB.docWrite = function (str) {
+      _write.apply(document, arguments);
+    }
+  } else {
+    SNB.docWrite = _write;
+  }
+};
+
+document.write = write;
+</script><meta name="keywords" content="数据哥 - 雪球"><meta name="description" content="数据哥 - 雪球"><!--<link rel="shortcut icon" href="http://xueqiu.com/favicon.ico">--><link rel="icon" type="image/png" href="https://assets.imedao.com/images/favicon.png"><style>html {display:none}</style><script>if (self == top) {
+  document.documentElement.style.display = 'block';
+} else if (top.location.host !== 'xueqiu.com') {
+  top.location = self.location;
+}
+var WATCH = {};
+WATCH.appStart = 1480994923111
+WATCH.pageStart = (new Date()).getTime()</script><link rel="stylesheet" href="https://assets.imedao.com/style/bootstrap-9c6ab2.css"><style>body{
+  padding-top:40px;
+}
+/* TODO */
+.search .dropdown-menu strong{
+  height:12px;
+  line-height:12px;
+}</style><link rel="apple-touch-icon-precomposed" href="https://assets.imedao.com/images/icon-144.png"><script src="https://assets.imedao.com/js/xdomain-0.6.15.js"></script><script>xdomain.slaves({
+  'https://xueqiu.com': '/proxy2.html',
+  'https://im0.xueqiu.com': '/proxy2.html',
+  'https://im1.xueqiu.com': '/proxy2.html',
+  'https://im2.xueqiu.com': '/proxy2.html',
+  'https://im3.xueqiu.com': '/proxy2.html',
+  'https://im4.xueqiu.com': '/proxy2.html',
+  'https://im5.xueqiu.com': '/proxy2.html',
+  'https://im6.xueqiu.com': '/proxy2.html',
+  'https://im7.xueqiu.com': '/proxy2.html',
+  'https://im8.xueqiu.com': '/proxy2.html',
+  'https://im9.xueqiu.com': '/proxy2.html'
+});</script><script src="https://assets.imedao.com/js/SNB.lib.bundle-b11b47.js"></script></head><body id="his-profile" class=" isPC isNotMobile isNotPad"><script>SNB = window.SNB || {};
+jQuery.extend(SNB, {
+  data: {},
+  env: "production",
+  Views: {},
+  Templates: {},
+  Models: {},
+  Collections: {},
+  domain: {"host":"http://xueqiu.com","base":"http://api.xueqiu.com","photo":"//xavatar.imedao.com","stock":"http://api.xueqiu.com","static":"//assets.imedao.com","staticHttps":"https://assets.imedao.com","upyun":"http://xqimg.b0.upaiyun.com","pdf":"http://xqdoc.imedao.com","im":"http://api.xueqiu.com","shared":"/data/deploy/snowball-fe/logs/","file":"http://xqfile.imedao.com/"},
+  currentUser: {"isGuest":true,"enableIM":true},
+  jsVersion: {"05.jquery.cookie.js":"68e2a4","08.templates.js":"4aa7bf","SNB.TopicList.js":"30468a","SNB.UsersList.js":"ec61ee","SNB.atDialog.js":"439f10","SNB.base.js":"38c701","SNB.base_simple.js":"22249f","SNB.bind_verify.js":"118df1","SNB.calendar.js":"c65d9a","SNB.calendarDialog.js":"929cb0","SNB.calendarSubscribe.js":"e6012c","SNB.capitalReturnRateChart.js":"bd11c3","SNB.cardDialog.js":"ab3d1d","SNB.commentView.js":"9bca52","SNB.commonFriends.js":"5fedd6","SNB.companyInfo.js":"f33c14","SNB.dialog.js":"16e07a","SNB.dm.js":"3fd46e","SNB.dmDialog.js":"c96117","SNB.downloadDialog.js":"68595d","SNB.editor.emotion.js":"4f7739","SNB.editor.js":"19f120","SNB.eventShare.js":"7b230c","SNB.financeTableDataInfo.js":"b5c438","SNB.follower.js":"83577e","SNB.friends.js":"dc5568","SNB.g.bar.js":"8d17c0","SNB.guest.js":"f2e95b","SNB.guide.js":"bd0b84","SNB.helpers.js":"d5327e","SNB.his_home.js":"468d25","SNB.holdStockChart.js":"7fb688","SNB.home.js":"da999e","SNB.hotStock.js":"320cd1","SNB.im.contacts.js":"3d5779","SNB.im.dialog.js":"078b09","SNB.im.emotions.js":"158b2d","SNB.im.group_applys.js":"f354a0","SNB.im.group_joined.js":"3f1895","SNB.im.js":"a4d637","SNB.im.message.js":"426e6d","SNB.im.model.js":"a8324f","SNB.im.net.js":"ec4486","SNB.im.peer_chat.js":"cb13f1","SNB.im.session_item.js":"6fb32d","SNB.im.sessions_list.js":"eb2ad1","SNB.im.setting.js":"ac0ed0","SNB.im.stranger.js":"8ea9a5","SNB.im.utils.js":"ab3f84","SNB.imeigu_fund_topic.js":"a64418","SNB.imeigu_index.js":"d4f2e9","SNB.index.login.js":"783530","SNB.inner_trade.js":"7d8321","SNB.interest.js":"dc0ab7","SNB.interview.js":"fa9ef6","SNB.kline.js":"7d13af","SNB.lib.bundle.js":"b11b47","SNB.lib.mobile.js":"8eda9f","SNB.modify_email.js":"0cb2c6","SNB.newChart.js":"a51b22","SNB.newChart.mobile.js":"a3db95","SNB.newProfile.js":"5496c0","SNB.password.js":"8bf5ac","SNB.pdfDialog.js":"b7cff4","SNB.performance-year.js":"55e5b8","SNB.performance.js":"3add97","SNB.performanceChart.js":"0cc6bc","SNB.performanceView.js":"fde3d9","SNB.performance_mobile.js":"7f8dcf","SNB.personality.js":"3a3a3d","SNB.portfolio.js":"716687","SNB.portfolioNew.js":"c928be","SNB.portfolioShareDialog.js":"de6849","SNB.profile_info.js":"1904cf","SNB.recommend.js":"344c23","SNB.renderTableTrHtml.js":"d9ecf0","SNB.renderUserView.js":"0ea1a6","SNB.reportSpam.js":"418c1f","SNB.repostDialog.js":"5afe3f","SNB.sameFriend.js":"d87ab3","SNB.search.js":"624e00","SNB.search_ipad.js":"62a216","SNB.search_stock_ipad.js":"6910d7","SNB.setting_user.js":"5d7e30","SNB.shareDialog.js":"1dee89","SNB.similarUsers.js":"0e8f2f","SNB.singleStock.js":"f37b4f","SNB.status-edit.js":"a9ae8a","SNB.status.js":"97662b","SNB.status_mobile.js":"d0cd07","SNB.stockActiveUser.js":"e09e6c","SNB.stockFollowers.js":"ba7380","SNB.stockList.js":"aab37c","SNB.stockList_new.js":"41ae06","SNB.stockNews.js":"55db59","SNB.stockRecommend.js":"a896cd","SNB.stockScreener.js":"47e5fa","SNB.stockStatus.js":"939a20","SNB.talks.js":"05b1eb","SNB.third_oauth.js":"1b9e2a","SNB.tipsTalk.js":"3bdde6","SNB.tipsTopic.js":"473f94","SNB.today.js":"d8d933","SNB.today.lib.js":"19681e","SNB.today_topic.js":"b47afc","SNB.tooltip.js":"27ed7d","SNB.topInfluence.js":"89f31e","SNB.trans.js":"737e63","SNB.tweetDialog.js":"9eb539","SNB.typeahead.js":"7f647d","SNB.userRecommend.js":"95a052","SNB.userRemark.js":"001ff1","SNB.validator.js":"0a8ca0","SNB.weiboUser.js":"81e080","TGJSBridge.js":"4aaeff","WdatePicker.js":"eb9586","ajaxfileupload.js":"59627b","analytics.js":"704cb1","article.conversation.js":"29d5a1","backbone.0.9.10.js":"5d519b","backbone.js":"d013f1","bootstrap.js":"6bd6fa","calendar.js":"9795e3","checkLogin.js":"38a9a1","config.js":"a0889d","d3.v2.min.js":"1ef3b6","fittext.js":"45db6e","flexible-0.1.js":"f2528c","flexible.js":"d171af","flexpaper.js":"3c6a5d","flexpaper_handlers.js":"623c12","fullcalendar.js":"26781c","g.bar.js":"32785d","g.line-min.js":"2db247","g.pie.js":"46e2f1","g.raphael.js":"630b74","hammer.js":"ec2456","hc_exporting.js":"bb5d9e","hc_grid.js":"3b9851","highcharts.js":"122285","highlight.js":"21d2c6","iScroll.js":"834870","im2014.js":"63b677","im_group_apply.js":"930e3b","imeigu_portfolioIframe.js":"e669a4","imgPlugin.js":"1cb5de","imgUpload.js":"249f02","infinity.min.js":"0c5941","jquery.color.js":"875798","jquery.galleriffic.js":"e6186f","jquery.hammer.js":"e02a44","jquery.history.js":"6f8651","jquery.imgareaselect.js":"a9d059","jquery.imgareaselect.pack.js":"a31351","jquery.js":"d80a03","jquery.lazyload.min.js":"fb3951","jquery.mousewheel.js":"41ebd2","jquery.pjax.js":"7ccac8","jquery.plugin.pullToRefresh.js":"35465b","jquery.rotate.1-1.js":"60d180","jquery.simplePagination.js":"420bda","jquery.tagsinput.js":"b68784","jquery.ui.js":"9ee05e","jquery.uploadify.js":"aac61a","jquery.validate.js":"555531","jquery.vticker.js":"5104ed","jquery.watermark.js":"0cc691","login.js":"094d42","medium-editor.js":"b7780c","moment.js":"b01d4e","morris.min.js":"92098e","mustache.js":"fbf1b1","perfect-scrollbar-0.4.8.with-mousewheel.min.js":"1bd536","qrcode.min.js":"1dc069","raphael.js":"ea1c64","redirect-to-native.js":"acce93","responsive_slides.min.js":"ea733a","sb-editor.js":"ba19d0","sea.js":"1264a2","share-to-xueqiu.js":"ae4237","shenma_agt.js":"986160","single.js":"fbc946","slides.jquery.js":"cd66ff","step01.js":"b846e6","subscribe.js":"7d760a","underscore.js":"51b489","userSearch.js":"54d13d","xdomain-0.6.15.js":"575cd5","xdomain.js":"c4e376","xss.js":"ba11d2","zepto.js":"6cdcc6","SNB.lib.bundle/00.sea.js":"2749ae","SNB.lib.bundle/01.JSON.js":"b459a8","SNB.lib.bundle/02.modernizr.js":"f634b5","SNB.lib.bundle/03.jquery.js":"53538f","SNB.lib.bundle/04.jquery.ui.js":"96c17c","SNB.lib.bundle/05.jquery.cookie.js":"68e2a4","SNB.lib.bundle/06.underscore.js":"d97ed3","SNB.lib.bundle/07.backbone.js":"8a9a44","SNB.lib.bundle/08.templates.js":"4aa7bf","SNB.lib.bundle/10.jade.runtime.js":"1fc7ae","SNB.lib.mobile/1.zepto.min.js":"acaeac","SNB.lib.mobile/2.underscore.js":"c2da07","SNB.lib.mobile/iscroll.js":"4a55be","article/m.js":"a748e8","bootstrap/bootstrap-alert.js":"a9f081","bootstrap/bootstrap-button.js":"ce03ae","bootstrap/bootstrap-carousel.js":"62b76a","bootstrap/bootstrap-collapse.js":"9be616","bootstrap/bootstrap-dropdown.js":"af96b6","bootstrap/bootstrap-modal.js":"cf302e","bootstrap/bootstrap-popover.js":"a4e6a7","bootstrap/bootstrap-scrollspy.js":"a88d39","bootstrap/bootstrap-tab.js":"8f2b45","bootstrap/bootstrap-tooltip.js":"682437","bootstrap/bootstrap-transition.js":"17fa23","bootstrap/bootstrap-typeahead.js":"97f107","common/SNB.helpers.js":"3115c8","common/backbone_1.1.2.js":"8531c9","common/css3-mediaqueries.js":"f83d37","common/fastclick.js":"753522","common/jquery-1.9.1.js":"b8b878","common/jquery-2.1.4.js":"394d23","common/jquery.countdown.js":"fe2cb6","common/jquery.waitforimages.js":"5cd25d","common/json.js":"b459a8","common/lib.js":"e9c317","common/moment_new.js":"606026","common/sea-2.3.0.js":"347c46","common/sea.js":"2749ae","common/underscore_1.6.0.js":"3ffba8","common/util.js":"41b549","common/zepto-core-fx.1.1.3.js":"27e274","common/zepto-deferred.js":"977158","cube/cube-analyze.js":"065ce2","cube/cube-rank-chart.js":"631f07","cube/cube-sell-notice.js":"4feee6","cube/cube-timeline.js":"660406","cube/cube_detail.js":"99a7f6","cube/cube_detail_m.js":"8b32af","cube/cube_discover.js":"faf0e4","cube/cube_discover_m.js":"b9ea8b","cube/cube_edit.js":"78ba98","cube/cube_guide.js":"a7e268","cube/cube_recommend.js":"7209e5","cube/post_grid.js":"730811","cube/profile_cubes.js":"c3312b","cube/range_slider.js":"358302","cube/stock_edit_modal.js":"8fe74f","fund/fund-detail-mobile.js":"82f574","fund/fund-detail.js":"1f5d05","fund/fund-dialog.js":"5673e5","fund/private-fund-home5.js":"172ab5","fund/profile-fund.js":"7416b3","highcharts/jquery-1.6.4.min.js":"526f75","im2014/base.adapter.deliver.js":"d5da9d","im2014/base.adapter.js":"e895d8","im2014/base.config.js":"0ce305","im2014/base.js":"58869d","im2014/base.localstorage.js":"57720d","im2014/base.net.js":"540257","im2014/base.utils.js":"cce3ed","im2014/db.contacts.js":"536985","im2014/db.groups.js":"aebe8f","im2014/db.js":"b1164d","im2014/db.message.helper.js":"62bc4a","im2014/db.messages.js":"00e053","im2014/db.sessions.js":"5289c7","im2014/im.js":"3675e3","im2014/session.dialog.js":"34f336","im2014/session.editor.js":"4feb32","im2014/session.gmm.js":"44c0a0","im2014/session.item.js":"2f722e","im2014/session.joingroup.js":"34f898","im2014/session.list.js":"2ed585","im2014/session.message.js":"30b56c","im2014/session.setting.js":"0cac30","im2014/widget.emotion.js":"389a95","im2014/widget.joingroup.js":"b2ee4c","im2014/widget.requestjoingroup.js":"319aaa","im2014/widget.search.js":"2d2eda","im2014/widget.uploader.js":"e1abec","im2014/widget.viewer.js":"93c152","imeigu/xueqiu_popup.js":"7589a8","lang/en.js":"c6550c","lang/zh-cn.js":"a606a6","lang/zh-tw.js":"4e0fdb","lib/autoresize.js":"f853a5","lib/chai.js":"a0130d","lib/html2canvas.js":"8a2596","lib/jade.runtime.js":"7e2d74","lib/jquery.easing.1.3.js":"008f85","lib/jquery.fullPage.js":"f69025","lib/jquery.fullPage.new.js":"ddc0ef","lib/jquery.slides.min.js":"269b95","lib/mocha.js":"8799cd","lib/scrollReveal.js":"8e7fd9","lib/shake.js":"57c8bc","lib/store.js":"9c7667","lib/swipe.js":"50667e","lib/swiper.js":"39e4cc","lib/swiper.min.js":"ecc734","lib/ueditor.js":"3bef0b","lib/upload.js":"63db39","lib/vue.js":"2e1995","lib/vue.min.js":"2db52a","monthly/index.js":"587761","pages/askstatement.js":"271027","pages/check_active_status.js":"e632f0","pages/home.js":"e7f211","pages/single.js":"2be692","pages/utils.js":"8be2b4","pages/welfare.js":"cfcc87","reward/index.js":"d2b947","reward/pay.js":"c7e0bb","reward/payAt.js":"af3c54","reward/red-envelope.js":"4b8229","reward/reward_tooltip.js":"e776be","reward/square.js":"95ea6c","widget/TSNB.addfriend.js":"f04fd7","widget/TSNB.addpdf.js":"c3074f","widget/TSNB.addstock.js":"0c459a","widget/TSNB.at.js":"fdafde","widget/TSNB.bindverify.js":"f3ea69","widget/TSNB.home-editor.js":"d94bf8","widget/TSNB.newuser-guide.js":"3bc710","widget/TSNB.people-autocomplete.js":"92ed61","widget/TSNB.performance.js":"acc148","widget/TSNB.risk.js":"a573e7","widget/TSNB.sharestatus.js":"16e249","widget/TSNB.stockalert.js":"1cb0fd","widget/TSNB.stockgroup.js":"e16260","widget/TSNB.typeahead.js":"95b8e6","widget/aside.js":"69141a","widget/backbone1.1.2.js":"181b4a","widget/bootstrap.js":"8a8204","widget/donate.js":"312591","widget/donate_tooltip.js":"435b5f","widget/editor.js":"8b40ee","widget/emotions.js":"623bc3","widget/favorite.js":"e356ee","widget/forward.js":"5a68fd","widget/global_pin.js":"b06ff9","widget/lodash.underscore.js":"1854ff","widget/profile_pin.js":"a66176","widget/report_spam.js":"0a5cf8","widget/repost_comment.js":"b4b7c1","widget/share.js":"6e71c0","widget/status.js":"551cf7","widget/underscore1.6.0.js":"4d7fd6","widget/util.js":"e09484","bootstrap/tests/phantom.js":"e38dfa","bootstrap/tests/server.js":"21e92a","common/lib/jquery-1.9.1.js":"3dd6ee","common/lib/sea-2.3.0.js":"347c46","common/lib/underscore_1.6.0.js":"834fa8","common/util/analytics_post.js":"204b43","common/util/image.js":"5eb87c","common/util/jade.runtime.js":"aed6b5","common/util/jquery.extend.js":"6736b6","common/util/observer.js":"648151","common/util/password.js":"8a8947","common/util/upload.js":"8f1294","mobile-chart/mobile-chart_files/SNB.mobile_chart.js":"ff1366","mobile-chart/mobile-chart_files/hammer.js":"0c510a","mobile-chart/mobile-chart_files/sea.js":"1264a2","mobile-chart/mobile-chart_files/underscore.js":"51b489","mobile-chart/mobile-chart_files/zepto-core-fx.1.1.3.js":"27e274","pages/about/app.js":"eecbff","pages/about/app_mobile.js":"7db607","pages/broker/TSNB.analyze.js":"e00911","pages/broker/TSNB.bind.js":"0b4a15","pages/broker/TSNB.bridge.js":"a4d938","pages/broker/TSNB.coupon-info.js":"586eb5","pages/broker/TSNB.coupon-list.js":"ac3f4e","pages/broker/TSNB.coupon-rules.js":"48ff6a","pages/broker/TSNB.harass-report.js":"04a698","pages/broker/TSNB.ib-bind.js":"17b088","pages/broker/TSNB.lucky.js":"0b5638","pages/broker/TSNB.new-stock-detail.js":"9ec620","pages/broker/TSNB.new-stock.js":"29de41","pages/broker/TSNB.open-gift.js":"e63367","pages/broker/TSNB.open-guide.js":"28e810","pages/broker/TSNB.open.js":"07b37a","pages/broker/TSNB.question-info.js":"eaf2ea","pages/broker/TSNB.question.js":"df6381","pages/cashier/cashier.js":"020e6d","pages/consultant/consultant-market.js":"6d9453","pages/cube/report-mobile.js":"7ca04c","pages/event/2015-summary.js":"ce321f","pages/event/TSNB.cube-summary-mobile.js":"d1e26c","pages/event/TSNB.cube-summary.js":"03609d","pages/event/TSNB.year-summary-mobile.js":"73f230","pages/event/TSNB.year-summary.js":"daff60","pages/event/ask-me-deeplink.js":"f14231","pages/event/cmc.js":"a7c273","pages/event/danjuan-club-xian.js":"61ed68","pages/event/danjuan-launch-2016.js":"5de903","pages/event/fof.js":"f3042a","pages/event/fund-event.js":"708f70","pages/event/volvo-ad.js":"2ab2a9","pages/event/winning.js":"344ce3","pages/event/xueqiu-club-hangzhou.js":"878b09","pages/event/xueqiu-club-nanjing.js":"15ef76","pages/event/xueqiu-club-suzhou.js":"429e29","pages/event/xueqiu-simu-shenzhen.js":"217baf","pages/festival/buy.js":"604d7d","pages/festival/my-order.js":"60f017","pages/festival/outside.js":"4e6899","pages/festival/pay-mobile.js":"2bfaaf","pages/festival/pay-web-01.js":"180313","pages/festival/pay.js":"0fa450","pages/festival/validate.js":"0ffb3a","pages/fund/apply-fof.js":"8a1ca1","pages/fund/callbacks-zepto.js":"1426db","pages/fund/deferred-zepto.js":"99c181","pages/fund/private-assets.js":"c7fb66","pages/fund/private-choice.js":"e449a9","pages/fund/private-risk.js":"c16c77","pages/fund/private-user.js":"404534","pages/fund/subscribe-form.js":"990a69","pages/fund/subscribe.js":"372dda","pages/home/live_list.js":"7b3567","pages/home/timeline.js":"f9b3c2","pages/invest/SNB.chart_base.js":"1efcdb","pages/invest/SNB.fund_chart.js":"ff9b86","pages/invest/SNB.mobile_chart.js":"c0b8f7","pages/invest/SNB.mobile_stock.js":"3ec79a","pages/invest/SNB.profile_broker_rank.js":"85311d","pages/invest/SNB.rank.js":"028504","pages/invest/TSNB.pankou.js":"1353ba","pages/invest/TSNB.stocklist_fund.js":"fec5ee","pages/invest/chart.js":"b06c84","pages/pay/bonus-mobile.js":"b5245b","pages/pay/deposit-mobile.js":"799d95","pages/pay/deposit.js":"e37ac4","pages/pay/donate-mobile.js":"3671bc","pages/pay/mention-mobile.js":"47d0d4","pages/pay/offer-mobile.js":"66174b","pages/pay/pin.js":"1804ea","pages/pay/reward-mobile.js":"a6b90e","pages/pay/subscribe-mobile.js":"c6187b","pages/pay/withdraw.js":"952521","pages/profile/article.js":"b3bd76","pages/prove/base.js":"47ae1d","pages/prove/cube-list.js":"60023e","pages/prove/cube.js":"5d88b0","pages/prove/user-moblie_3.js":"9299bb","pages/prove/user-web.js":"b5eaab","pages/sns/index.js":"6a3947","pages/sns/single.js":"c5259d","pages/special/TSNB.special-item.js":"d41d8c","pages/talks/single-mobile.js":"012a8c","pages/today/mobile.index.js":"f72378","pages/user/atme_paid.js":"eeaa04","pages/user/forgot_pwd.js":"e30b3f","pages/user/login.js":"ff5499","pages/user/profile.js":"7694a6","pages/user/recommend.js":"573f3e","pages/user/reg.js":"ed98f2","pages/user/reset_pwd.js":"da1832","pages/user/setting_money.js":"6628b4","pages/user/uploadImage.js":"99c6d9","pages/user/verify-bindedPhoneNumber.js":"0dfc9b","pages/wallet/history.js":"656569","widget/aside/TSNB.ad-danjuan.js":"a6aa6f","widget/aside/TSNB.ad.js":"cb229d","widget/aside/TSNB.cube-money.js":"46dc48","widget/aside/TSNB.fund-rank.js":"04bcc0","widget/aside/TSNB.hot-stocks.js":"44327c","widget/aside/TSNB.interesting-people.js":"832a1a","widget/aside/TSNB.other-services.js":"1d8361","widget/aside/TSNB.recommend-people.js":"73b8db","widget/aside/TSNB.sysnotify.js":"e50d01","widget/aside/TSNB.today-talk.js":"022aeb","widget/bootstrap/affix.js":"f014e8","widget/bootstrap/alert.js":"915f20","widget/bootstrap/bootstrap-datepicker.js":"daa8d6","widget/bootstrap/button.js":"3a8a2e","widget/bootstrap/carousel.js":"f763e0","widget/bootstrap/collapse.js":"c9ceab","widget/bootstrap/dropdown.js":"164604","widget/bootstrap/modal.js":"d390dd","widget/bootstrap/popover.js":"8c9993","widget/bootstrap/scrollspy.js":"37bd38","widget/bootstrap/tab.js":"5df6c4","widget/bootstrap/tooltip.js":"b973d7","widget/bootstrap/transition.js":"7af948","widget/bootstrap/typeahead.js":"f6b65a","widget/chart/c3.js":"8769cb","widget/chart/d3.js":"ef8166","widget/editor/at.js":"10a771","widget/editor/emotion.js":"67a7f8","widget/editor/umeditor.config.js":"ed3336","widget/editor/umeditor.js":"a65dc7","widget/editor/zh-cn.js":"16b3e4","widget/flexpaper/flexpaper.js":"3c6a5d","widget/flexpaper/flexpaper_handlers.js":"39b20d","widget/mobile/action.js":"43495d","widget/mobile/dm.js":"c45cf7","widget/mobile/form.js":"03c77e","widget/mobile/modal.js":"309f6a","widget/mobile/overlay.js":"44e1eb","widget/status/comment.js":"8d9872","widget/status/data.js":"234445","widget/status/pdf.js":"ee48be","widget/status/pin.js":"2ed6d5","widget/tmp/SNB.base.js":"9a920a","widget/tmp/json.js":"b459a8","widget/util/TSNB.donate.js":"7fe197","widget/util/areas.js":"4f6252","widget/util/asksuccess.js":"88014a","widget/util/modal.js":"2344f6","widget/util/notice.js":"b59e15","widget/util/share.js":"8c017a","widget/util/tooltip.js":"fb5f4b","widget/util/typeahead.js":"30a273","widget/util/user.js":"797fff","widget/util/webp.js":"84e846","bootstrap/tests/unit/bootstrap-alert.js":"93d6ac","bootstrap/tests/unit/bootstrap-button.js":"996b53","bootstrap/tests/unit/bootstrap-carousel.js":"54a2cf","bootstrap/tests/unit/bootstrap-collapse.js":"1b1262","bootstrap/tests/unit/bootstrap-dropdown.js":"6a491c","bootstrap/tests/unit/bootstrap-modal.js":"6dd5a0","bootstrap/tests/unit/bootstrap-phantom.js":"940ffb","bootstrap/tests/unit/bootstrap-popover.js":"4f65eb","bootstrap/tests/unit/bootstrap-scrollspy.js":"bd7b2c","bootstrap/tests/unit/bootstrap-tab.js":"63f9fc","bootstrap/tests/unit/bootstrap-tooltip.js":"fc2c1c","bootstrap/tests/unit/bootstrap-transition.js":"a1b2cc","bootstrap/tests/unit/bootstrap-typeahead.js":"2f86e0","bootstrap/tests/vendor/jquery.js":"fcf997","bootstrap/tests/vendor/qunit.js":"a8c0db","pages/broker/event/TSNB.contestrank.js":"3c98b6","pages/broker/event/TSNB.ebook.js":"55c001","pages/broker/event/TSNB.eight-gift.js":"e052ff","pages/broker/event/TSNB.eleven.js":"a2c612","pages/broker/event/TSNB.event-channel.js":"480398","pages/broker/event/TSNB.lagou.js":"84d891","pages/broker/event/TSNB.marginapplication.js":"bd70ee","pages/broker/event/TSNB.pick-gift.js":"52d940","pages/broker/event/TSNB.pingan-update.js":"1b0266","pages/broker/event/TSNB.pingan.js":"204c93","pages/broker/event/TSNB.realcontest.js":"0ba8a6","pages/broker/event/TSNB.realcontest2.js":"68575a","pages/broker/event/TSNB.realcontest3.js":"68575a","pages/broker/event/TSNB.realcontest4.js":"ca2775","pages/broker/event/TSNB.referee.js":"adc32f","pages/broker/event/TSNB.save.js":"2269c5","pages/broker/event/TSNB.savetraffic.js":"38fcde","pages/broker/event/TSNB.shakehistory.js":"eeb66d","pages/broker/event/TSNB.shakepk.js":"0593b7","pages/broker/event/TSNB.shakerank.js":"8c425a","pages/broker/event/TSNB.sport-gift.js":"485a56","pages/broker/invite/3d-falling-ribbons.js":"b224e2","pages/broker/invite/TSNB.invite-share-out.js":"0810dd","pages/broker/invite/TSNB.invite-share.js":"78e83c","pages/broker/invite/TSNB.invite.js":"7ff435","pages/broker/invite/rotate3Di.js":"63702b","pages/broker/invite/rules.js":"230b8b","pages/broker/shake/TSNB.win-streak-rank.js":"50d411","pages/broker/share/TSNB.trade-share.js":"9d902d","pages/broker/template/TSNB.new-stock-list.js":"24e2aa","pages/invest/chart/TSNB.chart.base.js":"2b3ad2","pages/invest/chart/TSNB.chart.compare.js":"cf13d4","pages/invest/chart/TSNB.chart.event.js":"bf9353","pages/invest/chart/TSNB.chart.kline.js":"89863d","pages/invest/chart/TSNB.chart.networth.js":"1283f7","pages/invest/chart/TSNB.chart.status.js":"a60839","pages/invest/chart/TSNB.chart.stock.js":"dc1c1d","pages/invest/chart/TSNB.chart.thumbnail.js":"25a409","pages/invest/hq/TSNB.compare_ah.js":"8dcaea","pages/invest/portfolio/TSNB.create-portfolio-group.js":"d9e67b","pages/invest/portfolio/TSNB.delete-portfolio-group.js":"e6a16d","pages/invest/portfolio/TSNB.delete-portfolio.js":"21e14d","pages/invest/portfolio/TSNB.manage-portfolio-group.js":"1b0504","pages/invest/portfolio/TSNB.portfolio-util.js":"d3d279","pages/invest/portfolio/TSNB.portfolio.js":"56d66e","pages/invest/portfolio/TSNB.stock-autocomplete.js":"cc5d2e","pages/sns/index/cube.js":"1f5d94","pages/sns/index/login.js":"2681eb","pages/sns/index/markets.js":"b51353","pages/sns/index/promotion.js":"aa01d3","pages/sns/index/stocks.js":"47fe9b"},
+  cssVersion: {"about.css":"8a68c7","activate_bar.css":"90db89","animate.css":"e53828","bootstrap-lite.css":"bacac2","bootstrap.css":"9c6ab2","bootstrap_full.css":"f0b414","bootstrap_tab_xueqiu.css":"69dee9","bootstrap_tab_xueqiu_white.css":"5492e5","button.css":"23513c","chart.css":"d41d8c","comment.css":"dbfbd5","connect_link.css":"0edf0b","default.css":"f802d8","default_mobile.css":"264592","dh.css":"a34780","dialog.css":"828547","editor.css":"57d8ef","editor_inline.css":"7d7563","flexpaper.css":"ecc108","form.css":"c845bd","fullcalendar.css":"b1f726","guide.css":"918f69","guide_overlay.css":"9dd1cf","hots-statuses.css":"181d4e","icon.css":"680a07","im.css":"aa2f71","im2014.css":"7185cd","imgroup.css":"5445f8","jinNang.css":"4bd30a","jinnang_1394597838763.css":"4bd30a","jquery.tagsinput.css":"3f47e0","jquery.ui.css":"279647","medium-editor.min.css":"dde48f","mentions_block.css":"4b58aa","mixin.css":"56732b","mixin_m.css":"8cdd93","mocha.css":"a5dea9","mystatus.css":"272433","newChart.css":"5d9be9","normalize.css":"709c92","payAt.css":"bf874d","pdfviewer.css":"720dd9","performance-year-mobile.css":"a17f1a","performance-year.css":"317994","performanceChart.css":"2589d4","personality-ie8.css":"6a37b0","personality.css":"c723c4","pop_login.css":"8f20df","portfolioIframe.css":"c85adf","portfolioNew.css":"4f2887","profile.css":"0737fc","profile_info.css":"4b5978","profile_operations.css":"a0abbd","profile_status.css":"3969fd","pull-to-refresh.css":"3e5b69","qa.css":"f8ec3a","red-envelope.css":"e0f5d3","reward.css":"5c6aa9","searchBar.css":"aeef28","simplePagination.css":"b23401","snowbrick.css":"852420","square.css":"5eb754","status_mobile.css":"625b26","status_operate_btn.css":"0872af","tab-setting.css":"506d45","today_topic.css":"90082e","tooltip.css":"820355","uploadify.css":"d5b49f","userRecommend.css":"beabbe","user_list.css":"bb06fd","variable.css":"d41d8c","widget.css":"88e99b","widget_user.css":"d1e0c0","article/m.css":"55a2b3","common/base.css":"39d7fe","common/form.css":"4839e9","common/grid.css":"c165dd","common/iconfont.css":"075d4f","common/iconfont2.css":"1dc535","common/layout.css":"746a95","common/menu.css":"985468","common/mobile.css":"3362b1","common/mod.css":"c15889","common/modal.css":"a72350","common/nav-bar.css":"ebb55d","common/pager.css":"0d5b09","common/reset.css":"e2dffc","common/var.css":"d41d8c","cube/cube-analyze.css":"3c5bf5","cube/cube_card.css":"a56e9f","cube/cube_detail.css":"da8fe2","cube/cube_detail_m.css":"6978cc","cube/cube_discover.css":"de6ef5","cube/cube_discover_m.css":"32a394","cube/cube_edit.css":"f5208f","cube/cube_sell_notice_dialog.css":"913dc6","editor/index.css":"663406","editor/modal.css":"88f071","editor/normalize.css":"709c92","fund/fund_detail.css":"f3eade","fund/fund_dialog-mobile.css":"e3c4b8","fund/fund_dialog.css":"fc8fcc","fund/fund_home.css":"66bf5b","lib/jquery.fullPage.css":"3dfa38","lib/jquery.fullPage.new.css":"d4d4ba","lib/swiper.min.css":"9da938","pages/TSNB.about.css":"28449a","pages/home.css":"562d78","pages/imeigu.css":"cff846","pages/post.css":"79b509","pages/profile.css":"8df782","pages/status.css":"72d8cf","pages/tip.css":"9bc5a0","profiles/m.css":"04515f","status/components_m.css":"738f36","status/offer.css":"553271","status/user.css":"678907","tactics/push.css":"ca2d74","touch/common.css":"1c57df","touch/normal.css":"d536b7","widget/TSNB.comment.css":"016154","widget/TSNB.donate.css":"708f8a","widget/TSNB.donate_tooltip.css":"672acf","widget/TSNB.performance.css":"588cce","widget/TSNB.portfolio_dialog.css":"68b2cb","widget/TSNB.portfolio_user_dialog.css":"9ad4f2","widget/TSNB.report_spam.css":"3e795c","widget/TSNB.share.css":"f36d77","widget/TSNB.status.css":"281546","widget/TSNB.user_dialog.css":"81075a","widget/ask.css":"887dea","widget/btn.css":"9fdda0","widget/datepicker.css":"d683e7","widget/donate.css":"ed122a","widget/donate_tooltip.css":"9e0336","widget/global_pin.css":"92b1cf","widget/modal.css":"5fc4e9","widget/profile_pin.css":"60296d","common/css3/inline-block.css":"bb8c38","common/fonts/demo.css":"f5e74e","common/fonts/iconfont.css":"444dd2","pages/about/animation.css":"1e4355","pages/about/app.css":"5b928a","pages/about/app_mobile.css":"5b4c12","pages/about/share.css":"6712c8","pages/cashier/cashier.css":"32e0ca","pages/consultant/consultant.css":"3d1566","pages/broker/analyze.css":"9cfaf8","pages/broker/bind-success.css":"e01f1a","pages/broker/coupon-info.css":"466999","pages/broker/coupon-list.css":"e30d83","pages/broker/dyzq-open.css":"e1a8a3","pages/broker/ft-transfer-guide-out.css":"aab76d","pages/broker/ft-transfer-guide.css":"aab76d","pages/broker/fzzq-open.css":"29f342","pages/broker/gfzq-open.css":"017efb","pages/broker/gjzq-open.css":"1e5c01","pages/broker/glzq-open.css":"5dcedc","pages/broker/harass-report.css":"c8f057","pages/broker/htzq-open.css":"3dc590","pages/broker/ib-bind.css":"00a9e5","pages/broker/insurance.css":"76f340","pages/broker/lucky-intro.css":"9f77d0","pages/broker/lucky-mobile.css":"15a951","pages/broker/lucky.css":"7e8ee4","pages/broker/mobile-base.css":"34ce7b","pages/broker/new-stock-detail.css":"fce293","pages/broker/new-stock.css":"b5356f","pages/broker/oops.css":"829ad0","pages/broker/open-gift-success.css":"efb534","pages/broker/open-gift.css":"2e20cb","pages/broker/open-guide.css":"a09f96","pages/broker/open.css":"952aa7","pages/broker/pingan-open-web.css":"56e767","pages/broker/pingan-open.css":"60b984","pages/broker/qa.css":"abe2ce","pages/broker/trade-question.css":"a16c67","pages/broker/zxzq-open.css":"817f57","pages/cube/report-mobile.css":"57b2b3","pages/event/2015-summary.css":"3fc58e","pages/event/TSNB.year-summary-mobile.css":"864fa2","pages/event/TSNB.year-summary.css":"a868f5","pages/event/assets-manage-mobile.css":"97f3d7","pages/event/assets-manage.css":"4e02c8","pages/event/choose-stock.css":"2e23a6","pages/event/cmc-mobile.css":"7fe9f7","pages/event/cmc.css":"8d1acc","pages/event/cube-summary-mobile.css":"bba03e","pages/event/cube-summary.css":"07f842","pages/event/danjuan-prize.css":"b665b6","pages/event/fof-mobile.css":"58e882","pages/event/fof-web.css":"607844","pages/event/winning.css":"70c7a4","pages/event/xueqiu-club-mobile.css":"3c7ee2","pages/event/xueqiu-club-xiamen-pc.css":"e4c98a","pages/event/xueqiu-club-xiamen.css":"7cb432","pages/event/xueqiu-club.css":"e8654f","pages/festival/buy.css":"281832","pages/festival/index.css":"990d70","pages/fund/apply-fof.css":"71f608","pages/fund/apply-success.css":"d072a6","pages/fund/private-info.css":"2ea562","pages/fund/private-risk.css":"fc7a8b","pages/fund/subscribe-form.css":"d92852","pages/fund/subscribe-success.css":"d41d8c","pages/home/home-editor.css":"b7e926","pages/home/newuser-guide.css":"23dd61","pages/home/widgets.css":"814a16","pages/index/cube.css":"041e70","pages/index/default.css":"5ec062","pages/invest/dealList.css":"79d551","pages/invest/mobile_chart.css":"5e058b","pages/invest/mobile_performance.css":"16e7bb","pages/invest/mobile_stock.css":"7e6b64","pages/invest/profile_broker_rank.css":"55a18e","pages/invest/rank.css":"4d6196","pages/invest/singleStock.css":"5049bf","pages/invest/stock_chart.css":"b9b8f1","pages/invest/stocklist.css":"519627","pages/invest/stocklist_fund.css":"74824d","pages/mobile/common.css":"004801","pages/mobile/vars.css":"d41d8c","pages/monthly/monthly.css":"e854d8","pages/pay/reward-mobile.css":"d1c45d","pages/pay/subscribe-mobile.css":"128827","pages/pay/wallet-mobile.css":"583bc0","pages/pay/wallet.css":"51833b","pages/pin/pin-mobile.css":"bf2ba8","pages/preipo/preipo.css":"9b69ea","pages/prove/cube-list.css":"c98458","pages/prove/cube-state.css":"082735","pages/prove/cube.css":"3b2a33","pages/prove/list.css":"12a10b","pages/prove/mobile.css":"4db118","pages/prove/photo.css":"9af94e","pages/prove/user-state.css":"98c676","pages/prove/user.css":"825d2d","pages/singlePage/download.css":"4ab7c5","pages/singlePage/single.css":"9432c6","pages/sns/TSNB.single.css":"9ee729","pages/sns/home.css":"dbceef","pages/special/TSNB.special-item.css":"cb325d","pages/stock/info.css":"924c83","pages/stock/option-import.css":"5c389d","pages/talks/single-mobile.css":"2944d9","pages/today/index-mobile.css":"a95cc9","pages/user/atmePaid.css":"029153","pages/user/binded-phonenumber.css":"a3d8b5","pages/user/forgot_pwd.css":"fc1bfd","pages/user/login.css":"b5b160","pages/user/profile.css":"b6d3b5","pages/user/recommend.css":"7464e2","pages/user/reg.css":"0722f2","pages/wallet/welfare.css":"d92df3","widget/c3/c3.css":"f105cd","widget/bootstrap/alerts.css":"2c520b","widget/bootstrap/badges.css":"da050d","widget/bootstrap/bootstrap.css":"971848","widget/bootstrap/breadcrumbs.css":"b9ab35","widget/bootstrap/button-groups.css":"a7c65b","widget/bootstrap/buttons.css":"a73cc0","widget/bootstrap/carousel.css":"93e128","widget/bootstrap/close.css":"30812b","widget/bootstrap/code.css":"fab06a","widget/bootstrap/component-animations.css":"63295e","widget/bootstrap/dropdowns.css":"d91661","widget/bootstrap/forms.css":"1dac09","widget/bootstrap/glyphicons.css":"024db0","widget/bootstrap/grid.css":"7f9bd0","widget/bootstrap/input-groups.css":"fc56c7","widget/bootstrap/jumbotron.css":"cf17ad","widget/bootstrap/labels.css":"3e0971","widget/bootstrap/list-group.css":"ec9751","widget/bootstrap/media.css":"ecbd91","widget/bootstrap/mixins.css":"a0cb66","widget/bootstrap/modals.css":"5b2682","widget/bootstrap/navbar.css":"abacbf","widget/bootstrap/navs.css":"9fbe5c","widget/bootstrap/normalize.css":"ddcb0b","widget/bootstrap/pager.css":"7be0a4","widget/bootstrap/pagination.css":"eaa566","widget/bootstrap/panels.css":"d53a2d","widget/bootstrap/popovers.css":"93bafa","widget/bootstrap/print.css":"b11602","widget/bootstrap/progress-bars.css":"580cf9","widget/bootstrap/responsive-embed.css":"1c5626","widget/bootstrap/responsive-utilities.css":"2db01f","widget/bootstrap/scaffolding.css":"0fc3a2","widget/bootstrap/tables.css":"462165","widget/bootstrap/theme.css":"52929d","widget/bootstrap/thumbnails.css":"b96eb4","widget/bootstrap/tooltip.css":"c060af","widget/bootstrap/type.css":"c8dff8","widget/bootstrap/utilities.css":"d3b1aa","widget/bootstrap/variables.css":"d41d8c","widget/bootstrap/wells.css":"578e1c","widget/mobile/modal.css":"f2f776","widget/mobile/normal.css":"d536b7","widget/mobile/top-bar.css":"f4eb52","widget/umeditor/editor.css":"49abf5","widget/umeditor/umeditor.css":"7eb569","widget/util/page.css":"3ea87c","pages/broker/event/animate.css":"15fd54","pages/broker/event/contestrank.css":"43e9ad","pages/broker/event/ebook.css":"9cf811","pages/broker/event/eight-gift.css":"4670ba","pages/broker/event/eleven-success.css":"6b6177","pages/broker/event/eleven.css":"3d7c5b","pages/broker/event/event-channel.css":"e50c2a","pages/broker/event/lagou.css":"0cc566","pages/broker/event/marginapplication.css":"c99577","pages/broker/event/pingan-success.css":"c27eca","pages/broker/event/pingan-update.css":"7630f5","pages/broker/event/realcontest.css":"eaebf6","pages/broker/event/realcontest2.css":"7062a5","pages/broker/event/realcontest3.css":"dfa2f8","pages/broker/event/realcontest4.css":"42dc9f","pages/broker/event/referee.css":"8d088f","pages/broker/event/save.css":"3b9754","pages/broker/event/savetraffic.css":"067c23","pages/broker/event/shakehistory.css":"abf144","pages/broker/event/shakepk.css":"5249d1","pages/broker/event/shakerank.css":"936224","pages/broker/event/sport-gift.css":"8c864c","pages/broker/invite/invite-web.css":"630b85","pages/broker/invite/invite.css":"30a613","pages/broker/shake/win-streak-rank.css":"936224","pages/broker/share/trade-share.css":"543eb6","pages/broker/widget/share.css":"1eb946","pages/home/widgets/ad.css":"4f1e5e","pages/home/widgets/hot-stocks.css":"24743d","pages/home/widgets/interesting-recommend.css":"25f080","pages/home/widgets/my-nav.css":"1f1314","pages/home/widgets/other-services.css":"d76f0d","pages/home/widgets/sysnotify.css":"116c48","pages/invest/portfolio/group.css":"3e96d2","pages/invest/portfolio/portfolio.css":"d608c6","pages/market/event/channel.css":"c3e553","pages/market/event/channel2.css":"78b35c","widget/bootstrap/mixins/alerts.css":"d41d8c","widget/bootstrap/mixins/background-variant.css":"d41d8c","widget/bootstrap/mixins/border-radius.css":"d41d8c","widget/bootstrap/mixins/buttons.css":"d41d8c","widget/bootstrap/mixins/center-block.css":"d41d8c","widget/bootstrap/mixins/clearfix.css":"d41d8c","widget/bootstrap/mixins/forms.css":"d41d8c","widget/bootstrap/mixins/gradients.css":"d41d8c","widget/bootstrap/mixins/grid-framework.css":"d41d8c","widget/bootstrap/mixins/grid.css":"2f25b9","widget/bootstrap/mixins/hide-text.css":"d41d8c","widget/bootstrap/mixins/image.css":"d41d8c","widget/bootstrap/mixins/labels.css":"d41d8c","widget/bootstrap/mixins/list-group.css":"d41d8c","widget/bootstrap/mixins/nav-divider.css":"d41d8c","widget/bootstrap/mixins/nav-vertical-align.css":"d41d8c","widget/bootstrap/mixins/opacity.css":"d41d8c","widget/bootstrap/mixins/pagination.css":"d41d8c","widget/bootstrap/mixins/panels.css":"d41d8c","widget/bootstrap/mixins/progress-bar.css":"d41d8c","widget/bootstrap/mixins/reset-filter.css":"d41d8c","widget/bootstrap/mixins/resize.css":"d41d8c","widget/bootstrap/mixins/responsive-visibility.css":"d41d8c","widget/bootstrap/mixins/size.css":"d41d8c","widget/bootstrap/mixins/tab-focus.css":"d41d8c","widget/bootstrap/mixins/table-row.css":"d41d8c","widget/bootstrap/mixins/text-emphasis.css":"d41d8c","widget/bootstrap/mixins/text-overflow.css":"d41d8c","widget/bootstrap/mixins/vendor-prefixes.css":"d41d8c"},
+  staticDomain: 'https://assets.imedao.com',
+  bid : ''
+});
+
+SNB.data.access_token =  $.cookie("xq_a_token") || "47697ade308c557aab035d60928e25f3e4dea8f6";
+</script><!-- 防止局域网缓存用户信息--><script>(function(){
+  var search = window.location.search || '';
+  if (search.indexOf('_=') === -1 && SNB.bid !== '' && document.cookie && document.cookie.indexOf('bid=' + SNB.bid) === -1) {
+    var searchArr = search.split('&');
+    searchArr.push('_=' + (+new Date).toString(36));
+    window.location.search = search.join('&');
+  }
+})();
+</script><script src="https://assets.imedao.com/js/05.jquery.cookie.js"></script><script>function delCookie(name){//为了删除指定名称的cookie，可以将其过期时间设定为一个过去的时间
+  var date = new Date();
+  date.setTime(date.getTime() - 10000);
+  document.cookie = name + '=a; expires=' + date.toGMTString();
+}
+/*
+if(!$.cookie('xq_refresh') && $.cookie('xq_a_token')){
+  $.ajax({
+    url: '/user/refreshCookie',
+    async: false
+  }).done(function(){
+    delCookie('xq_a_token');
+    delCookie('xq_r_token');
+    delCookie('xq_token_expire');
+  });
+}
+*/
+jQuery(function($){
+  $('.navbar a.exit').on('click', function(){
+    try{
+      delCookie('xq_a_token');
+      delCookie('xq_r_token');
+      delCookie('xq_token_expire');
+    } catch(e){
+      console.log(e);
+    }
+  });
+});</script><script src="https://assets.imedao.com/js/SNB.helpers-d5327e.js"></script><script>SNB.profileUser = {"subscribeable":false,"remark":null,"common_count":0,"recommend_reason":null,"st_color":"0","domain":null,"type":"1","recommend":null,"friends_count":17,"verified":false,"stock_status_count":null,"followers_count":53642,"blocking":false,"location":null,"description":"通过数据寻找投资机会，需要速度和效率，我专注快速寻找投资机会！","intro":null,"id":1675038558,"status":0,"profile":"/1675038558","screen_name":"数据哥","step":"three","allow_all_stock":false,"blog_description":null,"city":"城市/地区","donate_count":0,"gender":"n","last_status_id":78517906,"status_count":81,"province":"北京","url":null,"verified_description":null,"verified_type":0,"following":false,"follow_me":false,"stocks_count":13,"name":null,"screenname_pinyin":null,"profile_image_url":"community/20156/1437549874950-1437549926881.jpg!50x50.png","photo_domain":"//xavatar.imedao.com/","group_ids":null,"name_pinyin":null,"verified_realname":false,"cube_count":0,"profile_image_url_small":"community/default/avatar.png!30x30.png"}</script><noscript><style>html {
+  display: block
+}</style><p class="ie6">当前浏览器禁用了JavaScript，导致不能正常使用雪球的功能，请打开JavaScript后再访问本站。</p></noscript><!--[if lt IE 8]><div class="ie6">你正在使用的浏览器版本过低（IE7或IE7以下，包括套用了IE内核的360浏览器、搜狗浏览器等）。<br />如果不能正常浏览本站或某些功能无法使用，请到微软官网下载升级 <a href="http://windows.microsoft.com/zh-CN/internet-explorer/downloads/ie">Internet Explorer</a> 或使用 <a href="http://www.google.com/chrome/">谷歌 Google Chrome</a> 浏览器。</div><![endif]--><div class="temp"></div><div class="navbar navbar-fixed-top"><div class="navbar-inner"><div class="container"><h1 id="logo"><a href="/" title="返回我的首页"><img src="https://assets.imedao.com/images/logos/logo.2015.png" alt="雪球" class="logo-type"><img src="https://assets.imedao.com/images/logos/logotype.2015.png" alt="雪球"></a></h1><div class="search"><form method="get" action="/k"><input id="quick-search" name="q" type="text" autocomplete="off" placeholder="搜索 股票/讨论/用户/组合/群组" class="typeahead"></form><span class="icon"><i></i></span></div><ul class="nav pull-right account notlogined"><li><a href="/account/reg" class="reg">注册</a></li><li><a href="/" class="login">登录</a></li></ul></div></div></div><!--!=css('im.css')--><script>seajs.config({
+  timeout: 60000,
+  preload: [SNB.jsVersion && _.keys(SNB.jsVersion).length ? 'SNB.base-' + SNB.jsVersion['SNB.base.js'] + '.js' : 'SNB.base.js']
+})
+</script><script>seajs.use("SNB.guest.js")
+</script><script>;(function () {
+  var keys = _.keys(SNB.jsVersion)
+    , map = [];
+    
+  if (keys.length) {
+    _.each(keys, function(k) {
+      var reg = new RegExp('\\/(' + k.replace(/\./g, '\\.') + ')(\\?.*|$)');
+      
+      map.push([reg, function (all, fileName, param) {
+        var result = '/' + fileName.replace(/\.js$/i, '') + '-' + SNB.jsVersion[k] + '.js';
+        
+        if (param) {
+          result += param;
+        }
+        
+        return result;
+      }]);
+    });
+    
+    seajs.config({
+      map: map
+    });
+  }
+}())
+</script><!-- test config--><script src="https://assets.imedao.com/js/bootstrap-6bd6fa.js"></script><div id="center" class="container"><div class="main"><div style="display:none" class="loading"></div><div class="wrapper"><link rel="stylesheet" href="https://assets.imedao.com/style/pages/profile-8df782.css"><link rel="stylesheet" href="https://assets.imedao.com/style/widget/umeditor/editor-49abf5.css"><link rel="stylesheet" href="https://assets.imedao.com/style/pages/home/home-editor-b7e926.css"/><div class="profile_box container "><div class="profile_box_behaviour"><div class="profile_box_operations"><div class="profile_operations"><div class="profile-btn-group"><div class="btn-item relationship add-friend"><i></i>加关注</div><div data-id="1675038558" class="btn-item user-center-pay yellow hidden"><span class="icon-icon_16_-70"></span>提问</div></div><ul class="operations relation"><li><a href="javascript:;" data-toggle="at" data-target="数据哥" class="at">@他</a></li><li><a href="javascript:;" class="block">拉黑</a></li><li><a href="javascript:;" class="reportSpam_user">举报</a></li></ul></div></div><div class="profile_box_users"><div style="display:none" class="usersList similarUser_list head-list"></div><script>seajs.use('SNB.similarUsers.js', function(){
+  var collection=new SNB.Collections.similarUsers();
+  collection.fetch({
+    success:function(){
+      var col_length = collection.length;
+      if(col_length){
+        var views=new SNB.Views.similarUsersList({el:$(".similarUser_list"),collection:collection});
+        views.render();
+        $(".similarUser_list").prepend("<h3>兴趣相近</h3>").show();
+      }
+    }
+  })
+})</script></div></div><div class="profile_box_info"><div class="profile_info"><div class="profile_info_pic"><img src="//xavatar.imedao.com/community/20156/1437549874950-1437549926881.jpg!180x180.png" width="100" height="100"/></div><div class="profile_info_content"><h2><span>数据哥</span><a href="＃" style="display:none" data-user-id='1675038558' data-user-name="数据哥" class="setRemark">(备注)</a></h2><script>seajs.use("SNB.base.js", function(){
+  SNB.get("/user/profile/show.json", {uid: SNB.profileUser.id, property: "card_sid,personality"}, function(data) {
+    $(".profile_info_content h2").append("<a target='_blank' title='雪球名片' style='margin-left:6px' href='" + SNB.profileUser.profile + "/card'><img title='雪球名片' src='//assets.imedao.com/images/card/" + (data[0]?'namecard-icon2.png':'namecard-icon2-gray.png') + "'/></a>")
+    var p = data[1] && data[1].value != 'false';
+    $(".profile_info_content h2").append("<a target='_blank' title='投资者性格" + (p ? '：' + SNB.Util.personalityResult(data[1].value) : '') + "' style='margin-left:6px' href='/event/personality/x/" + (SNB.profileUser.domain || SNB.profileUser.id) + "'><img title='投资者性格" + (p ? '：' + SNB.Util.personalityResult(data[1].value) : '') + "' src='//assets.imedao.com/images/personality/icon_character" + (p ? '' : '_gray') + ".png'/></a>")
+  })
+})</script><ul><li class="gender_info"><span class="m head"></span>保密&nbsp;&nbsp;&nbsp;北京&nbsp;&nbsp;&nbsp;</li><li>股票13只&nbsp;&nbsp;讨论81条&nbsp;&nbsp;粉丝53642人</li><li></li><li><div class="item_title">简介：</div><div class="item_content expend_in_oneline"><p class="summary">通过数据寻找投资机会，需要速度和效率，我专注快速寻找投资机会！</p><p style="display:none" class="detail">通过数据寻找投资机会，需要速度和效率，我专注快速寻找投资机会！<span class="fold_all">收起<i class="newIcon_expend"></i></span></p></div></li></ul></div></div><script>seajs.use("SNB.base.js", function(){
+  SNB.get("/account/oauth/user/show.json",{source:"sina",userid:SNB.profileUser.id},function(ret){
+    if(ret && ret.id){
+      $(".profile_info").find("ul li").eq(0).append("<a href='http://weibo.com/"+ret.id+"' target='_blank'><span class='newIcon newIcon_weibo'>&nbsp;</span> 微博</a>")
+    }
+  })
+  $(".show_all,.fold_all").on("click",function(e){
+    e.preventDefault();
+    var that = this;
+    $(that).closest(".expend_in_oneline").find("p").toggle();
+  })
+})</script></div></div><style>.fundContainer{
+  display: none;
+}
+
+.fundContainer table .first{
+  width:325px;
+}
+
+.cube-follow {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cube-follow span {
+  display: none;
+  width: 20px;
+  height: 12px;
+  margin:0 3px;
+}
+
+.cube-follow-false .add {
+  display: inline-block;
+  background: url(https://assets.imedao.com/images/profile_cube_image.png) no-repeat -18px -1px;
+}
+
+.cube-follow-true .del {
+  display: inline-block;
+  background: url(https://assets.imedao.com/images/profile_cube_image.png) no-repeat  0px -1px;
+}
+
+a.rebalance {
+
+  display: inline-block;
+  background: url(https://assets.imedao.com/images/profile_cube_image.png) no-repeat -60px 0px;
+  width: 20px;
+  height: 12px;
+}
+a.contact{
+  background: url(https://assets.imedao.com/images/profile_cube_image.png) no-repeat -40px 0px;
+  display: inline-block;
+  width: 20px;
+  height: 12px;
+}
+.limit{
+  background: none!important;
+  width: auto!important;
+  margin: 0!important;
+  
+}
+.moreC{
+  background: none;
+  border: none;
+  color: #0055A2;
+  cursor: pointer;
+  height: 20px;
+  line-height: 20px;
+  margin: 0;
+  padding: 5px 6px 5px 15px;
+  text-align: right;
+  border-top: 1px solid #DDD;
+}
+.none{
+  padding: 15px;
+  font-size: 14px;
+  text-align: center;
+  color: #aaa;
+}
+
+</style><div class="portfolioContainer fundContainer"><div class="cube-title newtab"><ul style="float:left;display:block" class="nav nav-tabs"><li class="active"><a class="nav nav-tabs">他管理的私募</a></li></ul><div class="clear"></div></div><div class="tableContainer"></div></div><script>seajs.use('fund/profile-fund.js');
+</script><style>.cube-follow {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cube-follow span {
+  display: none;
+  width: 20px;
+  height: 12px;
+  margin:0 3px;
+}
+
+.cube-follow-false .add {
+  display: inline-block;
+  background: url(https://assets.imedao.com/images/profile_cube_image.png) no-repeat -18px -1px;
+}
+
+.cube-follow-true .del {
+  display: inline-block;
+  background: url(https://assets.imedao.com/images/profile_cube_image.png) no-repeat  0px -1px;
+}
+
+a.rebalance {
+
+  display: inline-block;
+  background: url(https://assets.imedao.com/images/profile_cube_image.png) no-repeat -60px 0px;
+  width: 20px;
+  height: 12px;
+}
+a.contact{
+  background: url(https://assets.imedao.com/images/profile_cube_image.png) no-repeat -40px 0px;
+  display: inline-block;
+  width: 20px;
+  height: 12px;
+}
+.limit{
+  background: none!important;
+  width: auto!important;
+  margin: 0!important;
+  
+}
+.moreC{
+  background: none;
+  border: none;
+  color: #0055A2;
+  cursor: pointer;
+  height: 20px;
+  line-height: 20px;
+  margin: 0;
+  padding: 5px 6px 5px 15px;
+  text-align: right;
+  border-top: 1px solid #DDD;
+}
+.none{
+  padding: 15px;
+  font-size: 14px;
+  text-align: center;
+  color: #aaa;
+}
+
+</style><div class="profile-cube-list portfolioContainer"><div class="cube-title newtab"><ul style="float:left;display:block" class="nav nav-tabs"><li class="active"><a class="nav nav-tabs">他创建的组合(<i class="num">--</i>)</a></li></ul><div class="clear"></div></div><div class="tableContainer"><table><thead><tr><th>组合</th><th>最新净值</th><th>总收益</th><th width="87px">操作</th></tr></thead><tbody><tr><td colspan="4"><div class="loading"></div></td></tr></tbody></table></div></div><script>$.ajax({
+  url:"/cubes/count_limit.json",
+  data:{
+    user_id:SNB.profileUser.id
+  },
+  type:"get"
+}).success(function(data){
+  $('.profile-cube-list .cube-title .num').text(data.exists_count);
+  $('.profile-cube-list .cube-title .limit').text(data.allow_count);
+  
+})
+seajs.use('cube/profile_cubes.js');
+</script><div class="portfolioContainer"><div class="newtab"><ul id="portfolioTab" class="nav nav-tabs"></ul><div class="clear"></div></div><div class="tableContainer"><table class="portfolioNew"><thead><tr><th style="min-width:120px;">股票</th><th style="min-width:40px;">当前价 </th><th style="min-width:80px;">买入目标价</th><th style="min-width:80px;">卖出目标价</th><th>备注</th></tr></thead><tbody><tr><td colspan="7"><div class="loading"></div></td></tr></tbody></table></div></div><script src="https://assets.imedao.com/js/jquery.mousewheel-41ebd2.js"></script><script src="https://assets.imedao.com/js/raphael-ea1c64.js"></script><script>seajs.use('SNB.dialog.js')
+seajs.use(['SNB.newChart.js', 'SNB.portfolioNew.js'],function(_c, p){
+  var portfolio=new p.Portfolio();
+})</script><div class="status_box "><div class="statuses_tab newtab"><ul class="nav nav-tabs"><li id="statusMenu" class="dropdown active status_tab"><a href="#status_content" data-target="#statusMenu" data-type="" data-toggle="dropdown" data-text="主贴(81)">主贴<small class="count">(81)</small><b class="caret"></b></a><ul class="dropdown-menu"><li><a href="#status_content" data-toggle="tab" data-type="" data-text="主贴">主贴</a></li><li><a href="#status_content" data-toggle="tab" data-type="0" data-text="原发布">原发布</a></li><li><a href="#status_content" data-toggle="tab" data-type="1" data-text="带标题">带标题</a></li><li><a href="#status_content" data-toggle="tab" data-type="2" data-text="长文章">长文章</a></li><li><a href="#status_content" data-toggle="tab" data-type="3" data-text="交易">交易</a></li></ul></li><li><a href="#articles_content" data-toggle="tab" id="articles_content_tab">原创专栏</a></li><li><a href="#status_content" data-toggle="tab" data-type="4" data-text="问答">问答</a></li><li><a href="#favs_content" data-toggle="tab">收藏<small id="favsCount"></small></a></li><li><a href="#friends_content" data-toggle="tab">关注<small>(17)</small></a></li><li><a href="#followers_content" data-toggle="tab">粉丝<small>(53642)</small></a></li></ul></div><div class="statuses_container container tab-content"><div id="status_content" class="status_content container active tab-pane"><div class="status_bd"><div id="statusLists" class="allStatuses no-head"></div></div><div class="status_widget"><div class="seachbar"><input id="searchStatus" type="text" autocomplete="off" placeholder="搜索他的讨论" class="placeholder"/><span class="glass"><i></i></span></div><style>.mentionedStocks{
+  margin-top:15px;
+  display:none;
+}
+.stocksList{
+  border-top:1px solid #F1F1F1;
+  margin-top: 8px;
+  padding-top: 10px;
+  font-size:12px;
+}
+.stocksList .stockInfo{
+  display:inline-block;
+  margin-right:5px;
+  margin-bottom:8px;
+}
+.stocksList .stockInfo span{
+  color:#888;
+  cursor:pointer;
+}
+</style><div class="mentionedStocks"><h2 class="widget-title">他经常讨论的股票 </h2><div class="fixit"></div><div class="stocksList"></div><div class="fixit"></div><script>seajs.use("SNB.base.js", function(){
+  var uid = 1675038558;
+  SNB.get("/user/top_status_count_stock.json", { count: 5, uid: uid }, function(stocks){
+    if ( stocks && stocks.length ) {
+      var html = "";
+      _.each(stocks, function(stock, index){
+        if ( stock.status_all_count > 0 ) {
+          var count = stock.status_all_count,
+            name = stock.stockName,
+            symbol = stock.symbol,
+            title = name + "(" + symbol + ") 查看" + count + "条讨论";
+            
+          html += '<span class="stockInfo" title="' + title + '" data-name="' + name + '" data-symbol="' + symbol + '" data-count="' + count + '"><a href="#">' + name + '</a><span>(<span class="status_count">' + count + '</span>条讨论)</span></span>';
+        }
+      });
+      if ( html ) {
+        $(".mentionedStocks .stocksList").append(html);
+        $(".mentionedStocks").show();
+      }
+    }
+  })
+})</script></div></div></div><div id="favs_content" class="fade tab-pane"></div><div id="friends_content" class="fade tab-pane"></div><div id="followers_content" class="fade tab-pane"></div></div><style>.seachbar .glass {
+  padding: 0;
+}
+
+.seachbar .glass i {
+  background-position: -172px -1px
+}
+
+.tab-content {
+  overflow: inherit;
+}</style><script>(function () {
+  SNB.data.req_isBrick = 0;
+  SNB.data.statuses = {"count":20,"statuses":[{"id":78517906,"user_id":1675038558,"title":"深港通首日，外资大举抄底这10只股票！","created_at":1480933273000,"retweet_count":37,"reply_count":77,"fav_count":202,"truncated":false,"commentId":0,"retweet_status_id":0,"symbol_id":null,"description":"【深交所公布深港通首日交易信息】深股通方面，买入26.69亿元，使用额度27.11亿元，标的股票中464只发生交易；港股通方面，买入9.02亿港元，卖出0.21亿港元，使用额度8.5亿元，标的股票中348只发生交易。 数据哥今天整理了深股通买入最多的10只个股，快来看看吧！","type":"1","source_link":null,"edited_at":1480935688000,"pic":"//xqimg.imedao.com/158cea54476187f3fdd9732a.png!thumb.jpg","user":{"subscribeable":false,"common_count":0,"remark":null,"recommend_reason":null,"domain":null,"type":"1","name":null,"location":null,"id":1675038558,"province":"北京","city":"城市/地区","gender":"n","verified":false,"blog_description":null,"followers_count":53642,"last_status_id":78517906,"status_count":81,"step":"three","verified_description":null,"recommend":null,"st_color":"0","intro":null,"stock_status_count":null,"follow_me":false,"allow_all_stock":false,"stocks_count":13,"verified_type":0,"description":"通过数据寻找投资机会，需要速度和效率，我专注快速寻找投资机会！","status":0,"url":null,"blocking":false,"screen_name":"数据哥","profile":"/1675038558","friends_count":17,"following":false,"donate_count":0,"verified_realname":false,"group_ids":null,"name_pinyin":null,"screenname_pinyin":null,"profile_image_url":"community/20156/1437549874950-1437549926881.jpg,community/20156/1437549874950-1437549926881.jpg!180x180.png,community/20156/1437549874950-1437549926881.jpg!50x50.png,community/20156/1437549874950-1437549926881.jpg!30x30.png","photo_domain":"//xavatar.imedao.com/"},"retweeted_status":null,"answers":null,"rqtype":null,"rqid":0,"target":"/1675038558/78517906","fragment":null,"blocked":false,"blocking":false,"topic_pic":null,"topic_symbol":null,"topic_title":null,"topic_desc":null,"donate_count":0,"donate_snowcoin":0,"view_count":1433201,"mark":0,"card":null,"favorited":false,"favorited_created_at":null,"offer":null,"timeBefore":"12-05 18:21","expend":true,"reward":true,"firstImg":"//xqimg.imedao.com/158cea54476187f3fdd9732a.png!thumb.jpg","canEdit":true,"topic_pic_thumbnail_small":null,"topic_pic_thumbnail":null,"topic_pic_headOrPad":null,"meta_keywords":null,"paid_mention":null,"reward_count":0,"reward_amount":0,"reward_user_count":0,"talk_count":0,"promotion_pic":null,"promotion_url":null,"promotion_id":0,"mark_desc":null,"pic_sizes":[{"width":526,"height":221}],"is_answer":false,"text":"<p>【深交所公布深港通首日交易信息】深股通方面，买入26.69亿元，使用额度27.11亿元，标的股票中464只发生交易；港股通方面，买入9.02亿港元，卖出0.21亿港元，使用额度8.5亿元，标的股票中348只发生交易。</p><p>数据哥今天整理了深股通买入最多的10只个股，快来看看吧！</p><p><img class=\"ke_img\" src=\"//xqimg.imedao.com/158cea54476187f3fdd9732a.png!custom.jpg\" ></p><p><p><br/></p><p></p>","recommend_cards":null,"is_refused":false,"is_bonus":false,"source":"雪球"},{"id":78362812,"user_id":1675038558,"title":"下一个格力电器是谁？关注这30只股票！","created_at":1480579425000,"retweet_count":86,"reply_count":139,"fav_count":620,"truncated":false,"commentId":0,"retweet_status_id":0,"symbol_id":null,"description":"格力电器被前海人寿增持引起市场关注，格力电器今天股价创历史新高。数据哥今天整理了30只保险产品已经持股但没有举牌，有可能继续增持的高分红绩优股，快来看看！","type":"1","source_link":null,"edited_at":1480581325000,"pic":"//xqimg.imedao.com/158b986109122473fd1a68f6.png!thumb.jpg","user":{"subscribeable":false,"common_count":0,"remark":null,"recommend_reason":null,"domain":null,"type":"1","name":null,"location":null,"id":1675038558,"province":"北京","city":"城市/地区","gender":"n","verified":false,"blog_description":null,"followers_count":53642,"last_status_id":78517906,"status_count":81,"step":"three","verified_description":null,"recommend":null,"st_color":"0","intro":null,"stock_status_count":null,"follow_me":false,"allow_all_stock":false,"stocks_count":13,"verified_type":0,"description":"通过数据寻找投资机会，需要速度和效率，我专注快速寻找投资机会！","status":0,"url":null,"blocking":false,"screen_name":"数据哥","profile":"/1675038558","friends_count":17,"following":false,"donate_count":0,"verified_realname":false,"group_ids":null,"name_pinyin":null,"screenname_pinyin":null,"profile_image_url":"community/20156/1437549874950-1437549926881.jpg,community/20156/1437549874950-1437549926881.jpg!180x180.png,community/20156/1437549874950-1437549926881.jpg!50x50.png,community/20156/1437549874950-1437549926881.jpg!30x30.png","photo_domain":"//xavatar.imedao.com/"},"retweeted_status":null,"answers":null,"rqtype":null,"rqid":0,"target":"/1675038558/78362812","fragment":null,"blocked":false,"blocking":false,"topic_pic":null,"topic_symbol":null,"topic_title":null,"topic_desc":null,"donate_count":0,"donate_snowcoin":0,"view_count":1848371,"mark":0,"card":null,"favorited":false,"favorited_created_at":null,"offer":null,"timeBefore":"12-01 16:03","expend":true,"reward":true,"firstImg":"//xqimg.imedao.com/158b986109122473fd1a68f6.png!thumb.jpg","canEdit":true,"topic_pic_thumbnail_small":null,"topic_pic_thumbnail":null,"topic_pic_headOrPad":null,"meta_keywords":null,"paid_mention":null,"reward_count":0,"reward_amount":0,"reward_user_count":0,"talk_count":0,"promotion_pic":null,"promotion_url":null,"promotion_id":0,"mark_desc":null,"pic_sizes":[{"width":631,"height":616}],"is_answer":false,"text":"<p>格力电器被前海人寿增持引起市场关注，格力电器今天股价创历史新高。数据哥今天整理了30只保险产品已经持股但没有举牌，有可能继续增持的高分红绩优股，快来看看！</p><p><img class=\"ke_img\" src=\"//xqimg.imedao.com/158b986109122473fd1a68f6.png!custom.jpg\" ><p><br/></p><br/></p>","recommend_cards":null,"is_refused":false,"is_bonus":false,"source":"雪球"},{"id":78303510,"user_id":1675038558,"title":"慢牛行情买什么？收好这30只年报大幅预增股","created_at":1480495460000,"retweet_count":25,"reply_count":39,"fav_count":462,"truncated":false,"commentId":0,"retweet_status_id":0,"symbol_id":null,"description":"四季度是市场资金布局跨年度行情的重要时间节点，其中，年报业绩超预期标的将大概率获资金追捧。数据哥今天整理了30只年报大幅预增个股，快来看看！","type":"1","source_link":null,"edited_at":null,"pic":"//xqimg.imedao.com/158b4673b8f16703fd615dc8.png!thumb.jpg","user":{"subscribeable":false,"common_count":0,"remark":null,"recommend_reason":null,"domain":null,"type":"1","name":null,"location":null,"id":1675038558,"province":"北京","city":"城市/地区","gender":"n","verified":false,"blog_description":null,"followers_count":53642,"last_status_id":78517906,"status_count":81,"step":"three","verified_description":null,"recommend":null,"st_color":"0","intro":null,"stock_status_count":null,"follow_me":false,"allow_all_stock":false,"stocks_count":13,"verified_type":0,"description":"通过数据寻找投资机会，需要速度和效率，我专注快速寻找投资机会！","status":0,"url":null,"blocking":false,"screen_name":"数据哥","profile":"/1675038558","friends_count":17,"following":false,"donate_count":0,"verified_realname":false,"group_ids":null,"name_pinyin":null,"screenname_pinyin":null,"profile_image_url":"community/20156/1437549874950-1437549926881.jpg,community/20156/1437549874950-1437549926881.jpg!180x180.png,community/20156/1437549874950-1437549926881.jpg!50x50.png,community/20156/1437549874950-1437549926881.jpg!30x30.png","photo_domain":"//xavatar.imedao.com/"},"retweeted_status":null,"answers":null,"rqtype":null,"rqid":0,"target":"/1675038558/78303510","fragment":null,"blocked":false,"blocking":false,"topic_pic":null,"topic_symbol":null,"topic_title":null,"topic_desc":null,"donate_count":0,"donate_snowcoin":0,"view_count":915445,"mark":0,"card":null,"favorited":false,"favorited_created_at":null,"offer":null,"timeBefore":"11-30 16:44","expend":true,"reward":true,"firstImg":"//xqimg.imedao.com/158b4673b8f16703fd615dc8.png!thumb.jpg","canEdit":true,"topic_pic_thumbnail_small":null,"topic_pic_thumbnail":null,"topic_pic_headOrPad":null,"meta_keywords":null,"paid_mention":null,"reward_count":0,"reward_amount":0,"reward_user_count":0,"talk_count":0,"promotion_pic":null,"promotion_url":null,"promotion_id":0,"mark_desc":null,"pic_sizes":[{"width":612,"height":620}],"is_answer":false,"text":"<p><p> 四季度是市场资金布局跨年度行情的重要时间节点，其中，年报业绩超预期标的将大概率获资金追捧。数据哥今天整理了30只年报大幅预增个股，快来看看！<br/> </p><p><img class=\"ke_img\" src=\"//xqimg.imedao.com/158b4673b8f16703fd615dc8.png!custom.jpg\" ></p><p><br/></p>","recommend_cards":null,"is_refused":false,"is_bonus":false,"source":"雪球"},{"id":78244308,"user_id":1675038558,"title":"小心！这30只股将大幅解禁！","created_at":1480408602000,"retweet_count":32,"reply_count":31,"fav_count":238,"truncated":false,"commentId":0,"retweet_status_id":0,"symbol_id":null,"description":"2016年12月和2017年1月将是今明两年解禁规模最高的月份，数据哥今天整理了这两个月解禁比例最大的30只个股，快来看看！","type":"1","source_link":null,"edited_at":null,"pic":"//xqimg.imedao.com/158af3a8e8fb9a3feeb211d9.png!thumb.jpg","user":{"subscribeable":false,"common_count":0,"remark":null,"recommend_reason":null,"domain":null,"type":"1","name":null,"location":null,"id":1675038558,"province":"北京","city":"城市/地区","gender":"n","verified":false,"blog_description":null,"followers_count":53642,"last_status_id":78517906,"status_count":81,"step":"three","verified_description":null,"recommend":null,"st_color":"0","intro":null,"stock_status_count":null,"follow_me":false,"allow_all_stock":false,"stocks_count":13,"verified_type":0,"description":"通过数据寻找投资机会，需要速度和效率，我专注快速寻找投资机会！","status":0,"url":null,"blocking":false,"screen_name":"数据哥","profile":"/1675038558","friends_count":17,"following":false,"donate_count":0,"verified_realname":false,"group_ids":null,"name_pinyin":null,"screenname_pinyin":null,"profile_image_url":"community/20156/1437549874950-1437549926881.jpg,community/20156/1437549874950-1437549926881.jpg!180x180.png,community/20156/1437549874950-1437549926881.jpg!50x50.png,community/20156/1437549874950-1437549926881.jpg!30x30.png","photo_domain":"//xavatar.imedao.com/"},"retweeted_status":null,"answers":null,"rqtype":null,"rqid":0,"target":"/1675038558/78244308","fragment":null,"blocked":false,"blocking":false,"topic_pic":null,"topic_symbol":null,"topic_title":null,"topic_desc":null,"donate_count":0,"donate_snowcoin":0,"view_count":491361,"mark":0,"card":null,"favorited":false,"favorited_created_at":null,"offer":null,"timeBefore":"11-29 16:36","expend":true,"reward":true,"firstImg":"//xqimg.imedao.com/158af3a8e8fb9a3feeb211d9.png!thumb.jpg","canEdit":true,"topic_pic_thumbnail_small":null,"topic_pic_thumbnail":null,"topic_pic_headOrPad":null,"meta_keywords":null,"paid_mention":null,"reward_count":1,"reward_amount":594,"reward_user_count":1,"talk_count":0,"promotion_pic":null,"promotion_url":null,"promotion_id":0,"mark_desc":null,"pic_sizes":[{"width":591,"height":580}],"is_answer":false,"text":"<p><p> 2016年12月和2017年1月将是今明两年解禁规模最高的月份，数据哥今天整理了这两个月解禁比例最大的30只个股，快来看看！ </p><p><img class=\"ke_img\" src=\"//xqimg.imedao.com/158af3a8e8fb9a3feeb211d9.png!custom.jpg\" ><p><br/></p></p>","recommend_cards":null,"is_refused":false,"is_bonus":false,"source":"雪球"},{"id":78047799,"user_id":1675038558,"title":"30只险资重仓股，拿走不谢！","created_at":1480002853000,"retweet_count":54,"reply_count":44,"fav_count":403,"truncated":false,"commentId":0,"retweet_status_id":0,"symbol_id":null,"description":"近日安邦举牌中国建筑等一系列险资举牌事件牵动人心，数据哥通过已披露的信息，整理了30只保险产品重仓股，快来看看。","type":"1","source_link":null,"edited_at":null,"pic":"//xqimg.imedao.com/158970b50a743c73fc6260d1.png!thumb.jpg","user":{"subscribeable":false,"common_count":0,"remark":null,"recommend_reason":null,"domain":null,"type":"1","name":null,"location":null,"id":1675038558,"province":"北京","city":"城市/地区","gender":"n","verified":false,"blog_description":null,"followers_count":53642,"last_status_id":78517906,"status_count":81,"step":"three","verified_description":null,"recommend":null,"st_color":"0","intro":null,"stock_status_count":null,"follow_me":false,"allow_all_stock":false,"stocks_count":13,"verified_type":0,"description":"通过数据寻找投资机会，需要速度和效率，我专注快速寻找投资机会！","status":0,"url":null,"blocking":false,"screen_name":"数据哥","profile":"/1675038558","friends_count":17,"following":false,"donate_count":0,"verified_realname":false,"group_ids":null,"name_pinyin":null,"screenname_pinyin":null,"profile_image_url":"community/20156/1437549874950-1437549926881.jpg,community/20156/1437549874950-1437549926881.jpg!180x180.png,community/20156/1437549874950-1437549926881.jpg!50x50.png,community/20156/1437549874950-1437549926881.jpg!30x30.png","photo_domain":"//xavatar.imedao.com/"},"retweeted_status":null,"answers":null,"rqtype":null,"rqid":0,"target":"/1675038558/78047799","fragment":null,"blocked":false,"blocking":false,"topic_pic":null,"topic_symbol":null,"topic_title":null,"topic_desc":null,"donate_count":0,"donate_snowcoin":0,"view_count":602079,"mark":0,"card":null,"favorited":false,"favorited_created_at":null,"offer":null,"timeBefore":"11-24 23:54","expend":true,"reward":true,"firstImg":"//xqimg.imedao.com/158970b50a743c73fc6260d1.png!thumb.jpg","canEdit":true,"topic_pic_thumbnail_small":null,"topic_pic_thumbnail":null,"topic_pic_headOrPad":null,"meta_keywords":null,"paid_mention":null,"reward_count":0,"reward_amount":0,"reward_user_count":0,"talk_count":0,"promotion_pic":null,"promotion_url":null,"promotion_id":0,"mark_desc":null,"pic_sizes":[{"width":544,"height":571}],"is_answer":false,"text":"<p>近日安邦举牌中国建筑等一系列险资举牌事件牵动人心，数据哥通过已披露的信息，整理了30只保险产品重仓股，快来看看。</p><p><img class=\"ke_img\" src=\"//xqimg.imedao.com/158970b50a743c73fc6260d1.png!custom.jpg\" ><p><br/></p></p>","recommend_cards":null,"is_refused":false,"is_bonus":false,"source":"雪球"},{"id":77914121,"user_id":1675038558,"title":"20只ST摘帽概念股，拿走不谢","created_at":1479811210000,"retweet_count":56,"reply_count":59,"fav_count":457,"truncated":false,"commentId":0,"retweet_status_id":0,"symbol_id":null,"description":"又到年度业绩公布之际，一些有摘帽概念的ST个股将受到市场追捧。数据哥整理了20只ST股年度扭亏或者前三季度已经实现盈利，并且每股净资产可能为正，这些个股有摘帽可能。快来看看吧 。","type":"1","source_link":null,"edited_at":null,"pic":"//xqimg.imedao.com/1588b9f10fc27e53fd8303ce.png!thumb.jpg","user":{"subscribeable":false,"common_count":0,"remark":null,"recommend_reason":null,"domain":null,"type":"1","name":null,"location":null,"id":1675038558,"province":"北京","city":"城市/地区","gender":"n","verified":false,"blog_description":null,"followers_count":53642,"last_status_id":78517906,"status_count":81,"step":"three","verified_description":null,"recommend":null,"st_color":"0","intro":null,"stock_status_count":null,"follow_me":false,"allow_all_stock":false,"stocks_count":13,"verified_type":0,"description":"通过数据寻找投资机会，需要速度和效率，我专注快速寻找投资机会！","status":0,"url":null,"blocking":false,"screen_name":"数据哥","profile":"/1675038558","friends_count":17,"following":false,"donate_count":0,"verified_realname":false,"group_ids":null,"name_pinyin":null,"screenname_pinyin":null,"profile_image_url":"community/20156/1437549874950-1437549926881.jpg,community/20156/1437549874950-1437549926881.jpg!180x180.png,community/20156/1437549874950-1437549926881.jpg!50x50.png,community/20156/1437549874950-1437549926881.jpg!30x30.png","photo_domain":"//xavatar.imedao.com/"},"retweeted_status":null,"answers":null,"rqtype":null,"rqid":0,"target":"/1675038558/77914121","fragment":null,"blocked":false,"blocking":false,"topic_pic":null,"topic_symbol":null,"topic_title":null,"topic_desc":null,"donate_count":0,"donate_snowcoin":0,"view_count":118997,"mark":0,"card":null,"favorited":false,"favorited_created_at":null,"offer":null,"timeBefore":"11-22 18:40","expend":true,"reward":true,"firstImg":"//xqimg.imedao.com/1588b9f10fc27e53fd8303ce.png!thumb.jpg","canEdit":true,"topic_pic_thumbnail_small":null,"topic_pic_thumbnail":null,"topic_pic_headOrPad":null,"meta_keywords":null,"paid_mention":null,"reward_count":1,"reward_amount":297,"reward_user_count":1,"talk_count":0,"promotion_pic":null,"promotion_url":null,"promotion_id":0,"mark_desc":null,"pic_sizes":[{"width":593,"height":400}],"is_answer":false,"text":"<p>又到年度业绩公布之际，一些有摘帽概念的ST个股将受到市场追捧。数据哥整理了20只ST股年度扭亏或者前三季度已经实现盈利，并且每股净资产可能为正，这些个股有摘帽可能。快来看看吧  。</p><p><img class=\"ke_img\" src=\"//xqimg.imedao.com/1588b9f10fc27e53fd8303ce.png!custom.jpg\" ><p><br/></p></p>","recommend_cards":null,"is_refused":false,"is_bonus":false,"source":"雪球"},{"id":77648219,"user_id":1675038558,"title":"机构：这30只股票涨幅空间超70%！","created_at":1479291314000,"retweet_count":16,"reply_count":16,"fav_count":67,"truncated":false,"commentId":0,"retweet_status_id":0,"symbol_id":null,"description":"16年即将结束，没有吃到大肉的小伙伴，还有机会！数据哥今天整理了近一个月的券商研报，从中挑出30只券商目标价比现价高70%以上的个股，哪些是真金，还需要你去仔细甄别。","type":"1","source_link":null,"edited_at":null,"pic":"//xqimg.imedao.com/1586ca2124311fd3feb6e36a.png!thumb.jpg","user":{"subscribeable":false,"common_count":0,"remark":null,"recommend_reason":null,"domain":null,"type":"1","name":null,"location":null,"id":1675038558,"province":"北京","city":"城市/地区","gender":"n","verified":false,"blog_description":null,"followers_count":53642,"last_status_id":78517906,"status_count":81,"step":"three","verified_description":null,"recommend":null,"st_color":"0","intro":null,"stock_status_count":null,"follow_me":false,"allow_all_stock":false,"stocks_count":13,"verified_type":0,"description":"通过数据寻找投资机会，需要速度和效率，我专注快速寻找投资机会！","status":0,"url":null,"blocking":false,"screen_name":"数据哥","profile":"/1675038558","friends_count":17,"following":false,"donate_count":0,"verified_realname":false,"group_ids":null,"name_pinyin":null,"screenname_pinyin":null,"profile_image_url":"community/20156/1437549874950-1437549926881.jpg,community/20156/1437549874950-1437549926881.jpg!180x180.png,community/20156/1437549874950-1437549926881.jpg!50x50.png,community/20156/1437549874950-1437549926881.jpg!30x30.png","photo_domain":"//xavatar.imedao.com/"},"retweeted_status":null,"answers":null,"rqtype":null,"rqid":0,"target":"/1675038558/77648219","fragment":null,"blocked":false,"blocking":false,"topic_pic":null,"topic_symbol":null,"topic_title":null,"topic_desc":null,"donate_count":0,"donate_snowcoin":0,"view_count":22232,"mark":0,"card":null,"favorited":false,"favorited_created_at":null,"offer":null,"timeBefore":"11-16 18:15","expend":true,"reward":true,"firstImg":"//xqimg.imedao.com/1586ca2124311fd3feb6e36a.png!thumb.jpg","canEdit":true,"topic_pic_thumbnail_small":null,"topic_pic_thumbnail":null,"topic_pic_headOrPad":null,"meta_keywords":null,"paid_mention":null,"reward_count":0,"reward_amount":0,"reward_user_count":0,"talk_count":0,"promotion_pic":null,"promotion_url":null,"promotion_id":0,"mark_desc":null,"pic_sizes":[{"width":898,"height":663}],"is_answer":false,"text":"<p></p><p>&nbsp;16年即将结束，没有吃到大肉的小伙伴，还有机会！数据哥今天整理了近一个月的券商研报，从中挑出30只券商目标价比现价高70%以上的个股，哪些是真金，还需要你去仔细甄别。&nbsp;</p><img class=\"ke_img\" src=\"//xqimg.imedao.com/1586ca2124311fd3feb6e36a.png!custom.jpg\" ><p><br></p>","recommend_cards":null,"is_refused":false,"is_bonus":false,"source":"雪球"},{"id":77368652,"user_id":1675038558,"title":"30只高送转潜力次新股，拿走不谢！","created_at":1478770118000,"retweet_count":57,"reply_count":53,"fav_count":637,"truncated":false,"commentId":0,"retweet_status_id":0,"symbol_id":null,"description":"高送转和次新股已经成为当前市场的人气龙头板块。数据哥今天整理了30只今年以来上市、具有年报高送转潜力的次新股，快来看看吧！ 注：点击可看大图","type":"1","source_link":null,"edited_at":null,"pic":"//xqimg.imedao.com/1584d90fafb723fea938117c.png!thumb.jpg","user":{"subscribeable":false,"common_count":0,"remark":null,"recommend_reason":null,"domain":null,"type":"1","name":null,"location":null,"id":1675038558,"province":"北京","city":"城市/地区","gender":"n","verified":false,"blog_description":null,"followers_count":53642,"last_status_id":78517906,"status_count":81,"step":"three","verified_description":null,"recommend":null,"st_color":"0","intro":null,"stock_status_count":null,"follow_me":false,"allow_all_stock":false,"stocks_count":13,"verified_type":0,"description":"通过数据寻找投资机会，需要速度和效率，我专注快速寻找投资机会！","status":0,"url":null,"blocking":false,"screen_name":"数据哥","profile":"/1675038558","friends_count":17,"following":false,"donate_count":0,"verified_realname":false,"group_ids":null,"name_pinyin":null,"screenname_pinyin":null,"profile_image_url":"community/20156/1437549874950-1437549926881.jpg,community/20156/1437549874950-1437549926881.jpg!180x180.png,community/20156/1437549874950-1437549926881.jpg!50x50.png,community/20156/1437549874950-1437549926881.jpg!30x30.png","photo_domain":"//xavatar.imedao.com/"},"retweeted_status":null,"answers":null,"rqtype":null,"rqid":0,"target":"/1675038558/77368652","fragment":null,"blocked":false,"blocking":false,"topic_pic":null,"topic_symbol":null,"topic_title":null,"topic_desc":null,"donate_count":0,"donate_snowcoin":0,"view_count":223006,"mark":0,"card":null,"favorited":false,"favorited_created_at":null,"offer":null,"timeBefore":"11-10 17:28","expend":true,"reward":true,"firstImg":"//xqimg.imedao.com/1584d90fafb723fea938117c.png!thumb.jpg","canEdit":true,"topic_pic_thumbnail_small":null,"topic_pic_thumbnail":null,"topic_pic_headOrPad":null,"meta_keywords":null,"paid_mention":null,"reward_count":0,"reward_amount":0,"reward_user_count":0,"talk_count":0,"promotion_pic":null,"promotion_url":null,"promotion_id":0,"mark_desc":null,"pic_sizes":[{"width":637,"height":573}],"is_answer":false,"text":"<p>&nbsp;高送转和次新股已经成为当前市场的人气龙头板块。数据哥今天整理了30只今年以来上市、具有年报高送转潜力的次新股，快来看看吧！</p><img class=\"ke_img\" src=\"//xqimg.imedao.com/1584d90fafb723fea938117c.png!custom.jpg\" ><p>注：点击可看大图</p>","recommend_cards":null,"is_refused":false,"is_bonus":false,"source":"雪球"},{"id":77307806,"user_id":1675038558,"title":"股权转让持续火爆，收好这30只概念股！","created_at":1478682324000,"retweet_count":33,"reply_count":33,"fav_count":342,"truncated":false,"commentId":0,"retweet_status_id":0,"symbol_id":null,"description":"近期控股权转让事项数量呈现加速迹象，相关概念股表现活跃，数据哥今天整理了近一个月发出股权转让公告的30只大比例股权转让概念股，快来看看！","type":"1","source_link":null,"edited_at":1478735362000,"pic":"//xqimg.imedao.com/1584b7edd0722393fe5ad108.png!thumb.jpg","user":{"subscribeable":false,"common_count":0,"remark":null,"recommend_reason":null,"domain":null,"type":"1","name":null,"location":null,"id":1675038558,"province":"北京","city":"城市/地区","gender":"n","verified":false,"blog_description":null,"followers_count":53642,"last_status_id":78517906,"status_count":81,"step":"three","verified_description":null,"recommend":null,"st_color":"0","intro":null,"stock_status_count":null,"follow_me":false,"allow_all_stock":false,"stocks_count":13,"verified_type":0,"description":"通过数据寻找投资机会，需要速度和效率，我专注快速寻找投资机会！","status":0,"url":null,"blocking":false,"screen_name":"数据哥","profile":"/1675038558","friends_count":17,"following":false,"donate_count":0,"verified_realname":false,"group_ids":null,"name_pinyin":null,"screenname_pinyin":null,"profile_image_url":"community/20156/1437549874950-1437549926881.jpg,community/20156/1437549874950-1437549926881.jpg!180x180.png,community/20156/1437549874950-1437549926881.jpg!50x50.png,community/20156/1437549874950-1437549926881.jpg!30x30.png","photo_domain":"//xavatar.imedao.com/"},"retweeted_status":null,"answers":null,"rqtype":null,"rqid":0,"target":"/1675038558/77307806","fragment":null,"blocked":false,"blocking":false,"topic_pic":null,"topic_symbol":null,"topic_title":null,"topic_desc":null,"donate_count":0,"donate_snowcoin":0,"view_count":258506,"mark":0,"card":null,"favorited":false,"favorited_created_at":null,"offer":null,"timeBefore":"11-09 17:05","expend":true,"reward":true,"firstImg":"//xqimg.imedao.com/1584b7edd0722393fe5ad108.png!thumb.jpg","canEdit":true,"topic_pic_thumbnail_small":null,"topic_pic_thumbnail":null,"topic_pic_headOrPad":null,"meta_keywords":null,"paid_mention":null,"reward_count":0,"reward_amount":0,"reward_user_count":0,"talk_count":0,"promotion_pic":null,"promotion_url":null,"promotion_id":0,"mark_desc":null,"pic_sizes":[{"width":574,"height":628}],"is_answer":false,"text":"<p>近期控股权转让事项数量呈现加速迹象，相关概念股表现活跃，数据哥今天整理了近一个月发出股权转让公告的30只大比例股权转让概念股，快来看看！</p><img class=\"ke_img\" src=\"//xqimg.imedao.com/1584b7edd0722393fe5ad108.png!custom.jpg\" ><p><br></p><p><br></p>","recommend_cards":null,"is_refused":false,"is_bonus":false,"source":"雪球"},{"id":77193430,"user_id":1675038558,"title":"30只跌破增发价个股，收好不谢","created_at":1478508163000,"retweet_count":54,"reply_count":53,"fav_count":483,"truncated":false,"commentId":0,"retweet_status_id":0,"symbol_id":null,"description":"跌破增发价的定增股一度被认为是市场的一个价值洼地。数据哥今天整理了30只今年以来实施定增，并且目前股价跌破增发价的个股，快来看看吧。","type":"1","source_link":null,"edited_at":1478510182000,"pic":"//xqimg.imedao.com/1583df32046a3e3fee42fc54.png!thumb.jpg","user":{"subscribeable":false,"common_count":0,"remark":null,"recommend_reason":null,"domain":null,"type":"1","name":null,"location":null,"id":1675038558,"province":"北京","city":"城市/地区","gender":"n","verified":false,"blog_description":null,"followers_count":53642,"last_status_id":78517906,"status_count":81,"step":"three","verified_description":null,"recommend":null,"st_color":"0","intro":null,"stock_status_count":null,"follow_me":false,"allow_all_stock":false,"stocks_count":13,"verified_type":0,"description":"通过数据寻找投资机会，需要速度和效率，我专注快速寻找投资机会！","status":0,"url":null,"blocking":false,"screen_name":"数据哥","profile":"/1675038558","friends_count":17,"following":false,"donate_count":0,"verified_realname":false,"group_ids":null,"name_pinyin":null,"screenname_pinyin":null,"profile_image_url":"community/20156/1437549874950-1437549926881.jpg,community/20156/1437549874950-1437549926881.jpg!180x180.png,community/20156/1437549874950-1437549926881.jpg!50x50.png,community/20156/1437549874950-1437549926881.jpg!30x30.png","photo_domain":"//xavatar.imedao.com/"},"retweeted_status":null,"answers":null,"rqtype":null,"rqid":0,"target":"/1675038558/77193430","fragment":null,"blocked":false,"blocking":false,"topic_pic":null,"topic_symbol":null,"topic_title":null,"topic_desc":null,"donate_count":0,"donate_snowcoin":0,"view_count":107998,"mark":0,"card":null,"favorited":false,"favorited_created_at":null,"offer":null,"timeBefore":"11-07 16:42","expend":true,"reward":true,"firstImg":"//xqimg.imedao.com/1583df32046a3e3fee42fc54.png!thumb.jpg","canEdit":true,"topic_pic_thumbnail_small":null,"topic_pic_thumbnail":null,"topic_pic_headOrPad":null,"meta_keywords":null,"paid_mention":null,"reward_count":1,"reward_amount":99,"reward_user_count":1,"talk_count":0,"promotion_pic":null,"promotion_url":null,"promotion_id":0,"mark_desc":null,"pic_sizes":[{"width":587,"height":581}],"is_answer":false,"text":"跌破增发价的定增股一度被认为是市场的一个价值洼地。数据哥今天整理了30只今年以来实施定增，并且目前股价跌破增发价的个股，快来看看吧。<br><img class=\"ke_img\" src=\"//xqimg.imedao.com/1583df32046a3e3fee42fc54.png!custom.jpg\" />","recommend_cards":null,"is_refused":false,"is_bonus":false,"source":"雪球"},{"id":77048381,"user_id":1675038558,"title":"30只社保基金增持股，收好不谢！","created_at":1478162414000,"retweet_count":42,"reply_count":30,"fav_count":291,"truncated":false,"commentId":0,"retweet_status_id":0,"symbol_id":null,"description":"深港通临近，哪些股票会被大资金看好？数据哥今天整理了30只社保基金三季度大幅增持的个股，快来看看三季度社保基金埋伏了哪些个股！ 注：点击可看大图","type":"1","source_link":null,"edited_at":null,"pic":"//xqimg.imedao.com/1582957fd8b72b3fdf9b80ff.png!thumb.jpg","user":{"subscribeable":false,"common_count":0,"remark":null,"recommend_reason":null,"domain":null,"type":"1","name":null,"location":null,"id":1675038558,"province":"北京","city":"城市/地区","gender":"n","verified":false,"blog_description":null,"followers_count":53642,"last_status_id":78517906,"status_count":81,"step":"three","verified_description":null,"recommend":null,"st_color":"0","intro":null,"stock_status_count":null,"follow_me":false,"allow_all_stock":false,"stocks_count":13,"verified_type":0,"description":"通过数据寻找投资机会，需要速度和效率，我专注快速寻找投资机会！","status":0,"url":null,"blocking":false,"screen_name":"数据哥","profile":"/1675038558","friends_count":17,"following":false,"donate_count":0,"verified_realname":false,"group_ids":null,"name_pinyin":null,"screenname_pinyin":null,"profile_image_url":"community/20156/1437549874950-1437549926881.jpg,community/20156/1437549874950-1437549926881.jpg!180x180.png,community/20156/1437549874950-1437549926881.jpg!50x50.png,community/20156/1437549874950-1437549926881.jpg!30x30.png","photo_domain":"//xavatar.imedao.com/"},"retweeted_status":null,"answers":null,"rqtype":null,"rqid":0,"target":"/1675038558/77048381","fragment":null,"blocked":false,"blocking":false,"topic_pic":null,"topic_symbol":null,"topic_title":null,"topic_desc":null,"donate_count":0,"donate_snowcoin":0,"view_count":135068,"mark":0,"card":null,"favorited":false,"favorited_created_at":null,"offer":null,"timeBefore":"11-03 16:40","expend":true,"reward":true,"firstImg":"//xqimg.imedao.com/1582957fd8b72b3fdf9b80ff.png!thumb.jpg","canEdit":true,"topic_pic_thumbnail_small":null,"topic_pic_thumbnail":null,"topic_pic_headOrPad":null,"meta_keywords":null,"paid_mention":null,"reward_count":1,"reward_amount":99,"reward_user_count":1,"talk_count":0,"promotion_pic":null,"promotion_url":null,"promotion_id":0,"mark_desc":null,"pic_sizes":[{"width":587,"height":594}],"is_answer":false,"text":"<p>&nbsp;深港通临近，哪些股票会被大资金看好？数据哥今天整理了30只社保基金三季度大幅增持的个股，快来看看三季度社保基金埋伏了哪些个股！&nbsp;</p><img class=\"ke_img\" src=\"//xqimg.imedao.com/1582957fd8b72b3fdf9b80ff.png!custom.jpg\" ><p>注：点击可看大图<br></p>","recommend_cards":null,"is_refused":false,"is_bonus":false,"source":"雪球"},{"id":76946809,"user_id":1675038558,"title":"恒大人寿清空梅雁吉祥，这13只恒大概念股要小心！","created_at":1478010994000,"retweet_count":47,"reply_count":105,"fav_count":94,"truncated":false,"commentId":0,"retweet_status_id":0,"symbol_id":null,"description":"前一段时间恒大概念股成为市场的热点，但恒大清空梅雁吉祥的消息给股民们提个醒，不要去当许老板的接盘侠。数据哥晚间整理了13只最新的恒大概念股，快来看看吧。 注：点击可看大图","type":"1","source_link":null,"edited_at":null,"pic":"//xqimg.imedao.com/1582051c96a9e43fd17eb19a.jpg!thumb.jpg","user":{"subscribeable":false,"common_count":0,"remark":null,"recommend_reason":null,"domain":null,"type":"1","name":null,"location":null,"id":1675038558,"province":"北京","city":"城市/地区","gender":"n","verified":false,"blog_description":null,"followers_count":53642,"last_status_id":78517906,"status_count":81,"step":"three","verified_description":null,"recommend":null,"st_color":"0","intro":null,"stock_status_count":null,"follow_me":false,"allow_all_stock":false,"stocks_count":13,"verified_type":0,"description":"通过数据寻找投资机会，需要速度和效率，我专注快速寻找投资机会！","status":0,"url":null,"blocking":false,"screen_name":"数据哥","profile":"/1675038558","friends_count":17,"following":false,"donate_count":0,"verified_realname":false,"group_ids":null,"name_pinyin":null,"screenname_pinyin":null,"profile_image_url":"community/20156/1437549874950-1437549926881.jpg,community/20156/1437549874950-1437549926881.jpg!180x180.png,community/20156/1437549874950-1437549926881.jpg!50x50.png,community/20156/1437549874950-1437549926881.jpg!30x30.png","photo_domain":"//xavatar.imedao.com/"},"retweeted_status":null,"answers":null,"rqtype":null,"rqid":0,"target":"/1675038558/76946809","fragment":null,"blocked":false,"blocking":false,"topic_pic":null,"topic_symbol":null,"topic_title":null,"topic_desc":null,"donate_count":0,"donate_snowcoin":0,"view_count":198493,"mark":0,"card":null,"favorited":false,"favorited_created_at":null,"offer":null,"timeBefore":"11-01 22:36","expend":true,"reward":true,"firstImg":"//xqimg.imedao.com/1582051c96a9e43fd17eb19a.jpg!thumb.jpg","canEdit":true,"topic_pic_thumbnail_small":null,"topic_pic_thumbnail":null,"topic_pic_headOrPad":null,"meta_keywords":null,"paid_mention":null,"reward_count":1,"reward_amount":99,"reward_user_count":1,"talk_count":0,"promotion_pic":null,"promotion_url":null,"promotion_id":0,"mark_desc":null,"pic_sizes":[{"width":407,"height":552}],"is_answer":false,"text":"<p>&nbsp;前一段时间恒大概念股成为市场的热点，但恒大清空梅雁吉祥的消息给股民们提个醒，不要去当许老板的接盘侠。数据哥晚间整理了13只最新的恒大概念股，快来看看吧。</p><img class=\"ke_img\" src=\"//xqimg.imedao.com/1582051c96a9e43fd17eb19a.jpg!custom.jpg\" ><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;注：点击可看大图</p>","recommend_cards":null,"is_refused":false,"is_bonus":false,"source":"雪球"},{"id":76928422,"user_id":1675038558,"title":"小心！年底前这35只股票大比例解禁","created_at":1477986172000,"retweet_count":22,"reply_count":23,"fav_count":172,"truncated":false,"commentId":0,"retweet_status_id":0,"symbol_id":null,"description":"经过10月的解禁低峰，A股市场上即将迎来一波解禁潮！数据哥今天整理了35只11月、12月解禁比例在20%以上的个股，快来看看吧！ 注：点击可看大图","type":"1","source_link":null,"edited_at":null,"pic":"//xqimg.imedao.com/1581ed6f9337763fd5d1425c.jpg!thumb.jpg","user":{"subscribeable":false,"common_count":0,"remark":null,"recommend_reason":null,"domain":null,"type":"1","name":null,"location":null,"id":1675038558,"province":"北京","city":"城市/地区","gender":"n","verified":false,"blog_description":null,"followers_count":53642,"last_status_id":78517906,"status_count":81,"step":"three","verified_description":null,"recommend":null,"st_color":"0","intro":null,"stock_status_count":null,"follow_me":false,"allow_all_stock":false,"stocks_count":13,"verified_type":0,"description":"通过数据寻找投资机会，需要速度和效率，我专注快速寻找投资机会！","status":0,"url":null,"blocking":false,"screen_name":"数据哥","profile":"/1675038558","friends_count":17,"following":false,"donate_count":0,"verified_realname":false,"group_ids":null,"name_pinyin":null,"screenname_pinyin":null,"profile_image_url":"community/20156/1437549874950-1437549926881.jpg,community/20156/1437549874950-1437549926881.jpg!180x180.png,community/20156/1437549874950-1437549926881.jpg!50x50.png,community/20156/1437549874950-1437549926881.jpg!30x30.png","photo_domain":"//xavatar.imedao.com/"},"retweeted_status":null,"answers":null,"rqtype":null,"rqid":0,"target":"/1675038558/76928422","fragment":null,"blocked":false,"blocking":false,"topic_pic":null,"topic_symbol":null,"topic_title":null,"topic_desc":null,"donate_count":0,"donate_snowcoin":0,"view_count":128646,"mark":0,"card":null,"favorited":false,"favorited_created_at":null,"offer":null,"timeBefore":"11-01 15:42","expend":true,"reward":true,"firstImg":"//xqimg.imedao.com/1581ed6f9337763fd5d1425c.jpg!thumb.jpg","canEdit":true,"topic_pic_thumbnail_small":null,"topic_pic_thumbnail":null,"topic_pic_headOrPad":null,"meta_keywords":null,"paid_mention":null,"reward_count":1,"reward_amount":99,"reward_user_count":1,"talk_count":0,"promotion_pic":null,"promotion_url":null,"promotion_id":0,"mark_desc":null,"pic_sizes":[{"width":595,"height":1220}],"is_answer":false,"text":"<p>&nbsp;经过10月的解禁低峰，A股市场上即将迎来一波解禁潮！数据哥今天整理了35只11月、12月解禁比例在20%以上的个股，快来看看吧！</p><img class=\"ke_img\" src=\"//xqimg.imedao.com/1581ed6f9337763fd5d1425c.jpg!custom.jpg\" ><p>&nbsp;注：点击可看大图</p>","recommend_cards":null,"is_refused":false,"is_bonus":false,"source":"雪球"},{"id":76874507,"user_id":1675038558,"title":"三季度30只筹码集中股，拿走不谢！","created_at":1477903866000,"retweet_count":58,"reply_count":55,"fav_count":471,"truncated":false,"commentId":0,"retweet_status_id":0,"symbol_id":null,"description":"三季报已经全部公布，三季度上市公司筹码集中度变化情况也已经显露。数据哥今天整理了30只三季报筹码集中股，快来看看吧！ 注：图中粉底为次新股，点击可看大图","type":"1","source_link":null,"edited_at":null,"pic":"//xqimg.imedao.com/15819eee897a3d3f9eb8162c.jpg!thumb.jpg","user":{"subscribeable":false,"common_count":0,"remark":null,"recommend_reason":null,"domain":null,"type":"1","name":null,"location":null,"id":1675038558,"province":"北京","city":"城市/地区","gender":"n","verified":false,"blog_description":null,"followers_count":53642,"last_status_id":78517906,"status_count":81,"step":"three","verified_description":null,"recommend":null,"st_color":"0","intro":null,"stock_status_count":null,"follow_me":false,"allow_all_stock":false,"stocks_count":13,"verified_type":0,"description":"通过数据寻找投资机会，需要速度和效率，我专注快速寻找投资机会！","status":0,"url":null,"blocking":false,"screen_name":"数据哥","profile":"/1675038558","friends_count":17,"following":false,"donate_count":0,"verified_realname":false,"group_ids":null,"name_pinyin":null,"screenname_pinyin":null,"profile_image_url":"community/20156/1437549874950-1437549926881.jpg,community/20156/1437549874950-1437549926881.jpg!180x180.png,community/20156/1437549874950-1437549926881.jpg!50x50.png,community/20156/1437549874950-1437549926881.jpg!30x30.png","photo_domain":"//xavatar.imedao.com/"},"retweeted_status":null,"answers":null,"rqtype":null,"rqid":0,"target":"/1675038558/76874507","fragment":null,"blocked":false,"blocking":false,"topic_pic":null,"topic_symbol":null,"topic_title":null,"topic_desc":null,"donate_count":0,"donate_snowcoin":0,"view_count":165536,"mark":0,"card":null,"favorited":false,"favorited_created_at":null,"offer":null,"timeBefore":"10-31 16:51","expend":true,"reward":true,"firstImg":"//xqimg.imedao.com/15819eee897a3d3f9eb8162c.jpg!thumb.jpg","canEdit":true,"topic_pic_thumbnail_small":null,"topic_pic_thumbnail":null,"topic_pic_headOrPad":null,"meta_keywords":null,"paid_mention":null,"reward_count":0,"reward_amount":0,"reward_user_count":0,"talk_count":0,"promotion_pic":null,"promotion_url":null,"promotion_id":0,"mark_desc":null,"pic_sizes":[{"width":457,"height":589}],"is_answer":false,"text":"<p>&nbsp;三季报已经全部公布，三季度上市公司筹码集中度变化情况也已经显露。数据哥今天整理了30只三季报筹码集中股，快来看看吧！&nbsp;</p><img class=\"ke_img\" src=\"//xqimg.imedao.com/15819eee897a3d3f9eb8162c.jpg!custom.jpg\" ><p>注：图中粉底为次新股，点击可看大图<br></p>","recommend_cards":null,"is_refused":false,"is_bonus":false,"source":"雪球"},{"id":76656699,"user_id":1675038558,"title":"基金三季度增持的30只股票，拿走不谢！","created_at":1477470706000,"retweet_count":16,"reply_count":16,"fav_count":168,"truncated":false,"commentId":0,"retweet_status_id":0,"symbol_id":null,"description":"昨天基金的三季报已经披露完毕，数据哥今天整理了基金三季度加仓比例最高的30只个股，大家快来看看吧！ 注：点击可看大图","type":"1","source_link":null,"edited_at":1477470774000,"pic":"//xqimg.imedao.com/158001db7691b4a3fdf98695.jpg!thumb.jpg","user":{"subscribeable":false,"common_count":0,"remark":null,"recommend_reason":null,"domain":null,"type":"1","name":null,"location":null,"id":1675038558,"province":"北京","city":"城市/地区","gender":"n","verified":false,"blog_description":null,"followers_count":53642,"last_status_id":78517906,"status_count":81,"step":"three","verified_description":null,"recommend":null,"st_color":"0","intro":null,"stock_status_count":null,"follow_me":false,"allow_all_stock":false,"stocks_count":13,"verified_type":0,"description":"通过数据寻找投资机会，需要速度和效率，我专注快速寻找投资机会！","status":0,"url":null,"blocking":false,"screen_name":"数据哥","profile":"/1675038558","friends_count":17,"following":false,"donate_count":0,"verified_realname":false,"group_ids":null,"name_pinyin":null,"screenname_pinyin":null,"profile_image_url":"community/20156/1437549874950-1437549926881.jpg,community/20156/1437549874950-1437549926881.jpg!180x180.png,community/20156/1437549874950-1437549926881.jpg!50x50.png,community/20156/1437549874950-1437549926881.jpg!30x30.png","photo_domain":"//xavatar.imedao.com/"},"retweeted_status":null,"answers":null,"rqtype":null,"rqid":0,"target":"/1675038558/76656699","fragment":null,"blocked":false,"blocking":false,"topic_pic":null,"topic_symbol":null,"topic_title":null,"topic_desc":null,"donate_count":0,"donate_snowcoin":0,"view_count":77279,"mark":0,"card":null,"favorited":false,"favorited_created_at":null,"offer":null,"timeBefore":"10-26 16:31","expend":true,"reward":true,"firstImg":"//xqimg.imedao.com/158001db7691b4a3fdf98695.jpg!thumb.jpg","canEdit":true,"topic_pic_thumbnail_small":null,"topic_pic_thumbnail":null,"topic_pic_headOrPad":null,"meta_keywords":null,"paid_mention":null,"reward_count":2,"reward_amount":198,"reward_user_count":2,"talk_count":0,"promotion_pic":null,"promotion_url":null,"promotion_id":0,"mark_desc":null,"pic_sizes":[{"width":521,"height":589}],"is_answer":false,"text":"昨天基金的三季报已经披露完毕，数据哥今天整理了基金三季度加仓比例最高的30只个股，大家快来看看吧！<img class=\"ke_img\" src=\"//xqimg.imedao.com/158001db7691b4a3fdf98695.jpg!custom.jpg\" ><p>注：点击可看大图</p><p><br></p>","recommend_cards":null,"is_refused":false,"is_bonus":false,"source":"雪球"},{"id":76596466,"user_id":1675038558,"title":"煤炭股连续大涨，关注这35只标的！","created_at":1477387179000,"retweet_count":6,"reply_count":2,"fav_count":16,"truncated":false,"commentId":0,"retweet_status_id":0,"symbol_id":null,"description":"最近市场又见煤飞色舞行情，数据哥今天整理了35只煤炭板块个股的财务情况，快来看看吧 ！","type":"1","source_link":null,"edited_at":null,"pic":"//xqimg.imedao.com/157fb234ceb13323fef40b80.jpg!thumb.jpg","user":{"subscribeable":false,"common_count":0,"remark":null,"recommend_reason":null,"domain":null,"type":"1","name":null,"location":null,"id":1675038558,"province":"北京","city":"城市/地区","gender":"n","verified":false,"blog_description":null,"followers_count":53642,"last_status_id":78517906,"status_count":81,"step":"three","verified_description":null,"recommend":null,"st_color":"0","intro":null,"stock_status_count":null,"follow_me":false,"allow_all_stock":false,"stocks_count":13,"verified_type":0,"description":"通过数据寻找投资机会，需要速度和效率，我专注快速寻找投资机会！","status":0,"url":null,"blocking":false,"screen_name":"数据哥","profile":"/1675038558","friends_count":17,"following":false,"donate_count":0,"verified_realname":false,"group_ids":null,"name_pinyin":null,"screenname_pinyin":null,"profile_image_url":"community/20156/1437549874950-1437549926881.jpg,community/20156/1437549874950-1437549926881.jpg!180x180.png,community/20156/1437549874950-1437549926881.jpg!50x50.png,community/20156/1437549874950-1437549926881.jpg!30x30.png","photo_domain":"//xavatar.imedao.com/"},"retweeted_status":null,"answers":null,"rqtype":null,"rqid":0,"target":"/1675038558/76596466","fragment":null,"blocked":false,"blocking":false,"topic_pic":null,"topic_symbol":null,"topic_title":null,"topic_desc":null,"donate_count":0,"donate_snowcoin":0,"view_count":19340,"mark":0,"card":null,"favorited":false,"favorited_created_at":null,"offer":null,"timeBefore":"10-25 17:19","expend":true,"reward":true,"firstImg":"//xqimg.imedao.com/157fb234ceb13323fef40b80.jpg!thumb.jpg","canEdit":true,"topic_pic_thumbnail_small":null,"topic_pic_thumbnail":null,"topic_pic_headOrPad":null,"meta_keywords":null,"paid_mention":null,"reward_count":0,"reward_amount":0,"reward_user_count":0,"talk_count":0,"promotion_pic":null,"promotion_url":null,"promotion_id":0,"mark_desc":null,"pic_sizes":[{"width":601,"height":679}],"is_answer":false,"text":"<p>&nbsp;最近市场又见煤飞色舞行情，数据哥今天整理了35只煤炭板块个股的财务情况，快来看看吧 ！</p><img class=\"ke_img\" src=\"//xqimg.imedao.com/157fb234ceb13323fef40b80.jpg!custom.jpg\" ><p><br></p>","recommend_cards":null,"is_refused":false,"is_bonus":false,"source":"雪球"},{"id":76535502,"user_id":1675038558,"title":"反弹行情买什么？收好这17只大股东增持股！","created_at":1477300241000,"retweet_count":14,"reply_count":28,"fav_count":245,"truncated":false,"commentId":0,"retweet_status_id":0,"symbol_id":null,"description":"沪指放量突破3100，反弹行情该买点啥？数据哥今天整理了9月以来大股东增持的17只个股的相关资料，大家快来看看吧。 （点击可看清晰大图）","type":"1","source_link":null,"edited_at":1477304038000,"pic":"//xqimg.imedao.com/157f5f4b86ab2f3fe25869c1.jpg!thumb.jpg","user":{"subscribeable":false,"common_count":0,"remark":null,"recommend_reason":null,"domain":null,"type":"1","name":null,"location":null,"id":1675038558,"province":"北京","city":"城市/地区","gender":"n","verified":false,"blog_description":null,"followers_count":53642,"last_status_id":78517906,"status_count":81,"step":"three","verified_description":null,"recommend":null,"st_color":"0","intro":null,"stock_status_count":null,"follow_me":false,"allow_all_stock":false,"stocks_count":13,"verified_type":0,"description":"通过数据寻找投资机会，需要速度和效率，我专注快速寻找投资机会！","status":0,"url":null,"blocking":false,"screen_name":"数据哥","profile":"/1675038558","friends_count":17,"following":false,"donate_count":0,"verified_realname":false,"group_ids":null,"name_pinyin":null,"screenname_pinyin":null,"profile_image_url":"community/20156/1437549874950-1437549926881.jpg,community/20156/1437549874950-1437549926881.jpg!180x180.png,community/20156/1437549874950-1437549926881.jpg!50x50.png,community/20156/1437549874950-1437549926881.jpg!30x30.png","photo_domain":"//xavatar.imedao.com/"},"retweeted_status":null,"answers":null,"rqtype":null,"rqid":0,"target":"/1675038558/76535502","fragment":null,"blocked":false,"blocking":false,"topic_pic":null,"topic_symbol":null,"topic_title":null,"topic_desc":null,"donate_count":0,"donate_snowcoin":0,"view_count":116990,"mark":0,"card":null,"favorited":false,"favorited_created_at":null,"offer":null,"timeBefore":"10-24 17:10","expend":true,"reward":true,"firstImg":"//xqimg.imedao.com/157f5f4b86ab2f3fe25869c1.jpg!thumb.jpg","canEdit":true,"topic_pic_thumbnail_small":null,"topic_pic_thumbnail":null,"topic_pic_headOrPad":null,"meta_keywords":null,"paid_mention":null,"reward_count":0,"reward_amount":0,"reward_user_count":0,"talk_count":0,"promotion_pic":null,"promotion_url":null,"promotion_id":0,"mark_desc":null,"pic_sizes":[{"width":836,"height":533}],"is_answer":false,"text":"<p></p><p>&nbsp;沪指放量突破3100，反弹行情该买点啥？数据哥今天整理了9月以来大股东增持的17只个股的相关资料，大家快来看看吧。<br></p><img class=\"ke_img\" src=\"//xqimg.imedao.com/157f5f4b86ab2f3fe25869c1.jpg!custom.jpg\" ><p>（点击可看清晰大图）</p>","recommend_cards":null,"is_refused":false,"is_bonus":false,"source":"雪球"},{"id":76353201,"user_id":1675038558,"title":"","created_at":1476924788000,"retweet_count":1,"reply_count":3,"fav_count":1,"truncated":false,"commentId":63585092,"retweet_status_id":76352393,"symbol_id":null,"description":"<img src=\"//assets.imedao.com/images/face/19qiaopi.png\" title=\"[俏皮]\" alt=\"[俏皮]\" height=\"24\" /><img src=\"//assets.imedao.com/images/face/19qiaopi.png\" title=\"[俏皮]\" alt=\"[俏皮]\" height=\"24\" /><img src=\"//assets.imedao.com/images/face/19qiaopi.png\" title=\"[俏皮]\" alt=\"[俏皮]\" height=\"24\" />快来抢票，手慢就木有了！","type":null,"source_link":null,"edited_at":null,"pic":null,"user":{"subscribeable":false,"common_count":0,"remark":null,"recommend_reason":null,"domain":null,"type":"1","name":null,"location":null,"id":1675038558,"province":"北京","city":"城市/地区","gender":"n","verified":false,"blog_description":null,"followers_count":53642,"last_status_id":78517906,"status_count":81,"step":"three","verified_description":null,"recommend":null,"st_color":"0","intro":null,"stock_status_count":null,"follow_me":false,"allow_all_stock":false,"stocks_count":13,"verified_type":0,"description":"通过数据寻找投资机会，需要速度和效率，我专注快速寻找投资机会！","status":0,"url":null,"blocking":false,"screen_name":"数据哥","profile":"/1675038558","friends_count":17,"following":false,"donate_count":0,"verified_realname":false,"group_ids":null,"name_pinyin":null,"screenname_pinyin":null,"profile_image_url":"community/20156/1437549874950-1437549926881.jpg,community/20156/1437549874950-1437549926881.jpg!180x180.png,community/20156/1437549874950-1437549926881.jpg!50x50.png,community/20156/1437549874950-1437549926881.jpg!30x30.png","photo_domain":"//xavatar.imedao.com/"},"retweeted_status":{"id":76352393,"user_id":2552920054,"title":"","created_at":1476923796000,"retweet_count":16,"reply_count":47,"fav_count":1,"truncated":false,"commentId":0,"retweet_status_id":0,"symbol_id":null,"description":"今天下午15:30，2016雪球嘉年华正式开始售票！敬请期待！今年嘉年华举办时间是在11月26日（周六），地点在北京「751D·PARK北京时尚设计广场」，根据以往抢票经验，建议有意参与「2016雪球嘉年华」的球友提前购票。","type":"0","source_link":null,"edited_at":1476925879000,"pic":"","user":{"subscribeable":false,"common_count":0,"remark":null,"recommend_reason":null,"domain":"huodong","type":"4","name":null,"location":null,"id":2552920054,"province":"北京","city":"城市/地区","gender":"f","verified":true,"blog_description":null,"followers_count":3357148,"last_status_id":78519684,"status_count":2791,"step":"three","verified_description":"雪球官方活动发布账号","recommend":null,"st_color":"1","intro":null,"stock_status_count":null,"follow_me":false,"allow_all_stock":false,"stocks_count":40,"verified_type":4,"description":"雪球活动是雪球官方唯一活动发布账号。雪球活动将不定期发布雪球线上、线下活动信息，以及各种为球友谋取的福利。","status":0,"url":null,"blocking":false,"screen_name":"雪球活动","profile":"/huodong","friends_count":334,"following":false,"donate_count":141,"verified_realname":false,"group_ids":null,"name_pinyin":null,"screenname_pinyin":null,"profile_image_url":"community/20141/1392627408561-1392627415477.png,community/20141/1392627408561-1392627415477.png!180x180.png,community/20141/1392627408561-1392627415477.png!50x50.png,community/20141/1392627408561-1392627415477.png!30x30.png","photo_domain":"//xavatar.imedao.com/"},"retweeted_status":null,"answers":null,"rqtype":null,"rqid":0,"target":"/2552920054/76352393","fragment":null,"blocked":false,"blocking":false,"topic_pic":null,"topic_symbol":null,"topic_title":null,"topic_desc":null,"donate_count":0,"donate_snowcoin":0,"view_count":0,"mark":0,"card":null,"favorited":false,"favorited_created_at":null,"offer":null,"timeBefore":"10-20 08:36","expend":false,"reward":true,"firstImg":null,"canEdit":true,"topic_pic_thumbnail_small":null,"topic_pic_thumbnail":null,"topic_pic_headOrPad":null,"meta_keywords":null,"paid_mention":null,"reward_count":0,"reward_amount":0,"reward_user_count":0,"talk_count":0,"promotion_pic":null,"promotion_url":null,"promotion_id":0,"mark_desc":null,"pic_sizes":[],"is_answer":false,"text":"<p>今天下午15:30，2016雪球嘉年华正式开始售票！敬请期待！今年嘉年华举办时间是在11月26日（周六），地点在北京「751D·PARK北京时尚设计广场」，根据以往抢票经验，建议有意参与「2016雪球嘉年华」的球友提前购票。</p>","recommend_cards":null,"is_refused":false,"is_bonus":false,"source":"雪球"},"answers":null,"rqtype":null,"rqid":0,"target":"/1675038558/76353201","fragment":null,"blocked":false,"blocking":false,"topic_pic":null,"topic_symbol":null,"topic_title":null,"topic_desc":null,"donate_count":0,"donate_snowcoin":0,"view_count":25402,"mark":0,"card":null,"favorited":false,"favorited_created_at":null,"offer":null,"timeBefore":"10-20 08:53","expend":false,"reward":true,"firstImg":null,"canEdit":false,"topic_pic_thumbnail_small":null,"topic_pic_thumbnail":null,"topic_pic_headOrPad":null,"meta_keywords":null,"paid_mention":null,"reward_count":1,"reward_amount":594,"reward_user_count":1,"talk_count":1,"promotion_pic":null,"promotion_url":null,"promotion_id":0,"mark_desc":null,"pic_sizes":[],"is_answer":false,"text":"<img src=\"//assets.imedao.com/images/face/19qiaopi.png\" title=\"[俏皮]\" alt=\"[俏皮]\" height=\"24\" /><img src=\"//assets.imedao.com/images/face/19qiaopi.png\" title=\"[俏皮]\" alt=\"[俏皮]\" height=\"24\" /><img src=\"//assets.imedao.com/images/face/19qiaopi.png\" title=\"[俏皮]\" alt=\"[俏皮]\" height=\"24\" />快来抢票，手慢就木有了！","recommend_cards":null,"is_refused":false,"is_bonus":false,"source":"雪球"},{"id":76352840,"user_id":1675038558,"title":"22只年报高送转潜力股，拿走不谢","created_at":1476924367000,"retweet_count":82,"reply_count":54,"fav_count":766,"truncated":false,"commentId":0,"retweet_status_id":0,"symbol_id":null,"description":"今天15:30，雪球嘉年华正式开始售票！请大家和数据哥一起多多关注<a href=\"http://xueqiu.com/n/雪球活动\" target=\"_blank\">@雪球活动</a> 即将进入年末，不少公司将陆陆续续地披露高送转预告，布局2016年年报高送转行情，从现在就要开始了。数据哥今天整理了22只有高送转预期的概念股，快来看看吧。","type":"3","source_link":null,"edited_at":null,"pic":"//xqimg.imedao.com/157df8d51011a13fe9aa8a58.png!thumb.jpg","user":{"subscribeable":false,"common_count":0,"remark":null,"recommend_reason":null,"domain":null,"type":"1","name":null,"location":null,"id":1675038558,"province":"北京","city":"城市/地区","gender":"n","verified":false,"blog_description":null,"followers_count":53642,"last_status_id":78517906,"status_count":81,"step":"three","verified_description":null,"recommend":null,"st_color":"0","intro":null,"stock_status_count":null,"follow_me":false,"allow_all_stock":false,"stocks_count":13,"verified_type":0,"description":"通过数据寻找投资机会，需要速度和效率，我专注快速寻找投资机会！","status":0,"url":null,"blocking":false,"screen_name":"数据哥","profile":"/1675038558","friends_count":17,"following":false,"donate_count":0,"verified_realname":false,"group_ids":null,"name_pinyin":null,"screenname_pinyin":null,"profile_image_url":"community/20156/1437549874950-1437549926881.jpg,community/20156/1437549874950-1437549926881.jpg!180x180.png,community/20156/1437549874950-1437549926881.jpg!50x50.png,community/20156/1437549874950-1437549926881.jpg!30x30.png","photo_domain":"//xavatar.imedao.com/"},"retweeted_status":null,"answers":null,"rqtype":null,"rqid":0,"target":"/1675038558/76352840","fragment":null,"blocked":false,"blocking":false,"topic_pic":null,"topic_symbol":null,"topic_title":null,"topic_desc":null,"donate_count":0,"donate_snowcoin":0,"view_count":509332,"mark":0,"card":null,"favorited":false,"favorited_created_at":null,"offer":null,"timeBefore":"10-20 08:46","expend":true,"reward":true,"firstImg":"//xqimg.imedao.com/157df8d51011a13fe9aa8a58.png!thumb.jpg","canEdit":true,"topic_pic_thumbnail_small":null,"topic_pic_thumbnail":null,"topic_pic_headOrPad":null,"meta_keywords":null,"paid_mention":null,"reward_count":2,"reward_amount":693,"reward_user_count":2,"talk_count":0,"promotion_pic":null,"promotion_url":null,"promotion_id":0,"mark_desc":null,"pic_sizes":[{"width":607,"height":439}],"is_answer":false,"text":"今天15:30，雪球嘉年华正式开始售票！请大家和数据哥一起多多关注<a href=\"http://xueqiu.com/n/雪球活动\" target=\"_blank\">@雪球活动</a><p></p><p>&nbsp;即将进入年末，不少公司将陆陆续续地披露高送转预告，布局2016年年报高送转行情，从现在就要开始了。数据哥今天整理了22只有高送转预期的概念股，快来看看吧。&nbsp;<br></p><img class=\"ke_img\" src=\"//xqimg.imedao.com/157df8d51011a13fe9aa8a58.png!custom.jpg\" ><p><br></p>","recommend_cards":null,"is_refused":false,"is_bonus":false,"source":"雪球"},{"id":76274519,"user_id":1675038558,"title":"30只深交所三季报大幅预增股，拿走不谢","created_at":1476783600000,"retweet_count":58,"reply_count":62,"fav_count":462,"truncated":false,"commentId":0,"retweet_status_id":0,"symbol_id":null,"description":"明天（周四）15:30，「2016雪球嘉年华」将正式开始售票，数据哥期待各位小伙伴一起来玩，详细介绍请戳<a href=\"https://xueqiu.com/2552920054/76293891\" title=\"https://xueqiu.com/2552920054/76293891\" target=\"_blank\" class=\"status-link\">网页链接</a> 深交所的三季报预报已全部披露。数据哥今天整理了30只深交所三季报预增最多的公司，给大家参考！","type":"1","source_link":null,"edited_at":1476848024000,"pic":"//xqimg.imedao.com/157d72968bd7ac3fc83a3b47.png!thumb.jpg","user":{"subscribeable":false,"common_count":0,"remark":null,"recommend_reason":null,"domain":null,"type":"1","name":null,"location":null,"id":1675038558,"province":"北京","city":"城市/地区","gender":"n","verified":false,"blog_description":null,"followers_count":53642,"last_status_id":78517906,"status_count":81,"step":"three","verified_description":null,"recommend":null,"st_color":"0","intro":null,"stock_status_count":null,"follow_me":false,"allow_all_stock":false,"stocks_count":13,"verified_type":0,"description":"通过数据寻找投资机会，需要速度和效率，我专注快速寻找投资机会！","status":0,"url":null,"blocking":false,"screen_name":"数据哥","profile":"/1675038558","friends_count":17,"following":false,"donate_count":0,"verified_realname":false,"group_ids":null,"name_pinyin":null,"screenname_pinyin":null,"profile_image_url":"community/20156/1437549874950-1437549926881.jpg,community/20156/1437549874950-1437549926881.jpg!180x180.png,community/20156/1437549874950-1437549926881.jpg!50x50.png,community/20156/1437549874950-1437549926881.jpg!30x30.png","photo_domain":"//xavatar.imedao.com/"},"retweeted_status":null,"answers":null,"rqtype":null,"rqid":0,"target":"/1675038558/76274519","fragment":null,"blocked":false,"blocking":false,"topic_pic":null,"topic_symbol":null,"topic_title":null,"topic_desc":null,"donate_count":0,"donate_snowcoin":0,"view_count":418387,"mark":0,"card":null,"favorited":false,"favorited_created_at":null,"offer":null,"timeBefore":"10-18 17:40","expend":true,"reward":true,"firstImg":"//xqimg.imedao.com/157d72968bd7ac3fc83a3b47.png!thumb.jpg","canEdit":true,"topic_pic_thumbnail_small":null,"topic_pic_thumbnail":null,"topic_pic_headOrPad":null,"meta_keywords":null,"paid_mention":null,"reward_count":0,"reward_amount":0,"reward_user_count":0,"talk_count":0,"promotion_pic":null,"promotion_url":null,"promotion_id":0,"mark_desc":null,"pic_sizes":[{"width":681,"height":632}],"is_answer":false,"text":"<p>明天（周四）15:30，「2016雪球嘉年华」将正式开始售票，数据哥期待各位小伙伴一起来玩，详细介绍请戳<a href=\"https://xueqiu.com/2552920054/76293891\" title=\"https://xueqiu.com/2552920054/76293891\" target=\"_blank\">https://xueqiu.com/2552920054/76293891</a>&nbsp;</p><p>深交所的三季报预报已全部披露。数据哥今天整理了30只深交所三季报预增最多的公司，给大家参考！</p><img class=\"ke_img\" src=\"//xqimg.imedao.com/157d72968bd7ac3fc83a3b47.png!custom.jpg\" ><p>&nbsp;</p>","recommend_cards":null,"is_refused":false,"is_bonus":false,"source":"雪球"}],"total":81,"page":1,"maxPage":5};
+  SNB.data.statusType = "";
+  SNB.data.isSelf = false;
+  SNB.data.who = '他';
+  SNB.data.route = '';
+  seajs.use(['SNB.status.js', 'SNB.newProfile.js']);
+})();</script><style>#articles_content .list {overflow:hidden;position: relative}
+#articles_content .list li{float:left;line-height: 24px;height:24px;width:50%;font-size: 14px;padding:5px 0;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;word-break: keep-all;}
+#articles_content .list li:before{content: '';float:left;width: 2px;height: 2px;background: #333;overflow: hidden;
+position: relative;top:11px;margin: 0 5px 0 10px;}
+/*#articles_content li + li{border-top:1px solid #f1f1f1;}*/
+#articles_content .list li a{color:#333;}
+#articles_content .pages{text-align: center;border-top:1px solid #eee;margin-top:10px;padding-top:10px;}
+#articles_content .pages .pager-wrapper{padding:0;}
+#articles_content .list .loading{position: absolute;top:0;bottom:0;width:100%;height: auto;}
+#articles_content .list .no{width: 100%;line-height: 100px;height:auto;text-align: center;padding:10px 0 0;color:#666;}
+#articles_content .list .no:before{display: none;}</style><script>seajs.use('pages/profile/article', function (article) {
+  article.init('1675038558','');
+});</script></div><script></script><script id="payConfirmTpl" type="x-template"><div id="payConfirm" class="reward-modal dimmer center middle hidden">
+  <div class="reward-container">
+    <div class="reward-modal-hd">确定提问金额
+      <div class="close"></div>
+    </div>
+    <div class="reward-modal-bd">
+      <div class="pay-confirm-main">
+        <div class="pay-user-info">
+          <% var avatar = data.photo_domain + data.profile_image_url.split(',')[0]; %>
+          <img src="<%= avatar %>!100x100.png" alt="" class="pay-user-avatar"/>
+          <div class="pay-user-name"><%= data.screen_name %>
+          <% if (data.verified) { %>
+          <img src="//assets.imedao.com/images/vipicon_<%= data.verified_type || 1 %>.png" alt="<%= data.verified_description %>"/>
+          <% } %>
+          </div>
+          <% if (data.verified_description) { %>
+          <div class="pay-user-title"><%= data.verified_description %></div>
+          <% } %>
+          <% if (data.description) { %>
+          <div class="pay-user-desc"><%= data.description %></div>
+          <% } %>
+        </div>
+        <div class="pay-confirm-bd">
+          <div class="pay-confirm-title">向Ta提问并支付</div>
+          <div class="pay-confirm-custom">
+            <input id="payAmount" type="text" min="<%= data.min %>" max="10000" value="<%= data.min %>"/><span>元</span>
+          </div>
+          <p>你可以选择为本次提问支付更高的费用，上限10000元</p>
+          <div class="pay-confirm-btn">确定</div>
+          <p class="pay-confirm-warn">
+            提问被对方回复后，所回复内容的打赏将与你5:5分成;
+            <br>若对方超过48小时未回答，费用将自动退回。
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></script><script id="payWindowTpl" type="text/x-template"><div id="payWindow" class="reward-modal dimmer center middle hidden">
+  <div class="reward-container">
+    <div class="reward-modal-hd">支付
+      <div class="close"></div>
+    </div>
+    <div class="reward-modal-bd">
+      <div class="payment-mod">
+        <div class="reward-amount-mod">
+          <div class="reward-heading">
+            支付￥<%= amount %>
+          </div>
+        </div>
+        <% if (wallet > 0) { %>
+          <div class="reward-payment-mod reward-payment-layout-3">
+            <div class="reward-payment wechat checked">
+              <span>微信支付</span>
+              <div class="check-radio"></div>
+            </div>
+            <div class="reward-payment alipay">
+              <span>支付宝支付</span>
+              <div class="check-radio"></div>
+            </div>
+            <div class="reward-payment wallet">
+              <span>余额支付
+                <i class="wallet-amount">可用余额<%= wallet %>元</i>
+              </span>
+              <div class="check-radio"></div>
+            </div>
+          </div>
+        <% } else { %>
+          <div class="reward-payment-mod reward-payment-layout-2">
+            <div class="reward-payment wechat">
+              <span>微信支付</span>
+              <div class="check-radio"></div>
+            </div>
+            <div class="reward-payment alipay">
+              <span>支付宝支付</span>
+              <div class="check-radio"></div>
+            </div>
+          </div>
+        <% } %>
+        <div class="reward-modal-btn pay-btn">立即支付</div>
+        <p class="reward-modal-terms">支付即代表同意<a href="/law/Q&A" target="_blank">雪球问答协议</a><br/>不符合协议规定的问题将会被删除</p>
+      </div>
+    </div>
+  </div>
+</div>
+</script><script id="payAtSuccessTpl" type="text/x-template"><div id="payAtSuccessModal" class="reward-modal dimmer center middle hidden">
+  <div class="reward-container">
+    <div class="reward-modal-hd">支付结果
+      <div class="close"></div>
+    </div>
+    <div class="reward-modal-bd">
+      <div class="pay-success">
+        <div class="reward-result-mod success">
+          <div class="reward-result-heading">支付成功</div>
+          <p>问题被回答后，你将收到推送提醒，若回答者在48小时内未回答，相关费用将退还至你的钱包</p>
+        </div>
+        <div class="reward-modal-btn pay-at-done blue">完成</div>
+      </div>
+    </div>
+  </div>
+</div></script><div id="payEditor" class="reward-modal dimmer center middle hidden"><div class="reward-container"><div class="reward-modal-hd">有什么想要问Ta：<div class="close"></div></div><div class="reward-modal-bd"><div id="home-editor" class="pay-editor"><div class="editor-textarea"><textarea></textarea></div><div class="editor-ctrl"><div class="extra"><div title="插入表情" class="editor-emotion1"><i class="icon-icon_16_-25"></i></div><div title="插入股票代码" class="editor-stock"><i class="icon-icon_16_-26"></i></div><div title="上传图片" class="editor-image"><i class="icon-icon_16_-27"></i></div><div class="upload-state"><i class="loading"></i>上传中</div></div></div></div><div data-type="1" class="profile-pay-btn pay-submit">支付并发布</div></div></div></div><script id="payAmountTemplate" type="x-template"><div id="payAmountModal" class="reward-modal dimmer center middle hidden">
+  <div class="reward-container">
+    <div class="reward-modal-hd">现金打赏
+      <div class="close"></div>
+    </div>
+    <div class="reward-modal-bd">
+      <div class="payment-mod">
+        <div class="reward-amount-mod">
+          <div class="reward-amount-hd">欢迎打赏，请选择打赏金额</div>
+          <div class="reward-amount-bd">
+            <div class="reward-amount-grid">
+              <div data-amount="1" class="reward-amount-item active">1 元</div>
+              <div data-amount="6" class="reward-amount-item">6 元</div>
+              <div data-amount="10" class="reward-amount-item">10 元</div>
+              <div data-amount="66" class="reward-amount-item">66 元</div>
+              <div data-amount="100" class="reward-amount-item">100 元</div>
+              <div class="reward-amount-other">其他金额</div>
+              <div class="reward-amount-custom hidden empty">
+                <input type="text" placeholder="可填写1-200"/>
+              </div>
+            </div>
+          </div>
+        </div>
+        <% if (wallet > 0) { %>
+          <div class="reward-payment-mod reward-payment-layout-3">
+            <div class="reward-payment wechat checked">
+              <span>微信支付</span>
+              <div class="check-radio"></div>
+            </div>
+            <div class="reward-payment alipay">
+              <span>支付宝支付</span>
+              <div class="check-radio"></div>
+            </div>
+            <div class="reward-payment wallet">
+              <span>余额支付
+                <i class="wallet-amount">可用余额<%= wallet %>元</i>
+              </span>
+              <div class="check-radio"></div>
+            </div>
+          </div>
+        <% } else { %>
+          <div class="reward-payment-mod reward-payment-layout-2">
+            <div class="reward-payment wechat">
+              <span>微信支付</span>
+              <div class="check-radio"></div>
+            </div>
+            <div class="reward-payment alipay">
+              <span>支付宝支付</span>
+              <div class="check-radio"></div>
+            </div>
+          </div>
+        <% } %>
+        <div class="reward-submit-mod">
+          <div class="reward-modal-btn pay-btn">立即支付</div>
+          <div class="reward-member-terms">
+            <div class="reward-ft-lf">支付即代表同意 <a href="/law/reward" target="_blank">雪球打赏协议</a></div>
+            <div class="reward-ft-rt reward-by-snowicon hidden"><a href="">使用雪球币打赏</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></script><script id="donateAmountTemplate" type="x-template"><div id="donateAmountModal" class="donate-modal reward-modal dimmer center middle hidden">
+  <div class="reward-container">
+    <div class="reward-modal-hd">雪球币打赏
+      <div class="close"></div>
+    </div>
+    <div class="reward-modal-bd">
+      <div class="payment-mod">
+        <div class="reward-amount-mod">
+          <div class="reward-amount-hd">欢迎打赏，请选择打赏金额</div>
+          <div class="reward-amount-bd">
+            <div class="reward-amount-grid">
+              <div data-amount="1" class="reward-amount-item active">1 雪球币</div>
+              <div data-amount="6" class="reward-amount-item">6 雪球币</div>
+              <div data-amount="10" class="reward-amount-item">10 雪球币</div>
+              <div data-amount="66" class="reward-amount-item">66 雪球币</div>
+              <div data-amount="100" class="reward-amount-item">100 雪球币</div>
+              <div class="reward-amount-custom">
+                <input type="text" placeholder="其他金额"/>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reward-submit-mod">
+          <div class="donate-detail">
+            应付：<span class="donate-amount"></span>雪球币；账号余额：<span class="donate-balance"></span>雪球币
+          </div>
+          <div class="donate-error hidden">
+          </div>
+          <div class="reward-modal-btn pay-btn">立即支付</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></script><script id="qrcodeTemplate" type="x-template"><div id="qrcodeModal" class="reward-modal dimmer center middle hidden">
+  <div class="reward-container">
+    <div class="reward-modal-hd">微信扫码支付
+      <div class="close"></div>
+    </div>
+    <div class="reward-modal-bd">
+      <div class="qrcode-container">
+        <p class="qrcode-title">支付金额 <span class="wechat-amount">20.00</span> 元</p>
+        <img src=""/>
+        <p class="qrcode-desc">打开手机微信“扫一扫”</p>
+      </div>
+    </div>
+  </div>
+</div></script><script id="successTemplate" type="x-template"><div id="successModal" class="reward-modal dimmer center middle hidden">
+  <div class="reward-container">
+    <div class="reward-modal-hd">现金打赏
+      <div class="close"></div>
+    </div>
+    <div class="reward-modal-bd">
+      <div class="pay-success">
+        <div class="reward-result-mod success">
+          <div class="reward-result-heading">感谢打赏</div>
+          <p>成功打赏该<%= type %>￥<%= amount %></p>
+        </div>
+        <div class="reward-modal-btn reward-share blue">分享到雪球动态</div>
+      </div>
+    </div>
+  </div>
+</div>
+</script><script id="walletConfirmTpl" type="x-template"><div id="walletConfirmModal" class="reward-modal dimmer center middle hidden">
+  <div class="reward-container">
+    <div class="reward-modal-hd">提示
+      <div class="close"></div>
+    </div>
+    <div class="reward-modal-bd">
+      <p>请确认是否用余额支付 <%= amount %> 元</p>
+      <div class="reward-modal-btn deny gray">取消</div>
+      <div class="reward-modal-btn define blue">确认</div>
+    </div>
+  </div>
+</div></script><script>seajs.use(['reward/reward_tooltip'], function () {
+  $('body')
+    .on('click', function (e) {
+      var $this =  $(e.target);
+      
+      if (!$this.parents('.set-sub-menu').length) {
+        $('.set-sub-menu').hide();
+      }
+    })
+    .on('mouseenter', '.status-list li', function () {
+      var $this = $(this);
+      
+      if ($this.find('.btn-sub-menu').length) {
+        $this.find('.btn-sub-menu').addClass('hover');
+      }
+    })
+    .on('mouseleave', '.status-list li', function () {
+      var $this = $(this);
+      
+      if ($this.find('.btn-sub-menu').length) {
+        $this.find('.btn-sub-menu').removeClass('hover');
+      }
+    });
+});</script></div></div></div><div id="footer"><div class="copyright"><a href="/about/faq" target="_blank">常见问题</a><a href="/about/contact-us" target="_blank">联系方式</a><a href="/about/jobs" target="_blank">加入我们</a><a href="https://danjuanapp.com/" target="_blank">蛋卷基金</a><a href="/about/what-is-xueqiu" target="_blank">关于雪球</a><a>© 2016 XUEQIU.COM</a><br><a href="http://xqimg.imedao.com/14ee3530b118403fee048f5b.png" target="_blank">京ICP证100666号</a><a href="http://www.miibeian.gov.cn" target="_blank">京ICP备10040543</a><a>京公网安备11010502026957</a><a href="http://xqimg.imedao.com/14d52aefd15e8f3fc0ce1fbd.png" target="_blank">证券业协会会员单位(代码817027)</a><p>风险提示：雪球里任何用户或者嘉宾的发言，都有其特定立场，投资决策需要建立在独立思考之上。</p></div></div><script>var _hmt = _hmt || [];
+(function () {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?1db88642e346389874251b5a1eded6e3";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();</script><script>var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-16079156-4']);
+_gaq.push(['_setDomainName', 'none']);
+_gaq.push(['_trackPageview']);
+
+(function () {
+  var ga = document.createElement('script');
+  ga.type = 'text/javascript';
+  ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0];
+  s.parentNode.insertBefore(ga, s);
+})();
+
+window.onerror = function (message, file, line) {
+  var sFormattedMessage = '[' + file + ' (' + line + ')]' + message;
+  _gaq.push(['_trackEvent', 'Exceptions', 'Application', sFormattedMessage, null, true]);
+}</script><script>if (window.jQuery) {
+  jQuery(function ($) {
+    $('.cube-invite').on('click', function () {
+      var href = $.trim($(this).attr('href'));
+      if (window._hmt) {
+        _hmt.push(['_trackEvent', 'cube-invite', 'click', href]);
+      }
+    });
+  });
+}</script></body></html>

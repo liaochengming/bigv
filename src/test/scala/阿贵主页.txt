@@ -1,0 +1,1076 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-cn" ng-app="moerApp">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>阿贵-摩尔金融，与投资高手为伍！</title>
+    <meta name="keywords" content="阿贵,沪深,股市分析,操盘指导,盘后分析" /> 
+    
+	
+    <meta name="description" content="心泉基金经理
+中国股市量化交易心理指数创始人
+《中国股市趋势交易之道》作者
+曾精确判断股市重要的多次牛熊转换。
+知名十年新浪独立证券评论人。
+《致证监会的信》等转载几十万，访问上亿人次，市场影响深远。" />
+	
+    
+
+
+	
+<script type="text/javascript">
+	var webPath = '';
+	var fileServerPath = 'http://static.moer.cn/staticFile';
+	var passport_url = 'http://passport.jiemian.com';
+</script>
+<meta name="renderer" content="webkit">
+<link rel="shortcut icon" type="image/x-icon" href="http://static.moer.cn/staticFile/20161123a/images/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="http://static.moer.cn/staticFile/20161123a/css/main.css" />
+<link rel="stylesheet" type="text/css" href="http://static.moer.cn/staticFile/20161123a/css/webcss.css" />
+<link rel="stylesheet" href="http://static.moer.cn/staticFile/20161123a/css/newindex.css"/>
+<link rel="stylesheet" type="text/css" href="http://static.moer.cn/staticFile/20161123a/css/base-all.css" />
+<script type="text/javascript" src="http://static.moer.cn/staticFile/20161123a/js/base-all.js"></script>
+
+<script type="text/javascript" src="http://static.moer.cn/staticFile/20161123a/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="http://static.moer.cn/staticFile/20161123a/layer/jm-box.min.js"></script>
+<script type="text/javascript" src="http://static.moer.cn/staticFile/20161123a/js/main.js"></script>
+<script type="text/javascript" src="http://static.moer.cn/staticFile/20161123a/js/jquery-noConflict.js"></script>
+<script type="text/javascript" src="http://static.moer.cn/staticFile/20161123a/js/commonUtil.js"></script>
+<script type="text/javascript" src="http://static.moer.cn/staticFile/20161123a/js/moerCommon.js"></script>
+<script type="text/javascript" src="http://static.moer.cn/staticFile/20161123a/js/easydialog.min.js"></script>
+<script type="text/javascript" src="http://static.moer.cn/staticFile/20161123a/webjs/allergicWordsJs.js"></script> 
+<script src="http://static.moer.cn/staticFile/20161123a/js/moerDialog.js"></script>
+<script src="http://static.moer.cn/staticFile/20161123a/js/moerInteraction.js"></script>
+<script src="http://static.moer.cn/staticFile/20161123a/js/businessCard.js"></script>
+<script src="http://static.moer.cn/staticFile/20161123a/js/qrcode2.js"></script>
+    <script type="text/javascript" src="http://static.moer.cn/staticFile/20161123a/webjs/author.js"></script>
+    <link rel="stylesheet" href="http://static.moer.cn/staticFile/20161123a/modules/usercenter/css/author.css">
+    <script type="text/javascript" src="/ueditor142/ueditor.config.js"></script>
+    <script type="text/javascript" src="/ueditor142/ueditor.all.js"></script>
+    <script src="http://static.moer.cn/staticFile/20161123a/js/wd/wd-main.js"></script>
+    <script src="http://static.moer.cn/staticFile/20161123a/js/wd/wdfinal.js"></script>
+    <script src="http://static.moer.cn/staticFile/20161123a/js/wd/answer_comment.js"></script>
+    <script src="http://static.moer.cn/staticFile/20161123a/webjs/qa_topic.js"></script>
+    <!-- 
+    	<script type="text/javascript" src="http://static.moer.cn/staticFile/20161123a/modules/article/js/view-all.js"></script>
+     -->
+	<link rel="stylesheet" href="http://static.moer.cn/staticFile/20161123a/widget/popupay/css/popupay.css">
+    <link rel="stylesheet" href="http://static.moer.cn/staticFile/20161123a/widget/bindphone/css/bindphone.css">
+    <link rel="stylesheet" href="http://static.moer.cn/staticFile/20161123a/css/wenda/wenda.css">
+    <script>
+    //登录用户id
+    var web_user_id = '';
+    //当前主页人的id
+    var the_id = $("#theId").val();
+    var server_path = 'http://static.moer.cn/staticFile';
+    </script>
+    <style type="text/css">
+        #personImg {
+            width: 120px;
+            height: 120px;
+        }
+        #companySpan {
+            width: 180px;
+        }
+        #erma {
+            width: 80px;
+            height: 80px;
+        }
+        #authorHome_UserName {
+            width: 500px;
+        }
+    </style>
+</head>
+
+<body style="padding-top:60px;">
+<!--头部开始-->
+<input id="nav" type="hidden" value="0"/>
+<input type="hidden" value="108121229" id="theId">
+<input type="hidden" value="2" id="attType">
+<input type="hidden" value="2" id="userLevel">
+
+
+
+<link rel="stylesheet" href="http://static.moer.cn/staticFile/20161123a/modules/header/css/header.css"/>
+
+
+<header class="header">
+    <div class="header-logo">
+        <a href="/"><img src="http://static.moer.cn/staticFile/20161123a/images/moer-new-logo.png" alt="#"/></a>
+    </div>
+    <div class="header-nav">
+           <ul>
+            <li style="margin-right:0;"><a class="navstatus navstatus0" href="/operationIndex.htm">首页</a></li>
+            <li class="headernav-div">
+            	
+	            
+		            <div class="headerhas-dropdown"><a class="navstatus navstatus1" href="javascript:;" onclick="$.moer.login.init();">我的关注</a></div>
+	                <div class="headerhas-dropdown"><a class="navstatus navstatus2" href="javascript:;" onclick="$.moer.login.init();">自选股</a></div>
+	            
+	            <!-- <div class="headerhas-dropdown"><a class="navstatus navstatus1" href="/moernewindex.htm">我的关注</a></div>
+                <div class="headerhas-dropdown"><a class="navstatus navstatus2" href="/stockInit.htm">自选股</a></div> -->
+                <!-- <div class="headerhas-dropdown"><a class="navstatus navstatus3" href="/v1/group/page/show">直播间</a>
+                    <div class="header-dropdown headertzgd-down">
+                        <em></em>
+                        <ul>
+                            <li><a href="/v1/group/page/square">直播发现</a></li>
+                            <li><a href="/v1/group/page/show" class="imbtn">我的订阅</a></li>
+                        </ul>
+                    </div>
+                </div> -->
+                <div class="headerhas-dropdown">
+                    <span class="im-count"></span>
+                    <a class="navstatus navstatus3 imNews" href="http://www.moer.cn//v1/group/page/show">消息</a>
+                </div>
+            </li>
+            <li class="headernav-div">
+                <i></i>
+                <div class="headerhas-dropdown"><a class="navstatus navstatus4" href="/articleIndex_articleIndex.htm">投资观点</a>
+                    <div class="header-dropdown headertzgd-down">
+                        <em></em>
+                        <ul>
+                            <li><a href="/articleIndex_articleIndex.htm?onColumn=TZGD_HUSHEN">沪深</a></li>
+                            <li><a href="/articleIndex_articleIndex.htm?onColumn=TZGD_GANGGU">港股</a></li>
+                            <li><a href="/articleIndex_articleIndex.htm?onColumn=TZGD_MEIGU">美股</a></li>
+                            <li><a href="/investment.htm">最新观点</a></li>
+                            <li><a href="/messageAction_goToWeekNews.htm">7x24小时资讯</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="headerhas-dropdown"><a class="navstatus navstatus8" href="http://www.moer.cn//v1/group/page/square">直播间</a></div>
+                <div class="headerhas-dropdown"><a class="navstatus navstatus5" href="/dp/brief.htm">短评</a>
+                    <div class="header-dropdown headerwd-down">
+                        <em></em>
+                        <ul>
+                            <li><a href="/dp/brief.htm">大V短评</a></li>
+                            <li><a href="/dp/forecast.htm">大盘预测</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- <div class="headerhas-dropdown"><a class="navstatus navstatus6" href="/top50.htm">问答</a>
+                    <div class="header-dropdown headerwd-down">
+                        <em></em>
+                        <ul>
+                            <li><a href="/top50.htm">问答发现</a></li>
+                            <li><a href="/topicSquare.htm">话题广场</a></li>
+                            <li><a href="/showAllMQuestion.htm">所有问题</a></li>
+                        </ul>
+                    </div>
+                </div> -->
+                <a class="navstatus navstatus7" href="/WriterAction_rankingInit.htm">找高手</a>
+            </li>
+        </ul>
+    </div>
+    <div class="header-user headerhas-dropdown">
+        <a id="header-user"></a>
+        <div class="header-dropdown headeruser-down">
+            <em></em>
+            <ul>
+                <li><a id="header-home" target="_blank">我的主页</a></li>
+                <li id="headerMyPublish"><a href="/userCenterRelease.htm" target="_blank">我的发布</a></li>
+<!--                 <li class="header-shopping"><a href="/toShoppingCart.htm" target="_blank">我的购物车<i class="header-count" id="shopCount" style="display:none;">0</i></a></li> -->
+                <li id="headerMyOrder"><a href="/order.htm?type=1" target="_blank">管理订单</a></li>
+                <li><a href="/payRecord.htm" target="_blank">购买记录</a></li>
+                <li><a href="/goToCharge.htm" target="_blank">摩尔帐户</a></li>
+                <li><a href="/userCenterSet_init.htm" target="_blank">帐户设置</a></li>
+                <li id="applyWriter"><a href="/articlefront.htm" target="_blank">申请撰稿人</a></li>
+                <li><a class="logout" href="javascript:;" exit="">退出账号</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="header-menu">
+        <div class="header-search headerhas-dropdown">
+            <div class="search-icon"></div>
+            <div class="headerform-cont">
+                <div class="headersearch-form">
+                    <input type="text" placeholder="找个股/用户/文章/问题" class="headersearch-input" id="headersearch-input"/>
+                    <button type="button"></button>
+                </div>
+            </div>
+            <div class="headersearch-cont" id="searchResult">
+            </div>
+        </div>
+        <ul>
+            <li class="header-app headerhas-dropdown"><a href="javascript:void(0)"></a>
+                <div class="header-dropdown headerapp-down">
+                    <em></em>
+                    <img src="http://static.moer.cn/staticFile/20161123a/images/moerapp-down-1210.png" alt="#"/>
+                    <p>iOS / Android 扫码直接下载</p>
+                    <button onclick="window.open('https://itunes.apple.com/cn/app/id1033149808')">iOS&nbsp;下载</button>
+                    <button onclick="window.open('http://static.moer.cn/staticFile/moer.apk')">Android&nbsp;下载
+                    </button>
+                </div>
+            </li>
+            <li class="header-notice headerhas-dropdown">
+                <a href="/usersysmsg.htm"></a>
+                <i class="header-count" id="noticeCount" style="display:none;"></i>
+                <div class="header-dropdown headernotice-down">
+                    <em></em>
+                    <ul class="headernotice-cont" id="msgList">
+                    </ul>
+                    <a href="/usersysmsg.htm" class="header-notice-more">查看更多</a>
+                </div>
+            </li>
+            <li class="header-msg"><a href="/cs.htm"></a><i class="header-count" id="letterCount" style="display:none;"></i></li>
+        </ul>
+    </div>
+    
+</header>
+<div>
+<!--头部结束-->
+    <div class="author-banner">
+        <div class="author-msg">
+            <div class="author-avatar">
+                <img src="http://static.moer.cn/staticFile/O/e69906d13fefd019c84dcadff96d0319.png" alt="">
+            </div>
+            <h4>
+                <span>
+	               
+	                    阿贵
+	                
+                </span>
+                
+	                
+	                
+	                    <i class="moerv-red"></i>
+	                
+                
+            </h4>
+            <p>关注领域：
+                <span>
+					
+	                沪深
+				</span>
+            </p>
+        </div>
+        
+        
+	        <div class="author-control">
+	            <a class="author-btn authorbtn-atten" id="attTypeB" href="javascript:void(0)" onclick="attentionsOnclick(this)">关注</a>
+	            <a class="author-btn" target="_blank" href="javascript:void(0)" id="attIm">TA的直播间</a>
+	            <a class="author-btn authorbtn-cs" href="http://www.moer.cn//v1/group/page/show?uid=108121229" id="sendMailB"></a>
+	        </div>
+        
+    </div>
+	<div class="middle_box" id="main">
+	    <div class="anthor_left">
+	        <ul class="anthor_left_top">
+	            <li id="articleLeft" style="border-left:0;">
+	                <a href="authorHome.htm?theId=108121229&returnAuPage=authorArticle"">
+	                <span>202</span><code>文 章</code>
+	                </a>
+	            </li>
+		        
+		        
+		            <li>
+		                    <span id="attentionsCount">0</span><code>关 注</code>
+		            </li>
+		            <li style="border-right:0;">
+		                    <span id="fansCount">0</span><code>粉 丝</code>
+		            </li>
+		        
+	        </ul>
+	        <div class="anthor_left_bottom">
+	            <!-- <h1>个人信息</h1> -->
+	            
+
+
+<table cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="60" style="border-top:0;" align="right">公&nbsp;&nbsp;&nbsp;&nbsp;司：</td>
+    
+    
+   		<td><span>未公开</span></td>
+    
+  </tr>
+  <tr>
+    <td align="right">职&nbsp;&nbsp;&nbsp;&nbsp;位：</td>
+    
+    
+   		<td><span>未公开</span></td>
+    
+  </tr>
+  <tr>
+    <td align="right">城&nbsp;&nbsp;&nbsp;&nbsp;市：</td>
+    
+    
+   		<td><span>未公开</span></td>
+    
+  </tr>
+  
+  <!-- 微信賬號 -->
+  
+  <tr>
+    <td align="right"  valign="top">简&nbsp;&nbsp;&nbsp;&nbsp;介：</td><td><p>心泉基金经理
+中国股市量化交易心理指数创始人
+《中国股市趋势交易之道》作者
+曾精确判断股市重要的多次牛熊转换。
+知名十年新浪独立证券评论人。
+《致证监会的信》等转载几十万，访问上亿人次，市场影响深远。</p></td>
+  </tr>
+</table>
+	        </div>
+	    </div>
+	    <div class="anthor_right">
+	    	<div class="author-unpack"></div>
+	    	<div class="author-list">
+		        <ul class="news_box_left_memu">
+		            
+		            
+		                
+		                    <li class="news_box_left_memu_left" id="authorArticle"><span id="articleSpan">文章（202）</span></li>
+		                
+		                <li id="authorCollect"><span id="collectSpan">提问（0）</span>
+		                </li>
+		                <li id="authorComment"><span id="commentSpan">回答（0）</span>
+		                </li>
+		            
+		        </ul>
+		        <div style="clear:both;"></div>
+		        
+		            <div class="author-ranking">
+		                <ul class="author-rankcont" id="authorTab">
+		                    <li class="cur">最新时间</li>
+		                    <li title="仅限收费文章">购买量</li>
+		                    <li style="display: none;">月收益</li>
+		                    <li>最高收益</li>
+		                </ul>
+		            </div>
+		            <div style="clear:both;"></div>
+		        
+		        <div id="InvestmentLoading" style="padding:20px 0;display:none;">
+		            <span class="item-1"></span>
+		            <span class="item-2"></span>
+		            <span class="item-3"></span>
+		            <span class="item-4"></span>
+		            <span class="item-5"></span>
+		            <span class="item-6"></span>
+		            <span class="item-7"></span>
+		
+		            <h1>Loading...</h1>
+		        </div>
+		        <div style="clear:both;"></div>
+		        <div class="content authortab-cont" id="authortab-list">
+		            
+
+
+  <style>
+  .blu.wdfinal-cont .wdfinal-list.htdynamic-list .wdfinal-desc .wdfinal-ueself td {line-height:1;padding:0;}
+  </style>
+  <script type="text/javascript">
+   var options ={
+	toolbars: [
+		['bold','simpleupload','insertvideo']
+	]
+	,initialFrameHeight:200
+	,maximumWords:10000
+	,autotypeset: {
+		mergeEmptyline: false,           //合并空行
+		removeClass: false,              //去掉冗余的class
+		removeEmptyline: false,         //去掉空行
+		imageBlockLine: 'left',       //图片的浮动方式，独占一行剧中,左右浮动，默认: center,left,right,none 去掉这个属性表示不执行排版
+		pasteFilter: true,             //根据规则过滤没事粘贴进来的内容
+		clearFontSize: false,           //去掉所有的内嵌字号，使用编辑器默认的字号
+		clearFontFamily: false,         //去掉所有的内嵌字体，使用编辑器默认的字体
+		removeEmptyNode: false        // 去掉空节点
+	}
+  };
+  var ueAskSelf;
+  </script>
+<!-- 他的收藏列表 -->
+<input type="hidden" id="totalNum" value="202"/>
+<input type="hidden" id="nowPageNum" value="1"/>
+<input type="hidden" id="pageTotalNum" value="10"/>
+
+
+
+	<div  class="blu authortab-list" id="list1">
+		
+			<table cellpadding="0" cellspacing="0">
+			
+			      <tr>
+			        <td width="700">
+			        	<a target="_blank" title='别做K线奴隶，管理好投资情绪' href="articleDetails.htm?articleId=156642">
+			        		别做K线奴隶，管理好投资情绪
+			        	</a>
+				        <!-- 显示文章是否收费 -->
+				        
+						<div>
+							<span class="s1">38分钟前</span>
+							<span class="s2">0</span>
+							
+						</div>
+						<!-- 控制文章摘要字数只显示153... -->
+						
+						
+							<p>这样做还有一个重要原因，因为我研究过很多投资的事情，当然包括对自己的研究，有一个最简单的规律和事实，决定越多，交易越多，交易越频繁，犯错就越多。而能赚钱的决定不需要那么多，一个决定做出之后，需要的主要是耐心。
+</p>
+						
+					</td>
+						<!-- 赞 Y被赞  类型：1.文章；2.活动-->
+					<td width="100" id="1" valign="top" align="center">
+				        
+				           	
+				           	
+				        	 	<a class="praise_button" id="156642" onclick="zanArticleOnclick(this)">0</a>
+				           	
+			           	
+		           	
+					
+					
+					</td>
+			      </tr>
+		    
+			      <tr>
+			        <td width="700">
+			        	<a target="_blank" title='A股量化交易心理指数阿贵11月24日' href="articleDetails.htm?articleId=156640">
+			        		A股量化交易心理指数阿贵11月24日
+			        	</a>
+				        <!-- 显示文章是否收费 -->
+				        
+						<div>
+							<span class="s1">43分钟前</span>
+							<span class="s2">0</span>
+							
+						</div>
+						<!-- 控制文章摘要字数只显示153... -->
+						
+						
+							<p>市场再次进入情绪化单日大变的状态，前一天还是看多红色指数，仅一日指数震荡收星的情况下，看空看多40：20。指数处于橙色与绿色的临界状态。</p>
+						
+					</td>
+						<!-- 赞 Y被赞  类型：1.文章；2.活动-->
+					<td width="100" id="1" valign="top" align="center">
+				        
+				           	
+				           	
+				        	 	<a class="praise_button" id="156640" onclick="zanArticleOnclick(this)">0</a>
+				           	
+			           	
+		           	
+					
+					
+					</td>
+			      </tr>
+		    
+			      <tr>
+			        <td width="700">
+			        	<a target="_blank" title='中字头返场演出中' href="articleDetails.htm?articleId=156371">
+			        		中字头返场演出中
+			        	</a>
+				        <!-- 显示文章是否收费 -->
+				        
+						<div>
+							<span class="s1">23小时前</span>
+							<span class="s2">0</span>
+							
+						</div>
+						<!-- 控制文章摘要字数只显示153... -->
+						
+						
+							<p>中字头返场演出中
+</p>
+						
+					</td>
+						<!-- 赞 Y被赞  类型：1.文章；2.活动-->
+					<td width="100" id="1" valign="top" align="center">
+				        
+				           	
+				           	
+				        	 	<a class="praise_button" id="156371" onclick="zanArticleOnclick(this)">0</a>
+				           	
+			           	
+		           	
+					
+					
+					</td>
+			      </tr>
+		    
+			      <tr>
+			        <td width="700">
+			        	<a target="_blank" title='老婆=股票？总是别人的好？' href="articleDetails.htm?articleId=156127">
+			        		老婆=股票？总是别人的好？
+			        	</a>
+				        <!-- 显示文章是否收费 -->
+				        
+						<div>
+							<span class="s1">2016-11-22</span>
+							<span class="s2">0</span>
+							
+						</div>
+						<!-- 控制文章摘要字数只显示153... -->
+						
+						
+							<p>老婆=股票？总是别人的好？
+</p>
+						
+					</td>
+						<!-- 赞 Y被赞  类型：1.文章；2.活动-->
+					<td width="100" id="1" valign="top" align="center">
+				        
+				           	
+				           	
+				        	 	<a class="praise_button" id="156127" onclick="zanArticleOnclick(this)">3</a>
+				           	
+			           	
+		           	
+					
+					
+					</td>
+			      </tr>
+		    
+			      <tr>
+			        <td width="700">
+			        	<a target="_blank" title='A股量化交易心理指数阿贵11月22日' href="articleDetails.htm?articleId=156126">
+			        		A股量化交易心理指数阿贵11月22日
+			        	</a>
+				        <!-- 显示文章是否收费 -->
+				        
+						<div>
+							<span class="s1">2016-11-22</span>
+							<span class="s2">0</span>
+							
+						</div>
+						<!-- 控制文章摘要字数只显示153... -->
+						
+						
+							<p>A股量化交易心理指数阿贵11月22日
+</p>
+						
+					</td>
+						<!-- 赞 Y被赞  类型：1.文章；2.活动-->
+					<td width="100" id="1" valign="top" align="center">
+				        
+				           	
+				           	
+				        	 	<a class="praise_button" id="156126" onclick="zanArticleOnclick(this)">1</a>
+				           	
+			           	
+		           	
+					
+					
+					</td>
+			      </tr>
+		    
+			      <tr>
+			        <td width="700">
+			        	<a target="_blank" title='A股量化交易心理指数阿贵11月17日' href="articleDetails.htm?articleId=155173">
+			        		A股量化交易心理指数阿贵11月17日
+			        	</a>
+				        <!-- 显示文章是否收费 -->
+				        
+						<div>
+							<span class="s1">2016-11-17</span>
+							<span class="s2">0</span>
+							
+						</div>
+						<!-- 控制文章摘要字数只显示153... -->
+						
+						
+							<p>A股量化交易心理指数阿贵11月17日
+</p>
+						
+					</td>
+						<!-- 赞 Y被赞  类型：1.文章；2.活动-->
+					<td width="100" id="1" valign="top" align="center">
+				        
+				           	
+				           	
+				        	 	<a class="praise_button" id="155173" onclick="zanArticleOnclick(this)">0</a>
+				           	
+			           	
+		           	
+					
+					
+					</td>
+			      </tr>
+		    
+			      <tr>
+			        <td width="700">
+			        	<a target="_blank" title='散户还有5%的仓位增加空间' href="articleDetails.htm?articleId=154960">
+			        		散户还有5%的仓位增加空间
+			        	</a>
+				        <!-- 显示文章是否收费 -->
+				        
+						<div>
+							<span class="s1">2016-11-16</span>
+							<span class="s2">0</span>
+							
+						</div>
+						<!-- 控制文章摘要字数只显示153... -->
+						
+						
+							<p>散户还有5%的仓位增加空间
+</p>
+						
+					</td>
+						<!-- 赞 Y被赞  类型：1.文章；2.活动-->
+					<td width="100" id="1" valign="top" align="center">
+				        
+				           	
+				           	
+				        	 	<a class="praise_button" id="154960" onclick="zanArticleOnclick(this)">0</a>
+				           	
+			           	
+		           	
+					
+					
+					</td>
+			      </tr>
+		    
+			      <tr>
+			        <td width="700">
+			        	<a target="_blank" title='阿贵：A股量化交易心理指数分析（11月15日）' href="articleDetails.htm?articleId=154674">
+			        		阿贵：A股量化交易心理指数分析（11月15日）
+			        	</a>
+				        <!-- 显示文章是否收费 -->
+				        
+						<div>
+							<span class="s1">2016-11-15</span>
+							<span class="s2">0</span>
+							
+						</div>
+						<!-- 控制文章摘要字数只显示153... -->
+						
+						
+							<p>3140由重要的压力变成了重要的支撑，或20天均线上方运行，就当珍惜这来之不易的多头为主的趋势，直到转向跌破20天均线。</p>
+						
+					</td>
+						<!-- 赞 Y被赞  类型：1.文章；2.活动-->
+					<td width="100" id="1" valign="top" align="center">
+				        
+				           	
+				           	
+				        	 	<a class="praise_button" id="154674" onclick="zanArticleOnclick(this)">0</a>
+				           	
+			           	
+		           	
+					
+					
+					</td>
+			      </tr>
+		    
+			      <tr>
+			        <td width="700">
+			        	<a target="_blank" title='为什么总是我的股票涨得少' href="articleDetails.htm?articleId=154671">
+			        		为什么总是我的股票涨得少
+			        	</a>
+				        <!-- 显示文章是否收费 -->
+				        
+						<div>
+							<span class="s1">2016-11-15</span>
+							<span class="s2">1</span>
+							
+						</div>
+						<!-- 控制文章摘要字数只显示153... -->
+						
+						
+							<p>为什么总是我的股票涨得少
+</p>
+						
+					</td>
+						<!-- 赞 Y被赞  类型：1.文章；2.活动-->
+					<td width="100" id="1" valign="top" align="center">
+				        
+				           	
+				           	
+				        	 	<a class="praise_button" id="154671" onclick="zanArticleOnclick(this)">5</a>
+				           	
+			           	
+		           	
+					
+					
+					</td>
+			      </tr>
+		    
+			      <tr>
+			        <td width="700">
+			        	<a target="_blank" title='突破取不了巧，要真金白银' href="articleDetails.htm?articleId=153468">
+			        		突破取不了巧，要真金白银
+			        	</a>
+				        <!-- 显示文章是否收费 -->
+				        
+						<div>
+							<span class="s1">2016-11-08</span>
+							<span class="s2">0</span>
+							
+						</div>
+						<!-- 控制文章摘要字数只显示153... -->
+						
+						
+							<p>办过大关这样的大事情，真的需要钱钱的呀。关键时刻，只想取巧是不行的。</p>
+						
+					</td>
+						<!-- 赞 Y被赞  类型：1.文章；2.活动-->
+					<td width="100" id="1" valign="top" align="center">
+				        
+				           	
+				           	
+				        	 	<a class="praise_button" id="153468" onclick="zanArticleOnclick(this)">0</a>
+				           	
+			           	
+		           	
+					
+					
+					</td>
+			      </tr>
+		    
+			</table>
+	    
+	    
+	</div>
+
+
+<!-- 他的收藏列表 -->
+
+		        </div>
+		        <div style="clear:both;"></div>
+		        <div class="inverstment-page" id="inverstment-page" style="display:none">
+		            <span class="page_mun_style1" id="firstpage">&nbsp;</span>
+		            <span class="page_mun_style2" id="backpage">&nbsp;</span>
+		
+		            <div id="page_num" class="page_num"></div>
+		            <span class="page_mun_style3" id="nextpage">&nbsp;</span>
+		            <span class="page_mun_style4" id="lastpage">&nbsp;</span>
+		            <span class="noclass">跳到第</span>
+		            <input type="text" id="input-page"/>
+		            <span class="noclass">页</span>
+		        </div>
+	    	</div>
+	    </div>
+	    <div style="clear:both;"></div>
+	</div>
+</div>
+
+
+  <div class="footer">
+    <div class="footer-top">
+      <div class="footertop-cont">
+        <div class="footertop-cont1">
+          <h4>20000<span>篇</span></h4>
+          <p>独家投资观点</p>
+        </div>
+        <div class="footertop-cont2">
+          <h4>1500<span>位</span></h4>
+          <p>顶尖撰稿人加入</p>
+        </div>
+        <div class="footertop-cont3">
+          <h4>24<span>小时</span></h4>
+          <p>24小时更新</p>
+        </div>
+        <div class="footertop-cont4">
+          <h4>89<span>%</span></h4>
+          <p>在摩尔金融讨论的所有股票平均收益为89%</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-cont">
+      <div class="footercont-right">
+        <img src="http://static.moer.cn/staticFile/20161123a/images/moer-footer-logo.png" alt="#"/>
+      </div>
+      <div class="footercont-left">
+        <ul>
+          <li><strong>关于摩尔</strong></li>
+          <li><a href="/websiteContact.htm" target="_blank">联系我们</a></li>
+          <li><a href="/websiteRelief.htm" target="_blank">免责声明</a></li>
+          <li><a href="/websiteCopyright.htm" target="_blank">版权声明</a></li>
+          <li><a href="/websiteSecrecy.htm" target="_blank">隐私声明</a></li>
+          <li><a href="/websiteBecomeAuthor.htm" target="_blank">撰稿人守则</a></li>
+          <li><a href="/investmentPointCode.htm" target="_blank">投资观点守则</a></li>
+        </ul>
+        <ul>
+          <li><strong>投资人</strong></li>
+          <li><a href="http://www.news365.com.cn" target="_blank">上海报业集团</a></li>
+          <li><a href="http://www.mi.com" target="_blank">小米科技</a></li>
+          <li><a href="http://www.360.cn" target="_blank">奇虎360</a></li>
+          <li><a href="http://www.htsec.com" target="_blank">海通证券</a></li>
+          <li><a href="http://www.gtja.com" target="_blank">国泰君安</a></li>
+        </ul>
+        <ul>
+          <li><strong>合作伙伴</strong></li>
+          <li><a href="http://www.cs.ecitic.com" target="_blank">中信证券</a></li>
+          <li><a href="http://www.orient-fund.com" target="_blank">东方基金</a></li>
+          <li><a href="http://www.gjzq.com.cn" target="_blank">国金证券</a></li>
+        </ul>
+        <ul>
+          <li><strong>网站地图</strong></li>
+          <li><a href="/operationIndex.htm" target="_blank">首页</a></li>
+          <li><a href="/optionalStock_getStockSub.htm" target="_blank">自选股</a></li>
+          <li><a href="/articleIndex_articleIndex.htm" target="_blank">投资发现</a></li>
+          <li><a href="/top50.htm" target="_blank">问答发现</a></li>
+          <li><a href="/articlefront.htm" target="_blank">申请撰稿人</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>摩尔星灵（北京）网络科技有限公司 版权所有 Copyright 2016 京ICP备 16018449-1号</span>
+      <span>服务热线：400-803-6208（工作日9：00-18：00）</span>
+    </div>
+  </div>
+<div id="question_writeLocation"></div>
+<script src="http://static.moer.cn/staticFile/20161123a/modules/header/js/header.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?b54c73f5510c10a9726f2873723c0576";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script type="text/javascript" src="http://tajs.qq.com/stats?sId=39129504" charset="UTF-8"></script>
+<script src="http://static.moer.cn/staticFile/20161123a/modules/header/js/header.js"></script>
+<!-- <script src="http://static.moer.cn/staticFile/20161123a/widget/bindphone/js/bindphone.js"></script> -->
+
+<script>
+    var the_id = $("#theId").val();
+
+    function investmentPage() {
+        var totalNum = $("#totalNum").val();
+        var nowPageNum = $("#nowPageNum").val();
+        var pageTotalNum = $("#pageTotalNum").val();
+
+        var maxPageNum = Math.ceil(totalNum / pageTotalNum);
+        var setPageHtml = "";
+
+        if (maxPageNum < 2) {
+            $("#inverstment-page").hide();
+            $(".blu table tr:last td").css("border", "none");
+        } else {
+            $("#inverstment-page").show();
+        }
+
+        if (maxPageNum > 9) {
+            var pagestart = 1;
+            if (nowPageNum > 3) {//如果当前页小于等于3页
+                pagestart = nowPageNum - 3;
+            }
+
+            for (var i = pagestart; i <= maxPageNum && maxPageNum - i > -1 && i - pagestart < 7; i++) {
+                setPageHtml += "<span style='cursor: pointer;'  num='" + i + "'>" + i + "</span>";
+            }
+            //是否存在...
+            if (maxPageNum - pagestart >= 7) {
+                setPageHtml += "<span>...</span>";//显示前7页
+                setPageHtml += "<span style='cursor: pointer;' num='" + maxPageNum + "'>" + maxPageNum + "</span>";
+            }
+        } else {
+            //小于8页
+            for (var i = 1; i <= maxPageNum; i++) {
+                setPageHtml += "<span style='cursor: pointer;'  num='" + i + "'>" + i + "</span>";
+            }
+        }
+        $("#page_num").html(setPageHtml);
+        $("#page_num span[num=" + nowPageNum + "]").addClass("page_mun_style6");
+    }
+    investmentPage();
+
+    $(document).on("click", ".inverstment-page span", function () {
+        var pageNum = 1;
+        var totalNum = $("#totalNum").val();
+        var nowPageNum = $("#nowPageNum").val();
+        var pageTotalNum = $("#pageTotalNum").val();
+        if ($(this).hasClass("page_mun_style1")) {
+            pageNum = 1;
+        } else if ($(this).hasClass("page_mun_style2")) {
+            if (nowPageNum > 1) {
+                pageNum = nowPageNum - 1;
+            } else {
+                return false;
+            }
+        } else if ($(this).hasClass("page_mun_style3")) {
+            if (nowPageNum < (Math.ceil(totalNum / pageTotalNum))) {
+                pageNum = parseInt(nowPageNum) + 1;
+            } else {
+                return false;
+            }
+        } else if ($(this).hasClass("page_mun_style4")) {
+            pageNum = Math.ceil(totalNum / pageTotalNum);
+        } else if ($(this).attr("num")) {
+            pageNum = $(this).attr("num");
+        }
+        search(pageNum);
+        $('html, body').animate({scrollTop: 0}, 'fast');
+    })
+
+    $("#input-page").on({
+        blur: function () {
+            inputPageVal();
+        },
+        keyup: function () {
+            var e = event || window.event || arguments.callee.caller.arguments[0];
+            if (e && e.keyCode == 13) { // enter 键
+                //要做的事情
+                inputPageVal();
+            }
+        }
+    })
+
+    function inputPageVal() {
+        var pageNum = $("#input-page").val();
+        search(pageNum);
+        $('html, body').animate({scrollTop: 0}, 'fast');
+    }
+
+    function search(pageNum) {
+        var url = "findArticlePageList.json";
+        var collectType = $("#authorTab .cur").index();
+        var returnAuPage = "";
+        if ('authorArticle' == returnAuPage || '' == returnAuPage) {
+            url = "findArticlePageList.htm?theId=" + the_id + "&returnAuPage=" + returnAuPage + "&page=" + pageNum + "&collectType=" + collectType;
+        } else if ('authorCollect' == returnAuPage) {
+            url = "findCollectionPageList.htm?theId=" + the_id + "&returnAuPage=" + returnAuPage + "&page=" + pageNum + "&collectType=" + collectType;
+        } else {
+            url = "findCommentPageList.htm?theId=" + the_id + "&returnAuPage=" + returnAuPage + "&page=" + pageNum;
+        }
+
+        $("#InvestmentLoading").show();
+        $("#authortab-list").html("");
+
+        $.post(url, {}, function (html) {
+            $("#InvestmentLoading").hide();
+            $('#authortab-list').html(html);
+            investmentPage();
+        });
+
+    }
+
+
+    try {
+        $("#authorTab li").each(function (n) {
+            $(this).click(function () {
+                if ($(this).hasClass("cur") == false) {
+                    $(this).addClass("cur").andSelf().siblings().removeClass("cur");
+                    $("#InvestmentLoading").show();
+                    $('#authortab-list').html("");
+                    var collectType = n;
+                    var returnAuPage = "";
+                    var url = "findArticlePageList.json";
+                    if (returnAuPage != null && returnAuPage != "" && returnAuPage == "authorCollect") {
+                        url = "findCollectionPageList.json";
+                    }
+                    $.post(url, {
+                        "collectType": collectType,
+                        "returnAuPage": returnAuPage,
+                        "page": "1",
+                        "theId": the_id
+                    }, function (html) {
+                        $("#InvestmentLoading").hide();
+                        $('#authortab-list').html(html);
+                        investmentPage();
+                    });
+                }
+            })
+        })
+    } catch (e) {
+    }
+</script>
+<!-- 2015-05-06  用户文章排序JS  End  -->
+
+
+<script type="text/javascript">
+    $(function () {
+        //头像初始化
+        $("#personImg").attr('src', server_path + "/O/e69906d13fefd019c84dcadff96d0319.png");
+        //二维码初始化 muser_weixinQrcode
+        $("#erma").attr('src', server_path + "/O/a24a573a9d3e6f81306aae62b2f0b000.png");
+        //显示页面选项
+        $("#").click();
+        //三个请求
+        $(".news_box_left_memu li").click(function () {
+            var authorType = $(this).attr("id");
+            var _url = "authorHome.htm?theId=" + the_id + "&returnAuPage=" + authorType;
+            location.href = _url;
+        });
+    });
+    //切换头部样式
+    $(".blu:gt(0)").hide();
+    $(".news_box_left_memu li").click(function () {
+        $(this).addClass("news_box_left_memu_left").siblings().removeClass("news_box_left_memu_left");
+        var selContent = j(".news_box_left_memu li ").index(this);
+        $(".blu").eq(selContent).show().siblings().hide();
+    });
+    //---------------------------------发私信-----------------------------------------------
+    $(function() {
+       /*  $("#sendMailB").click(function () {
+            if(!islogin) {
+                $.moer.login.init();
+            } else {
+	            $.fn.bindphone(function() {
+		            var name = '阿贵';
+		            var login_uid = '';
+		
+		            if (login_uid != null && login_uid != '') {
+		                MOER.sendLetter(name, the_id, '1');
+		            }
+		         })
+            }
+        }); */
+
+        $(document).on("click", ".author-ask-attention", function () {
+            if(!islogin) {
+                $.moer.login.init();
+            } else {
+                This = $(this);
+                var number = parseInt(This.siblings(".questionAttentionCount").children("u").html());
+                var mQuestionFollowRel_questionId = This.attr("mQuestionFollowRel_questionId");
+                if ($(this).attr("attention") == "0") {
+                    url = "addMQuestionFollowRel.json";
+                    $.ajax({
+                        url: url,
+                        async: false,
+                        dataType: 'json',
+                        type: "POST",
+                        data: {'mQuestionFollowRel_questionId': mQuestionFollowRel_questionId},
+                        success: function (data) {
+                            if (data) {
+                                if (data.success == true) {
+                                    This.text("取消关注");
+                                    This.attr("attention", "1");
+                                    This.siblings(".questionAttentionCount").children("u").html(number + 1);
+                                } else {
+                                    MOER.alertError(data.message, 1);
+                                    if (data.errorCode == 1) {
+                                        This.text("取消关注");
+                                        This.attr("attention", "1");
+                                    }
+                                }
+                            }
+                        }
+                    });
+        
+                } else {
+                    url = "deleteMQuestionFollowRel.json";
+                    $.ajax({
+                        url: url,
+                        async: false,
+                        dataType: 'json',
+                        type: "POST",
+                        data: {'mQuestionFollowRel_questionId': mQuestionFollowRel_questionId},
+                        success: function (data) {
+                            if (data) {
+                                if (data.success == true) {
+                                    This.text("关注问题");
+                                    This.attr("attention", "0");
+                                    This.siblings(".questionAttentionCount").children("u").html(number - 1);
+                                } else {
+                                    MOER.alertError(data.message, 1);
+                                    if (data.errorCode == 1) {
+                                        This.text("关注问题");
+                                        This.attr("attention", "0");
+                                    }
+                                }
+                            }
+                        }
+                    });
+                }
+           }
+        })
+    })
+</script>
+<script src="http://static.moer.cn/staticFile/20161123a/widget/popupay/js/popupayforart.js"></script>
+<script src="http://static.moer.cn/staticFile/20161123a/widget/bindphone/js/bindphone.js"></script>
+<script src="http://static.moer.cn/staticFile/20161123a/modules/author/js/author.js"></script>
+</body>
+</html>
