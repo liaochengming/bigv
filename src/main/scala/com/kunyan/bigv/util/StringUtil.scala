@@ -7,6 +7,7 @@ import com.kunyan.bigv.logger.BigVLogger
 
 /**
   * Created by niujiaojiao on 2016/11/16.
+ * 处理固定格式的字符串
   */
 object StringUtil {
 
@@ -28,17 +29,18 @@ object StringUtil {
 
   }
 
-  //匹配需要的字符串
+  /**
+   * 匹配需要的字符串
+   * @param str 原字符串
+   * @param reg 正则规则
+   * @return 需求的字符串
+   */
   def getMatch(str: String, reg: String): String = {
 
     val pattern = Pattern.compile(reg)
     val matchUserId = pattern.matcher(str)
 
-    if (matchUserId.find()) {
-      matchUserId.group(1)
-    } else {
-      null
-    }
+    if (matchUserId.find()) matchUserId.group(1) else ""
 
   }
 }

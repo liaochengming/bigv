@@ -1,20 +1,27 @@
 package com.kunyan.bigv.util
 
-import java.sql.PreparedStatement
+import java.sql.{CallableStatement, PreparedStatement}
 import java.text.SimpleDateFormat
 import java.util.Locale
 
 import com.ibm.icu.text.CharsetDetector
 import com.kunyan.bigv.db.LazyConnections
 import com.kunyan.bigv.logger.BigVLogger
-import org.apache.hadoop.hbase.client.{Put, Get}
+import com.kunyandata.nlpsuit.classification.Bayes
+import com.kunyandata.nlpsuit.sentiment.PredictWithNb
+import com.kunyandata.nlpsuit.summary.SummaryExtractor
+import com.kunyandata.nlpsuit.util.{KunyanConf, TextPreprocessing}
+import org.apache.hadoop.hbase.client.{Get, Put}
 import org.apache.hadoop.hbase.util.Bytes
+import org.apache.spark.SparkEnv
+
 
 /**
  * Created by niujiaojiao on 2016/11/16.
  *
  */
 object DBUtil {
+
   def getDateString: String = getDateString(System.currentTimeMillis())
 
   def getDateString(timestamp: Long): String = new SimpleDateFormat("yyyyMMddHHmmss").format(timestamp)
@@ -26,9 +33,15 @@ object DBUtil {
 
   }
 
-  def getLongTimeStamp(time:String):Long={
+  /**
+   * 将字符串类型时间转换成long类型的时间戳
+   * @param time 字符串类型的时间
+   * @param format 时间的类型
+   * @return long 类型的时间戳
+   */
+  def getLongTimeStamp(time:String,format:String):Long={
     val loc = new Locale("en")
-    val sdf = new SimpleDateFormat("yyyy年MM月dd日 HH:mm:ss",loc)
+    val sdf = new SimpleDateFormat(format,loc)
     val date = sdf.parse(time)
     date.getTime
   }
@@ -46,7 +59,6 @@ object DBUtil {
     val table = lazyConn.getTable(tableName)
     val get = new Get(rowkey.getBytes)
 
-    println("enter hbase")
     try {
 
       val url = table.get(get).getValue(Bytes.toBytes("basic"), Bytes.toBytes("url"))
@@ -81,29 +93,31 @@ object DBUtil {
   /**
    * 插入数据到hbase
    * @param tableName 表名
-   * @param rowKey 行名
+   * @param rowKey url
+   * @param content 正文
+   * @param publish_time 文章时间
    * @param platform 平台号
-   * @param content 内容
    * @param title 标题
-   * @param time 时间
    * @param lazyConn 连接
    */
-  def insertHbase(tableName: String, rowKey: String, platform:String,content:String,title:String,time:String, lazyConn: LazyConnections) = {
+  def insertHbase(tableName: String, rowKey: String,content: String,publish_time:String,
+                  platform:String,title:String, lazyConn: LazyConnections) = {
 
     val table = lazyConn.getTable(tableName)
     val put = new Put(rowKey.getBytes)
 
-    put.addColumn("basic".getBytes, "platform".getBytes, platform.getBytes)
     put.addColumn("basic".getBytes, "content".getBytes, content.getBytes)
+    put.addColumn("basic".getBytes, "publish_time".getBytes, publish_time.getBytes)
+    put.addColumn("basic".getBytes, "platform".getBytes, platform.getBytes)
     put.addColumn("basic".getBytes, "title".getBytes, title.getBytes)
-    put.addColumn("basic".getBytes, "time".getBytes, time.getBytes)
 
     table.put(put)
+
 
   }
 
   //插入数据库操作
-  def insert(prep: PreparedStatement, params: Any*): Unit = {
+  def insert(prep: PreparedStatement, params: Any*): Boolean = {
 
     try {
 
@@ -124,17 +138,262 @@ object DBUtil {
           case param: Double =>
             prep.setDouble(i + 1, param)
           case _ =>
-            println("Unknown Type")
+            BigVLogger.error("Unknown Type")
+
         }
-
       }
-
       prep.executeUpdate
 
+      true
     } catch {
+
       case e: Exception =>
-        e.printStackTrace()
+        BigVLogger.exception(e)
+        false
     }
+
+  }
+
+
+  def insertCall(call: CallableStatement, params: Any*): Boolean = {
+
+    try {
+
+      for (i <- params.indices) {
+
+        val param = params(i)
+
+        param match {
+          case param: String =>
+            call.setString(i + 1, param)
+          case param: Int =>
+            call.setInt(i + 1, param)
+          case param: Boolean =>
+            call.setBoolean(i + 1, param)
+          case param: Long =>
+            call.setLong(i + 1, param)
+          case param: Double =>
+            call.setDouble(i + 1, param)
+          case param: Short =>
+            call.setShort(i + 1, param)
+          case _ =>
+            BigVLogger.error("Unknown Type")
+        }
+      }
+
+      call.executeUpdate
+
+      true
+
+    } catch {
+
+      case e: Exception =>
+        BigVLogger.error("向MySQL插入数据失败")
+        BigVLogger.exception(e)
+
+        false
+    }
+
+  }
+
+
+  /**
+   * 将文章信息写分析之后 写到mysql
+   * @param lazyConn 连接
+   * @param cstmtDigest 存储过程的sql语句
+   * @param newsMysqlStatement mysql的存储语句
+   * @param url 文章网址
+   * @param title 文章标题
+   * @param time 文章时间
+   * @param content 文章内容
+   * @param platform 平台id
+   * @param platformStr 平台字符串
+   * @param stopWords 分词
+   * @param classModels 分类
+   * @param sentimentModels 情感
+   * @param keyWordDict 关键字摘要
+   * @param kyConf 公司配置
+   * @param summaryExtraction 摘要提取
+   */
+  def inputDataToSql(lazyConn: LazyConnections,
+                     cstmtDigest: CallableStatement,
+                     newsMysqlStatement: PreparedStatement,
+                     url: String,
+                     title: String,
+                     time: Long,
+                     content: String,
+                     platform:Int,
+                     platformStr:String,
+                     stopWords: Array[String],
+                     classModels: scala.Predef.Map[scala.Predef.String, scala.Predef.Map[scala.Predef.String, scala.Predef.Map[scala.Predef.String, java.io.Serializable]]],                     sentimentModels: scala.Predef.Map[scala.Predef.String, scala.Any],
+                     keyWordDict: scala.Predef.Map[scala.Predef.String, scala.Predef.Map[scala.Predef.String, scala.Array[scala.Predef.String]]],
+                     kyConf: KunyanConf,
+                     summaryExtraction: (String, Int)
+                      ): Unit = {
+
+    var isOk = true
+
+    var digest = ""
+    var tempDigest = ""
+
+    if (content != "") {
+      tempDigest = DBUtil.getDigest(url, content, summaryExtraction)
+    }
+
+    if (tempDigest == "") {
+      isOk = false
+    } else {
+      digest = DBUtil.getFirstSignData(tempDigest, "\t")
+    }
+
+    val summary = DBUtil.interceptData(tempDigest, 300)
+    val newDigest = DBUtil.interceptData(digest, 500)
+    var categories = ("", "", "")
+    var sentiment = ""
+    var senti = 1
+
+    try {
+
+      if (tempDigest != "") {
+
+        val words = TextPreprocessing.process(tempDigest, stopWords, kyConf)
+        categories = Bayes.predict(words, classModels, keyWordDict)
+        sentiment = PredictWithNb.predict(words, sentimentModels, stopWords)
+
+        if (sentiment == "neg")
+          senti = 0
+
+      } else {
+        senti = -1
+
+      }
+    } catch {
+
+      case e: Exception =>
+        BigVLogger.exception(e)
+        BigVLogger.error("分词程序异常")
+        isOk = false
+    }
+
+    if (isOk) {
+
+      var stock = ""
+
+      val newsType = 2
+
+      if (categories._1.length > 0)
+        stock = DBUtil.getNewStock(categories._1, keyWordDict("stockDict"))
+
+      stock = DBUtil.getLastSignData(DBUtil.interceptData(stock, 500), "&")
+      var digestFlag:Boolean = true // 插入article_info digest and summary and stock
+
+      if(platform == 40003){
+
+        val buy = 0
+        val price = 0.0
+        digestFlag = DBUtil.insertCall(cstmtDigest, url, buy, price,newDigest, summary, stock)
+
+      }else{
+        digestFlag = DBUtil.insertCall(cstmtDigest, url, newDigest, summary, stock)
+      }
+
+      //插入news_info 数据
+      if (digestFlag) {
+
+        val n_id = System.currentTimeMillis() * 100 + SparkEnv.get.executorId.toInt
+        val newsFlag = insert(newsMysqlStatement,n_id, newsType, platform, title, url, time, categories._2, categories._3, categories._1, newDigest, summary, senti, System.currentTimeMillis(), platformStr)
+
+        if (!newsFlag) {
+          BigVLogger.warn(s"$platformStr begins to insert digest to mysql and data to news_info error")
+        }
+
+      } else {
+        BigVLogger.warn(s"$platformStr begins to insert digest to mysql and data to article_info error:$digest,$summary,$stock")
+      }
+
+    }
+
+  }
+
+
+  /**
+   * 获取摘要
+   *
+   * @author sijiansheng
+   * @param content 正文内容
+   * @return 返回的300字摘要
+   */
+  def interceptData(content: String, number: Int): String = {
+
+    var summary: String = ""
+
+    if (content.length > number && number >= 0) {
+      summary = content.substring(0, number)
+    } else if (content.length < number) {
+      summary = content
+    } else {
+      println("索引错误，结果不存在")
+    }
+
+    summary
+  }
+
+
+  /**
+   * 获取完成字符(获取最后一个标识符前的字符串)
+   *
+   * @param data 原数据
+   * @param sign 标志数据
+   * @return
+   */
+  def getLastSignData(data: String, sign: String): String = {
+
+    if (data.contains(sign))
+      data.substring(0, data.lastIndexOf(sign))
+    else data
+
+  }
+
+
+
+  /**
+   * 获取完成字符(获取第一个标识符前的字符串)
+   *
+   * @param data 原数据
+   * @param sign 标志数据
+   * @return
+   */
+  def getFirstSignData(data: String, sign: String): String = {
+
+    if (data.contains(sign))
+      data.substring(0, data.indexOf(sign))
+    else data
+
+  }
+
+
+
+  def getDigest(url: String, content: String, extractSummaryConfiguration: (String, Int)): String = {
+
+    try {
+
+      SummaryExtractor.extractSummary(content, extractSummaryConfiguration._1, extractSummaryConfiguration._2)
+    } catch {
+
+      case e: Exception =>
+        BigVLogger.error(s"获取digest错误，url是$url")
+        BigVLogger.exception(e)
+        ""
+
+    }
+
+  }
+
+  def getNewStock(lastStock: String, stockDict: scala.collection.Map[scala.Predef.String, scala.Array[scala.Predef.String]]): String = {
+
+    lastStock.split(",").map(cate => {
+      cate + "=" + stockDict(cate).filterNot(_ == cate)(0)
+    }).mkString("&")
 
   }
 }

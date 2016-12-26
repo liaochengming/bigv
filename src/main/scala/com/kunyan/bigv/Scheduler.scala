@@ -1,15 +1,21 @@
 package com.kunyan.bigv
 
 import com.kunyan.bigv.db.LazyConnections
-import com.kunyan.bigv.parser.SnowballParser
+import com.kunyan.bigv.logger.BigVLogger
 import com.kunyan.bigv.parser.moer.{MoerBigVHistoryParser, MoerBigVUpdateParser, MoerFinance}
+import com.kunyan.bigv.parser.xueqiu.{SnowballHistoryParser, SnowballParser, SnowballUpdateParser}
+import com.kunyan.bigv.parser.zhongjin.{ZhonJinBlogParser, ZhongJinBlogHistoryParse, ZhongJinBlogUpdateParse}
 import com.kunyan.bigv.util.DBUtil
+import com.kunyandata.nlpsuit.classification.Bayes
+import com.kunyandata.nlpsuit.sentiment.PredictWithNb
+import com.kunyandata.nlpsuit.util.KunyanConf
 import kafka.serializer.StringDecoder
 import org.apache.log4j.{Level, LogManager}
 import org.apache.spark.SparkConf
 import org.apache.spark.streaming.kafka.KafkaUtils
 import org.apache.spark.streaming.{Seconds, StreamingContext}
 
+import scala.io.Source
 import scala.util.parsing.json.JSON
 import scala.xml.XML
 
@@ -21,80 +27,167 @@ object Scheduler {
 
   def main(args: Array[String]): Unit = {
 
-//    Logger.getLogger("org").setLevel(Level.ERROR)
+    try {
 
-    val sparkConf = new SparkConf()
-      .setAppName("NewTask")
-      .set("spark.serializer", "org.apache.spark.serializer.KryoSerializer")
-      .set("spark.kryoserializer.buffer.max", "2000")
-      //.setMaster("local")
+      val sparkConf = new SparkConf()
+        .setAppName("BIGV")
+        .set("spark.serializer", "org.apache.spark.serializer.KryoSerializer")
+        .set("spark.kryoserializer.buffer.max", "2000")
+      //        .setMaster("local")
 
-    val ssc = new StreamingContext(sparkConf, Seconds(1))
-
-
-    val path = args(0)
-
-    val configFile = XML.loadFile(path)
-    val lazyConn = LazyConnections(configFile)
-    val connectionsBr = ssc.sparkContext.broadcast(lazyConn)
+      val ssc = new StreamingContext(sparkConf, Seconds(args(1).toInt))
 
 
-    val groupId = (configFile \ "kafka" \ "groupId").text
-    val brokerList = (configFile \ "kafka" \ "brokerList").text
+      val path = args(0)
 
-    LogManager.getRootLogger.setLevel(Level.WARN)
+      val configFile = XML.loadFile(path)
+      val lazyConn = LazyConnections(configFile)
+      val connectionsBr = ssc.sparkContext.broadcast(lazyConn)
 
-    //摩尔的topic
-    val moerReceiveTopic = (configFile \ "kafka" \ "moerreceive").text
-    val moerSendTopic = (configFile \ "kafka" \ "moersend").text
-    val moerTopicsSet = Set[String](moerReceiveTopic)
+      val stopWordsPath = (configFile \ "segment" \ "stopWords").text
+      val modelsPath = (configFile \ "segment" \ "classModelAddress").text
+      val sentiPath = (configFile \ "segment" \ "sentimentModelAddress").text
+      val keyWordDictPath = (configFile \ "segment" \ "keyWords").text
 
-    //雪球的topic
-    val xueQiuReceiveTopic = (configFile \ "kafka" \ "xueqiureceive").text
-    val xueQiuSendTopic = (configFile \ "kafka" \ "xueqiusend").text
-    val xueQiuTopicsSet = Set[String](xueQiuReceiveTopic)
+      val kyConf = new KunyanConf()
+
+      kyConf.set((configFile \ "segment" \ "ip").text, (configFile \ "segment" \ "port").text.toInt)
+
+      //val stopWords = null//Bayes.getStopWords(stopWordsPath)
+      val stopWords = Source.fromFile(stopWordsPath).getLines().toArray
+      val classModels = Bayes.initModels(modelsPath)
+      val sentiModels = PredictWithNb.init(sentiPath)
+      val keyWordDict = Bayes.initGrepDicts(keyWordDictPath)
+
+      val stopWordsBr = ssc.sparkContext.broadcast(stopWords)
+      val classModelsBr = ssc.sparkContext.broadcast(classModels)
+      val sentiModelsBr = ssc.sparkContext.broadcast(sentiModels)
+      val keyWordDictBr = ssc.sparkContext.broadcast(keyWordDict)
+
+      val summaryExtraction = ((configFile \ "summaryConfiguration" \ "ip").text, (configFile \ "summaryConfiguration" \ "port").text.toInt)
 
 
-    val kafkaParams = Map[String, String]("metadata.broker.list" -> brokerList,
+
+      val groupId = (configFile \ "kafka" \ "groupId").text
+      val brokerList = (configFile \ "kafka" \ "brokerList").text
+
+      LogManager.getRootLogger.setLevel(Level.WARN)
+
+      //摩尔的topic
+      val moerReceiveTopic = (configFile \ "kafka" \ "moerreceive").text
+      val moerSendTopic = (configFile \ "kafka" \ "moersend").text
+      val moerTopicsSet = Set[String](moerReceiveTopic)
+
+      //雪球的topic
+      val xueQiuReceiveTopic = (configFile \ "kafka" \ "xueqiureceive").text
+      val xueQiuSendTopic = (configFile \ "kafka" \ "xueqiusend").text
+      val xueQiuTopicsSet = Set[String](xueQiuReceiveTopic)
+
+      //中金的topic
+      val zhongJinReceiveTopic = (configFile \ "kafka" \ "zhongjinreceive").text
+      val zhongJinSendTopic = (configFile \ "kafka" \ "zhongjinsend").text
+      val zhongJinTopicsSet = Set[String](zhongJinReceiveTopic)
+
+      val kafkaParams = Map[String, String]("metadata.broker.list" -> brokerList,
       "group.id" -> groupId)
 
-    //摩尔的信息
-    val moerMessages = KafkaUtils.createDirectStream[String, String, StringDecoder, StringDecoder](
+      //摩尔的信息
+      val moerMessages = KafkaUtils.createDirectStream[String, String, StringDecoder, StringDecoder](
       ssc, kafkaParams, moerTopicsSet)
 
-    //摩尔的信息处理
-    moerMessages.map(_._2).filter(_.length > 0).foreachRDD(rdd => {
-      //
-      rdd.foreach(message => {
+      //摩尔的信息处理
+      moerMessages.map(_._2).filter(_.length > 0).foreachRDD(rdd => {
         //
-        println("get kafka moerTopic message: " + message)
-        analyzer(message, connectionsBr.value, moerSendTopic)
+        rdd.foreach(message => {
+          //
+          println("get kafka moerTopic message: " + message)
+          BigVLogger.warn("get kafka moerTopic message: " + message)
 
+          analyzer(message,
+            connectionsBr.value,
+            moerSendTopic,
+            stopWordsBr.value,
+            classModelsBr.value,
+            sentiModelsBr.value,
+            keyWordDictBr.value,
+            kyConf,
+            summaryExtraction)
+
+        })
       })
-    })
 
-    //雪球的信息
-    val xueQiuMessages = KafkaUtils.createDirectStream[String, String, StringDecoder, StringDecoder](
+      //雪球的信息
+      val xueQiuMessages = KafkaUtils.createDirectStream[String, String, StringDecoder, StringDecoder](
       ssc, kafkaParams, xueQiuTopicsSet)
 
-//    雪球的信息处理
-    xueQiuMessages.map(_._2).filter(_.length > 0).foreachRDD(rdd => {
-      //
-      rdd.foreach(message => {
+      //    雪球的信息处理
+      xueQiuMessages.map(_._2).filter(_.length > 0).foreachRDD(rdd => {
         //
-        println("get kafka xueqiuTopic message: " + message)
-        analyzer(message, connectionsBr.value, xueQiuSendTopic)
+        rdd.foreach(message => {
+          //
+          println("get kafka xueqiuTopic message: " + message)
+          BigVLogger.warn("get kafka xueqiuTopic message: " + message)
 
+          analyzer(message,
+            connectionsBr.value,
+            xueQiuSendTopic,
+            stopWords,
+            classModels,
+            sentiModelsBr.value,
+            keyWordDict,
+            kyConf,
+            summaryExtraction)
+
+        })
       })
-    })
 
+      //中金的信息
+      val zhongJinMessages = KafkaUtils.createDirectStream[String, String, StringDecoder, StringDecoder](
+      ssc, kafkaParams, zhongJinTopicsSet)
 
-    ssc.start()
-    ssc.awaitTermination()
+      //中金的信息处理
+
+      zhongJinMessages.map(_._2).filter(_.length > 0).foreachRDD(rdd => {
+        //
+
+        rdd.foreach(message => {
+          //
+          println("get kafka zhongjinTopic message: " + message)
+          BigVLogger.warn("get kafka zhongjinTopic message: " + message)
+
+          analyzer(message,
+            connectionsBr.value,
+            zhongJinSendTopic,
+            stopWordsBr.value,
+            classModelsBr.value,
+            sentiModelsBr.value,
+            keyWordDictBr.value,
+            kyConf,
+            summaryExtraction)
+
+        })
+      })
+
+      ssc.start()
+      ssc.awaitTermination()
+
+    } catch {
+      case excepiton: Exception =>
+        excepiton.printStackTrace()
+    }
   }
 
 
-  def analyzer(message: String, lazyConn: LazyConnections, topic: String): Unit = {
+  def analyzer(message: String,
+               lazyConn: LazyConnections,
+               topic: String,
+               stopWords: Array[String],
+               classModels: scala.Predef.Map[scala.Predef.String, scala.Predef.Map[scala.Predef.String, scala.Predef.Map[scala.Predef.String, java.io.Serializable]]],
+               sentimentModels: scala.Predef.Map[scala.Predef.String, scala.Any],
+               keyWordDict: scala.Predef.Map[scala.Predef.String, scala.Predef.Map[scala.Predef.String, scala.Array[scala.Predef.String]]],
+               kyConf: KunyanConf,
+               summaryExtraction: (String, Int)
+                ): Unit = {
 
     val json: Option[Any] = JSON.parseFull(message)
 
@@ -107,83 +200,158 @@ object Scheduler {
 
         val attrId = map.get("attr_id").get.toInt
         val tableName = map.get("key_name").get
-        val rowkey = map.get("pos_name").get
-        val result = DBUtil.query(tableName, rowkey, lazyConn)
+        val rowKey = map.get("pos_name").get
+        val result = DBUtil.query(tableName, rowKey, lazyConn)
 
         //即将增加的状态
         val status = map.get("tag").get
 
         if (null == result) {
-          //        if (result == null || result._1.isEmpty || result._2.isEmpty) {
 
-          println("Get empty data from hbase table! Message :  " + message)
+          BigVLogger.warn("Get empty data from hbase table! Message :  " + message)
           return
         }
 
         attrId match {
 
-          //摩尔金融和雪球平台
+          //摩尔金融平台
           case id if id == 60003 =>
-            println(result._1 + "\n")
 
             status match {
 
               //解析top100阶段的数据
               case "SELECT" =>
-                println("摩尔，状态==>SELECT")
+                println("摩尔，状态==>SELECT" + "\n")
+                BigVLogger.warn("摩尔，状态==>SELECT" + "\n")
                 MoerFinance.parse(result._1, result._2, lazyConn, topic)
+              //                lazyConn.sendTask(topic, StringUtil.getUrlJsonString(Platform.MOER.id, "https://www.moer.com/", 0))
 
               //解析100大V的历史文章
               case "HISTORY" =>
-                println("状态==>HISTORY")
-                MoerBigVHistoryParser.parse(result._1, result._2, lazyConn, topic)
+                println("摩尔，状态==>HISTORY" + "\n")
+                BigVLogger.warn("摩尔，状态==>HISTORY" + "\n")
+                MoerBigVHistoryParser.parse(result._1,
+                  result._2,
+                  lazyConn,
+                  topic,
+                  stopWords,
+                  classModels,
+                  sentimentModels,
+                  keyWordDict,
+                  kyConf,
+                  summaryExtraction)
 
               //解析更新的文章
               case "UPDATE" =>
-                println("状态==>UPDATE")
-                MoerBigVUpdateParser.parse(result._1, result._2, lazyConn, topic)
+                println("摩尔，状态==>UPDATE" + "\n")
+                BigVLogger.warn("摩尔，状态==>UPDATE" + "\n")
+                MoerBigVUpdateParser.parse(result._1,
+                  result._2,
+                  lazyConn,
+                  topic,
+                  stopWords,
+                  classModels,
+                  sentimentModels,
+                  keyWordDict,
+                  kyConf,
+                  summaryExtraction)
 
             }
 
-          //摩尔金融和雪球平台
+          //雪球平台
           case id if id == 60005 =>
-            println(result._1 + "\n")
 
             status match {
 
               //解析top100阶段的数据
               case "SELECT" =>
-                println("雪球，状态==>SELECT")
+                println("雪球，状态==>SELECT" + "\n")
+                BigVLogger.warn("雪球，状态==>SELECT" + "\n")
                 SnowballParser.parse(result._1, result._2, lazyConn, topic)
+              //                lazyConn.sendTask(topic, StringUtil.getUrlJsonString(Platform.SNOW_BALL.id, "https://www.xueqiu.com/", 0))
 
-//              解析100大V的历史文章
+
+              //              解析100大V的历史文章
               case "HISTORY" =>
-                println("状态==>HISTORY")
-                MoerBigVHistoryParser.parse(result._1, result._2, lazyConn, topic)
-//
-//              //解析更新的文章
-//              case "UPDATE" =>
-//                println("状态==>UPDATE")
-//                MoerBigVUpdateParser.parse(result._1, result._2, lazyConn, topic)
-              case _ =>
+                println("雪球，状态==>HISTORY" + "\n")
+                BigVLogger.warn("雪球，状态==>HISTORY" + "\n")
 
+                SnowballHistoryParser.parse(result._1,
+                  result._2,
+                  lazyConn, topic,
+                  stopWords,
+                  classModels,
+                  sentimentModels,
+                  keyWordDict,
+                  kyConf,
+                  summaryExtraction
+                )
+
+              //解析更新的文章
+              case "UPDATE" =>
+                println("雪球，状态==>UPDATE" + "\n")
+                BigVLogger.warn("雪球，状态==>UPDATE" + "\n")
+
+                SnowballUpdateParser.parse(result._1,
+                  result._2,
+                  lazyConn,
+                  topic,
+                  stopWords,
+                  classModels,
+                  sentimentModels,
+                  keyWordDict,
+                  kyConf,
+                  summaryExtraction)
 
             }
+          //中金博客
+          case id if id == 60007 =>
+            println("中金，状态==>UPDATE" + "\n")
+            BigVLogger.warn("中金，状态==>UPDATE" + "\n")
+            status match {
 
-          case _ =>
-            println(attrId.toString)
+              //解析top100阶段的数据
+              case "SELECT" =>
+                println("中金，状态==>SELECT")
 
+                ZhonJinBlogParser.parse(result._1, result._2, lazyConn, topic)
+
+              //解析100大V的历史文章
+              case "HISTORY" =>
+                println("中金，状态==>HISTORY")
+                ZhongJinBlogHistoryParse.parse(result._1, result._2, lazyConn, topic,
+                  kyConf,
+                  stopWords,
+                  classModels,
+                  sentimentModels,
+                  keyWordDict,
+                  summaryExtraction
+                )
+
+              //解析更新的文章
+              case "UPDATE" =>
+                println("中金，状态==>UPDATE")
+                ZhongJinBlogUpdateParse.parse(result._1, result._2, lazyConn, topic,
+                  kyConf,
+                  stopWords,
+                  classModels,
+                  sentimentModels,
+                  keyWordDict,
+                  summaryExtraction)
+
+            }
         }
 
       } catch {
+
         case e: Exception =>
           println(e.printStackTrace())
-          println("json格式不正确" + json)
-      }
+          BigVLogger.error("json格式不正确=>" + json)
 
+      }
     } else {
 
-      println("this source isn't standard json" + message)
+      BigVLogger.error("this message from kafka  isn't standard json =>" + message)
 
     }
 

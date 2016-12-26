@@ -1,15 +1,17 @@
 package com.kunyan.bigv.logger
 
-import org.apache.log4j.{PropertyConfigurator, BasicConfigurator, Logger}
+import com.kunyan.bigv.Scheduler
+import org.apache.log4j.{Logger, PropertyConfigurator}
 
 /**
-  * Created by niujiaojiao on 2016/11/16.
-  */
+ * Created by niujiaojiao on 2016/11/16.
+ *
+ */
 object BigVLogger {
-  val logger = Logger.getLogger("BIGV analyzer")
+  val logger = Logger.getLogger(Scheduler.getClass.getName)
 
-  BasicConfigurator.configure()
-//    PropertyConfigurator.configure("/home/vip/conf/log4j.properties")
+  PropertyConfigurator.configure("/home/bigv/conf/log4j.properties")
+
 
   def exception(e: Exception) = {
     logger.error(e.getLocalizedMessage)
@@ -17,8 +19,8 @@ object BigVLogger {
   }
 
   def error(msg: String): Unit = {
-    println(msg)
-//    logger.error(msg)
+    //    println(msg)
+    logger.error(msg)
   }
 
   def warn(msg: String): Unit = {

@@ -14,6 +14,7 @@ class LazyConnections(createHbaseConnection: () => org.apache.hadoop.hbase.clien
                       createProducer: () => Producer[String, String],
                       createMySQLConnection: () => Connection,
                       createMySQLNewsConnection: () => Connection,
+                      createMySQLVipConnection: () => Connection,
                       createMySQLPS: () => PreparedStatement) extends Serializable {
 
 
@@ -22,6 +23,8 @@ class LazyConnections(createHbaseConnection: () => org.apache.hadoop.hbase.clien
   lazy val mysqlConn = createMySQLConnection()
 
   lazy val mysqlNewsConn = createMySQLNewsConnection()
+
+  lazy val mysqlVipConn = createMySQLVipConnection()
 
   lazy val preparedStatement = createMySQLPS()
 
@@ -98,10 +101,11 @@ object LazyConnections {
       producer
     }
 
+    //连接给算法组计算大V的数据库表，存储文章和用户信息
     val createMySQLConnection = () => {
 
       Class.forName("com.mysql.jdbc.Driver")
-      val connection = DriverManager.getConnection((configFile \ "mysql" \ "url").text, (configFile \ "mysql" \ "username").text, (configFile \ "mysql" \ "password").text)
+      val connection = DriverManager.getConnection((configFile \ "mysqlArticle" \ "url").text, (configFile \ "mysqlArticle" \ "username").text, (configFile \ "mysqlArticle" \ "password").text)
 
       sys.addShutdownHook {
         connection.close()
@@ -110,6 +114,7 @@ object LazyConnections {
       connection
     }
 
+    //连接新闻表
     val createMySQLNewsConnection = () => {
 
       Class.forName("com.mysql.jdbc.Driver")
@@ -122,6 +127,18 @@ object LazyConnections {
       connection
     }
 
+    //连接vip表
+    val createMySQLVipConnection = () => {
+
+      Class.forName("com.mysql.jdbc.Driver")
+      val connection = DriverManager.getConnection((configFile \ "mysqlVip" \ "url").text, (configFile \ "mysqlVip" \ "username").text, (configFile \ "mysqlVip" \ "password").text)
+
+      sys.addShutdownHook {
+        connection.close()
+      }
+
+      connection
+    }
     val createCNFOLPs = () => {
 
       Class.forName("com.mysql.jdbc.Driver")
@@ -192,7 +209,7 @@ object LazyConnections {
       connection.prepareStatement("INSERT INTO article_weibo (user_id, title, retweet, reply, like_count, url, ts) VALUES (?,?,?,?,?,?,?)")
     }
 
-    new LazyConnections(createHbaseConnection, createProducer, createMySQLConnection, createMySQLNewsConnection, createMOERPs)
+    new LazyConnections(createHbaseConnection, createProducer, createMySQLConnection, createMySQLNewsConnection,createMySQLVipConnection, createMOERPs)
 
   }
 

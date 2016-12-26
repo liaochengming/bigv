@@ -1,7 +1,11 @@
 package com.kunyan.bigv.parser.moer
 
+import com.kunyan.bigv.config.Platform
 import com.kunyan.bigv.db.LazyConnections
+import com.kunyan.bigv.logger.BigVLogger
 import com.kunyan.bigv.util.{DBUtil, StringUtil}
+import com.kunyandata.nlpsuit.util.KunyanConf
+import org.apache.hadoop.hbase.client.Get
 import org.jsoup.Jsoup
 
 /**
@@ -17,8 +21,18 @@ object MoerBigVHistoryParser {
   val basePageUrlPart = "http://www.moer.cn/findArticlePageList.htm"
   val baseArticleUrl = "http://www.moer.cn/articleDetails.htm?articleId="
 
-  def parse(url: String, html: String, lazyConn: LazyConnections, topic: String) = {
+  def parse(url: String,
+            html: String,
+            lazyConn: LazyConnections,
+            topic: String,
+            stopWords: Array[String],
+            classModels: scala.Predef.Map[scala.Predef.String, scala.Predef.Map[scala.Predef.String, scala.Predef.Map[scala.Predef.String, java.io.Serializable]]],
+            sentimentModels: scala.Predef.Map[scala.Predef.String, scala.Any],
+            keyWordDict: scala.Predef.Map[scala.Predef.String, scala.Predef.Map[scala.Predef.String, scala.Array[scala.Predef.String]]],
+            kyConf: KunyanConf,
+            summaryExtraction: (String, Int)) = {
 
+    BigVLogger.warn("摩尔 history url => " + url)
 
     try {
 
@@ -27,7 +41,15 @@ object MoerBigVHistoryParser {
       } else if (url.startsWith(basePageUrlPart)) {
         parseArticleUrl(html, lazyConn, topic)
       } else if (url.startsWith(baseArticleUrl)) {
-        parseArticle(url, html, lazyConn)
+        parseArticle(url,
+          html,
+          lazyConn,
+          stopWords,
+          classModels,
+          sentimentModels,
+          keyWordDict,
+          kyConf,
+          summaryExtraction)
       }
 
 
@@ -45,65 +67,152 @@ object MoerBigVHistoryParser {
     val arr = homeUrl.split("=")
     var userId: String = ""
 
-    if (arr.length == 2) {
-      userId = arr(1)
+    try {
+
+      if (arr.length == 2) {
+        userId = arr(1)
+      }
+
+      val doc = Jsoup.parse(html)
+
+      //文章数
+      val articleNum = doc.select("li[id=\"articleLeft\"] span").text()
+
+      //页面数
+      val pageNum = (articleNum.toInt + 9) / 10
+
+      for (page <- 1 to pageNum) {
+
+        //文章列表的url
+        val articleListUrl = basePageUrl.format(userId, page)
+
+        lazyConn.sendTask(topic, StringUtil.getUrlJsonString(Platform.MOER.id, articleListUrl, 0))
+      }
+
+    } catch {
+
+      case e: Exception =>
+        BigVLogger.error("摩尔 history 解析文章最大数出错 ！url => " + homeUrl)
+        e.printStackTrace()
     }
 
-    val doc = Jsoup.parse(html)
-
-    //文章数
-    val articleNum = doc.select("li[id=\"articleLeft\"] span").text()
-
-    //页面数
-    val pageNum = (articleNum.toInt + 9) / 10
-
-    for (page <- 1 to pageNum) {
-
-      //文章列表的url
-      val articleListUrl = basePageUrl.format(userId, page)
-
-      lazyConn.sendTask(topic, StringUtil.getUrlJsonString(60003, articleListUrl, 0))
-    }
   }
 
 
   //解析大V文章的url
   def parseArticleUrl(html: String, lazyConn: LazyConnections, topic: String) = {
 
-    val doc = Jsoup.parse(html)
-    val elements = doc.select("a[title]")
+    try{
 
-    for (index <- 0 until elements.size()) {
+      val doc = Jsoup.parse(html)
+      val elements = doc.select("a[title]")
 
-      val element = elements.get(index)
-      val href = element.attr("href")
-      val url = host + href
-      lazyConn.sendTask(topic, StringUtil.getUrlJsonString(60003, url, 0))
+      for (index <- 0 until elements.size()) {
+
+        val element = elements.get(index)
+        val href = element.attr("href")
+        val url = host + href
+        lazyConn.sendTask(topic, StringUtil.getUrlJsonString(Platform.MOER.id, url, 0))
+
+      }
+
+    }catch {
+
+      case e:Exception =>
+        BigVLogger.error("摩尔 history 解析文章列表页出错! ")
+        e.printStackTrace()
 
     }
   }
 
   //解析文章
-  def parseArticle(url: String, html: String, lazyConn: LazyConnections) = {
+  def parseArticle(url: String,
+                   html: String,
+                   lazyConn: LazyConnections,
+                   stopWords: Array[String],
+                   classModels: scala.Predef.Map[scala.Predef.String, scala.Predef.Map[scala.Predef.String, scala.Predef.Map[scala.Predef.String, java.io.Serializable]]],
+                   sentimentModels: scala.Predef.Map[scala.Predef.String, scala.Any],
+                   keyWordDict: scala.Predef.Map[scala.Predef.String, scala.Predef.Map[scala.Predef.String, scala.Array[scala.Predef.String]]],
+                   kyConf: KunyanConf,
+                   summaryExtraction: (String, Int)
+                    ) = {
 
-    val platform = "60003"
-    val doc = Jsoup.parse(html)
-    val timestamp = DBUtil.getLongTimeStamp(doc.select("p.summary-footer i:matches(时间)").text.substring(3)).toString
-    val title = doc.select("h2.article-title").text()
-    var text: String = ""
-    val elements = doc.select("div[class=\"article-daily article-daily-first\"] p:not([style],[class])")
+    try{
 
-    if (elements.size() == 0) {
+      val cstmt = lazyConn.mysqlVipConn.prepareCall("{call proc_InsertMoerNewArticle(?,?,?,?,?,?,?,?)}")
 
-      DBUtil.insertHbase("bigv_article", url, platform, "付费文章", title, timestamp, lazyConn)
+      val cstmtDigest = lazyConn.mysqlVipConn.prepareCall("{call proc_InsertDigestMoer(?,?,?,?,?,?)}")
 
-    } else {
+      val newsMysqlStatement = lazyConn.mysqlNewsConn.prepareStatement("INSERT INTO news_info (n_id, type, platform, title, url, news_time, industry, section, stock, digest, summary, sentiment, updated_time, source)" +
+        " VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)")
 
-      for (index <- 0 until elements.size()) {
-        text = text + elements.get(index).text() + " "
+
+
+      val platform = Platform.MOER.id.toString
+      val doc = Jsoup.parse(html)
+      val uid = doc.select("a.follow").attr("uid")
+      val timeStamp = DBUtil.getLongTimeStamp(doc.select("p.summary-footer i:matches(时间)").text.substring(3), "yyyy年MM月dd日 HH:mm:ss").toString
+      val title = doc.select("h2.article-title").text()
+      val read = StringUtil.getMatch(doc.select("p.summary-footer i:contains(浏览)").text(),"(\\d+)")
+      var buy = 0
+      var price = 0.0
+      var text: String = ""
+      val elements = doc.select("div[class=\"article-daily article-daily-first\"] p:not([class])")
+
+      if (elements.size() == 0) {
+
+        buy = doc.select("p.summary-footer i.red").text().toInt
+        price= doc.select("span[class=\"red moerb-icon\"] strong").text().toDouble
+        DBUtil.insertHbase("news_detail", url, "付费文章", timeStamp, platform, title, lazyConn)
+
+      } else {
+
+        text=elements.text()
+
+        if(text != ""){
+
+          BigVLogger.warn("写入表的数据 => " + url + "  timeStamp => " + timeStamp)
+          println("写入表的数据 => " + url + "  timeStamp => " + timeStamp)
+
+          val table = lazyConn.getTable("news_detail")
+          val g = new Get(url.getBytes)
+          val result = table.get(g)
+
+          if (result.isEmpty) {
+
+            val insTrue = DBUtil.insertCall(cstmt, uid, title, read, buy, price,url, timeStamp, "")
+
+            if(insTrue){
+
+              DBUtil.inputDataToSql(lazyConn,
+                cstmtDigest,
+                newsMysqlStatement,
+                url,
+                title,
+                timeStamp.toLong,
+                text,
+                Platform.OLD_MOER.id,
+                Platform.OLD_MOER.toString,
+                stopWords,
+                classModels,
+                sentimentModels,
+                keyWordDict,
+                kyConf,
+                summaryExtraction)
+
+              DBUtil.insertHbase("news_detail", url, text, timeStamp, platform, title, lazyConn)
+            }
+          }
+        }
       }
 
-      DBUtil.insertHbase("bigv_article", url, platform, text.toString, title, timestamp, lazyConn)
+    }catch {
+
+      case e:Exception =>
+
+        BigVLogger.error("摩尔 解析文章出错！url => " + url)
+        e.printStackTrace()
+
     }
 
   }

@@ -10,7 +10,7 @@ ivyScala := ivyScala.value map { _.copy(overrideScalaVersion = true) }
 
 resolvers += "kunyanData" at "http://61.147.114.81:9023/nexus/content/groups/kunyanData/"
 
-libraryDependencies += "com.kunyan" % "nlpsuit-package" % "0.2.6.6"
+libraryDependencies += "com.kunyan" % "nlpsuit-package" % "0.2.8.9"
 
 libraryDependencies += "org.ansj" % "ansj_seg" % "0.9"
 
