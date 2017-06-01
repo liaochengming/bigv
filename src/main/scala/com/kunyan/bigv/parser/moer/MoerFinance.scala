@@ -45,7 +45,7 @@ object MoerFinance {
 
     try {
 
-      val mysqlConnection = lazyConn.mysqlConn
+      val mysqlConnection = lazyConn.mysqlVipConn
       mysqlConnection.setAutoCommit(true)
 
       val articleSql = mysqlConnection.prepareStatement("insert into  moer_bigv_article_info(articleId,authorId,buy,view,time,likeInfo, priceInfo,profit) VALUES (?,?,?,?,?,?,?,?)")
@@ -69,27 +69,19 @@ object MoerFinance {
           buyCnt = "0"
         }
 
-        val tags = doc.getElementsByClass("summary-footer").first.getElementsByTag("span").first.getElementsByTag("i")
-        val readCnt = tags.get(0).text.substring(3).replaceAll("次", "")
-        val timeStamp = (DBUtil.getTimeStamp(tags.get(1).text.substring(3), "yyyy年MM月dd日 HH:mm:ss") / 1000).toInt.toString
+        val tags = doc.select("p.article-other-info span")
+        val readCnt = tags.get(1).text.substring(3).replaceAll("次", "")
+        val timeStamp = (DBUtil.getTimeStamp(tags.get(0).text.substring(3), "yyyy年MM月dd日 HH:mm:ss") / 1000).toInt.toString
         val likeCnt = doc.getElementsByClass("article-handler").first().getElementsByTag("b").text
         var price = "0"
-        val priceTag = doc.getElementsByAttributeValue("class", "float-r goOrder").first
+        val priceTag = doc.select("span.now-price")
 
-        if (priceTag != null){
-          price = priceTag.getElementsByTag("strong").first.text
+        if (priceTag.size() != 0){
+          price = priceTag.first().text()
         }
 
-        var profit = "0"
-        if (doc.toString.contains("total_yield")) {
-
-          val total = doc.toString.split("total_yield\":")
-
-          if ((total.length >= 2) && doc.toString.contains("article_type")) {
-            profit = total(1).split("article_type")(0).split(",")(0).replace("\"", "")
-          }
-
-        }
+        val profit = "0"
+//
         //文章信息
         DBUtil.insert(articleSql, articleId, authorId, buyCnt, readCnt, timeStamp, likeCnt, price, profit)
 

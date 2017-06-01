@@ -4,12 +4,12 @@ import java.sql.{CallableStatement, PreparedStatement}
 import java.text.SimpleDateFormat
 import java.util.Locale
 
+import com.hankcs.hanlp.HanLP
 import com.ibm.icu.text.CharsetDetector
 import com.kunyan.bigv.db.LazyConnections
 import com.kunyan.bigv.logger.BigVLogger
 import com.kunyandata.nlpsuit.classification.Bayes
 import com.kunyandata.nlpsuit.sentiment.PredictWithNb
-import com.kunyandata.nlpsuit.summary.SummaryExtractor
 import com.kunyandata.nlpsuit.util.{KunyanConf, TextPreprocessing}
 import org.apache.hadoop.hbase.client.{Get, Put}
 import org.apache.hadoop.hbase.util.Bytes
@@ -65,10 +65,13 @@ object DBUtil {
       val content = table.get(get).getValue(Bytes.toBytes("basic"), Bytes.toBytes("content"))
 
       if(url == null){
-        println("url == null")
+        println("hbase url == null")
       }
       if(content == null ){
-        println("content == null")
+        println("hbase content == null")
+      }
+      if(content == "" ){
+        println("hbase content == null")
       }
 
       if (url == null && content == null) {
@@ -107,7 +110,7 @@ object DBUtil {
     val put = new Put(rowKey.getBytes)
 
     put.addColumn("basic".getBytes, "content".getBytes, content.getBytes)
-    put.addColumn("basic".getBytes, "publish_time".getBytes, publish_time.getBytes)
+    put.addColumn("basic".getBytes, "time".getBytes, publish_time.getBytes)
     put.addColumn("basic".getBytes, "platform".getBytes, platform.getBytes)
     put.addColumn("basic".getBytes, "title".getBytes, title.getBytes)
 
@@ -225,7 +228,8 @@ object DBUtil {
                      platform:Int,
                      platformStr:String,
                      stopWords: Array[String],
-                     classModels: scala.Predef.Map[scala.Predef.String, scala.Predef.Map[scala.Predef.String, scala.Predef.Map[scala.Predef.String, java.io.Serializable]]],                     sentimentModels: scala.Predef.Map[scala.Predef.String, scala.Any],
+                     classModels: scala.Predef.Map[scala.Predef.String, scala.Predef.Map[scala.Predef.String, scala.Predef.Map[scala.Predef.String, java.io.Serializable]]],
+                     sentimentModels: scala.Predef.Map[scala.Predef.String, scala.Any],
                      keyWordDict: scala.Predef.Map[scala.Predef.String, scala.Predef.Map[scala.Predef.String, scala.Array[scala.Predef.String]]],
                      kyConf: KunyanConf,
                      summaryExtraction: (String, Int)
@@ -377,7 +381,8 @@ object DBUtil {
 
     try {
 
-      SummaryExtractor.extractSummary(content, extractSummaryConfiguration._1, extractSummaryConfiguration._2)
+      //SummaryExtractor.extractSummary(content, extractSummaryConfiguration._1, extractSummaryConfiguration._2)
+      HanLP.getSummary(content,50)
     } catch {
 
       case e: Exception =>

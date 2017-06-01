@@ -10,7 +10,8 @@ import org.apache.log4j.{Logger, PropertyConfigurator}
 object BigVLogger {
   val logger = Logger.getLogger(Scheduler.getClass.getName)
 
-  PropertyConfigurator.configure("/home/bigv/conf/log4j.properties")
+  PropertyConfigurator.configure("/home/liaochengming/bigv/conf/log4j.properties")
+//  PropertyConfigurator.configure("C:\\Users\\lcm\\Documents\\conf\\log4j.properties")
 
 
   def exception(e: Exception) = {

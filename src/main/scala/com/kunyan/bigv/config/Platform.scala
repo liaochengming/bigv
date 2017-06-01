@@ -2,6 +2,8 @@ package com.kunyan.bigv.config
 
 /**
   * Created by niujiaojiao on 2016/11/16.
+ *
+ * OLD为旧版vip的平台号，保持不变
   */
   object Platform extends Enumeration {
 

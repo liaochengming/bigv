@@ -153,21 +153,21 @@ object MoerBigVHistoryParser {
       val uid = doc.select("a.follow").attr("uid")
       val timeStamp = DBUtil.getLongTimeStamp(doc.select("p.summary-footer i:matches(时间)").text.substring(3), "yyyy年MM月dd日 HH:mm:ss").toString
       val title = doc.select("h2.article-title").text()
-      val read = StringUtil.getMatch(doc.select("p.summary-footer i:contains(浏览)").text(),"(\\d+)")
+      val read = StringUtil.getMatch(doc.select("p.article-other-info span:contains(浏览)").text(),"(\\d+)")
       var buy = 0
       var price = 0.0
       var text: String = ""
-      val elements = doc.select("div[class=\"article-daily article-daily-first\"] p:not([class])")
+      val tryRead = doc.select("h3.sec-title").text()
 
-      if (elements.size() == 0) {
+      if (tryRead == "试读") {
 
-        buy = doc.select("p.summary-footer i.red").text().toInt
-        price= doc.select("span[class=\"red moerb-icon\"] strong").text().toDouble
+        buy = doc.select("p.article-other-info i.red").text().replace(" ","").toInt
+        price= doc.select("span.now-price").first().text().toDouble
         DBUtil.insertHbase("news_detail", url, "付费文章", timeStamp, platform, title, lazyConn)
 
       } else {
 
-        text=elements.text()
+        text=doc.select("div[class=\"article-daily article-daily-first\"] p").text()
 
         if(text != ""){
 

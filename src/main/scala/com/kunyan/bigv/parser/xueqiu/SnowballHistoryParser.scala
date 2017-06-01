@@ -37,24 +37,24 @@ object SnowballHistoryParser {
     val pattern = Pattern.compile("https://xueqiu.com/(\\d+)$")
     val result = pattern.matcher(url)
 
-    if(result.find()){
+    if (result.find()) {
 
       //解析出用户文章页面的最大页面值
       val userId = result.group(1)
-      parserMaxPage(userId,html,lazyConn,topic)
+      parserMaxPage(userId, html, lazyConn, topic)
 
     }
 
-    if(url.startsWith(articleListUrlPart)){
+    if (url.startsWith(articleListUrlPart)) {
 
       //解析页面上的文章url
-      parserArticleUrl(html,lazyConn,topic)
+      parserArticleUrl(html, lazyConn, topic)
     }
 
     val pattern2 = Pattern.compile("https://xueqiu.com/(\\d+)/")
     val result2 = pattern2.matcher(url)
 
-    if(result2.find()){
+    if (result2.find()) {
 
       //解析出用户文章页面的最大页面值
       parserArticle(url,
@@ -72,7 +72,7 @@ object SnowballHistoryParser {
   }
 
   //解析最大页面数
-  def parserMaxPage(userId: String,html: String, lazyConn: LazyConnections, topic: String)={
+  def parserMaxPage(userId: String, html: String, lazyConn: LazyConnections, topic: String) = {
 
     try {
 
@@ -80,25 +80,25 @@ object SnowballHistoryParser {
 
       val doc = Jsoup.parse(html)
       val data = doc.body().toString
-      val result = StringUtil.getMatch(data,"\"maxPage\":(\\d+)")
+      val result = StringUtil.getMatch(data, "\"maxPage\":(\\d+)")
 
-      if(null != result && result.toInt > 1){
+      if (null != result && result.toInt > 1) {
 
-        var ArticleListUrl:String =""
+        var ArticleListUrl: String = ""
 
-        for(num <- 1 to result.toInt){
+        for (num <- 1 to result.toInt) {
 
-          ArticleListUrl = baseArticleListUrl.format(userId,num)
+          ArticleListUrl = baseArticleListUrl.format(userId, num)
           lazyConn.sendTask(topic, StringUtil.getUrlJsonString(Platform.SNOW_BALL.id, ArticleListUrl, 0))
 
         }
-      }else{
-        lazyConn.sendTask(topic, StringUtil.getUrlJsonString(Platform.SNOW_BALL.id, baseArticleListUrl.format(userId,1), 0))
+      } else {
+        lazyConn.sendTask(topic, StringUtil.getUrlJsonString(Platform.SNOW_BALL.id, baseArticleListUrl.format(userId, 1), 0))
       }
 
-    }catch {
+    } catch {
 
-      case exception:Exception =>
+      case exception: Exception =>
         BigVLogger.error("雪球 history 解析最大页面数出错！ userId => " + userId)
         exception.printStackTrace()
 
@@ -106,34 +106,34 @@ object SnowballHistoryParser {
   }
 
   //解析文章列表页面的文章url
-  def parserArticleUrl(html:String, lazyConn: LazyConnections, topic: String)={
+  def parserArticleUrl(html: String, lazyConn: LazyConnections, topic: String) = {
 
     val xueqiuHost = "https://xueqiu.com"
 
-    try{
+    try {
 
       val json = new JSONObject(html)
       val jsonArr = json.getJSONArray("statuses")
 
-      for(index <- 0 until jsonArr.length()){
+      for (index <- 0 until jsonArr.length()) {
 
         val articleInfo = jsonArr.getJSONObject(index)
         val target = articleInfo.getString("target")
         val articleUrl = xueqiuHost + target
 
         val checkUserSql = lazyConn.mysqlVipConn.prepareStatement("select * from snowball_article_black_list where url = ?")
-        checkUserSql.setString(1,articleUrl)
+        checkUserSql.setString(1, articleUrl)
         val result = checkUserSql.executeQuery()
 
-        if(!result.next()){
+        if (!result.next()) {
           lazyConn.sendTask(topic, StringUtil.getUrlJsonString(Platform.SNOW_BALL.id, articleUrl, 0))
         }
 
       }
 
-    }catch {
+    } catch {
 
-      case exception:Exception=>
+      case exception: Exception =>
         BigVLogger.error("雪球 history 解析文章列表页面出错！")
         exception.printStackTrace()
 
@@ -154,7 +154,6 @@ object SnowballHistoryParser {
 
     val tableName = "news_detail"
     val platform = Platform.SNOW_BALL.id.toString
-    //val original = "0"
 
     val cstmt = lazyConn.mysqlVipConn.prepareCall("{call proc_InsertSnowBallNewArticle(?,?,?,?,?,?,?)}")
 
@@ -164,7 +163,7 @@ object SnowballHistoryParser {
       " VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)")
 
     val recordBlackUrl = lazyConn.mysqlVipConn.prepareStatement("insert into snowball_article_black_list(url) VALUES (?)")
-    try{
+    try {
 
       val doc = Jsoup.parse(html)
       val isRaw = doc.select("div.status-retweet").isEmpty
@@ -177,30 +176,29 @@ object SnowballHistoryParser {
       var content = ""
       var retweeted = ""
 
-      if(isRaw){
+      if (isRaw) {
 
         //原创
         retweeted = "1"
         title = doc.select("div.status-content h1").text()
         content = doc.select("div.status-content div.detail").text()
 
-      }else{
+      } else {
 
         //转载
         retweeted = "0"
         title = screeName + "：的观点"
-        content = doc.select("div.status-content").get(0).text().replace("查看对话","")
+        content = doc.select("div.status-content").get(0).text().replace("查看对话", "")
 
       }
 
-      if(title == "" || title.length > 200){
+      if (title == "" || title.length > 200) {
         title = screeName + ":的观点"
       }
 
-      if(content != ""){
+      if (content != "") {
 
         BigVLogger.warn("写入表的数据 => " + url + "  timeStamp => " + time.toLong)
-        println("写入表的数据 => " + url + "  timeStamp => " + time.toLong)
 
         val table = lazyConn.getTable(tableName)
         val g = new Get(url.getBytes)
@@ -210,7 +208,7 @@ object SnowballHistoryParser {
 
           val insTrue = DBUtil.insertCall(cstmt, uid, title, retweet, reply, url, time.toLong, "")
 
-          if(insTrue){
+          if (insTrue) {
 
             DBUtil.inputDataToSql(lazyConn,
               cstmtDigest,
@@ -232,15 +230,15 @@ object SnowballHistoryParser {
           }
         }
 
-      }else{
+      } else {
 
         DBUtil.insert(recordBlackUrl, url)
       }
 
-    }catch {
+    } catch {
 
-      case exception:Exception=>
-        BigVLogger.error("雪球 解析文章出错！url => "+ url )
+      case exception: Exception =>
+        BigVLogger.error("雪球 解析文章出错！url => " + url)
         exception.printStackTrace()
 
     }

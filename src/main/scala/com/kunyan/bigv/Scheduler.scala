@@ -33,7 +33,7 @@ object Scheduler {
         .setAppName("BIGV")
         .set("spark.serializer", "org.apache.spark.serializer.KryoSerializer")
         .set("spark.kryoserializer.buffer.max", "2000")
-      //        .setMaster("local")
+      //.setMaster("local")
 
       val ssc = new StreamingContext(sparkConf, Seconds(args(1).toInt))
 
@@ -59,10 +59,10 @@ object Scheduler {
       val sentiModels = PredictWithNb.init(sentiPath)
       val keyWordDict = Bayes.initGrepDicts(keyWordDictPath)
 
-      val stopWordsBr = ssc.sparkContext.broadcast(stopWords)
-      val classModelsBr = ssc.sparkContext.broadcast(classModels)
+      //val stopWordsBr = ssc.sparkContext.broadcast(stopWords)
+      //val classModelsBr = ssc.sparkContext.broadcast(classModels)
       val sentiModelsBr = ssc.sparkContext.broadcast(sentiModels)
-      val keyWordDictBr = ssc.sparkContext.broadcast(keyWordDict)
+      //val keyWordDictBr = ssc.sparkContext.broadcast(keyWordDict)
 
       val summaryExtraction = ((configFile \ "summaryConfiguration" \ "ip").text, (configFile \ "summaryConfiguration" \ "port").text.toInt)
 
@@ -74,63 +74,40 @@ object Scheduler {
       LogManager.getRootLogger.setLevel(Level.WARN)
 
       //摩尔的topic
-      val moerReceiveTopic = (configFile \ "kafka" \ "moerreceive").text
-      val moerSendTopic = (configFile \ "kafka" \ "moersend").text
-      val moerTopicsSet = Set[String](moerReceiveTopic)
+      val moerReceiveTopic_s = (configFile \ "kafka" \ "moerreceive_s").text
+      val moerReceiveTopic_h = (configFile \ "kafka" \ "moerreceive_h").text
+      val moerReceiveTopic_u = (configFile \ "kafka" \ "moerreceive_u").text
+      val moerSendTopic_s = (configFile \ "kafka" \ "moersend_s").text
+      val moerSendTopic_h = (configFile \ "kafka" \ "moersend_h").text
+      val moerSendTopic_u = (configFile \ "kafka" \ "moersend_u").text
+      val moerTopicsSet = Set[String](moerReceiveTopic_s,moerReceiveTopic_h,moerReceiveTopic_u)
+      val moerSendTopic = (moerSendTopic_s, moerSendTopic_h, moerSendTopic_u)
 
       //雪球的topic
-      val xueQiuReceiveTopic = (configFile \ "kafka" \ "xueqiureceive").text
-      val xueQiuSendTopic = (configFile \ "kafka" \ "xueqiusend").text
-      val xueQiuTopicsSet = Set[String](xueQiuReceiveTopic)
-
-      //中金的topic
-      val zhongJinReceiveTopic = (configFile \ "kafka" \ "zhongjinreceive").text
-      val zhongJinSendTopic = (configFile \ "kafka" \ "zhongjinsend").text
-      val zhongJinTopicsSet = Set[String](zhongJinReceiveTopic)
+      val xueQiuReceiveTopic_s = (configFile \ "kafka" \ "xueqiureceive_s").text
+      val xueQiuReceiveTopic_h = (configFile \ "kafka" \ "xueqiureceive_h").text
+      val xueQiuReceiveTopic_u = (configFile \ "kafka" \ "xueqiureceive_u").text
+      val xueQiuSendTopic_s = (configFile \ "kafka" \ "xueqiusend_s").text
+      val xueQiuSendTopic_h = (configFile \ "kafka" \ "xueqiusend_h").text
+      val xueQiuSendTopic_u = (configFile \ "kafka" \ "xueqiusend_u").text
+      val xueQiuTopicsSet = Set[String](xueQiuReceiveTopic_s,xueQiuReceiveTopic_h,xueQiuReceiveTopic_u)
+      val xueQiuSendTopic = (xueQiuSendTopic_s, xueQiuSendTopic_h, xueQiuSendTopic_u)
 
       val kafkaParams = Map[String, String]("metadata.broker.list" -> brokerList,
       "group.id" -> groupId)
 
       //摩尔的信息
       val moerMessages = KafkaUtils.createDirectStream[String, String, StringDecoder, StringDecoder](
-      ssc, kafkaParams, moerTopicsSet)
+            ssc, kafkaParams, moerTopicsSet)
 
       //摩尔的信息处理
       moerMessages.map(_._2).filter(_.length > 0).foreachRDD(rdd => {
         //
         rdd.foreach(message => {
-          //
-          println("get kafka moerTopic message: " + message)
-          BigVLogger.warn("get kafka moerTopic message: " + message)
 
           analyzer(message,
             connectionsBr.value,
             moerSendTopic,
-            stopWordsBr.value,
-            classModelsBr.value,
-            sentiModelsBr.value,
-            keyWordDictBr.value,
-            kyConf,
-            summaryExtraction)
-
-        })
-      })
-
-      //雪球的信息
-      val xueQiuMessages = KafkaUtils.createDirectStream[String, String, StringDecoder, StringDecoder](
-      ssc, kafkaParams, xueQiuTopicsSet)
-
-      //    雪球的信息处理
-      xueQiuMessages.map(_._2).filter(_.length > 0).foreachRDD(rdd => {
-        //
-        rdd.foreach(message => {
-          //
-          println("get kafka xueqiuTopic message: " + message)
-          BigVLogger.warn("get kafka xueqiuTopic message: " + message)
-
-          analyzer(message,
-            connectionsBr.value,
-            xueQiuSendTopic,
             stopWords,
             classModels,
             sentiModelsBr.value,
@@ -141,32 +118,32 @@ object Scheduler {
         })
       })
 
+      //雪球的信息
+      //      val xueQiuMessages = KafkaUtils.createDirectStream[String, String, StringDecoder, StringDecoder](
+      //      ssc, kafkaParams, xueQiuTopicsSet)
+      //
+      //      //    雪球的信息处理
+      //      xueQiuMessages.map(_._2).filter(_.length > 0).foreachRDD(rdd => {
+      //        //
+      //        rdd.foreach(message => {
+      //          //
+      //          println("get kafka xueqiuTopic message: " + message)
+      //          analyzer(message,
+      //            connectionsBr.value,
+      //            xueQiuSendTopic,
+      //            stopWords,
+      //            classModels,
+      //            sentiModelsBr.value,
+      //            keyWordDict,
+      //            kyConf,
+      //            summaryExtraction)
+      //
+      //        })
+      //      })
+
       //中金的信息
-      val zhongJinMessages = KafkaUtils.createDirectStream[String, String, StringDecoder, StringDecoder](
-      ssc, kafkaParams, zhongJinTopicsSet)
-
-      //中金的信息处理
-
-      zhongJinMessages.map(_._2).filter(_.length > 0).foreachRDD(rdd => {
-        //
-
-        rdd.foreach(message => {
-          //
-          println("get kafka zhongjinTopic message: " + message)
-          BigVLogger.warn("get kafka zhongjinTopic message: " + message)
-
-          analyzer(message,
-            connectionsBr.value,
-            zhongJinSendTopic,
-            stopWordsBr.value,
-            classModelsBr.value,
-            sentiModelsBr.value,
-            keyWordDictBr.value,
-            kyConf,
-            summaryExtraction)
-
-        })
-      })
+      //      val zhongJinMessages = KafkaUtils.createDirectStream[String, String, StringDecoder, StringDecoder](
+      //      ssc, kafkaParams, zhongJinTopicsSet)
 
       ssc.start()
       ssc.awaitTermination()
@@ -180,7 +157,7 @@ object Scheduler {
 
   def analyzer(message: String,
                lazyConn: LazyConnections,
-               topic: String,
+               topic: (String, String, String),
                stopWords: Array[String],
                classModels: scala.Predef.Map[scala.Predef.String, scala.Predef.Map[scala.Predef.String, scala.Predef.Map[scala.Predef.String, java.io.Serializable]]],
                sentimentModels: scala.Predef.Map[scala.Predef.String, scala.Any],
@@ -223,7 +200,7 @@ object Scheduler {
               case "SELECT" =>
                 println("摩尔，状态==>SELECT" + "\n")
                 BigVLogger.warn("摩尔，状态==>SELECT" + "\n")
-                MoerFinance.parse(result._1, result._2, lazyConn, topic)
+                MoerFinance.parse(result._1, result._2, lazyConn, topic._1)
               //                lazyConn.sendTask(topic, StringUtil.getUrlJsonString(Platform.MOER.id, "https://www.moer.com/", 0))
 
               //解析100大V的历史文章
@@ -233,7 +210,7 @@ object Scheduler {
                 MoerBigVHistoryParser.parse(result._1,
                   result._2,
                   lazyConn,
-                  topic,
+                  topic._2,
                   stopWords,
                   classModels,
                   sentimentModels,
@@ -248,7 +225,7 @@ object Scheduler {
                 MoerBigVUpdateParser.parse(result._1,
                   result._2,
                   lazyConn,
-                  topic,
+                  topic._3,
                   stopWords,
                   classModels,
                   sentimentModels,
@@ -265,20 +242,15 @@ object Scheduler {
 
               //解析top100阶段的数据
               case "SELECT" =>
-                println("雪球，状态==>SELECT" + "\n")
-                BigVLogger.warn("雪球，状态==>SELECT" + "\n")
-                SnowballParser.parse(result._1, result._2, lazyConn, topic)
-              //                lazyConn.sendTask(topic, StringUtil.getUrlJsonString(Platform.SNOW_BALL.id, "https://www.xueqiu.com/", 0))
+                SnowballParser.parse(result._1, result._2, lazyConn, topic._1)
 
 
-              //              解析100大V的历史文章
+              //解析100大V的历史文章
               case "HISTORY" =>
-                println("雪球，状态==>HISTORY" + "\n")
-                BigVLogger.warn("雪球，状态==>HISTORY" + "\n")
-
                 SnowballHistoryParser.parse(result._1,
                   result._2,
-                  lazyConn, topic,
+                  lazyConn,
+                  topic._2,
                   stopWords,
                   classModels,
                   sentimentModels,
@@ -290,12 +262,10 @@ object Scheduler {
               //解析更新的文章
               case "UPDATE" =>
                 println("雪球，状态==>UPDATE" + "\n")
-                BigVLogger.warn("雪球，状态==>UPDATE" + "\n")
-
                 SnowballUpdateParser.parse(result._1,
                   result._2,
                   lazyConn,
-                  topic,
+                  topic._3,
                   stopWords,
                   classModels,
                   sentimentModels,
@@ -314,12 +284,12 @@ object Scheduler {
               case "SELECT" =>
                 println("中金，状态==>SELECT")
 
-                ZhonJinBlogParser.parse(result._1, result._2, lazyConn, topic)
+                ZhonJinBlogParser.parse(result._1, result._2, lazyConn, topic._1)
 
               //解析100大V的历史文章
               case "HISTORY" =>
                 println("中金，状态==>HISTORY")
-                ZhongJinBlogHistoryParse.parse(result._1, result._2, lazyConn, topic,
+                ZhongJinBlogHistoryParse.parse(result._1, result._2, lazyConn, topic._2,
                   kyConf,
                   stopWords,
                   classModels,
@@ -331,7 +301,7 @@ object Scheduler {
               //解析更新的文章
               case "UPDATE" =>
                 println("中金，状态==>UPDATE")
-                ZhongJinBlogUpdateParse.parse(result._1, result._2, lazyConn, topic,
+                ZhongJinBlogUpdateParse.parse(result._1, result._2, lazyConn, topic._3,
                   kyConf,
                   stopWords,
                   classModels,

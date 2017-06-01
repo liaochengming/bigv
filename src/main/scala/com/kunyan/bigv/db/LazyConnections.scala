@@ -33,8 +33,6 @@ class LazyConnections(createHbaseConnection: () => org.apache.hadoop.hbase.clien
 
   def sendTask(topic: String, value: String): Unit = {
 
-    println(value)
-
     val message = new KeyedMessage[String, String](topic, value)
 
     try {
@@ -139,6 +137,7 @@ object LazyConnections {
 
       connection
     }
+
     val createCNFOLPs = () => {
 
       Class.forName("com.mysql.jdbc.Driver")

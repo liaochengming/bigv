@@ -82,6 +82,7 @@ object SnowballParser {
 
               val sendInfo = "https://xueqiu.com/friendships/groups/members.json?page=" + k + "&uid=" + firstId + "&gid=0"
               lazyConn.sendTask(topic, StringUtil.getUrlJsonString(Platform.SNOW_BALL.id, sendInfo, 0)) //发送url
+              println("\n" + "\n")
 
             }
           }
@@ -142,6 +143,8 @@ object SnowballParser {
 
                 lazyConn.sendTask(topic, StringUtil.getUrlJsonString(Platform.SNOW_BALL.id, articleListUrl, 0))
                 lazyConn.sendTask(topic, StringUtil.getUrlJsonString(Platform.SNOW_BALL.id, sendUrl, 0)) //发送url
+                println("\n" + "\n")
+
               }
             }
 
@@ -348,7 +351,7 @@ object SnowballParser {
   def isFourMonthAgo(createdAt: Long): Boolean = {
 
     val currentTime = System.currentTimeMillis()
-    currentTime - createdAt >  5270400000L
+    currentTime - createdAt >  2*30*24*60*60*1000L
 
   }
 

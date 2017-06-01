@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="SBT: com.hankcs:hanlp:portable-1.3.2:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/com.hankcs/hanlp/jars/hanlp-portable-1.3.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
