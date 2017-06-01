@@ -1,0 +1,381 @@
+<!DOCTYPE html><html><head><!--变量定义--><!--head 里的 meta 标签--><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta charset="utf-8"><meta property="qc:admins" content="10210420621156375"><meta name="renderer" content="webkit"><meta name="keywords" content="雪球，实时行情，股票，基金，ETF，分级基金，理财，可转债，交易，价值投资，投资，美股，港股，A股，社交网络"><meta name="description" content="雪球是一个投资者的社交网络，给投资者提供跨市场、跨品种的数据查询、新闻订阅和互动交流服务，目前已覆盖A股、港股、美股市场。"><link rel="icon" type="image/png" href="https://assets.imedao.com/images/favicon.png"><!--标题--><title>余晓光: live.me的直播有些收获，看会议纪要还是尝试走大V模式。News Republic被清理大师强推一下增加了覆盖，以前... - 雪球</title><!--默认样式--><!--IE8 支持 media query 需要跨域读取 css 内容，暂时不做支持。--><link rel="stylesheet" href="https://assets.imedao.com/style/common/base-39d7fe.css"><!--默认加载编辑器相关 css--><link href="https://assets.imedao.com/style/widget/umeditor/editor-49abf5.css" rel="stylesheet"><link rel="stylesheet" href="https://assets.imedao.com/style/pages/sns/TSNB.single-9ee729.css"><!--默认脚本--><script src="https://assets.imedao.com/js/xdomain-0.6.15-575cd5.js"></script><script>xdomain.slaves({
+  'https://xueqiu.com': '/proxy2.html',
+  'https://im0.xueqiu.com': '/proxy2.html',
+  'https://im1.xueqiu.com': '/proxy2.html',
+  'https://im2.xueqiu.com': '/proxy2.html',
+  'https://im3.xueqiu.com': '/proxy2.html',
+  'https://im4.xueqiu.com': '/proxy2.html',
+  'https://im5.xueqiu.com': '/proxy2.html',
+  'https://im6.xueqiu.com': '/proxy2.html',
+  'https://im7.xueqiu.com': '/proxy2.html',
+  'https://im8.xueqiu.com': '/proxy2.html',
+  'https://im9.xueqiu.com': '/proxy2.html'
+});</script><script src="https://assets.imedao.com/js/common/lib-e9c317.js"></script><script src="https://assets.imedao.com/js/config-451cd4.js"></script><script>//如果没有 JSON 对象，就加载
+if (!window.JSON || !window.JSON.stringify) {
+  document.writeln('<script src="https://assets.imedao.com/js/common/json-b459a8.js"><\/script>');
+}
+SNB.staticDomain.init('https://assets.imedao.com');
+SNB.currentUser = JSON.parse(decodeURIComponent('%7B%22isGuest%22%3Atrue%7D'));
+SNB.env = "production";</script></head><body class=""><div id="head"><div class="grid"><div class="col col-12-2"><div id="logo"><a href="/" title="返回我的首页"><img src="https://assets.imedao.com/images/logos/logo.2015.png" alt="雪球" class="logo-type"><img src="https://assets.imedao.com/images/logos/logotype.2015.png" alt="雪球"></a></div></div><div class="col col-12-7"><div id="nav-logined" style="display:none" class="nav-logined"><ul class="nav"><li class="my-home"><a href="/" target="_self">首页</a></li><li class="dropdown hots"><a data-target="#" data-toggle="dropdown" href="/today" class="dropdown-toggle">精华</a><ul class="dropdown-menu"><li><a href="/today" target="_self">今日话题</a></li><!--li--><!--  a(href="/today/hots", target="_self") 热门讨论--><li><a href="/talks/all" target="_self">雪球访谈</a></li><li><a href="/people" target="_self">找人</a></li></ul></li><li class="dropdown hqhave-caret invest"><a data-target="#" data-toggle="dropdown" href="/hq" target="_self" class="dropdown-toggle">行情</a><ul class="dropdown-menu"><li><a href="/hq" target="_self">行情中心</a></li><li><a href="/p/discover" target="_self">买什么</a></li><li><a href="/hq/screener" target="_self">筛选器</a></li><li><a href="/hq#exchange=P&amp;industry=私募工场&amp;firstName=私募" target="_self">私募工场</a></li><li><a href="/hq#xgss" target="_self">新股上市</a></li></ul></li><li><a href="/ask/square" target="_self" class="new">问答</a></li></ul></div><div class="search"><form action="/k" method="get"><input id="quick-search" type="text" placeholder="搜索 股票/讨论/用户/组合/群组" autocomplete="off" name="q" class="typeahead"><button type="submit">search</button></form></div></div><div id="nav-account-layout" class="col col-12-3"><false></false><ul id="nav-account" style="display:none" class="nav pull-right account"><li class="dropdown"><a id="nav-account-name" data-target="#" data-toggle="dropdown" href="#" class="dropdown-toggle"><script type="text/html">{screen_name}</script></a><ul class="dropdown-menu"><li id="nav-account-profile"><script type="text/html"><a href="{profile}/profile" target="_self"><img src="{photo_domain}{profile_image_url}">{screen_name}</a></script></li><li><a href="/setting/user" target="_self">个人设置</a></li><li><a href="/setting/st_privacy" target="_self">股票设置</a></li><li><a href="/user/logout" target="_self" class="exit">退出</a></li></ul></li><li class="dropdown"><a id="btn-notice" data-target="#" data-toggle="dropdown" href="#" style="display: none;" class="dropdown-toggle">消息<span style="display: none;" class="notice-count">0</span></a><ul class="notices-list dropdown-menu"><li style="display: none;" class="comments"><a href="/comments" target="_self" class="pjax"><span class="count"></span>收到的评论</a></li><!--li.dm(style="display: none;")<a href="/messages" target="_self"><span class="count"></span>新私信</a>--><li style="display: none;" class="mentions"><a href="/atme" target="_self" class="pjax"><span class="count"></span>@我的</a></li><li style="display: none;" class="paid_mentions"><a href="/atme-paid" target="_self" class="pjax"><span class="count"></span>原文提问我的</a></li><li style="display: none;" class="pm_comments"><a href="/atme-paid?mention=comment" target="_self" class="pjax"><span class="count"></span>评论提问我的</a></li><!--li.weibo_friends(style="display: none;")<a href="/friends?q=weibo" target="_self" class="pjax"><span class="count"></span>微博好友</a>--><li style="display: none;" class="followers"><a href="/follows" target="_self"><span class="count"></span>新增粉丝</a></li><li style="display: none;" class="notices"><a href="#" target="_self" class="pjax"><span class="count"></span>新公告</a></li><li style="display: none;" class="events"><a href="/calendar" target="_self" class="pjax"><span class="count"></span>事件提醒</a></li><li class="setting"><a href="/setting/notice" target="_self">提醒设置</a></li></ul></li><li class="dropdown"><!--a#btn-open-im(href="#")--><!--  | 聊天--><!--  sup(style="display: none;") 0--></li></ul><ul id="nav-login" style="display:block" class="nav pull-right account"><li><a href="/account/reg" target="_self" class="reg">注册</a></li><li><a id="nav-login-link" href="/" target="_self" class="login">登录</a></li></ul><script>seajs.use('widget/util/user');</script></div><script>jQuery(function(){seajs.use(['widget/util/typeahead', 'widget/bootstrap/dropdown']);});</script></div></div><div id="container"><div class="grid"><div class="col col-12-11"><script src="https://assets.imedao.com/js/qrcode.min.js"></script><script src="https://assets.imedao.com/js/SNB.helpers.js"></script><script src="https://assets.imedao.com/js/analytics-704cb1.js"></script><input id="sid" type="hidden" value="77865462"><input id="offer" type="hidden" value="0"><script id="payConfirmTpl" type="x-template"><div id="payConfirm" class="reward-modal dimmer center middle hidden">
+  <div class="reward-container">
+    <div class="reward-modal-hd">确定提问金额
+      <div class="close"></div>
+    </div>
+    <div class="reward-modal-bd">
+      <div class="pay-confirm-main">
+        <div class="pay-user-info">
+          <% var avatar = data.photo_domain + data.profile_image_url.split(',')[0]; %>
+          <img src="<%= avatar %>!100x100.png" alt="" class="pay-user-avatar"/>
+          <div class="pay-user-name"><%= data.screen_name %>
+          <% if (data.verified) { %>
+          <img src="//assets.imedao.com/images/vipicon_<%= data.verified_type || 1 %>.png" alt="<%= data.verified_description %>"/>
+          <% } %>
+          </div>
+          <% if (data.verified_description) { %>
+          <div class="pay-user-title"><%= data.verified_description %></div>
+          <% } %>
+          <% if (data.description) { %>
+          <div class="pay-user-desc"><%= data.description %></div>
+          <% } %>
+        </div>
+        <div class="pay-confirm-bd">
+          <div class="pay-confirm-title">向Ta提问并支付</div>
+          <div class="pay-confirm-custom">
+            <input id="payAmount" type="text" min="<%= data.min %>" max="10000" value="<%= data.min %>"/><span>元</span>
+          </div>
+          <p>你可以选择为本次提问支付更高的费用，上限10000元</p>
+          <div class="pay-confirm-btn">确定</div>
+          <p class="pay-confirm-warn">
+            提问被对方回复后，所回复内容的打赏将与你5:5分成;
+            <br>若对方超过48小时未回答，费用将自动退回。
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></script><script id="payWindowTpl" type="text/x-template"><div id="payWindow" class="reward-modal dimmer center middle hidden">
+  <div class="reward-container">
+    <div class="reward-modal-hd">支付
+      <div class="close"></div>
+    </div>
+    <div class="reward-modal-bd">
+      <div class="payment-mod">
+        <div class="reward-amount-mod">
+          <div class="reward-heading">
+            支付￥<%= amount %>
+          </div>
+        </div>
+        <% if (wallet > 0) { %>
+          <div class="reward-payment-mod reward-payment-layout-3">
+            <div class="reward-payment wechat checked">
+              <span>微信支付</span>
+              <div class="check-radio"></div>
+            </div>
+            <div class="reward-payment alipay">
+              <span>支付宝支付</span>
+              <div class="check-radio"></div>
+            </div>
+            <div class="reward-payment wallet">
+              <span>余额支付
+                <i class="wallet-amount">可用余额<%= wallet %>元</i>
+              </span>
+              <div class="check-radio"></div>
+            </div>
+          </div>
+        <% } else { %>
+          <div class="reward-payment-mod reward-payment-layout-2">
+            <div class="reward-payment wechat">
+              <span>微信支付</span>
+              <div class="check-radio"></div>
+            </div>
+            <div class="reward-payment alipay">
+              <span>支付宝支付</span>
+              <div class="check-radio"></div>
+            </div>
+          </div>
+        <% } %>
+        <div class="reward-modal-btn pay-btn">立即支付</div>
+        <p class="reward-modal-terms">支付即代表同意<a href="/law/Q&A" target="_blank">雪球问答协议</a><br/>不符合协议规定的问题将会被删除</p>
+      </div>
+    </div>
+  </div>
+</div>
+</script><script id="payAtSuccessTpl" type="text/x-template"><div id="payAtSuccessModal" class="reward-modal dimmer center middle hidden">
+  <div class="reward-container">
+    <div class="reward-modal-hd">支付结果
+      <div class="close"></div>
+    </div>
+    <div class="reward-modal-bd">
+      <div class="pay-success">
+        <div class="reward-result-mod success">
+          <div class="reward-result-heading">支付成功</div>
+          <p>问题被回答后，你将收到推送提醒，若回答者在48小时内未回答，相关费用将退还至你的钱包</p>
+        </div>
+        <div class="reward-modal-btn pay-at-done blue">完成</div>
+      </div>
+    </div>
+  </div>
+</div></script><div id="offer-assign" class="reward-modal dimmer center middle hidden"><div class="reward-container"><div class="reward-modal-hd">分配悬赏奖金 <div class="close"></div></div><div class="reward-modal-bd"><p class="offer-modal__amount">剩余可分配奖金：<span data-balance="12000">120</span>元</p><div class="offer-modal__input"><label>元</label><input type="text"></div><div class="offer-modal__btns"><a href="#" class="offer-modal__btn offer-modal__btn--cancle">取消</a><a href="#" class="offer-modal__btn offer-modal__btn--submit">确定</a></div><p class="offer-modal__declaration">剩余奖金需在悬赏结束前分配完，否则将按规则自动分配</p></div></div></div><div class="single-mod"><!-- 正文页--><div id="status-77865462" data-id="77865462" data-uid="5277310522" data-pdf="" data-rid="" data-paid="undefined" data-payment="undefined" data-ask_state="undefined" data-quiz-uid="" data-quiz-refused="true" data-is-offer="false" class="status-item "><div class="status-bd "><div class="status-single-hd"><!--user_id = -1 股票头像--><a href="/investor/profile" target="_blank" data-screenname="余晓光" class="avatar"><img src="//xavatar.imedao.com/community/20115/1307498370665-20121221.png!100x100.png" alt="余晓光"/></a><div class="status-retweet-user"><a href="/investor" target="_blank" data-screenname="余晓光" class="name">余晓光<span style="display:none" class="user-remark">()</span><img width="16" height="16" alt="泽诚资本 投资总监" src="https://assets.imedao.com/images/vipicon_2@2x.png" class="icon-vip"/></a></div><div class="subtitle"><span class="source">来自雪球</span><a href="/5277310522/77865462" data-created_at="1479741095000" target="_blank" class="time">发布于11-21 23:12</a></div></div><div class="status-content"><!-- 文章标题--><div class="detail"><!--如果在列表中展示，需要收起状态 或者 是 pdf类型--><!--如果不在列表里，就存下一个 description 给分享组件用--><script type="text/html" class="single-description">余晓光 : live.me的直播有些收获，看会议纪要还是尝试走大V模式。News Republic被清理大师强推一下增加了覆盖，以前推别人，现在推自己。</script>live.me的直播有些收获，看会议纪要还是尝试走大V模式。News Republic被清理大师强推一下增加了覆盖，以前推别人，现在推自己。<!-- pdf--><div><a href="" data-id="77855943" data-comment_id="64767829" class="article__conversation__btn">查看对话</a></div><script>seajs.use(['article.conversation.js'], function () {
+
+})
+</script></div></div><!-- 引用的文章--><blockquote><div data-pdf="" class="status-retweet"><div class="status-bd"><div class="status-retweet-user"><a href="/7780749203" target="_blank" data-screenname="猎豹移动" class="name">猎豹移动<span style="display:none" class="user-remark">()</span><img width="16" height="16" alt="猎豹移动 官方账号" src="https://assets.imedao.com/images/vipicon_3@2x.png" class="icon-vip"/></a>:</div><div class="status-content"><h1 class="status-title">猎豹移动Q3收入再创历史新高 引领中国内容模式出海</h1><div class="detail"><p>北京时间11月21日，全球领先的移动安全及内容提供商猎豹移动(NYSE:CMCM)公布了截至2016年9月30日的第三季度财报。财报显示，第三季度总收入为11.283亿元，同比增长9.7%，环比增长7.8%，高于市场预期，公司季度收入重新回到环比增长轨道，这反映公司重振收入增长举措取得了显著成效，工具产品的出色表现帮助公司在三季度取得了良好的财务业绩，内容产品有条不紊地深化布局，并获得不俗的成绩，公司未来发展整体持续向好。</p><p>与此同时，本季度公司移动收入和海外收入再创历史新高，并恢复盈利。财报显示，公司第三季度移动收入同比增长26.8%，达8.982亿元，移动收入占总收入比重为79.6%；海外收入同比增长28.9%，达7.199亿元，海外收入占总收入比重为63.8%，占移动收入比重为80.1%。移动和海外业务取得出色表现，收入同比和环比均呈现稳步增幅，且对总收入贡献度持续提升，表明猎豹移动全球化业务的加速拓展、以及全球化程度的不断加深。</p><p>猎豹移动CEO傅盛表示：“工具产品的出色表现帮助公司在三季度取得了良好的财务业绩。我们的工具产品十分稳定、收入保持增长、盈利能力稳健。更重要的是，本季度，我们的内容产品 Live.me和News Republic取得了长足的进步，尤其在美国市场。这些成绩让我们坚信猎豹有能力连接我们在全球超过6亿多的月度活跃用户和个性化、丰富的内容，为用户打造最好的移动体验，从而不断提升用户活跃度，并奠定新一轮增长引擎的基础。”</p><img class="ke_img" src="//xqimg.imedao.com/15886a9f1de1c263fea1595c.png!custom.jpg" ><p> </p><p>截至2016年9月30日，猎豹移动产品在全球范围内已下载安装到34.64亿台移动设备上。猎豹移动在移动端的月度活跃用户规模达6.12亿。其中，80.3%的移动端月度活跃用户来自欧美为主的海外市场。</p><p>值得一提的是，虽然猎豹已经在减少对工具产品的投放和推广力度，但核心工具产品的MAU在欧美等发达国家依旧强劲。据APP Annie数据，Clean Master保持美国地区工具产品下载排行榜第一名。工具产品收入保持稳步增长给猎豹带来巨大的财务和经营杠杆，支撑公司在移动内容领域的投入。</p><img class="ke_img" src="//xqimg.imedao.com/15886aa6a1f1bbb3fcfa79e2.jpg!custom.jpg" ><p>本季度，猎豹移动的内容产品Live.me和News Republic，都取得了显著的成绩，尤其是在美国市场。内容产品的成绩是猎豹移动内容战略的重要一步，让猎豹更好地以工具连接内容。</p><p>Live.me推出后在美国市场上得到了广泛的认可，成为美国时尚年轻人最喜爱的社交产品之一。据APP Annie 10月数据，Live.me荣登谷歌应用商店美国地区社交类畅销榜第一名，排在苹果应用商店美国地区社交类畅销榜前五位。在Google Play和苹果应用商店中，评分高达4.5分。</p><p>累计至今，Live.me全球下载数已破千万，吸引抖森Tom Hiddleston、《超级名模生死斗》主持人Tyra Banks使用。连全球前十大YouTuber、追踪粉丝超过970万的Roman Atwood都与Live.me长期合作，积极由影片创作的YouTuber转型为实时互动的主播。在美国市场取得成功之后，Live.me还一路从美国红回亚洲，在台湾、日本、印尼相继上线，并且纷纷取得了显著的成绩。</p><p>据了解，Live.me在全球的用户大多是25岁以下的年轻人，他们热爱分享生活的点滴瞬间、自己对生活的态度和想法，并愿意去结识新的朋友。猎豹正在积极地为他们营造一个社区，鼓励他们在Live.me平台上产生内容。未来，猎豹还将不断完善产品、扩大用户群、提升用户活跃度，吸引更多的用户开启直播。同时，值得一提的是，猎豹也将不断尝试一些新的商业化手段，尤其是那些在国内被证明的商业模式。</p><img class="ke_img" src="//xqimg.imedao.com/15886aabe571c1b3fc186397.jpg!custom.jpg" ><p> </p><p>最近，猎豹移动还对News Republic进行了深度改版，使每个用户拿起手机看到的新闻都是独特的，这大大提升了用户体验、用户活跃度和使用时长。APP Annie数据显示，10月News Republic位列美国地区新闻杂志类下载排行榜的前三名。</p><p>正是猎豹移动6亿多月度活跃用户，以及这些海量用户产生的庞大数据，支撑起猎豹在产品端“千人千面”的个性化内容推送。本季度，猎豹还将个性化新闻内容整合入一些工具产品中，以连接用户和个性化内容，这些举措同样得到用户的认可，并很好地提升了工具产品的活跃度和使用时长。</p><img class="ke_img" src="//xqimg.imedao.com/15886ab0ec91bc03fe45ff57.jpg!custom.jpg" ><p> </p><p>“即使在向移动内容转型期间，公司Q3仍恢复了季度收入环比增长和整体盈利。”猎豹移动CEO傅盛表示，猎豹成立6年来，收入规模增长了30多倍，在全球累计了6亿多月度活跃用户，并成功引领中国移动互联网的出海浪潮。未来，猎豹将致力于把全球超过6亿多的月度活跃用户和更加丰富且个性化的内容连接起来，聚焦移动、海外和内容战略，建立新一轮公司增长引擎。</p><p>在收入组成方面，猎豹移动第三季度的在线广告及相关业务收入为9.864亿元，同比增长8.9%。本季度，移动广告收入占本板块收入82%，对比去年同期为72%，对比上个季度为78%。该项收入增长主要依赖于猎豹全球广告客户（包括直销客户）对公司移动广告服务需求的不断增长。该项增长也与公司成功通过游戏内广告形式商业化休闲游戏有关。</p><p>互联网增值服务业务收入为1.105亿元，环比增长38.8%。该项收入增长主要是由于公司在海外初步尝试商业化Live.me的影响。</p><p>网络安全与其他业务收入为3150万元，同比增长32.3%。该项收入增长主要是由移动软件授权收入增长所致。</p><p>财报数据还显示，猎豹移动第三季度，Non-GAAP营业利润为3810万元，环比增长49.3%。Non-GAAP归属猎豹移动股东净利润为7240万元，对比上期Non-GAAP归属股东净亏损6190万元有很大幅度增长。</p><p>此外，董事会于2016年3月16日批准的为期1年1亿美元回购计划，截至2016年11月18日，公司累计回购2,536,808股猎豹ADS，相当于25,368,080股猎豹普通股。</p><p>猎豹移动预计，2016年四季度总收入在12.00亿元至12.40亿元之间，同比增长4%至8%，环比增长6%至10%，此指引仅代表公司目前及初步的预期，未来可能会发生变化。</p><p></p><!-- pdf--></div></div></div><div class="status-ft"><div class="status-meta"><div class="meta-info"><a href="/7780749203/77855943" data-created_at="1479728135000" target="_blank" class="time">11-21 19:36</a><a href="/7780749203/77855943" target="_blank" class="original-uri">相关讨论(2)</a></div></div></div></div></blockquote><link rel="stylesheet" href="https://assets.imedao.com/style/reward-5c6aa9.css"/><input id="sid" type="hidden" value="77865462"/><div class="reward-container"><div class="reward-btn">打赏</div><div class="reward-member hidden"><div class="header">已有<span id="listSize">0</span>人打赏了这篇帖子：</div><div class="reward-member-bd"></div></div></div><script id="rewardListTpl" type="x-template"><div class="reward-member-list">
+  <div class="fold-icon hidden"></div>
+  <%  _.each(data, function (item) { %>
+  <a class="reward-member-item" href="/<%= item.user_id %>/profile" data-screenname="<%= item.name %>" target="_blank">
+    <%
+      var domain = item.photo_domain;
+      function getProfileImage (profile_image_url,size){
+        profile_image_url = profile_image_url && profile_image_url.split(",") || [];
+        var img = domain + "/" + (profile_image_url.length > 3 ? profile_image_url[3] : (profile_image_url.length == 1 ? profile_image_url[0] : 'community/default/avatar.png!30x30.png'))
+        img = typeof size !== "undefined" ? img.replace(/([0-9]+)x([0-9]+)/,size + "x" + size) : img
+        return img;
+      };
+      var img = getProfileImage(item.profile_image_url, 30);
+    %>
+    <img src="<%= img %>">
+    <span><%= item.amount/100 %></span>
+  </a>
+  <% }); %>
+</div></script><script id="payAmountTemplate" type="x-template"><div id="payAmountModal" class="reward-modal dimmer center middle hidden">
+  <div class="reward-container">
+    <div class="reward-modal-hd">现金打赏
+      <div class="close"></div>
+    </div>
+    <div class="reward-modal-bd">
+      <div class="payment-mod">
+        <div class="reward-amount-mod">
+          <div class="reward-amount-hd">欢迎打赏，请选择打赏金额</div>
+          <div class="reward-amount-bd">
+            <div class="reward-amount-grid">
+              <div data-amount="1" class="reward-amount-item active">1 元</div>
+              <div data-amount="6" class="reward-amount-item">6 元</div>
+              <div data-amount="10" class="reward-amount-item">10 元</div>
+              <div data-amount="66" class="reward-amount-item">66 元</div>
+              <div data-amount="100" class="reward-amount-item">100 元</div>
+              <div class="reward-amount-other">其他金额</div>
+              <div class="reward-amount-custom hidden empty">
+                <input type="text" placeholder="可填写1-200"/>
+              </div>
+            </div>
+          </div>
+        </div>
+        <% if (wallet > 0) { %>
+          <div class="reward-payment-mod reward-payment-layout-3">
+            <div class="reward-payment wechat checked">
+              <span>微信支付</span>
+              <div class="check-radio"></div>
+            </div>
+            <div class="reward-payment alipay">
+              <span>支付宝支付</span>
+              <div class="check-radio"></div>
+            </div>
+            <div class="reward-payment wallet">
+              <span>余额支付
+                <i class="wallet-amount">可用余额<%= wallet %>元</i>
+              </span>
+              <div class="check-radio"></div>
+            </div>
+          </div>
+        <% } else { %>
+          <div class="reward-payment-mod reward-payment-layout-2">
+            <div class="reward-payment wechat">
+              <span>微信支付</span>
+              <div class="check-radio"></div>
+            </div>
+            <div class="reward-payment alipay">
+              <span>支付宝支付</span>
+              <div class="check-radio"></div>
+            </div>
+          </div>
+        <% } %>
+        <div class="reward-submit-mod">
+          <div class="reward-modal-btn pay-btn">立即支付</div>
+          <div class="reward-member-terms">
+            <div class="reward-ft-lf">支付即代表同意 <a href="/law/reward" target="_blank">雪球打赏协议</a></div>
+            <div class="reward-ft-rt reward-by-snowicon hidden"><a href="">使用雪球币打赏</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></script><script id="donateAmountTemplate" type="x-template"><div id="donateAmountModal" class="donate-modal reward-modal dimmer center middle hidden">
+  <div class="reward-container">
+    <div class="reward-modal-hd">雪球币打赏
+      <div class="close"></div>
+    </div>
+    <div class="reward-modal-bd">
+      <div class="payment-mod">
+        <div class="reward-amount-mod">
+          <div class="reward-amount-hd">欢迎打赏，请选择打赏金额</div>
+          <div class="reward-amount-bd">
+            <div class="reward-amount-grid">
+              <div data-amount="1" class="reward-amount-item active">1 雪球币</div>
+              <div data-amount="6" class="reward-amount-item">6 雪球币</div>
+              <div data-amount="10" class="reward-amount-item">10 雪球币</div>
+              <div data-amount="66" class="reward-amount-item">66 雪球币</div>
+              <div data-amount="100" class="reward-amount-item">100 雪球币</div>
+              <div class="reward-amount-custom">
+                <input type="text" placeholder="其他金额"/>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reward-submit-mod">
+          <div class="donate-detail">
+            应付：<span class="donate-amount"></span>雪球币；账号余额：<span class="donate-balance"></span>雪球币
+          </div>
+          <div class="donate-error hidden">
+          </div>
+          <div class="reward-modal-btn pay-btn">立即支付</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></script><script id="qrcodeTemplate" type="x-template"><div id="qrcodeModal" class="reward-modal dimmer center middle hidden">
+  <div class="reward-container">
+    <div class="reward-modal-hd">微信扫码支付
+      <div class="close"></div>
+    </div>
+    <div class="reward-modal-bd">
+      <div class="qrcode-container">
+        <p class="qrcode-title">支付金额 <span class="wechat-amount">20.00</span> 元</p>
+        <img src=""/>
+        <p class="qrcode-desc">打开手机微信“扫一扫”</p>
+      </div>
+    </div>
+  </div>
+</div></script><script id="successTemplate" type="x-template"><div id="successModal" class="reward-modal dimmer center middle hidden">
+  <div class="reward-container">
+    <div class="reward-modal-hd">现金打赏
+      <div class="close"></div>
+    </div>
+    <div class="reward-modal-bd">
+      <div class="pay-success">
+        <div class="reward-result-mod success">
+          <div class="reward-result-heading">感谢打赏</div>
+          <p>成功打赏该<%= type %>￥<%= amount %></p>
+        </div>
+        <div class="reward-modal-btn reward-share blue">分享到雪球动态</div>
+      </div>
+    </div>
+  </div>
+</div>
+</script><script id="walletConfirmTpl" type="x-template"><div id="walletConfirmModal" class="reward-modal dimmer center middle hidden">
+  <div class="reward-container">
+    <div class="reward-modal-hd">提示
+      <div class="close"></div>
+    </div>
+    <div class="reward-modal-bd">
+      <p>请确认是否用余额支付 <%= amount %> 元</p>
+      <div class="reward-modal-btn deny gray">取消</div>
+      <div class="reward-modal-btn define blue">确认</div>
+    </div>
+  </div>
+</div></script><script>seajs.use(['reward/red-envelope.js'], function () {
+
+});
+</script></div><div class="status-ft"><!-- meta--><div class="status-meta"><div class="meta-btns single-meta-btn"><a href="#" class="btn-repost">转发<span style="display:none" class="number">(<em class="em_number">911</em>)</span></a><a data-id="77865462" href="#" class="btn-fav">收藏</a><a href="#" class="btn-status-reply last">评论<span style="display:none" class="number">(<em class="em_number">88</em>)</span></a></div><div class="meta-info"><div id="share" class="single-share"><span>分享到:</span><a href="javascipt:void(0)" class="wechat"><img src="https://assets.imedao.com/images/wechat@2x.png" class="share"/></a><a href="javascipt:void(0)" class="sina"><img src="https://assets.imedao.com/images/weibo@2x.png" class="share"/></a></div></div></div><!-- 评论框--><div id="editor-status-77865462" class="editor-comment"><form action="/service/comment/add?type=status" method="post" enctype="application/x-www-form-urlencoded" class="comment-form "><input type="hidden" name="id" value="77865462"/><div class="editor-textarea"><div class="arrow"><span class="arrow-top-out"></span><span class="arrow-top-in"></span></div><textarea name="comment"></textarea></div><div class="editor-ctrl"><div class="extra"><b class="editor-emotion"><span class="icon-icon_16_-25"></span></b><b class="editor-stock"><span class="icon-icon_16_-26"></span></b><b class="editor-pay"><span class="icon-icon_16_-70"></span></b><label><input type="checkbox" name="forward" value="1"/>同时转发到我的首页</label><label class="ask-refuse"><input type="checkbox" name="charge" value="1"/>拒绝回复</label></div><div class="submit"><button type="submit" data-type="2" class="btn btn-medium pay-submit hidden">支付并发布</button><button type="submit" class="btn btn-medium status-submit">发布</button></div></div></form></div><script>$('.status-link').each(function () {
+  $(this).html('<i class="iconfont">&#xe600;</i>网页链接')
+});</script><script class="ask-comment-placeholder"></script><script class="offer-comment-placeholder"></script><script class="good-comment-placeholder"></script><script class="all-comment-placeholder"></script></div></div><script>seajs.use('pages/single.js',function (single) {
+  single.init(77865462, '');
+});
+
+$("img").error(function () {
+  var src = this.src;
+  if(/\.webp/.test(src)){
+    this.src = src.replace('.webp','.jpg');
+  }
+});</script></div></div><div class="col col-12-1"><div class="mod"><!--include ../../pagelets/util/share.jade--></div><div class="single-qr-code"><div class="qr-code-cover"></div><div class="qr-code-container"><div class="qr-code"><div class="title">分享到微信</div><div class="content"><div id="render-code"></div><div class="bottom"><i></i><div class="text">扫一扫</div></div></div></div></div></div><a id="to-top" href="#" title="回到顶部"></a></div></div></div><script>(function () {
+  var getTextNodesIn = function(el) {
+    return $(el).find(":not(iframe)").addBack().contents().filter(function() {
+      return this.nodeType == 3;
+    });
+  };
+  var copyright = function (getString) {
+    var author = getTextNodesIn('.status-single-hd .name').eq(0).text()
+    var info = [
+      '',
+      '作者：' + author,
+      '链接：' + window.location.href,
+      '来源：雪球',
+      '著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。'
+    ];
+    if (getString) {
+      return info.join('\n');
+    } else {
+      return info;
+    }
+  };
+  var warpText = function (text) {
+    return '<div>' + text + '<br/>' + copyright().join('<br/>') + '</div>';
+  }
+  var getSelectText = function () {
+      var text = "";
+      if (window.getSelection) {
+        text = window.getSelection().toString()
+      } else if (window.document.selection && "Control" !== window.document.selection.type) {
+        text = window.document.selection.createRange().text;
+      }
+      return text;
+  }
+  $(document).on('copy', '.status-content .detail', function (event) {
+    var text = getSelectText();
+    if (text && text.length > 42) {
+      if (typeof event.originalEvent.clipboardData === 'object') {
+        event.originalEvent.clipboardData.setData('text/html', warpText(text));
+        event.originalEvent.clipboardData.setData('text/plain', text + '\n' + copyright(true));
+        if (event.originalEvent.clipboardData.getData('text/plain').length > 0) {
+          event.preventDefault();
+          return;
+        }
+      }
+
+      if (window.getSelection) {
+        var createDiv = $(warpText(text)).css({
+          'position': 'fixed',
+          'left': '-9999px'
+        }).appendTo('body');
+        window.getSelection().selectAllChildren(createDiv[0]);
+        window.setTimeout(function () {
+          createDiv.remove();
+        }, 200)
+      }
+    }
+  });
+
+  var pageId = window.location.pathname.split('/').pop();
+  //- 页面进入统计
+  var data = {
+    type: 1,
+    page: 47,
+    mod: 1,
+    data: {
+      status_id: pageId
+    }
+  };
+  Analytics(data);
+})();
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();</script><div id="footer"><div class="copyright"><a href="/about/faq" target="_blank">常见问题</a><a href="/about/contact-us" target="_blank">联系方式</a><a href="/about/jobs" target="_blank">加入我们</a><a href="https://danjuanapp.com/" target="_blank">蛋卷基金</a><a href="/about" target="_blank">关于雪球</a><a>© 2016 XUEQIU.COM</a><a>北京雪球信息科技有限公司</a><br><a href="http://xqimg.imedao.com/14ee3530b118403fee048f5b.png" target="_blank">京ICP证100666号</a><a href="http://www.miibeian.gov.cn" target="_blank">京ICP备10040543</a><a>京公网安备11010502026957</a><a href="http://xqimg.imedao.com/14d52aefd15e8f3fc0ce1fbd.png" target="_blank">证券业协会会员单位(代码817027)</a><p>风险提示：雪球里任何用户或者嘉宾的发言，都有其特定立场，投资决策需要建立在独立思考之上。</p></div></div><script>seajs.use(['widget/util/notice', 'widget/util/tooltip', 'widget/util/user']);
+</script><!--baidu tongji--><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?1db88642e346389874251b5a1eded6e3";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+$('body').on('click','[data-track-event]',function(e){
+    if($(this).data('track-event')){
+      _hmt.push(['_trackEvent', $(this).data('track-event') , 'click', $(this).data('track-subevent')||'auto']);
+    }
+});</script><!--end baidu tongji--></body></html>

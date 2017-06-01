@@ -1,0 +1,378 @@
+<!DOCTYPE html><html><head><!--变量定义--><!--head 里的 meta 标签--><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta charset="utf-8"><meta property="qc:admins" content="10210420621156375"><meta name="renderer" content="webkit"><meta name="keywords" content="雪球,实时行情,股票,基金,ETF,分级基金,理财,可转债,A股,创业板,新三板,美股,港股,开户,交易,炒股,证券,K线图,指数,价值投资,投资,社交网络"><meta name="description" content="刷刷雪球再下单，买卖股票才心安 - 雪球提供沪深港美股票实时行情、实战交流、实盘交易。"><link rel="icon" type="image/png" href="https://assets.imedao.com/images/favicon.png"><!--标题--><title>jh786: 清华李强教授：中国社会分层 清华李强教授：中国社会分层 我不知道大家对“社会分层”这个概念熟悉不熟悉，社会分层是一个很学术化的概念。过去，汉语里没有... - 雪球</title><!--默认样式--><!--IE8 支持 media query 需要跨域读取 css 内容，暂时不做支持。--><link rel="stylesheet" href="https://assets.imedao.com/style/common/base-39d7fe.css"><!--默认加载编辑器相关 css--><link href="https://assets.imedao.com/style/widget/umeditor/editor-1d4683.css" rel="stylesheet"><link rel="stylesheet" href="https://assets.imedao.com/style/pages/sns/TSNB.single-9ee729.css"><!--默认脚本--><script src="https://assets.imedao.com/js/xdomain-0.6.15-575cd5.js"></script><script>xdomain.slaves({
+  'https://xueqiu.com': '/proxy2.html',
+  'https://im0.xueqiu.com': '/proxy2.html',
+  'https://im1.xueqiu.com': '/proxy2.html',
+  'https://im2.xueqiu.com': '/proxy2.html',
+  'https://im3.xueqiu.com': '/proxy2.html',
+  'https://im4.xueqiu.com': '/proxy2.html',
+  'https://im5.xueqiu.com': '/proxy2.html',
+  'https://im6.xueqiu.com': '/proxy2.html',
+  'https://im7.xueqiu.com': '/proxy2.html',
+  'https://im8.xueqiu.com': '/proxy2.html',
+  'https://im9.xueqiu.com': '/proxy2.html'
+});</script><script src="https://assets.imedao.com/js/common/lib-e9c317.js"></script><script src="https://assets.imedao.com/js/config-39d289.js"></script><script>//如果没有 JSON 对象，就加载
+if (!window.JSON || !window.JSON.stringify) {
+  document.writeln('<script src="https://assets.imedao.com/js/common/json-b459a8.js"><\/script>');
+}
+SNB.staticDomain.init('https://assets.imedao.com');
+SNB.currentUser = JSON.parse(decodeURIComponent('%7B%22isGuest%22%3Atrue%7D'));
+SNB.env = "production";</script></head><body class=""><div id="head"><div class="grid"><div class="col col-12-2"><div id="logo"><a href="/" title="返回我的首页"><img src="https://assets.imedao.com/images/logos/logo.2015.png" alt="雪球" class="logo-type"><img src="https://assets.imedao.com/images/logos/logotype.2015.png" alt="雪球"></a></div></div><div class="col col-12-7"><div id="nav-logined" style="display:none" class="nav-logined"><ul class="nav"><li class="my-home"><a href="/" target="_self">首页</a></li><li class="dropdown hots"><a data-target="#" data-toggle="dropdown" href="/today" class="dropdown-toggle">精华</a><ul class="dropdown-menu"><li><a href="/today" target="_self">今日话题</a></li><!--li--><!--  a(href="/today/hots", target="_self") 热门讨论--><li><a href="/talks/all" target="_self">雪球访谈</a></li><li><a href="/people" target="_self">找人</a></li></ul></li><li class="dropdown hqhave-caret invest"><a data-target="#" data-toggle="dropdown" href="/hq" target="_self" class="dropdown-toggle">行情</a><ul class="dropdown-menu"><li><a href="/hq" target="_self">行情中心</a></li><li><a href="/p/discover" target="_self">买什么</a></li><li><a href="/hq/screener" target="_self">筛选器</a></li><li><a href="/hq#exchange=P&amp;industry=私募工场&amp;firstName=私募" target="_self">私募工场</a></li><li><a href="/hq#xgss" target="_self">新股上市</a></li></ul></li><li><a href="/ask/square" target="_self" class="new">问答</a></li></ul></div><div class="search"><form action="/k" method="get"><input id="quick-search" type="text" placeholder="搜索 股票/讨论/用户/组合/群组" autocomplete="off" name="q" class="typeahead"><button type="submit">search</button></form></div></div><div id="nav-account-layout" class="col col-12-3"><false></false><ul id="nav-account" style="display:none" class="nav pull-right account"><li class="dropdown"><a id="nav-account-name" data-target="#" data-toggle="dropdown" href="#" class="dropdown-toggle"><script type="text/html">{screen_name}</script></a><ul class="dropdown-menu"><li id="nav-account-profile"><script type="text/html"><a href="{profile}/profile" target="_self"><img src="{photo_domain}{profile_image_url}">{screen_name}</a></script></li><li><a href="/setting/user" target="_self">个人设置</a></li><li><a href="/setting/st_privacy" target="_self">股票设置</a></li><li><a href="/user/logout" target="_self" class="exit">退出</a></li></ul></li><li class="dropdown"><a id="btn-notice" data-target="#" data-toggle="dropdown" href="#" style="display: none;" class="dropdown-toggle">消息<span style="display: none;" class="notice-count">0</span></a><ul class="notices-list dropdown-menu"><li style="display: none;" class="comments"><a href="/comments" target="_self" class="pjax"><span class="count"></span>收到的评论</a></li><!--li.dm(style="display: none;")<a href="/messages" target="_self"><span class="count"></span>新私信</a>--><li style="display: none;" class="mentions"><a href="/atme" target="_self" class="pjax"><span class="count"></span>@我的</a></li><li style="display: none;" class="paid_mentions"><a href="/atme-paid" target="_self" class="pjax"><span class="count"></span>原文提问我的</a></li><li style="display: none;" class="pm_comments"><a href="/atme-paid?mention=comment" target="_self" class="pjax"><span class="count"></span>评论提问我的</a></li><!--li.weibo_friends(style="display: none;")<a href="/friends?q=weibo" target="_self" class="pjax"><span class="count"></span>微博好友</a>--><li style="display: none;" class="followers"><a href="/follows" target="_self"><span class="count"></span>新增粉丝</a></li><li style="display: none;" class="notices"><a href="#" target="_self" class="pjax"><span class="count"></span>新公告</a></li><li style="display: none;" class="events"><a href="/calendar" target="_self" class="pjax"><span class="count"></span>事件提醒</a></li><li class="setting"><a href="/setting/notice" target="_self">提醒设置</a></li></ul></li><li class="dropdown"><!--a#btn-open-im(href="#")--><!--  | 聊天--><!--  sup(style="display: none;") 0--></li></ul><ul id="nav-login" style="display:block" class="nav pull-right account"><li><a href="/account/reg" target="_self" class="reg">注册</a></li><li><a id="nav-login-link" href="/" target="_self" class="login">登录</a></li></ul><script>seajs.use('widget/util/user');</script></div><script>jQuery(function(){seajs.use(['widget/util/typeahead', 'widget/bootstrap/dropdown']);});</script></div></div><div id="container"><div class="grid"><div class="col col-12-11"><script src="https://assets.imedao.com/js/qrcode.min.js"></script><script src="https://assets.imedao.com/js/SNB.helpers.js"></script><script src="https://assets.imedao.com/js/analytics-704cb1.js"></script><input id="sid" type="hidden" value="78970088"><input id="offer" type="hidden" value="0"><script id="payConfirmTpl" type="x-template"><div id="payConfirm" class="reward-modal dimmer center middle hidden">
+  <div class="reward-container">
+    <div class="reward-modal-hd">确定提问金额
+      <div class="close"></div>
+    </div>
+    <div class="reward-modal-bd">
+      <div class="pay-confirm-main">
+        <div class="pay-user-info">
+          <% var avatar = data.photo_domain + data.profile_image_url.split(',')[0]; %>
+          <img src="<%= avatar %>!100x100.png" alt="" class="pay-user-avatar"/>
+          <div class="pay-user-name"><%= data.screen_name %>
+          <% if (data.verified) { %>
+          <img src="//assets.imedao.com/images/vipicon_<%= data.verified_type || 1 %>.png" alt="<%= data.verified_description %>"/>
+          <% } %>
+          </div>
+          <% if (data.verified_description) { %>
+          <div class="pay-user-title"><%= data.verified_description %></div>
+          <% } %>
+          <% if (data.description) { %>
+          <div class="pay-user-desc"><%= data.description %></div>
+          <% } %>
+        </div>
+        <div class="pay-confirm-bd">
+          <div class="pay-confirm-title">向Ta提问并支付</div>
+          <div class="pay-confirm-custom">
+            <input id="payAmount" type="text" min="<%= data.min %>" max="10000" value="<%= data.min %>"/><span>元</span>
+          </div>
+          <p>你可以选择为本次提问支付更高的费用，上限10000元</p>
+          <div class="pay-confirm-btn">确定</div>
+          <p class="pay-confirm-warn">
+            提问被对方回复后，所回复内容的打赏将与你5:5分成;
+            <br>若对方超过48小时未回答，费用将自动退回。
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></script><script id="payWindowTpl" type="text/x-template"><div id="payWindow" class="reward-modal dimmer center middle hidden">
+  <div class="reward-container">
+    <div class="reward-modal-hd">支付
+      <div class="close"></div>
+    </div>
+    <div class="reward-modal-bd">
+      <div class="payment-mod">
+        <div class="reward-amount-mod">
+          <div class="reward-heading">
+            支付￥<%= amount %>
+          </div>
+        </div>
+        <% if (wallet > 0) { %>
+          <div class="reward-payment-mod reward-payment-layout-3">
+            <div class="reward-payment wechat checked">
+              <span>微信支付</span>
+              <div class="check-radio"></div>
+            </div>
+            <div class="reward-payment alipay">
+              <span>支付宝支付</span>
+              <div class="check-radio"></div>
+            </div>
+            <div class="reward-payment wallet">
+              <span>余额支付
+                <i class="wallet-amount">可用余额<%= wallet %>元</i>
+              </span>
+              <div class="check-radio"></div>
+            </div>
+          </div>
+        <% } else { %>
+          <div class="reward-payment-mod reward-payment-layout-2">
+            <div class="reward-payment wechat">
+              <span>微信支付</span>
+              <div class="check-radio"></div>
+            </div>
+            <div class="reward-payment alipay">
+              <span>支付宝支付</span>
+              <div class="check-radio"></div>
+            </div>
+          </div>
+        <% } %>
+        <div class="reward-modal-btn pay-btn">立即支付</div>
+        <p class="reward-modal-terms">支付即代表同意<a href="/law/Q&A" target="_blank">雪球问答协议</a><br/>不符合协议规定的问题将会被删除</p>
+      </div>
+    </div>
+  </div>
+</div>
+</script><script id="payAtSuccessTpl" type="text/x-template"><div id="payAtSuccessModal" class="reward-modal dimmer center middle hidden">
+  <div class="reward-container">
+    <div class="reward-modal-hd">支付结果
+      <div class="close"></div>
+    </div>
+    <div class="reward-modal-bd">
+      <div class="pay-success">
+        <div class="reward-result-mod success">
+          <div class="reward-result-heading">支付成功</div>
+          <p>问题被回答后，你将收到推送提醒，若回答者在48小时内未回答，相关费用将退还至你的钱包</p>
+        </div>
+        <div class="reward-modal-btn pay-at-done blue">完成</div>
+      </div>
+    </div>
+  </div>
+</div></script><div id="offer-assign" class="reward-modal dimmer center middle hidden"><div class="reward-container"><div class="reward-modal-hd">分配悬赏奖金 <div class="close"></div></div><div class="reward-modal-bd"><p class="offer-modal__amount">剩余可分配奖金：<span data-balance="12000">120</span>元</p><div class="offer-modal__input"><label>元</label><input type="text"></div><div class="offer-modal__btns"><a href="#" class="offer-modal__btn offer-modal__btn--cancle">取消</a><a href="#" class="offer-modal__btn offer-modal__btn--submit">确定</a></div><p class="offer-modal__declaration">剩余奖金需在悬赏结束前分配完，否则将按规则自动分配</p></div></div></div><div class="single-mod"><!-- 正文页--><div id="status-78970088" data-id="78970088" data-uid="8102984655" data-pdf="" data-rid="" data-paid="undefined" data-payment="undefined" data-ask_state="undefined" data-quiz-uid="" data-quiz-refused="true" data-is-offer="false" class="status-item "><div class="status-bd "><div class="status-single-hd"><!--user_id = -1 股票头像--><a href="/8102984655/profile" target="_blank" data-screenname="jh786" class="avatar"><img src="//xavatar.imedao.com/community/20142/1393821158403-1393821173963.jpg!100x100.png" alt="jh786"/></a><div class="status-retweet-user"><a href="/8102984655" target="_blank" data-screenname="jh786" class="name">jh786<span style="display:none" class="user-remark">()</span></a></div><div class="subtitle"><span class="source">来自雪球</span><a href="/8102984655/78970088" data-created_at="1481767725000" target="_blank" class="time">发布于12-15 10:09</a></div></div><div class="status-content"><!-- 文章标题--><h1 class="status-title">清华李强教授：中国社会分层</h1><div class="detail"><!--如果在列表中展示，需要收起状态 或者 是 pdf类型--><!--如果不在列表里，就存下一个 description 给分享组件用--><script type="text/html" class="single-description">jh786 : 清华李强教授：中国社会分层清华李强教授：中国社会分层 我不知道大家对“社会分层”这个概念熟悉不熟悉，社会分层是一个很学术化的概念。过去，汉语里没有这个词，你要查古书上更是没有。这个词最初是从英文翻译过来的。 是社会学家借用生物学的概念--地球是分层的，社会学家发现人类社会也是有高有低的层化现象，于是大概...</script><p><b>清华李强教授：中国社会分层</b></p><p><b><br/></b></p><p>我不知道大家对“社会分层”这个概念熟悉不熟悉，社会分层是一个很学术化的概念。过去，汉语里没有这个词，你要查古书上更是没有。这个词最初是从英文翻译过来的。</p><p><br/></p><p>是社会学家借用生物学的概念--地球是分层的，社会学家发现人类社会也是有高有低的层化现象，于是大概在十九世纪，就把这个词引入社会研究中来了。</p><p><br/></p><p>研究社会分层，通俗地讲就是分析一个社会的阶级结构。首先，大家有一点都能理解，就是社会肯定是分成不同群体的。我们说原始社会是平等的。其实我觉得那是大家没有经历那个社会，看不见。</p><p><br/></p><p>我们从资源的占用上说，人们要想非常均等的分配资源本身就非常困难。原始部落时期，一般来说人们出于崇敬，往往给部落酋长的条件要好一点。</p><p><br/></p><p>有人研究早期的人类社会的小部落，结果发现有分层现象的占绝大多数。所以从古到今社会分层现象是很普遍的。<br/></p><p><br/></p><p>有人认为，社会分层现象在我们国家有一段时间里可以说是弱化了，就是1949年以后，农村要分田，城市里要分财产，到了1956年以后基本上私有化的财产包括私有房屋就变得很少了，这看起来好像分层现象弱化了，但实际上我们如果仔细分析的话，即使从1949年到1979年，也有分层社会。</p><p><br/></p><p>我记得有很多小说，比如《血色浪漫》里描写的干部大院，你就能感到干部大院里就跟普通老百姓的不一样。所以，它也是分层的社会。我写过一篇文章叫《政治分层和经济分层》，我的意思是说，1949年到1979年，经济分层确实有弱化现象，但政治分层很突出。</p><img class="ke_img" src="//xqimg.imedao.com/159003d024d30273feaed4dd.jpg!custom660.jpg" ></span><p><br/></p><p>所以，刚才主持人三味书屋的李老师介绍的时候说到的红五类、黑五类，那都是1949年到1979年的时候发生的现象，那不是典型的分层吗？不过当时更多讲的是政治地位。</p><p><br/></p><p>我只想阐明一个现象，因为大家可能不太熟悉这个词，所以我们就发现这个层化现象在任何一个时候，任何一个社会都是存在的。</p><p><br/></p><p>我们中国到今天，什么样的一个层化现象大家认为是公平的、是合理的，这是关键的核心问题，什么叫公平？任何一个社会都在解释这个问题。</p><p><br/></p><p>其实毛泽东发动的土改运动，在1945年的解放区就开始了，不过大规模的土改还是在1949年以后。那么当时从法理上说，土地是属于地主的，就跟今天没卖出的房子是属于房地产商的一样，说我们找一帮人抢过来，那不行，这是违法的。</p><p><br/></p><p>但是，1950年的时候，政务院颁布了一个法律叫《中华人民共和国土地改革法》，它先立法了。所以，土地改革运动合乎法理，剥夺地主土地时，讲的是剥夺为公平，当时全民接受了。</p><p><br/></p><p>但是今天你要说有一块地，你带人去抢那可了不得，那肯定要抓进监狱。1949年到1952年这个时期，农民抢地主的土地就是合法的，就被认为是公平的。当然有地主反抗，当时就以反革命给镇压了。大家看葛优演的一部电影《活着》，就是讲的那个年代的事。</p><p><br/></p><p>当时毛泽东提出来一个概念叫公平，他认为大家一样就叫公平。但是，这个理念到今天不存在了。邓小平在1979年提出大家不一样叫公平。要不然他怎么提出一部分人先富呢？</p><p><br/></p><p>所以可见这个分层还真是个很大的问题。从共和国刚建立一直涉及到今天，它基本都是头号问题。</p><p><br/></p><p>我向大家来阐述一下基本理念，什么叫公平和公正？我研究这个问题，写过很多书，1988年是第一本，叫《中国大陆的贫富差别》。贫富差别现象1987、1988年的时候开始出现，但没有今天这样突出。后来我写过一系列的文章，大家从网上应该也很容易找到。</p><p><br/></p><p>最近，我们都在做一件事，就是总结改革开放30年。当然我觉得2009年也很重要，是中华人民共和国成立60年。对改革开放30年和建国60年的总结，我觉得两者都很重要。</p><p><br/></p><p>我最近参加了好多关于总结30年的会议，我在会上发表了一些关于改革以来的社会结构变化，以及共和国60年的四个实验的观点，这些观点还没写成文章，但好像网上有人把我在会上不是很完全的讲话记录下来了。共和国在阶级分层和结构上做的四个大的实验，我想今天就大概地讲一讲，这也是我最近的一个观点。</p><p><br/></p><p><br/></p><p>第一个大实验：打碎阶级结构的实验</p><p><br/></p><img class="ke_img" src="//xqimg.imedao.com/159003d02d32f9f3fd561ee2.jpg!custom660.jpg" ></span><p>这是毛泽东做的实验。在中华民族3000多年有文字记载的历史中，都从来没有发生过毛泽东做的这个打碎阶级结构的实验。中国王朝更替频繁，但它基本上都复制了原来的社会结构，没有把原来的结构打碎，然后建造一种新的结构。</p><p><br/></p><p>大家都知道，把农村的结构打碎，一开始的时候农民挺老实的，你让他去抢地主土地，他不敢。周立波写的小说《暴风骤雨》，就是反映解放区土地改革中的阶级风暴，一开始谁敢去抢啊，都是本分农民。但是***就给他们讲清道理，为什么要抢。</p><p><br/></p><p>一般本分农民真的不敢。后来大家一想也是，凭什么地主就拥有那么多土地，最后就把这些土地分了。从理论上讲，我们管这样一种公正观念叫结构公正，就说我不管什么原因，最后大家结果应该是一样的。所以出于这样的理念大家最后接受了。</p><p><br/></p><p>农民分地事件对中国社会的影响非常巨大，直到今天我们都必须承认。为什么呢？大家后来分析了分了土地的国家和没分土地的国家的各自发展进程，发现没分地的国家后期的改革改造特别困难，如泰国就没分地，到现在为止还不稳定，就是说打碎这个土地所有制不能说它没有意义，但是确实也付出了十分惨重代价，为什么惨重呢？</p><p><br/></p><p>你要理解一个村庄怎样生活，中国人是讲仁、义、礼、智、信的，一个社会生活占有财产和不占用财产只是问题的一个方面，更多的是大家得有理念。</p><p><br/></p><p>我们中国并没有很强的宗教，西方的宗教很发达，所以你能理解西方通过宗教来传播它的东西。但中国从来没有一个能让全体民众都接受了的统一的神教。大家说的佛、道，实际上信的是很少的一部分人，而且那个宗教在中国也改变形状了。</p><p><br/></p><p>宗教强调的是一个理念，如果求的都是现实目的那不叫宗教。比如说她想生孩子，她去拜观音娘娘，说让我生个男孩子。宗教不是那么要求现实利益的，不是我要赚钱就赶紧去求神拜佛。</p><p><br/></p><p>宗教讲的是一个比较崇高的目的和理念。所以佛教传到中国后都变形了，不是原来意义上的佛教。那这个民族的精神靠什么维持呢？汉武帝罢黜百家，独尊儒术以后，仁义礼智信这套儒家的思想大家都信了，然后形成一种，梁漱冥先生管它叫家庭伦理本位社会。</p><p><br/></p><p>这个东西就维系着这个民族。这套东西以谁来为载体，来传播呢？隋朝以后建立科举考试制度形成了士绅阶层，这个士绅阶层很重要的，他们占有土地，他们也是一个社会的理念的代表。</p><p><br/></p><p>看鲁迅写的小说，还能看出当时农村里还存在没有破落掉的士绅阶层。费孝通讲过，其实士绅和地主讲的是一回事。地主，我们革命以后就认为是坏极了，是剥削者。</p><p><br/></p><p>其实他们也是文化的代表。那么，当我们把这个土地平分后，把地主阶级摧毁掉以后，那就出现了一个大的问题，就是一个农村该怎么来治理？它还有没有正义的代表了？</p><p><br/></p><p>当然我们出现了村干部，我觉得在这段时间里毛泽东传播了他所创造的思想体系，虽然他认为是继承发扬了马克思主义，其实你要仔细研究老三篇，《为人民服务》《愚公移山》这些也是讲仁义礼智信的，是跟传统儒家道德是接轨的。毛泽东创造的思想体系，被全民族也接受了。</p><p><br/></p><p>在这段时间里原有结构打碎以后，农村非常困难。大家要理解为什么老是没有粮食吃，我们从1949年以后，一直到1979年把土地再分了以前，粮食不够吃的问题一直解决不了。在座的年龄大的都知道，一到夏天的时候就得下乡帮助农民去。</p><p><br/></p><p>你想想那时候中国的农民比现在还多，怎么就种不出粮食来呢。我那时候在北京四中念书，一到夏天收粮食的时候，学生都要到乡下去，割麦子，收粮食。农民怎么就不收呢？农民不好好干活。农民是顾家的，如果你强调这是给他家干他绝对好好干。</p><p><br/></p><p>如果你说给公社干，他不太理解你，他不会给你好好干。我们那时候好多人到农村去帮农民干活其实是很荒诞的。你以为农民干不了？农民当然会干，农民只不过是就不干。</p><p><br/></p><p>原有的结构打碎以后我们真的是很困难。直到今天这个“三农”问题还是解决不了。其实核心问题还是农村没有一个道德价值观的载体。因为毛主席的时代好歹还有一个村干部，那个村干部有的时候也自私，但是毛泽东对他们训的很厉害，经常开展社会主义教育运动。那时候村干部顶多有一点多吃多占。</p><p><br/></p><p>我不知道大家理解不理解，我们看那个时候的材料，一个村干部到公社去开会，他看人家早点店里卖炸糕，他就买了两个炸糕吃，结果回去就被批斗了。这叫多吃多占啊，这是公款啊，你敢拿公款买炸糕吃。六十年代初搞社会主义教育运动，主要就批判农村干部多吃多占这个事情。</p><p><br/></p><p>毛泽东时期的干部大体上还代表一种为公的价值观。像陈永贵就是这种代表，我觉得陈永贵还是挺努力的，不管怎么样，人家是干活干出来的，真的是让那个山西的大寨多打粮食了。</p><p><br/></p><p>当时出了一些榜样。但改革以后就完了，因为大家分田单干了，干部也要有利益，所以干部就不再是正义的代表了。</p><p><br/></p><p>所以农村到现在为止搞不好。其实大家都明白，一个事情要搞好，核心是人啊。现在干部都自己顾自己，他还想多捞一点呢，怎么能把村里搞好呢？所以实际上我们自从打碎这个士绅阶层以后，我们始终没找到一个能组合农村的社会阶级。</p><p><br/></p><p>今天虽然也有村干部，但总有很多矛盾。有一些，像华西村、韩村河，有一些好的村代表，但都是个案。很难像传统的士绅阶层那样有着道德理念，有这样的一种代表。</p><p><br/></p><p>这个阶段的实验大体上是摧毁结构的一个试验。摧毁以后也有一点好处，就是后来的试验比较好做。因为你要不把旧的结构摧毁掉，你后来想做的事情很难做到。摧毁结构的一个试验实际上就是解放农民。</p><p><br/></p><p>这个打碎阶级结构的试验先是在农村进行。后来到50年代中期，毛主席决定把它引到城市中来。1956年开始了社会主义改造，就是资本家要把他们的产业厂房都让出来。当然一开始说的是公私合营，但合着合着都合成后来国营集体的来源了。</p><p><br/></p><p>这个事情大家如果看材料的话荣毅仁他们都写过回忆录。1956年夏天，毛泽东主席在中南海组织了一个座谈会，把当时最有钱的这些人，工商业主，包括荣毅仁都请去了。</p><p><br/></p><p>毛泽东劝说他们要搞社会主义。当时荣老板带头。毛泽东问荣老板，问他是公有制好还是私有制好。荣老板赶紧回答毛主席，说“公有制好！”。然后所有在座的都说公有制好。</p><p><br/></p><p>毛泽东主席原来设想的社会主义改造的过渡时期相当长。你要理解中国的国情，我写过一篇论文叫“中国人的心理二重区域”，中国人的心里都分成两个东西，一个是对外讲的，一个是不对外讲的，心理学上有这个现象。</p><p><br/></p><p>那明明就是他们家的东西，怎么会说不要了呢？他不是说不要，而是迫于当时那种情况。应该说毛泽东是一个很有感染力的人，毕竟大家接受了他的想法，所以说中国人就很怪。</p><p><br/></p><p>清王朝入主中原之后，强制推行清朝发式：将前额头发剃掉,后面留起辫子，当时有“留头不留发,留发不留头”之说。一开始汉人是反抗的，大家看历史档案知道，谁要不剃头就砍头，但就有人敢反抗，于是清王朝很震惊。</p><p><br/></p><p>你统治就统治吧，但你连头发都剃，那就过了，你非让大家剃头，不剃就得杀头。清王朝在一开始有点害怕，但后来下了决心，杀。最后还是老百姓怂了。那就剃吧。你说当时人们心里真服气吗？当然不服气了。所以我估计中国人心里二重区域有很长远的历史。</p><p><br/></p><p>我们分析文革，美国的加利福尼亚大学洛杉矶校区有个教授叫黄宗智，Philip.C.Huang，研究过文革，他发现当时报纸上讲的是一套东西，而实际上做的是另一套东西，这是很难以理解的。</p><p><br/></p><p>香港也有个教授研究大陆，也有同样的感受，就是说你文字上写的东西与实际做的是两回事情。</p><p><br/></p><p>直到今天，比如说我们在学校里有政治学习。要到政治学习了，大家发言，大家一定会说三个代表、科学发展观什么的，等到散会了，就说另一套话了。所以我觉得毛主席是一个心理学大师。</p><p><br/></p><p>他那样问“公有制还是私有制好？”当时那些民族资本家们能说什么？肯定得说公有制好。不管怎么样，那场财产制度的改革是比较彻底的，所以可以说到了1956年以后，从财政上来看我们原来的财产结构真的打碎了，连房产结构都打碎。</p><p><br/></p><p>在座的老同志都知道，1956年的时候是要把私房交出去的。而到了90年代后期开展了大规模的公有住房改革，最大的事情就是把公有住房分掉了。现在城市里的老百姓70%得到的是房改房，30%是后来买的商品房，大概就是这样一个分配结构。</p><p><br/></p><p>住房改革一下子把中国变成了在全世界里住房自有率很高的国家了。而1956年做的是相反的事情，那时要你把私房交公，按道理说这太难了。</p><p><br/></p><p>当时有一个文件，是中央批转了中共中央书记处二处《关于目前城市私有房产基本情况及进行社会主义改造的意见》，按照文件要求：如果你们家房子很小，就你们家几口人在里面住，这是自住房屋是允许的。但除了自住房屋以外，如果还有房子拿去出租，那就叫剥削，这在当时是件很可怕的事。</p><p><br/></p><p>那你说大家交房吗？我看了几份当时的有关资料，表明都踊跃交了房。所以你要理解这就是心理二重区域。我看一个资料说，中、小学生在学校里受教育，回去就跟父母们不干了，说爸妈你们说清楚咱们家的房子，到底是公房还是私房。</p><p><br/></p><p>凡是家里有私房的人就觉得特对不起孩子，就觉得说人家都交了，你为什么不交。所以父母就纷纷交房。</p><p><br/></p><p>1956年的私房改造，造成了许多历史遗留问题，不仅是北京市，好几个城市都有这样的问题，就是1956年把房子交了，现在又后悔了，跑到政府去想要回这个房子，这件事不是一个少数，相当大的一批人，现在政府没有办法解决这些问题。</p><p><br/></p><p>1956年把私房拿来以后，交的就是现在的那个房管所。大家去查那个房屋的性质，一般叫经租房。什么叫经租房，就是这个房本来是你们家的，后来经国家去出租了。</p><p><br/></p><p>开始，是给你点利息，后来也不给了，反正就变成国家的了。这件事确实是有点不明不白的。这从法理上说合法吗？严格的说，不合法。土改的时候，确实立法把土地分了。</p><p>大家知道我们的五星红旗有五个星，那四个小星星什么含义？最初设计的时候认为那是四个阶级，其中有一个是代表民族资产阶级，那是共和国建国时候的一个合法阶级。</p><p><br/></p><p>后来就把人东西给抢过来了。严格的说，这件事情做的不是特别合乎法律。大家说那怎么就违法了呢。那你想想毛泽东主席是什么人物，大家说毛泽东主席是无产阶级革命家，我觉得一点不错。</p><p><br/></p><p>后来是个领导人就说是无产阶级革命家，我说你不能随便叫。只有像毛泽东这样的人，真敢把财产分了，才能叫无产阶级革命家，对不对？革命家大家要想想，他按不按法律办事？当然不按法律办事。按法律办事叫革命吗？革命啊，那能合法吗？。</p><p><br/></p><p>尼克松和基辛格1972年访华的时候，毛泽东直白地告诉尼克松：我这个人是“和尚打伞，无法无天”。当时美方翻译没太理解，后来美国国务院公布的文本怎么说的呢？</p><p><br/></p><p>它说毛泽东主席像一个和尚，打着一把雨伞，行走在风雨之中。后来尼克松在海外老说毛泽东说他是一个打着雨伞云游四方的和尚。他就没理解毛泽东是什么意思。毛泽东的行为真的是不按法律办，他搞的文化大革命符合哪条法律？所以他真的打碎了原有的结构。</p><p><br/></p><p>打碎阶级结构以后出现了靠什么来维持秩序的问题。文化大革命中，毛泽东根据***的理论，让无产阶级的先进代表来当管理者。那时候我们清华大学，就有工宣队进驻，就是工人当领导了。</p><p><br/></p><p>1968年，我们被要求上山下乡，我在东北呆了好多年，在离那个叫珍宝岛的地方很近，叫宝清。我们村里面那时候有一个活动叫忆苦思甜，我们解放后出生的人也忆不出什么苦。那村里真有苦的，有个冯自盛（音），忆着忆着就越忆地位越高。</p><p><br/></p><p>最后，当了副团长，相当于副县长这么一个级别。那就当领导了。当领导以后他就管后勤。你说他一个农民，解放前是吃过不少苦。他管仓库，他觉得仓库里什么东西都好，他就天天从仓库里往他们家搬东西。</p><p><br/></p><p>搬到最后，大家实在不能容忍了，说你再苦你天天把仓库的东西拿你们家，你也不能当这个干部了。后来就把他撤掉了。我的意思说打碎阶级结构以后当时也尝试过各种各样的管理办法，但总的来说你能理解一个打碎阶级结构的社会是比较混乱的。</p><p><br/></p><p>邓小平在1979年以后就坚决不允许“坐直升飞机”。王洪文是一个上海的工人，毛泽东把他作为接班人，所以当时党内排名次是毛泽东，王洪文，周恩来，后来是毛泽东不信任王洪文了，又把他撤掉了。</p><p><br/></p><p>邓小平说要有秩序，决不能那样方式提拔人。你要理解那一段时间，中国确实秩序比较混乱，这它和打碎阶级结构有密切的关系。当然，毛泽东打碎阶级结构以后也复制了一套新的秩序，比如说干部制度、户籍制度。户籍制度应该说是在毛泽东时期形成的，它也是维持秩序的一种方法，其实也是分层，实行城乡二元结构。</p><p><br/></p><p><br/></p><p>第二个大实验：恢复结构的实验</p><p><br/></p><p><br/></p><p>这是邓小平做的实验。仔细想想，邓小平改革以后做了什么，他不过就是恢复了原来那个结构。邓小平在农村做的一件事就是分田。很简单一个道理，从前田是归公社的。</p><p>安徽省凤阳县小岗村几个农民把田地分了，然后逐渐传到全国去，邓小平他们也支持。于是农民就把地分了，这就叫作农村联产承包责任制。其实分田这件事情很简单，50年代就分过田。</p><p><br/></p><p>后来在困难时期，大家知道毛泽东和刘少奇的一个重大分歧就是刘少奇搞“三自一包”。刘少奇就认为你没粮食了，那你就把田分给农民自己种，农民只要知道是给自己干活，那他就绝对好好干。说不清这是给谁干活的，那这活表面上像干，但实际没干。</p><p><br/></p><p>在恢复结构的这段时间里，我使用了一个概念叫“社会记忆”。这一点体现出中国和前苏联的不同。大家知道，苏联所谓社会主义革命如果从1917年算起的话它是70多年了，它原来社会的一套彻底没有了。中国严格的说，它的社会主义实验只有20多年。</p><p><br/></p><p>1956年以前资本家还很多，私营企业还是很普遍的，然后1966年到1976年文化大革命基本结束，接着就开始改革了。邓小平请荣毅仁这些大资本家再出来的时候，这些人还活着。</p><p><br/></p><p>改革最初有个概念叫老个体户，什么叫老个体户呢？1956年时人家就是做个体的，现在又重操旧业。所以我觉得中国的打碎阶级结构的实验实际上时间很短。</p><p><br/></p><p>到1979年以后它开始恢复结构。为什么能够恢复？我觉得就是因为人们的社会记忆没有忘却，改革这30年来好大一部分都是社会记忆。你比如说老的京戏怎么又重新恢复了？</p><p><br/></p><p>那都没忘啊，词和曲都会的。所以你要理解，包括比如四书五经又开始变得热起来了，于丹又红起来了，实际上它的这套道德价值观念中断的时间不算长，它打碎的时间并不是很长。在一定程度上它还有可能恢复原有的结构。</p><p><br/></p><p>恢复结构这段时间的实验，我曾经有过一些总结。首先就是说我们特别特殊地把财产均等化的一个分配制度。现在所有数据都能证明，毛泽东时期他做的这个财产均等化的试验实际上证明财富分配的均等程度是平均多了。</p><p><br/></p><p>我们用一种方法来测算吧，我不知道大家熟悉不熟悉，用基尼系数来测。基尼系数实际上是个统计学家叫Gini的这么一个人，他用经济学上的洛伦茨曲线来算人们的差异性程度的这么一个指标。</p><p><br/></p><p>算的结果证明，毛泽东时期中国如果把城乡合在一起的基尼系数大概是0.3的样子。这个系数最小为0，最大为1。0就是绝对平等，1就是绝对不平等。当然1是不可能出现的。如果出现1，那就是说所有财富都归国王一个人，从第二个人开始，一分钱都没有。</p><p><br/></p><p>王后也不给一分钱，一口饭也不给。所以是不可能的。毛泽东时期的基尼系数，如果城乡合计是0.3左右，如果单算城市是0.16，这是世界银行在1979做的一个数据，均等化很强。0.16，做研究的人知道，全世界都找不出第二个地区。</p><p><br/></p><p>这是怎么弄的呢？就是用票证来分，你真的不得不承认它分的很均等，票证太多了，买什么东西都是均等地分。所以你得承认这套体系组织太强大了。当然不是他一个人，有周恩来帮着他。当时也有一点腐败但不严重。</p><p><br/></p><p>假设是今天来分，乱了。那干部肯定都拿走了谁还给你分呢？当时毛泽东他用他那套理念来教育大家，然后大家真的就均分了。改革以后，我有篇文章分析，就是中国怎么恢复到原来体制的，毛泽东创造的体系，财产均等化程度很强。</p><p><br/></p><p>改革以后，中国又变成贫富差距很大的国家。我们测的基尼系数目前一般大概认为是0.5的水平。大家对这0.3与0.5可能不太理解。0.5的水平在世界上应该说算比较高的。</p><p><br/></p><p>0.3是比较低的。一般认为基尼系数如果低于0.4就属于中低不平等程度。基尼系数如果高于0.4那属于高不平等程度。我们从1994年以后就进入高不平等程度国家。到现在我们属于比较高的了。因为全世界基尼系数最高的国家也就0.61~0.62的样子。</p><p><br/></p><p>我看世界银行数据，像塞拉利昂、巴西、危地马拉等南美洲、非洲的一些国家，他们基尼系数最大的前十位最高也就是0.6稍多一点。从来没见过0.7的。我估计财富分布还是有天理的，就是如果你一口饭不给人家你还能统治吗？</p><p><br/></p><p>像巴西我看过一个材料，说巴西在城市里办了很多的食品服务中心，我理解就跟我们从前说的粥棚差不多，大概就这意思。我们还没到那个程度，但是全世界各个国家相比，我们现在排的是比较前面，但没有进入最前面，我们是0.5。</p><p><br/></p><p>所以说毛泽东做的财产均等化的实验，实际上以失败告终了。因为邓小平说了“让一部分人先富”，除了邓小平我没见过世界上有第二个领导人敢说这句话的。</p><p><br/></p><p>你想想美国总统敢说吗？当然不敢说了。大家知道，美国是不是一部分人先富，那是肯定的。但他一定得说自由平等博爱，他绝不敢说一部分人先富。我们得承认邓小平胆子大。</p><p><br/></p><p>这是很伤人的，凭什么一部分人先富？八十年代初就在争论，谁是这一部分人？现在还在争论。我记得当时***在世的时候，***说那我们干部不能当这一部分人。</p><p><br/></p><p>他挺正直的，说干部不能当。但这东西不是谁要当不要当的，财富的分布，特别是推进市场化以后，不是你指挥棒能决定的。不是你说谁就是谁。</p><p><br/></p><p>从这个角度来看，改革以后我们这样一个恢复结构的实验产生的结果表现的是财富的不均等化比较突出。那么当然就要探讨一个问题了，就是合理不合理，公正不公正。这是核心问题。</p><p><br/></p><p>在分析这些问题的时候我提出过好多理论。90年代后期到新世纪以来，我管它叫“阶级结构定性化”。80年代，阶级流动率很高，一个人说我想致富，绝对有机会。1992年以前都不能说有大富翁。真的富翁是邓小平1992年南巡以后产生的。</p><p><br/></p><p>最大的财产是来源于土地、矿产、国有企业这些大资源。这些资源如果分掉的话，那极大的财产集团就产生了，实际上是分这些东西产生的。80年代，万元户就了不起了。</p><p><br/></p><p>你想想万元户，现在上大学一年都得交一万。所以直到80年代的时候没有什么大的财产集团产生。大的财产集团都是到90年代才出现。90年代以后我们发现这样一个现象，80年代社会流动率比较高，穷人真的可能变富，有好多个案都证明。</p><p><br/></p><p>我们当时有一次把中国私营企业（当然可能不是很准）前100名请到北京来，那是1994或1995年的事，发现有很多就是农民。他们为什么突然就变得暴富了呢？主要是产权不清楚。</p><p><br/></p><p>怎么致富呢？我觉得特简单，有一个广西人，那时候包荒山，他就把山包了。结果他突然发现这山上有矿，那这矿是谁的说不清楚，当时有个口号叫带领大家致富，就是不管怎么样反正咱就采矿、开矿，就把这矿挖出来开始卖了，越卖越多，那时候发现的是大理石，他就买了切割机，跟切豆腐一样，切成片。</p><p><br/></p><p>城市建设需要，就大量往城里运，这样逐渐的有了150辆卡车，迅速就暴富了，好几个亿的财产了。那你这个山是谁的？矿是谁的？在改革初期就说不清楚嘛。人家包了那就是人家的。</p><p><br/></p><p>另外人家可不光是自己一个人富，他带领全村富裕啊，大家都去采矿。他很有财产，但别人也赚了些钱。这段时间是第一个阶段，可以说社会没有形成阶级结构，很乱的。</p><p><br/></p><p>到了90年代我们就逐渐立法，在座的说“我再去包一座山！”，今天没有这个机会了。你去看那法规说的越来越细，财产权越来越清楚。2007年3月份我们颁布了《中华人民共和国物权法》。</p><p><br/></p><p>经过一个比较乱的时期，到现在，阶级的界限逐渐形成了。80年代姜文演过一个电影叫《本命年》：从大牢里放出一个人，没工作，谁也不愿意要他。街道有人劝他，你扯个照吧，就是说你办个个体买卖吧。</p><p><br/></p><p>那个时候真没什么规定，反正只要你自己创业，做个什么事情就做起来了。今天应该说这套规范越来越严格，那叫注册资本。你说我办个房地产公司，得有一两千万注册资本，如果没有你就办不了。</p><p><br/></p><p>我们发现阶级的界限形成，阶级的流动率降低，阶级的生活方式形成等等，这套东西在都在这个阶段形成了。我们管它叫恢复结构时期。当然还有好多好多特征，我就不去细讲这些特征了。</p><p><br/></p><p>这是第二个实验。这段分析，我也提出过一些想法和观点，我写过《中国社会的四个利益集团》、《丁字形社会结构》等文章，这些文章在网上都能看到，大家可以去网上看一看。</p><p><br/></p><p>第二个实验是回答这样一个问题：谁得到了什么。毛泽东说地主不能有土地，把它分给农民。农民得到了土地。邓小平说应该让一部分人先富起来，那谁是那一部分人呢？</p><p><br/></p><p>我们知道在欧美的学界中国研究变的非常热，我不知道大家熟悉不熟悉。就是说过去关于我们中国的研究在西方叫Regional study——区域研究，不是他们的学术主流，但最近你看国外的经济学杂志、社会学杂志，中国研究不仅仅是一个区域性的研究，它会把它作为一个主题的问题提出来。</p><p><br/></p><p>我想这是因为中国目前的这场实验是具有世界意义的一个实验，太大的一个实验了。欧美社会它的社会结构基本定型了。它没有那么多惊心动魄的实验。而中国这个实验非常吸引人，所以就有很多人在研究中国。欧美学界，特别是社会学界，他们始终在探讨一个问题，就是改革以后谁获利了。</p><p><br/></p><p>他们研究这个问题，有一派认为干部获利了。北大张维迎教授我不知道大家知不知道他的观点。有一天，我看了张维迎一篇回忆他母亲的文章，看后挺感动。</p><p><br/></p><p>张维迎出身非常贫寒。他是陕西一家很贫穷的农民子弟。但他说了这样一句话，改革以后干部是利益受损最大的集团。这一下子网上都在骂张维迎。</p><p><br/></p><p>欧美学界一直在争论：干部究竟获没获利。美国康奈尔大学，挺有名的一个大学，在纽约州的北部。这个大学的Victor.Nee教授，在八十年代写了一篇论文。当时做了一个关于医疗的调查。调查里面有收入的数据，他用那个数据证明，大概在1981或1982年，福建农村改革的时候，农民获益了，干部受损了。</p><p><br/></p><p>这有可能。因为大家知道分田最开始的时候，之前都是干部有权利，突然把土地分给农民了。他用福建的一组数据，证明在80年代前期的时候，干部权利缩小了。但后来所有数据都证明，那只是改革前期里面很短的一段时间里发生的事情。</p><p><br/></p><p>后来的历史证明肯定不是那个样子。所以，欧美学界就批评维Victor.Nee。可能有人不太知道他。这个人看他样子你以为他是个华人，其实他是典型的美国人。不会说汉语。大家不知道他其实是美国人，他是在美国出生的。</p><p><br/></p><p>但是他写的那篇文章还是挺有影响的。后来美国学界争论的焦点就是说到底是谁获利了？到现在还在争论这个问题。其实我们中国人都明白，干部当然没受损失了，还用说吗。</p><p><br/></p><p>第二个的实验大部分是在解释“谁得到了什么？”。我的一篇文章叫《中国社会的四个利益集团》，也是分析哪些是受损的集团，哪些是获得巨大利益的集团。</p><p><br/></p><p><br/></p><p>第三个大实验：资源配置方式的实验</p><p><br/></p><img class="ke_img" src="//xqimg.imedao.com/159003d02ed30283f7a6be24.jpg!custom660.jpg" ></span><p>换句话说，我在解释“怎样得到的？”。从社会分层角度讲有两个大问题，第一个叫“谁得到了什么？”，第二个叫“怎样得到的？”其实“怎样得到的？”比“谁得到了什么？”还重要。</p><p><br/></p><p>“怎样得到”更多的证明社会正义，他得到的合理不合理？邓小平说一部分人先富。好，假设某一个人他富了，比如说姚明，大家承认姚明有钱。我前一段看了一个富翁排行榜，说姚明年收入七亿。但姚明为什么得到，有没有人嫉妒姚明？没有。</p><p><br/></p><p>为什么没人嫉妒他呢？那就是他为什么得到，因为人家有本事，到外国去挣钱，挣NBA的钱。反过来了，说一个大贪污犯――海军有一个王副司令员，有个女孩老在海军大院门口告他，最后告到中纪委去他家的时候（我这是从网上看的），从他家搜出人民币现金5000多万元。没有一个人认为这是公正的吧。</p><p><br/></p><p>还有一个例子，就是黑龙江的马德受贿案，说马德受贿的时候，在病床上，别人都是提一个大提包里装几十万元，给马德的时候都是往病床边一放，马德往床底一踹，从来不带数的。</p><p><br/></p><p>根据那个提包的大小，将来给你安排什么职务（我在网上看到的）。这也没有人认为是公正的。</p><p><br/></p><p>我把改革以来得到财产的渠道分了六个方面，这篇文章还没写成，我只是在想这个问题。我觉得大概是六种方式，我简单介绍一下为什么得到：第一种方式叫市场机制。</p><p><br/></p><p>改革以前是怎么配置的呢？就是政府配置。毛泽东当时创造一种方法，就是比较均等化的一种配置。但改革以后引入市场制，这个市场一共走了三步，直到今天也不能说走完了。什么叫市场？市场大家都明白，从亚当斯密以来就说是用一支看不见的手去配置资源的，也就是说让人们在竞争中去实现。</p><p><br/></p><p>所谓市场讲的是三个市场：商品市场、劳动力市场、金融信用市场。我们改革就是走三步。第一步是邓小平、***的商品市场改革。商品市场改革的核心是物价。</p><p><br/></p><p>改革开放前，商品的价格是国家控制。改革后，放开物价。我们就经历了八十年代末的物价暴涨时期。没有商品，就敢闯物价关。我觉得邓小平胆子很大。邓小平当时指示赵，大家去看《人民日报》，《人民日报》写的是“闯物价关”。</p><p><br/></p><p>邓小平认为这就跟打仗一样。真是很难，因为你没有东西就放开物价，当然就是价格暴涨了。大概到90年代中期，物价不是问题了。中国人的生产能力焕发出来了。</p><p><br/></p><p>就是说你只要生产东西能卖，能赚钱，那当然都去生产了。所以，我们第一步叫做商品市场改革。第二步是劳动力市场改革。谁搞的?朱镕基。</p><p><br/></p><p>胆子大不大？确实比较大，下岗啊。换句话就是说再没有分配工作了，再没有铁饭碗了，劳动力市场配置。到今天为止大家都理解这一点了。找工作变的很难了，没有分配工作了，老板想解雇就解雇。90年代中期以前，那时候中国还有铁饭碗制度。</p><p><br/></p><p>所以这是第二步。就是劳动力让市场自由配置。第三步是2006年12月底在WTO协议上承诺的，放开金融市场。看看2007年、2008年的股市暴涨暴跌，这就是金融改革实验。</p><p><br/></p><p>为什么会这个样子？就是因为大家相信有一个市场的，虽然不是我能控制住的，由它去配置。当然，金融市场实在也是危机很大。市场是周期性的，康拉捷夫曾经研究了几百年的市场，他发现市场是周期的。</p><p><br/></p><p>只可惜我们今天很惨，所有的市场都是走到这点上。但大家也不用灰心。因为市场是周期的。即使目前是在最危机的萧条期，但它会复苏。康拉捷夫是拿出几百年的数据去证明，市场就是这样一个东西。</p><p><br/></p><p>所以，既然我们中国人敢用这个东西，那你就得承受市场形成的压力。市场配置这个实验应该是最大胆的，中国改革开放30年做的最主要的事情就是这件事情，它就是把从前让政府规定的东西去让市场配置。</p><p><br/></p><p>这个市场配置大家要理解，它也是慢慢完善的。市场配置初期漏洞很多，那时一个人要想赚点钱，不是太难。要想暴富，在那个制度很混乱的阶段还有可能。当它逐渐秩序化，以后就很难实现了。为什么呢？我们中国人民银行实行存款实名制。</p><p><br/></p><p>1995年以前，你瞎编一个名字，就能存钱，那时候就这个样子，什么证件都不要。当时还说为储户保密。现在，你到银行就要拿身份证。全世界没有一个国家说我敢编一个名字就去存钱的。但1995年以前，中国就是这个样子。</p><p><br/></p><p>所以你要理解这个制度有个完善的过程。市场机制的实验应该说还算是成功的实验，尽管这里面产生无数的问题。市场它实际上讲的是一个竞争规则的问题。那就是说你这个规则要逐渐完善。</p><p><br/></p><p>我们用一组数据测算发现这个成功之处。什么成功之处呢？我们测了一个东西，叫教育的收益率。在座不是专门做这个研究的人可能不太理解什么叫教育收益率。</p><p><br/></p><p>就是说，假设有两个人，甲和乙。说甲比乙多上一年学，将来对他的收入产生什么影响。我们中国过去确实出现过一个很怪异的现象叫“脑体倒挂”。</p><p><br/></p><p>80年代，社会上有种说法叫“搞原子弹的不如卖茶叶蛋的”，今天就不能理解了，国家搞原子弹的那帮人，收入还没大街上卖茶叶蛋的收入高？80年代，中国真的就这样子。那时候还有种说法叫“拿手术刀的不如拿剃头刀的”。</p><p><br/></p><p>不是假的。你去查查那时候的医生，一个医生做一个大手术，或者一夜连做三四个手术。到早上拿加班费，一角八分钱。就这么惨那时候。所以你要理解那个时候叫脑体倒挂。</p><p><br/></p><p>都不要上学了，越上收入越低。教育收益率从八十年代的负收益，到1993、1994、1995年，每年我们测，教育收益率逐渐变成正收益了。一开始是4%、5%、6%，最近，测我们中国人的教育收益率达到10%的样子了。什么叫10%的教育收益率呢？</p><p><br/></p><p>就是如果一个人比另一个人多上一年学，在一般概率的意义上来说，他可能比少上一年的人要多收入10%。这些东西说的是为什么得到。市场机制有没有合理性？应该说，它有合理性。我们毕竟建市场时间不长，漏洞还很多。这是第一个。</p><p><br/></p><p>第二个我管它叫政府的作用。我前年写了一篇论文，我发现改革30年，政府起了特别大的指导作用。其实就看政府政策怎么定。老百姓管这叫“说你行，你就行，说你不行，你就不行”。实际很大程度上是它想把财产给谁。</p><p><br/></p><p>我们国有企业有一段时间搞抓大放小，当时很多的国有企业财产就拍卖掉了。在那个过程中产生了很大的问题。我记得当时有个叫郎咸平的指责顾雏军，郎咸平发现格林柯尔——顾雏军自称在香港注册的一个公司，收购了四家大国企。</p><p><br/></p><p>在那段时间，说实在的，很大一部分富裕叫政策性富裕，就是看政策对谁有利，政策想让谁富。虽然我们认为第一个因素有市场的合理性在里面，但不公正的现象是很多的，一个重要的原因就是我们所分的财产都是毛泽东留下的那笔财产。</p><p><br/></p><p>毛泽东留下的财产应该说最大的那笔叫土地，对吧？比如2008年，最有钱的黄光裕。2007年，最有钱的是26岁的一个女孩——碧桂园的杨惠妍，她是中国首富。</p><p><br/></p><p>大家怎么看心理也不平衡。26岁也就是个年轻的女孩子吧，就成中国首富了？那就是说你为什么得到?因为他们家有土地，那我们就得问了。</p><p><br/></p><p>土地是谁的啊？因为按照《中华人民共和国宪法》，中华人民共和国土地就两种所有制：农村土地为农民集体所有，城市土地为全民所有。大家看宪法到现在还是这么写的。</p><p><br/></p><p>但是说他家买了70年的使用权，然后他就暴富了。这段时间里很多的富裕属于政策性富裕。政策性富裕和第三种叫权力性富裕还不太一样，政策性富裕就是说它也合乎法规。但法规本身应该说不是机会公平的，而是不公平的。</p><p><br/></p><p>第三种我管它叫权力性富裕。权利性富裕就很麻烦了，包括腐败这些因素。这里面确实非常复杂。这个就和第四种东西联系在一起，我管它叫“关系“。中国是全世界关系最为复杂的一个国家。我们想建法治社会，但“关系“最摧毁法治。</p><p><br/></p><p>这个东西无处不在，表面上你看不出来。比如说土地公开。你看我也限制了，他的子女不许怎么怎么样了。但是你要理解，这个七大姑、八大姨拐弯抹角的关系啊，什么老乡啊、同学你防不胜防。你要想从法律上来把关系限制住，你绝对限制不住。</p><p><br/></p><p>现在，权力加关系，这个东西太可怕了。这是中国碰到的一个大难题。我们本来以为说世界各国要搞法治，但搞到东亚国家以后，都碰到这个难题了。当年的日本，也是腐败的要命，总理跟走马灯一样的更换。</p><p><br/></p><p>韩国、我们国家的台湾，你看那陈水扁现在都弄出事来了。所以东亚这些国家到最后它没有办法，就全盘的照搬西方的政治制度了。但中国大陆说了，我们决不能模仿西方的政治制度。对我们来说非常大的难题，就是怎么限制住权力。</p><p><br/></p><p>用法律来限制关系太困难了。陈水扁我觉得他关系用的不算太杰出。他就他儿子这几个家庭成员，如果他动用的关系更复杂的话就更难处理了。我们今天碰到的是极其复杂的。</p><p><br/></p><p>比如陈良宇，当时就把上海的两个房地产商审出来了。一个叫周正毅，一个叫张荣坤。从家庭关系看，找不到。你找不到陈良宇与他们有什么直接的亲属关系，但是他就给他批地。</p><p><br/></p><p>这个批地可是了不得的，可以把表面做的很漂亮，也是公开招标，程序合理，实际上大家都明白，那东西就是要给他的。你不管这游戏怎么玩，玩到最后肯定是到他手里。</p><p><br/></p><p>所以从这个角度来看，第三种和第四种结合，在为什么得到里是最复杂的一个问题了。解决这个问题太困难了。</p><p><br/></p><p>第五种我管它叫单位的作用。就是说在配置资源里面，一直到今天有的资源是通过单位配置的。比如说有人在银行工作，有人在中石油、中石化工作。</p><p><br/></p><p>前一段，企业老总可以自行定工资，这是合乎法理的。平安保险公司的马明哲给自己定了一个六七千万元的年薪，于是大家就开始骂。说你那个平安保险公司，国家把保险给你，你不就等于白拿钱吗？怎么就能给自己定那麽高的工薪。</p><p><br/></p><p>所以就看你在哪个单位。这个东西你说他为什么得到，因为他在银行工作，他在中国移动工作。这个东西就很复杂了。我觉得在这个事情上可能对中国今天就业产生很大的问题。改革以后，邓小平的设想就是说我们大家应该是机会相等的。</p><p><br/></p><p>但今天就业变的非常困难，在就业这个事情上，不公平变的极其严重了。</p><p><br/></p><p>就是刚才我说的关系。你去看吧，最后那个就业全都是关系了。我觉得这个事情很麻烦了，还不如回到过去分配工作。因为你的班主任还是有点良心。他一般还是根据你的学习成绩来分配的。</p><p><br/></p><p>要这样说来的话分配工作还有一定的合理性。对老师来说，一班都是自己的学生，都对他们好，但分配工作肯定是他功课好，给好单位，你天天不及格肯定给你分一个差单位。他心里还有公正可言，而今天我看了一些事情，就觉得真的了不得。</p><p><br/></p><p>所以今天劳动力市场机制表面上看很合理的，其实是最不合理的了。就因为“关系“把一切都冲破了！听起来很好的一个制度，全都是走后门。所以在这个问题上，我觉得问题很大。那大家说按你这个配置我们老百姓就一点办法都没有了吗？</p><p><br/></p><p>老百姓也有一点办法。比如那个最牛钉子户，都走了，就剩他一家。大家就觉得这人胆真大，他怎么就留下。后来网上说了，人家是全国散打第二名。大家理解了吧，拳头。</p><p><br/></p><p>所以我们就理解了，抗争如此激烈啊。我们一年发生的群体性事件八万多起，真了不得啊。所以说你一个无权无势无关系的老百姓，他最后就是拳头抗争。</p><p><br/></p><p>管不管用？那个最牛钉子户还是管用，据说后来给了他很大一笔钱。一个社会如果讲秩序最后要上拳头，但现在真的就是拳头。</p><p><br/></p><p>我曾经研究两个地方的旧城改造，一个是什刹海，还有是我们关于南池子的旧城改造有一个课题，社会学和建筑学一块做的。南池子改造大家可能不太熟悉。南池子是王府井和故宫之间那块地叫南池子。寸土寸金，所以那个改造过程中斗争极其激烈。</p><p><br/></p><p>记得有一次我们到那个地方去调查，老百姓跟我反映各种各样的问题。我们聊着聊着就发现，老百姓一个个眼神不对，颜色不对，然后就一个个溜溜溜全跑了。</p><p><br/></p><p>我就问发生什么事情了？老百姓就说：李教授，你快看，他们来了！赶紧跑。什么来了呢？就是拆迁公司。拆迁公司那么厉害？你要理解，多数老百姓还是不敢动拳头，比较老实的。</p><p><br/></p><p>人家也不说什么，你不是不搬吗，今天一回家，玻璃破了。你去找，找不清楚。明天，孩子哭哭啼啼回来了，说妈妈，一个叔叔说了，明天我就不一定能回来了。</p><p><br/></p><p>当家长的你想什么心情啊？算了，咱斗不过人，赶紧跑吧。多数人都被吓跑了。但有没有厉害的？绝对有，散打冠军，绝对有钉的住的。</p><p><br/></p><p>最近，碰到了一系列的事件和问题，我感到关于为什么得到，你要理解一个社会大的制度变形，原来毛泽东以各种名义占有的财产，基本以公众名义占有的。后来就分这笔财产。</p><p><br/></p><p>分的时候基本就是按照我刚才说的那六个机制分的。里面有没有合理因素，我刚才说了有。比如说姚明人家有本事。那你说庄则栋有没有本事。肯定庄则栋他有本事。毛泽东时期庄则栋连续三次得世界冠军，给钱没有？</p><p><br/></p><p>没给什么钱。因为按毛泽东想法来说，你得世界冠军，精神鼓励为主嘛。现在庄则栋家里挂的奖状很多。那时候的分配机制、想法跟现在不大一样，。如果今天庄则栋连续三届获世界冠军，我估计庄则栋家里钱也不少了，对不对？改革以后，资源配置的方式发生了变化，这一部分就是分析这个问题的。</p><p><br/></p><p><br/></p><p>第四个大实验：寻找社会矛盾缓冲机制的实验</p><p><br/></p><p>我们第三个实验引发了很多的社会矛盾。资源配置一个大的问题就是合理不合理，公平不公平。所以，第四个实验就是今天正在做的。政府试图找到一种机制来缓解由于资源配置机制中各种不合理因素造成的社会冲突。</p><p><br/></p><p>今天的中国是什么样一个社会呢？我们管它叫转型社会。因为中国社会几个基本的事情没有完成，它从一个农业社会向一个工业社会转型，我们管它叫工业化、城市化、市场化。</p><p>在这个变化过程中，都是最激化矛盾的事情。欧美他们曾经在一二百年前和我们出现过同样的问题，就是大量人口向城市，工业化的速度非常快。</p><p><br/></p><p>那个时候矛盾冲突也是非常激烈。中国你要理解为什么群体性事件变的这么激烈，那就是说你这三个实验和三个大变化（市场化、城市化、工业化）。</p><p><br/></p><p>中国形成全世界最大的工人阶级队伍，按道理这是工业矛盾冲突非常尖锐的时期。我们也在探讨，用什么样一种体制和机制，来缓解这个矛盾和冲突。</p><p><br/></p><p>欧美国家基本上是想用制度化，想让矛盾冲突制度化。比如说法律就是一种矛盾冲突的制度化，他们也开始建立了各种各样的集体谈判制度等等。我们也在尝试着各种各样的实验。</p><p><br/></p><p>大家问我们要用多长时间？这是个大问题。最近我也写了一篇文章，就说我们改革开放30年了，从1978年到2008年，那篇文章预测，再过30年什么样子。当然，我们都不是神仙，不敢断定一定是什么样子。我们先看30年发生了什么变化，变化的方向是什么，根据这个方向，我们能预测未来的30年。</p><p><br/></p><p>预测大概是这样一种情况：再过30年，到2038年，农民占人口多大比例？直接从事农业生产劳动的人在全部劳动者中只占10%了。所以再过30年变化非常非常巨大。</p><p><br/></p><p>到现在为止，我们在改革之前，30年前，在国营、集体企业里就业的人数占99.9%。就是说城市的劳动者都在国有企业。只有0.15%不在国营企业。还有一点个体户，但非常非常少。今天在国有企业里工作的人（2008年）大概占到21%的样子。</p><p><br/></p><p>再过30年，国有、集体企业，包括政府所有加在一块，在城市的全部就业者中也就占10%的样子。我相信中国的这个结构会有很大的变化。还有一个很大的变化就是，大家可以从网上看我的一篇文章《丁字形社会结构》。</p><p><br/></p><p>我把我们国家第五次人口普查的数据，拿来用一种方法我们叫国际社会经济地位指数来算，算完结果发现中国特别怪。中国是一个什么社会呢？一个大横道，一个大竖道。</p><p><br/></p><p>这个就是每个人得分的分值。我们有一种算法，就是你的职业得多少分。因为我们“五普”数据有职业记录，我们就知道每一个人的详细职业。那为什么是一个大横道，一个大竖道呢？那就是城乡分野。</p><p><br/></p><p>这个大横道大体是农民，大竖道大体是城里人。换句话说，这个社会中产阶级不是很明显很突出。再过30年，大横道就只占10%了。中产阶级变的比较大了。</p><p><br/></p><p>从这个角度看，我相信中国社会似乎也能找到一种缓解社会矛盾的办法。因为中产阶级发展起来了。今天我们的中产阶级有多大？按我们的算法，中产阶级在我们今天中国的全部就业者中只占15%，所以85%都不是中产阶级。再过30年这部分会膨胀起来。我相信这个社会很大一部分稳定的因素会来自这样的一个阶层。</p><p><br/></p><p>今天因为时间的关系我们已经讲了一个半小时，大概还有半个小时可以让大家提问，那讲课就到这了。谢谢。</p><!-- pdf--></div></div><!-- 引用的文章--><link rel="stylesheet" href="https://assets.imedao.com/style/reward-009636.css"/><input id="sid" type="hidden" value="78970088"/><div class="reward-container"><div class="reward-btn">打赏</div><div class="reward-member hidden"><div class="header">已有<span id="listSize">0</span>人打赏了这篇帖子：</div><div class="reward-member-bd"></div></div></div><script id="rewardListTpl" type="x-template"><div class="reward-member-list">
+  <div class="fold-icon hidden"></div>
+  <%  _.each(data, function (item) { %>
+  <a class="reward-member-item" href="/<%= item.user_id %>/profile" data-screenname="<%= item.name %>" target="_blank">
+    <%
+      var domain = item.photo_domain;
+      function getProfileImage (profile_image_url,size){
+        profile_image_url = profile_image_url && profile_image_url.split(",") || [];
+        var img = domain + "/" + (profile_image_url.length > 3 ? profile_image_url[3] : (profile_image_url.length == 1 ? profile_image_url[0] : 'community/default/avatar.png!30x30.png'))
+        img = typeof size !== "undefined" ? img.replace(/([0-9]+)x([0-9]+)/,size + "x" + size) : img
+        return img;
+      };
+      var img = getProfileImage(item.profile_image_url, 30);
+    %>
+    <img src="<%= img %>">
+    <span><%= item.amount/100 %></span>
+  </a>
+  <% }); %>
+</div></script><script id="payAmountTemplate" type="x-template"><div id="payAmountModal" class="reward-modal dimmer center middle hidden">
+  <div class="reward-container">
+    <div class="reward-modal-hd">现金打赏
+      <div class="close"></div>
+    </div>
+    <div class="reward-modal-bd">
+      <div class="payment-mod">
+        <div class="reward-amount-mod">
+          <div class="reward-amount-hd">欢迎打赏，请选择打赏金额</div>
+          <div class="reward-amount-bd">
+            <div class="reward-amount-grid">
+              <div data-amount="1" class="reward-amount-item active">1 元</div>
+              <div data-amount="6" class="reward-amount-item">6 元</div>
+              <div data-amount="10" class="reward-amount-item">10 元</div>
+              <div data-amount="66" class="reward-amount-item">66 元</div>
+              <div data-amount="100" class="reward-amount-item">100 元</div>
+              <div class="reward-amount-other">其他金额</div>
+              <div class="reward-amount-custom hidden empty">
+                <input type="text" placeholder="可填写1-200"/>
+              </div>
+            </div>
+          </div>
+        </div>
+        <% if (wallet > 0) { %>
+          <div class="reward-payment-mod reward-payment-layout-3">
+            <div class="reward-payment wechat checked">
+              <span>微信支付</span>
+              <div class="check-radio"></div>
+            </div>
+            <div class="reward-payment alipay">
+              <span>支付宝支付</span>
+              <div class="check-radio"></div>
+            </div>
+            <div class="reward-payment wallet">
+              <span>余额支付
+                <i class="wallet-amount">可用余额<%= wallet %>元</i>
+              </span>
+              <div class="check-radio"></div>
+            </div>
+          </div>
+        <% } else { %>
+          <div class="reward-payment-mod reward-payment-layout-2">
+            <div class="reward-payment wechat">
+              <span>微信支付</span>
+              <div class="check-radio"></div>
+            </div>
+            <div class="reward-payment alipay">
+              <span>支付宝支付</span>
+              <div class="check-radio"></div>
+            </div>
+          </div>
+        <% } %>
+        <div class="reward-submit-mod">
+          <div class="reward-modal-btn pay-btn">立即支付</div>
+          <div class="reward-member-terms">
+            <div class="reward-ft-lf">支付即代表同意 <a href="/law/reward" target="_blank">雪球打赏协议</a></div>
+            <div class="reward-ft-rt reward-by-snowicon hidden"><a href="">使用雪球币打赏</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></script><script id="donateAmountTemplate" type="x-template"><div id="donateAmountModal" class="donate-modal reward-modal dimmer center middle hidden">
+  <div class="reward-container">
+    <div class="reward-modal-hd">雪球币打赏
+      <div class="close"></div>
+    </div>
+    <div class="reward-modal-bd">
+      <div class="payment-mod">
+        <div class="reward-amount-mod">
+          <div class="reward-amount-hd">欢迎打赏，请选择打赏金额</div>
+          <div class="reward-amount-bd">
+            <div class="reward-amount-grid">
+              <div data-amount="1" class="reward-amount-item active">1 雪球币</div>
+              <div data-amount="6" class="reward-amount-item">6 雪球币</div>
+              <div data-amount="10" class="reward-amount-item">10 雪球币</div>
+              <div data-amount="66" class="reward-amount-item">66 雪球币</div>
+              <div data-amount="100" class="reward-amount-item">100 雪球币</div>
+              <div class="reward-amount-custom">
+                <input type="text" placeholder="其他金额"/>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reward-submit-mod">
+          <div class="donate-detail">
+            应付：<span class="donate-amount"></span>雪球币；账号余额：<span class="donate-balance"></span>雪球币
+          </div>
+          <div class="donate-error hidden">
+          </div>
+          <div class="reward-modal-btn pay-btn">立即支付</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div></script><script id="qrcodeTemplate" type="x-template"><div id="qrcodeModal" class="reward-modal dimmer center middle hidden">
+  <div class="reward-container">
+    <div class="reward-modal-hd">微信扫码支付
+      <div class="close"></div>
+    </div>
+    <div class="reward-modal-bd">
+      <div class="qrcode-container">
+        <p class="qrcode-title">支付金额 <span class="wechat-amount">20.00</span> 元</p>
+        <img src=""/>
+        <p class="qrcode-desc">打开手机微信“扫一扫”</p>
+      </div>
+    </div>
+  </div>
+</div></script><script id="successTemplate" type="x-template"><div id="successModal" class="reward-modal dimmer center middle hidden">
+  <div class="reward-container">
+    <div class="reward-modal-hd">现金打赏
+      <div class="close"></div>
+    </div>
+    <div class="reward-modal-bd">
+      <div class="pay-success">
+        <div class="reward-result-mod success">
+          <div class="reward-result-heading">感谢打赏</div>
+          <p>成功打赏该<%= type %>￥<%= amount %></p>
+        </div>
+        <div class="reward-modal-btn reward-share blue">分享到雪球动态</div>
+      </div>
+    </div>
+  </div>
+</div>
+</script><script id="walletConfirmTpl" type="x-template"><div id="walletConfirmModal" class="reward-modal dimmer center middle hidden">
+  <div class="reward-container">
+    <div class="reward-modal-hd">提示
+      <div class="close"></div>
+    </div>
+    <div class="reward-modal-bd">
+      <p>请确认是否用余额支付 <%= amount %> 元</p>
+      <div class="reward-modal-btn deny gray">取消</div>
+      <div class="reward-modal-btn define blue">确认</div>
+    </div>
+  </div>
+</div></script><script>seajs.use(['reward/red-envelope.js'], function () {
+
+});
+</script></div><div class="status-ft"><!-- meta--><div class="status-meta"><div class="meta-btns single-meta-btn"><a href="#" class="btn-repost">转发<span style="" class="number">(<em class="em_number">20</em>)</span></a><a data-id="78970088" href="#" class="btn-fav">收藏</a><a href="#" class="btn-status-reply last">评论<span style="" class="number">(<em class="em_number">8</em>)</span></a></div><div class="meta-info"><div id="share" class="single-share"><span>分享到:</span><a href="javascipt:void(0)" class="wechat"><img src="https://assets.imedao.com/images/wechat@2x.png" class="share"/></a><a href="javascipt:void(0)" class="sina"><img src="https://assets.imedao.com/images/weibo@2x.png" class="share"/></a></div></div></div><!-- 评论框--><div id="editor-status-78970088" class="editor-comment"><form action="/service/comment/add?type=status" method="post" enctype="application/x-www-form-urlencoded" class="comment-form "><input type="hidden" name="id" value="78970088"/><div class="editor-textarea"><div class="arrow"><span class="arrow-top-out"></span><span class="arrow-top-in"></span></div><textarea name="comment"></textarea></div><div class="editor-ctrl"><div class="extra"><b class="editor-emotion"><span class="icon-icon_16_-25"></span></b><b class="editor-stock"><span class="icon-icon_16_-26"></span></b><b class="editor-pay"><span class="icon-icon_16_-70"></span></b><label><input type="checkbox" name="forward" value="1"/>同时转发到我的首页</label><label class="ask-refuse"><input type="checkbox" name="charge" value="1"/>拒绝回复</label></div><div class="submit"><button type="submit" data-type="2" class="btn btn-medium pay-submit hidden">支付并发布</button><button type="submit" class="btn btn-medium status-submit">发布</button></div></div></form></div><script>$('.status-link').each(function () {
+  $(this).html('<i class="iconfont">&#xe600;</i>网页链接')
+});</script><script class="ask-comment-placeholder"></script><script class="offer-comment-placeholder"></script><script class="good-comment-placeholder"></script><script class="all-comment-placeholder"></script></div></div><script>seajs.use('pages/single.js',function (single) {
+  single.init(78970088, '');
+});
+
+$("img").error(function () {
+  var src = this.src;
+  if(/\.webp/.test(src)){
+    this.src = src.replace('.webp','.jpg');
+  }
+});</script></div></div><div class="col col-12-1"><div class="mod"><!--include ../../pagelets/util/share.jade--></div><div class="single-qr-code"><div class="qr-code-cover"></div><div class="qr-code-container"><div class="qr-code"><div class="title">分享到微信</div><div class="content"><div id="render-code"></div><div class="bottom"><i></i><div class="text">扫一扫</div></div></div></div></div></div><a id="to-top" href="#" title="回到顶部"></a></div></div></div><script>(function () {
+  var getTextNodesIn = function(el) {
+    return $(el).find(":not(iframe)").addBack().contents().filter(function() {
+      return this.nodeType == 3;
+    });
+  };
+  var copyright = function (getString) {
+    var author = getTextNodesIn('.status-single-hd .name').eq(0).text()
+    var info = [
+      '',
+      '作者：' + author,
+      '链接：' + window.location.href,
+      '来源：雪球',
+      '著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。'
+    ];
+    if (getString) {
+      return info.join('\n');
+    } else {
+      return info;
+    }
+  };
+  var warpText = function (text) {
+    return '<div>' + text + '<br/>' + copyright().join('<br/>') + '</div>';
+  }
+  var getSelectText = function () {
+      var text = "";
+      if (window.getSelection) {
+        text = window.getSelection().toString()
+      } else if (window.document.selection && "Control" !== window.document.selection.type) {
+        text = window.document.selection.createRange().text;
+      }
+      return text;
+  }
+  $(document).on('copy', '.status-content .detail', function (event) {
+    var text = getSelectText();
+    if (text && text.length > 42) {
+      if (typeof event.originalEvent.clipboardData === 'object') {
+        event.originalEvent.clipboardData.setData('text/html', warpText(text));
+        event.originalEvent.clipboardData.setData('text/plain', text + '\n' + copyright(true));
+        if (event.originalEvent.clipboardData.getData('text/plain').length > 0) {
+          event.preventDefault();
+          return;
+        }
+      }
+      
+      if (window.getSelection) {
+        var createDiv = $(warpText(text)).css({
+          'position': 'fixed',
+          'left': '-9999px'
+        }).appendTo('body');
+        window.getSelection().selectAllChildren(createDiv[0]);
+        window.setTimeout(function () {
+          createDiv.remove();
+        }, 200)
+      }
+    }
+  });
+  
+  var pageId = window.location.pathname.split('/').pop();
+  //- 页面进入统计
+  var data = {
+    type: 1,
+    page: 47,
+    mod: 1,
+    data: {
+      status_id: pageId
+    }
+  };
+  Analytics(data);
+})();
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https'){
+bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else{
+  bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();</script><div id="footer"><div class="copyright"><a href="/about/faq" target="_blank">常见问题</a><a href="/about/contact-us" target="_blank">联系方式</a><a href="/about/jobs" target="_blank">加入我们</a><a href="https://danjuanapp.com/" target="_blank">蛋卷基金</a><a href="/about" target="_blank">关于雪球</a><a>© 2016 XUEQIU.COM</a><a>北京雪球信息科技有限公司</a><br><a href="http://xqimg.imedao.com/14ee3530b118403fee048f5b.png" target="_blank">京ICP证100666号</a><a href="http://www.miibeian.gov.cn" target="_blank">京ICP备10040543</a><a>京公网安备11010502026957</a><a href="http://xqimg.imedao.com/14d52aefd15e8f3fc0ce1fbd.png" target="_blank">证券业协会会员单位(代码817027)</a><p>风险提示：雪球里任何用户或者嘉宾的发言，都有其特定立场，投资决策需要建立在独立思考之上。</p></div></div><script>seajs.use(['widget/util/notice', 'widget/util/tooltip', 'widget/util/user']);
+</script><!--baidu tongji--><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?1db88642e346389874251b5a1eded6e3";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+$('body').on('click','[data-track-event]',function(e){
+    if($(this).data('track-event')){
+      _hmt.push(['_trackEvent', $(this).data('track-event') , 'click', $(this).data('track-subevent')||'auto']);
+    }
+});</script><!--end baidu tongji--></body></html>

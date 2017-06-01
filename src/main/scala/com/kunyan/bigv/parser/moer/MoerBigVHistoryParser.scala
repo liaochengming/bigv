@@ -151,17 +151,17 @@ object MoerBigVHistoryParser {
       val platform = Platform.MOER.id.toString
       val doc = Jsoup.parse(html)
       val uid = doc.select("a.follow").attr("uid")
-      val timeStamp = DBUtil.getLongTimeStamp(doc.select("p.summary-footer i:matches(时间)").text.substring(3), "yyyy年MM月dd日 HH:mm:ss").toString
+      val timeStamp = DBUtil.getLongTimeStamp(doc.select("span:matches(时间)").text.substring(3), "yyyy年MM月dd日 HH:mm:ss").toString
       val title = doc.select("h2.article-title").text()
-      val read = StringUtil.getMatch(doc.select("p.article-other-info span:contains(浏览)").text(),"(\\d+)")
-      var buy = 0
+      val read = StringUtil.getMatch(doc.select("span:matches(浏览)").text(),"(\\d+)")
+      var buyCount = 0
       var price = 0.0
       var text: String = ""
-      val tryRead = doc.select("h3.sec-title").text()
+      val buy = doc.select("a.submit-btn").first().text()
 
-      if (tryRead == "试读") {
+      if (buy == "购买") {
 
-        buy = doc.select("p.article-other-info i.red").text().replace(" ","").toInt
+        buyCount = doc.select("p.article-other-info i.red").text().replace(" ","").toInt
         price= doc.select("span.now-price").first().text().toDouble
         DBUtil.insertHbase("news_detail", url, "付费文章", timeStamp, platform, title, lazyConn)
 
@@ -180,7 +180,7 @@ object MoerBigVHistoryParser {
 
           if (result.isEmpty) {
 
-            val insTrue = DBUtil.insertCall(cstmt, uid, title, read, buy, price,url, timeStamp, "")
+            val insTrue = DBUtil.insertCall(cstmt, uid, title, read, buyCount, price,url, timeStamp, "")
 
             if(insTrue){
 

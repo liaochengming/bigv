@@ -1,0 +1,686 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" ng-app="moerApp">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="renderer" content="webkit">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<title>立足当下 展望未来（二）：大盘研判-摩尔金融</title>
+
+	<meta name="keywords" content="莱克电气,sh603355,弦舞者,沪深/理财/" />
+
+
+
+    <meta name="description" content="市场今天的走势和昨天的两篇文章预测完全吻合。本篇文章分析上证指数和创业板指的今日走势，对未来走势进行研判，将券商板块与次新股板块进行对比。没时间的可以直接跳到后面看结论。文章提及的个股是昨天文章中作为" />
+
+
+
+	<script type="text/javascript">
+		var moer = {
+            env: {
+              subdomain: 'www' ,
+              domain: 'moer.cn'
+            }
+          };
+	</script>
+    <script src="http://static.moer.cn/staticFile/20161220c/js/base-all.js"></script>
+	<script type="text/javascript">
+		var createUserId = '107275374';
+		var userId = '';
+		var rmIsopen = '';
+		var userName = '';
+		var realName = '';
+		var imgUrl = 'http://static.moer.cn/staticFile';
+	 	var relatedStockInfo = '';
+	//	var commentAndEvaluateTotal=Number('');
+	//	var commentTotal=Number('');
+	//	var evaluateTotal=Number('');
+	//	var curPage =Number('1');
+	//	var rows = Number('15');
+		var articleId = '65905';
+		var type='';
+		var url="getCommentsByArticle.htm?articleId="+articleId+"&type="+type;
+		var maa_title='立足当下 展望未来（二）：大盘研判';
+		var commentRows=Number('');
+		var commentType = '1';
+		var proCopy = Number('0.00');
+		//初始化分页点击事件
+		var urlStr='articleDetails.htm?articleId='+articleId+'&page=';
+		$(function(){
+		$("#strContent img").each(function(){
+			$(this).css("max-width","700px");
+				var imgwidth = $(this).attr("width");
+				var imgheight = $(this).attr("height");
+				if(imgwidth){
+					if(imgwidth>700){
+						$(this).attr("width",700);
+						$(this).attr("height",imgheight*700/imgwidth);
+					}
+				}
+			});
+		});
+		//防copy
+		//if(proCopy > 0) {
+		document.oncontextmenu=function(evt){evt.preventDefault();};
+		document.onselectstart=function(evt){evt.preventDefault();};
+		//}
+	</script>
+
+	<link rel="shortcut icon" type="image/x-icon" href="http://static.moer.cn/staticFile/20161220c/images/favicon.ico" />
+	<link rel="stylesheet" href="http://static.moer.cn/staticFile/20161220c/css/newindex.css"/>
+	<link rel="stylesheet" href="http://static.moer.cn/staticFile/20161220c/css/base-all.css"/>
+    <link rel="stylesheet" href="http://static.moer.cn/staticFile/20161220c/modules/article/css/view-all.css"/>
+    <link rel="stylesheet" href="http://static.moer.cn/staticFile/20161220c/widget/popupay/css/popupay.css">
+</head>
+
+<body onselectstart="return false";>
+<!--头部开始-->
+<input id="nav" type="hidden" value="4" />
+
+
+
+<link rel="stylesheet" href="http://static.moer.cn/staticFile/20161220c/modules/header/css/header.css"/>
+
+
+<header class="header">
+    <div class="header-logo">
+        <a href="/"><img src="http://static.moer.cn/staticFile/20161220c/images/moer-new-logo.png" alt="#"/></a>
+    </div>
+    <div class="header-nav">
+           <ul>
+            <li style="margin-right:0;"><a class="navstatus navstatus0" href="/operationIndex.htm">首页</a></li>
+            <li class="headernav-div">
+
+
+		            <div class="headerhas-dropdown"><a class="navstatus navstatus1" href="javascript:;" onclick="$.moer.login.init();">我的关注</a></div>
+	                <div class="headerhas-dropdown"><a class="navstatus navstatus2" href="javascript:;" onclick="$.moer.login.init();">自选股</a></div>
+
+	            <!-- <div class="headerhas-dropdown"><a class="navstatus navstatus1" href="/moernewindex.htm">我的关注</a></div>
+                <div class="headerhas-dropdown"><a class="navstatus navstatus2" href="/stockInit.htm">自选股</a></div> -->
+                <!-- <div class="headerhas-dropdown"><a class="navstatus navstatus3" href="/v1/group/page/show">直播间</a>
+                    <div class="header-dropdown headertzgd-down">
+                        <em></em>
+                        <ul>
+                            <li><a href="/v1/group/page/square">直播发现</a></li>
+                            <li><a href="/v1/group/page/show" class="imbtn">我的订阅</a></li>
+                        </ul>
+                    </div>
+                </div> -->
+                <div class="headerhas-dropdown">
+                    <span class="im-count"></span>
+                    <a class="navstatus navstatus3 imNews" href="http://www.moer.cn//v1/group/page/show">消息</a>
+                </div>
+            </li>
+            <li class="headernav-div">
+                <i></i>
+                <div class="headerhas-dropdown"><a class="navstatus navstatus4" href="/articleIndex_articleIndex.htm">投资观点</a>
+                    <div class="header-dropdown headertzgd-down">
+                        <em></em>
+                        <ul>
+                            <li><a href="/articleIndex_articleIndex.htm?onColumn=TZGD_HUSHEN">沪深</a></li>
+                            <li><a href="/articleIndex_articleIndex.htm?onColumn=TZGD_GANGGU">港股</a></li>
+                            <li><a href="/articleIndex_articleIndex.htm?onColumn=TZGD_MEIGU">美股</a></li>
+                            <li><a href="/investment.htm">最新观点</a></li>
+                            <li><a href="/messageAction_goToWeekNews.htm">7x24小时资讯</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="headerhas-dropdown"><a class="navstatus navstatus8" href="http://www.moer.cn//v1/group/page/square">直播间</a></div>
+                <div class="headerhas-dropdown"><a class="navstatus navstatus5" href="/dp/brief.htm">短评</a>
+                    <div class="header-dropdown headerwd-down">
+                        <em></em>
+                        <ul>
+                            <li><a href="/dp/brief.htm">大V短评</a></li>
+                            <li><a href="/dp/forecast.htm">大盘预测</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- <div class="headerhas-dropdown"><a class="navstatus navstatus6" href="/top50.htm">问答</a>
+                    <div class="header-dropdown headerwd-down">
+                        <em></em>
+                        <ul>
+                            <li><a href="/top50.htm">问答发现</a></li>
+                            <li><a href="/topicSquare.htm">话题广场</a></li>
+                            <li><a href="/showAllMQuestion.htm">所有问题</a></li>
+                        </ul>
+                    </div>
+                </div> -->
+                <a class="navstatus navstatus7" href="/WriterAction_rankingInit.htm">找高手</a>
+            </li>
+        </ul>
+    </div>
+    <div class="header-user headerhas-dropdown">
+        <a id="header-user"></a>
+        <div class="header-dropdown headeruser-down">
+            <em></em>
+            <ul>
+                <li><a id="header-home" target="_blank">我的主页</a></li>
+                <li id="headerMyPublish"><a href="/userCenterRelease.htm" target="_blank">我的发布</a></li>
+<!--                 <li class="header-shopping"><a href="/toShoppingCart.htm" target="_blank">我的购物车<i class="header-count" id="shopCount" style="display:none;">0</i></a></li> -->
+                <li id="headerMyOrder"><a href="/order.htm?type=1" target="_blank">管理订单</a></li>
+                <li><a href="/payRecord.htm" target="_blank">购买记录</a></li>
+                <li><a href="/goToCharge.htm" target="_blank">摩尔帐户</a></li>
+                <li><a href="/userCenterSet_init.htm" target="_blank">帐户设置</a></li>
+                <li id="applyWriter"><a href="/articlefront.htm" target="_blank">申请撰稿人</a></li>
+                <li><a class="logout" href="javascript:;" exit="">退出账号</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="header-menu">
+        <div class="header-search headerhas-dropdown">
+            <div class="search-icon"></div>
+            <div class="headerform-cont">
+                <div class="headersearch-form">
+                    <input type="text" placeholder="找个股/用户/文章/问题" class="headersearch-input" id="headersearch-input"/>
+                    <button type="button"></button>
+                </div>
+            </div>
+            <div class="headersearch-cont" id="searchResult">
+            </div>
+        </div>
+        <ul>
+            <li class="header-app headerhas-dropdown"><a href="javascript:void(0)"></a>
+                <div class="header-dropdown headerapp-down">
+                    <em></em>
+                    <img src="http://static.moer.cn/staticFile/20161220c/images/moerapp-down-1210.png" alt="#"/>
+                    <p>iOS / Android 扫码直接下载</p>
+                    <button onclick="window.open('https://itunes.apple.com/cn/app/id1033149808')">iOS&nbsp;下载</button>
+                    <button onclick="window.open('http://static.moer.cn/staticFile/moer.apk')">Android&nbsp;下载
+                    </button>
+                </div>
+            </li>
+            <li class="header-notice headerhas-dropdown">
+                <a href="/usersysmsg.htm"></a>
+                <i class="header-count" id="noticeCount" style="display:none;"></i>
+                <div class="header-dropdown headernotice-down">
+                    <em></em>
+                    <ul class="headernotice-cont" id="msgList">
+                    </ul>
+                    <a href="/usersysmsg.htm" class="header-notice-more">查看更多</a>
+                </div>
+            </li>
+            <li class="header-msg"><a href="/cs.htm"></a><i class="header-count" id="letterCount" style="display:none;"></i></li>
+        </ul>
+    </div>
+
+</header>
+<!--头部结束-->
+<!-- new begin -->
+<div class="layout clearfix">
+<div class="left-content">
+        <article class="article-container">
+            <section class="article-header">
+                <h2 class="article-title">立足当下 展望未来（二）：大盘研判</h2>
+                <div class="article-summary">
+                    <p class="summary-txt">
+                        <i>[摘要]</i>
+                        <span>市场今天的走势和昨天的两篇文章预测完全吻合。本篇文章分析上证指数和创业板指的今日走势，对未来走势进行研判，将券商板块与次新股板块进行对比。没时间的可以直接跳到后面看结论。文章提及的个股是昨天文章中作为例子的典型股，今日走势不错，但并非**的唯一股票。最重要的干货技术在《弦舞技》系列中，有兴趣的可以阅读。</span>
+                    </p>
+                    <p class="summary-footer">
+                        <span class="float-l">
+                        	<i>浏览：14501次</i>
+                        	<i>时间：2015年11月11日 21:56:51</i>
+
+                        </span>
+
+
+
+
+
+
+
+
+
+
+                    </p>
+                </div>
+            </section>
+
+            <section class="article-section" id="relatedStockSection">
+            </section>
+
+            <section class="article-section">
+                <h3 class="sec-title">
+                    <span>正文</span>
+                </h3>
+                <div class="article-main">
+
+
+	                	<div class="article-daily article-daily-first">
+	                        <p class="time-stamp">2015年11月11日 21:56:51</p>
+	                        <p style="text-align: left;"><strong>【开篇闲话】</strong></p><p style="text-align: left;">今天上证指数如昨天在《立足当下，展望未来（一）》中所说，震荡，上方面临较大压力，最高点触及3655，没有突破昨天文章中提到的压力点位3659，全天基本在昨天收盘指数下方震荡，尾盘在券商、国企改革等带动下才有所回升，微涨0.27%。</p><p style="text-align: left;">创业板指表现出色，全天基本在昨日收盘指数之上一直上扬，再次创下本次反弹的新高，成交量继续放大。</p><p style="text-align: left;"><strong>以上两点在昨天的文章结论中已经详细说明。</strong></p><p style="text-align:center"><img src="http://moerfile.jiemian.com/O/c3ddcaf4a61cdac147c3785b4161138f.png?mark=1" title="c3ddcaf4a61cdac147c3785b4161138f.jpeg" style="font-size: 16px; line-height: 28px; text-align: center;"/></p><p style="text-align: left;">图一 摘自《立足当下，展望未来（一）》</p><p style="text-align: left;"><strong>今天最大的亮点是次新股，这个在昨天《秒杀次新股的绝技》中已经提到</strong>，次新股将是最近一段时间的投资热点，有兴趣的可以去看昨天的文章。文章中作为典型例子的莱克电气今天表现也不错，涨了近7个点，当然我更看好它的中线。最重要的不是个股，而是方法，<strong>鱼在不如渔在。今天会跟进一篇技术干货。</strong></p><p style="text-align:center"><img src="http://moerfile.jiemian.com/O/433e26753ce11b756aebc54423f3eaed.png?mark=1" title="433e26753ce11b756aebc54423f3eaed.jpeg"/></p><p style="text-align:center"><strong><img src="http://moerfile.jiemian.com/O/d6f9162719f845660761c6bcc9a3c34b.png?mark=1" title="d6f9162719f845660761c6bcc9a3c34b.jpeg"/></strong></p><p style="text-align: left;">图二 摘自《弦舞技（一）：秒杀次新股的绝技》</p><p style="text-align: left;"><strong>【上证指数】</strong></p><p style="text-align: left;">1、先来看分时图</p><p style="text-align:center"><img src="http://moerfile.jiemian.com/O/f9059c6564366d5e5a2277f45ecab9ff.png?mark=1" title="f9059c6564366d5e5a2277f45ecab9ff.jpeg"/></p><p style="text-align: left;">全天一直在分水岭下方运行，只在尾盘两处翻红，弱势震荡，可以对比一下后面的创业板</p><p style="text-align: left;">2、再来看日线图</p><p style="text-align:center"><img src="http://moerfile.jiemian.com/O/12901df89f6f7498d05db0fd641c0500.png?mark=1" title="12901df89f6f7498d05db0fd641c0500.jpeg"/></p><p style="text-align: left;">在5日均线处获得支撑，微微站上布林中轨，但是没有得到有效确认，而且成交量继续萎缩，可以对比一下后面的创业板</p><p style="text-align: left;">3、再看60分钟K线</p><p style="text-align:center"><img src="http://moerfile.jiemian.com/O/e96aa633548fef7013f05591e46c7dba.png?mark=1" title="e96aa633548fef7013f05591e46c7dba.jpeg"/></p><p style="text-align: left;">已经处于布林上轨，下面如果不能使布林上轨向上倾斜的角度拉大，那么无外乎沿着上轨平走一段，或者到中轨寻求支撑后再去向上轨发起冲击</p><p style="text-align: left;">4、最后看带头大哥证券板块</p><p style="text-align:center"><img src="http://moerfile.jiemian.com/O/1bc92cce4e94baf4b423cf5500e6991f.png?mark=1" title="1bc92cce4e94baf4b423cf5500e6991f.jpeg"/></p><p style="text-align: left;">分时图是这样的，潜水一天，最后头才漏出来，说好的游艇没看见</p><p style="text-align:center"><img src="http://moerfile.jiemian.com/O/730e45dde2c19b716b6b0ff038724338.png?mark=1" title="730e45dde2c19b716b6b0ff038724338.jpeg"/></p><p style="text-align: left;">日线图是这样的，现在的1处和曾经的2、3处处于相同的指数区间，我们放大来看</p><p style="text-align:center"><img src="http://moerfile.jiemian.com/O/e9f97a1491f5fefcfc0641955919fb14.png?mark=1" title="e9f97a1491f5fefcfc0641955919fb14.jpeg"/></p><p style="text-align: left;">虽然放大的比例有点瑕疵，请对已一下K线图形态，是不是感觉1和3更像，前几天步子走的太急，要歇歇了的意思。今天银行板块继续萎靡，市场缺乏权重拉动。</p><p style="text-align: left;">【创业板指】</p><p style="text-align: left;">1、先来看分时图</p><p style="text-align:center"><img src="http://moerfile.jiemian.com/O/378e595a1620ec5ad3ec9bbf2d91cd9f.png?mark=1" title="378e595a1620ec5ad3ec9bbf2d91cd9f.jpeg"/></p><p style="text-align: left;">全天维持在分水岭以上，对比一下上面的上证指数，不多说了</p><p style="text-align: left;">2、再来看日线图</p><p style="text-align:center"><img src="http://moerfile.jiemian.com/O/405499cf48a7121e3cb149178e2ad432.png?mark=1" title="405499cf48a7121e3cb149178e2ad432.jpeg"/></p><p style="text-align: left;">基本可以确认站上布林中轨，成交量继续放大，但是上方在2983处的压力位已然存在，这个昨天的文章中说过了，也对比一下上面的上证指数</p><p style="text-align: left;">3、在看60分钟K线</p><p style="text-align:center"><img src="http://moerfile.jiemian.com/O/c313bec8c58d4837684b89fe7f550ea8.png?mark=1" title="c313bec8c58d4837684b89fe7f550ea8.jpeg"/></p><p style="text-align: left;">也处于布林上轨了，但是在中轨和上轨间震荡幅度最近一段时间不大，基本不会踩到中轨就往上轨继续冲击，而且还有一段沿着上轨爬行的“前科”，对比一下上面的上证指数</p><p style="text-align: left;">4、最后看带头大哥新股与次新股板块</p><p style="text-align:center"><img src="http://moerfile.jiemian.com/O/ae78c6d3d2035347c34b91ee0ec8c1c9.png?mark=1" title="ae78c6d3d2035347c34b91ee0ec8c1c9.jpeg"/></p><p style="text-align: left;">分时图上一路向上，全天最耀眼的板块，对比一下上面的证券板块</p><p style="text-align:center"><img src="http://moerfile.jiemian.com/O/0ee02727d4fe85bb517c84335f02f7b3.png?mark=1" title="0ee02727d4fe85bb517c84335f02f7b3.jpeg"/></p><p style="text-align: left;">板块指数创下历史新高，过了前期压力位，虽然还不能说有效突破，但是无论真假至少今天突破了，对比一下上面的证券板块</p><p style="text-align: left;"><strong>【综上】</strong></p><p style="text-align: left;">1、上证指数必须有权重一鼓作气拉上去，否则震荡，3659-3420</p><p style="text-align: left;">2、创业板指还有空间，但也在逐渐缩小，关注2983</p><p style="text-align: left;">3、次新股，下面一段时间的明星板块，拿来做个中线也不错，但是请注意美联储加息的风险，肯定会加的，12月要谨慎，次新股的秒杀绝技参考昨天的文章，今天会再跟进一篇</p><p style="text-align: left;"><strong>【预告】</strong></p><p style="text-align: left;"><span style="font-size: 16px; line-height: 28px;">IPO年内将重启，</span></p><p style="text-align: left;">美联储年内极有可能加息；</p><p style="text-align: left;">新股认购不须先缴款，</p><p style="text-align: left;">看着不错，其中中签率肯定极低；</p><p style="text-align: left;">有机会布局新股，</p><p style="text-align: left;">但是机会只有一次；</p><p style="text-align: left;">因为新股开闸后，不会轻易再暂停，大大说了我们需要一个健康的市场，</p><p style="text-align: left;">所以开闸后的首批机会最大；</p><p style="text-align: left;">后面加息了，</p><p style="text-align: left;">一切让市场验证。</p><p style="text-align: left;">我们跑不过市场，但可以跑在多数人之前，且看《弦舞技（二）：跑在旋律之前，提前布局新股》</p><p style="text-align: left;"><em><strong>【历史文章】</strong></em></p><p style="text-align: left;">《立足当下 展望未来（一）：大盘研判》</p><p style="text-align: left;">http://moer.jiemian.com/articleDetails.htm?articleId=65313</p><p style="text-align: left;">《弦舞技（一）：秒杀次新股的绝技》</p><p style="text-align: left;">http://moer.jiemian.com/articleDetails.htm?articleId=65347</p>
+	                    </div>
+	                    <div class="article-statement">
+	                        <p class="statement-warning">
+	                        	作者已持有文中所涉及的股票或其他投资组合。
+	                        </p>
+
+							<p class="red">本文仅代表撰稿人个人观点，不代表摩尔金融平台。</p>
+	                    </div>
+	                    <a id="rewardBtn" class="reward-btn" href="javascript:;">打赏</a>
+
+
+                </div>
+            </section>
+        </article>
+
+        <div class="article-handler">
+            <div class="article-handler-box clearfix">
+                	<a href="javascript:void(0);" class="like-handler ">
+                	<b>2</b></a>
+                <ul class="handler-list clearfix">
+
+
+                    	<li class="favor-handler "><a href="javascript:;">收藏</a></li>
+
+                    <li class="comment-handler">
+	                    <a href="javascript:;">
+
+
+	                    		评论
+
+	                    </a>
+
+                    </li>
+
+                    <li class="share-handler">
+                        <a href="javascript:;">分享</a>
+                        <ul class="share-list clearfix" id="shareOutside">
+                            <li>
+                                <a href="javascript:;">
+                                    <!-- <img src="http://static.moer.cn/staticFile//modules/article/img/code.png" alt="微信/QQ扫一扫" /> -->
+                                    <i></i>
+                                    <span>微信/QQ扫一扫</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="wb" href="javascript:;">
+                                	<i class="shareWb"></i>
+                                    <span>微博</span>
+                                </a>
+                                <span class="arrow"></span>
+                            </li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!--[if lte IE 8]><div class="article-bg-ie"></div><![endif]-->
+            <div class="comment-area">
+
+                <a name="commentT" id="commentArea" class="target"></a>
+                <h3 class="sec-title">
+                   	 发表评论
+                </h3>
+                <form action="#" method="post" class="comment-box">
+                    <textarea id="commentInput" class="comment-input"></textarea>
+                    <div class="comment-footer clearfix">
+                        <span class="float-l" id="wordsTip">最少输入1个字</span>
+                        <span class="float-r">
+                            <!-- 评论同时分享到：<input id="shareToWeibo" type="checkbox" />
+                            <label for="shareToWeibo" class="share-to-weibo">
+                            </label> -->
+                            <a id="commentCancel" class="cancel-btn" href="javascript:;">取消</a>
+                            <a id="submitCancel" buyflag ="true" price="0.00" maaId="65905"
+                            class="submit-btn" href="javascript:;">评论</a>
+                        </span>
+                    </div>
+                </form>
+
+                <div class="comment-main" buyFlag="true"
+                	commentFlag="true">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+<aside>
+
+<div class="sidebar">
+        <div class="author">
+        	<a class="author-avatar" href="/authorHome.htm?theId=107275374" target="_blank">
+        		<img src="http://static.moer.cn/staticFile/O/83f358a6b0edca7a271b868047ad8065.png" />
+        	</a>
+        	<div class="author-info">
+        		<h3><a href="/authorHome.htm?theId=107275374">
+
+						弦舞者
+
+
+						</a><i class="userv-red"></i></h3>
+
+
+        		<span>关注领域：
+
+
+						沪深/理财/
+
+        		</span>
+        		<p>
+
+        				复旦大学硕士，CFA(特许金融分析师)，擅长股票、贵金属、外汇、期货、另类投资等。股票方面...
+
+
+        		</p>
+        	</div>
+        	<ul class="stats-list">
+        		<li>关注<span>4</span></li>
+        		<li>粉丝<span>2660</span></li>
+        		<li><a target="_blank" href="authorHome.htm?theId=107275374">文章<i>180</i></a></li>
+        		<li>问答<span>
+
+
+		        		14
+
+	        	</span>
+        		</li>
+        	</ul>
+        	<div class="follow-qa">
+
+
+
+
+	        		<a class="follow" href="javascript:void(0);" uid="107275374">+ 关注</a>
+
+
+
+	        		<a class="qa" href="http://www.moer.cn//v1/group/page/show?uid=107275374" uid="107275374" name="弦舞者">私信</a>
+
+
+
+        		<a class="im" target="_blank" href="http://www.moer.cn//v1/group/page/show?gid=176308813207440120" >直播间</a>
+
+        	</div>
+        </div>
+        <div class="article-dp" id="articleDp">
+        	<div class="article-dptitle">
+        		<h3>TA的大盘预测(5月31日)</h3>
+        		<a href="#" target="_blank">更多大V预测</a>
+        	</div>
+        	<div class="article-dpcont">
+        		<div class="article-dpitem">
+        			<em>已有123234人参与</em>
+        			<i></i>
+        			明日多空预测：<span>看涨</span>
+        		</div>
+        		<div class="article-dpitem">
+        			<em>已有123234人参与</em>
+        			<i></i>
+        			明日仓位建议：<span>10%</span>
+        		</div>
+        		<div class="article-dpitem">
+        			<i></i>
+        			明日多空预测：
+        			<p>周二沪市有惯性回补3月11日的缺口2815一带区域的动能。由于连续大幅下跌，短线技术指标已经严重超卖。况且，如果继续向下，将引发更高级别底背离。由于连续大幅下跌，短线技术指标已经严重超卖。</p>
+        		</div>
+        		<a href="#" class="article-dplink">我也要预测</a>
+        	</div>
+        </div>
+        <div class="author-other">
+
+        	<div class="author-title">
+	          <h3>作者其他文章</h3>
+
+
+
+	        </div>
+	        <ul class="artcile-list">
+
+	        	<li>
+					<a target="_blank" href="/articleDetails.htm?articleId=159124" title="无视大盘，走出红三兵的一只庄股">
+
+						无视大盘，走出红三兵的一只庄股
+
+					</a>
+
+						<i class="moerChargeicon"></i>
+
+					<div class="state">
+						<div class="state-date">
+							2016-12-05
+						</div>
+
+					</div>
+				</li>
+
+	        	<li>
+					<a target="_blank" href="/articleDetails.htm?articleId=158481" title="证监会严打，主力是蓝瘦香菇or另辟蹊径">
+
+						证监会严打，主力是蓝瘦香菇or另辟蹊径
+
+					</a>
+
+					<div class="state">
+						<div class="state-date">
+							2016-12-02
+						</div>
+
+					</div>
+				</li>
+
+	        	<li>
+					<a target="_blank" href="/articleDetails.htm?articleId=158085" title="“吃瓜”，看高送转第二波">
+
+						“吃瓜”，看高送转第二波
+
+					</a>
+
+					<div class="state">
+						<div class="state-date">
+							2016-11-30
+						</div>
+
+					</div>
+				</li>
+
+	        	<li>
+					<a target="_blank" href="/articleDetails.htm?articleId=158014" title="​一只小票，送个福利">
+
+						​一只小票，送个福利
+
+					</a>
+
+						<i class="moerChargeicon"></i>
+
+					<div class="state">
+						<div class="state-date">
+							2016-11-30
+						</div>
+
+					</div>
+				</li>
+
+	        	<li>
+					<a target="_blank" href="/articleDetails.htm?articleId=154898" title="悄然崛起的一大热点及个股">
+
+						悄然崛起的一大热点及个股
+
+					</a>
+
+						<i class="moerChargeicon"></i>
+
+					<div class="state">
+						<div class="state-date">
+							2016-11-15
+						</div>
+
+					</div>
+				</li>
+
+          	</ul>
+
+        </div>
+
+        <div class="author-other">
+
+        	<div class="author-title">
+	          <h3>相关文章</h3>
+	        </div>
+	        <ul class="artcile-list">
+
+	        	<li>
+	        		<a target="_blank" href="/articleDetails.htm?articleId=161851" title="12月18日复盘选股">
+
+						12月18日复盘选股
+
+
+					</a>
+					<div class="state">
+						<div class="state-name">
+							郁庸Wesker
+						</div>
+						<div class="state-date">
+							2016-12-18
+						</div>
+					</div>
+				</li>
+
+	        	<li>
+	        		<a target="_blank" href="/articleDetails.htm?articleId=156229" title="NARUTO摩尔日记2016/11/22">
+
+						NARUTO摩尔日记2016/11/22
+
+
+					</a>
+					<div class="state">
+						<div class="state-name">
+							漩涡鸣人
+						</div>
+						<div class="state-date">
+							2016-11-22
+						</div>
+					</div>
+				</li>
+
+	        	<li>
+	        		<a target="_blank" href="/articleDetails.htm?articleId=20999" title="被错杀的莱克电气 V字反转已经开始">
+
+						被错杀的莱克电气 V字反转已经开始
+
+
+					</a>
+					<div class="state">
+						<div class="state-name">
+							乾坤说金银
+						</div>
+						<div class="state-date">
+							2015-07-10
+						</div>
+					</div>
+				</li>
+
+          	</ul>
+
+        </div>
+
+    </div>
+
+
+ </aside>
+
+
+
+    <div class="loading-eggs"></div>
+    </div>
+
+    <script src="http://static.moer.cn/staticFile/20161220c/js/plugin/highcharts.js"></script>
+    <script src="http://static.moer.cn/staticFile/20161220c/js/wd/question_write.js"></script>
+    <script type="text/javascript" src="http://static.moer.cn/staticFile/20161220c/webjs/allergicWordsJs.js"></script>
+    <script type="text/javascript" src="http://static.moer.cn/staticFile/20161220c/modules/article/js/view-all.js"></script>
+    <script src="http://static.moer.cn/staticFile/20161220c/widget/popupay/js/popupayforart.js"></script>
+    <script src="http://static.moer.cn/staticFile/20161220c/widget/bindphone/js/bindphone.js"></script>
+
+
+
+  <div class="footer">
+    <div class="footer-top">
+      <div class="footertop-cont">
+        <div class="footertop-cont1">
+          <h4>20000<span>篇</span></h4>
+          <p>独家投资观点</p>
+        </div>
+        <div class="footertop-cont2">
+          <h4>1500<span>位</span></h4>
+          <p>顶尖撰稿人加入</p>
+        </div>
+        <div class="footertop-cont3">
+          <h4>24<span>小时</span></h4>
+          <p>24小时更新</p>
+        </div>
+        <div class="footertop-cont4">
+          <h4>89<span>%</span></h4>
+          <p>在摩尔金融讨论的所有股票平均收益为89%</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-cont">
+      <div class="footercont-right">
+        <img src="http://static.moer.cn/staticFile/20161220c/images/moer-footer-logo.png" alt="#"/>
+      </div>
+      <div class="footercont-left">
+        <ul>
+          <li><strong>关于摩尔</strong></li>
+          <li><a href="/websiteContact.htm" target="_blank">联系我们</a></li>
+          <li><a href="/websiteRelief.htm" target="_blank">免责声明</a></li>
+          <li><a href="/websiteCopyright.htm" target="_blank">版权声明</a></li>
+          <li><a href="/websiteSecrecy.htm" target="_blank">隐私声明</a></li>
+          <li><a href="/websiteBecomeAuthor.htm" target="_blank">撰稿人守则</a></li>
+          <li><a href="/investmentPointCode.htm" target="_blank">投资观点守则</a></li>
+        </ul>
+        <ul>
+          <li><strong>投资人</strong></li>
+          <li><a href="http://www.news365.com.cn" target="_blank">上海报业集团</a></li>
+          <li><a href="http://www.mi.com" target="_blank">小米科技</a></li>
+          <li><a href="http://www.360.cn" target="_blank">奇虎360</a></li>
+          <li><a href="http://www.htsec.com" target="_blank">海通证券</a></li>
+          <li><a href="http://www.gtja.com" target="_blank">国泰君安</a></li>
+        </ul>
+        <ul>
+          <li><strong>合作伙伴</strong></li>
+          <li><a href="http://www.cs.ecitic.com" target="_blank">中信证券</a></li>
+          <li><a href="http://www.orient-fund.com" target="_blank">东方基金</a></li>
+          <li><a href="http://www.gjzq.com.cn" target="_blank">国金证券</a></li>
+        </ul>
+        <ul>
+          <li><strong>网站地图</strong></li>
+          <li><a href="/operationIndex.htm" target="_blank">首页</a></li>
+          <li><a href="/optionalStock_getStockSub.htm" target="_blank">自选股</a></li>
+          <li><a href="/articleIndex_articleIndex.htm" target="_blank">投资发现</a></li>
+          <li><a href="/top50.htm" target="_blank">问答发现</a></li>
+          <li><a href="/articlefront.htm" target="_blank">申请撰稿人</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>摩尔星灵（北京）网络科技有限公司 版权所有 Copyright 2016 京ICP备 16018449-1号</span>
+      <span>服务热线：400-803-6208（工作日9：00-18：00）</span>
+    </div>
+  </div>
+<div id="question_writeLocation"></div>
+<script src="http://static.moer.cn/staticFile/20161220c/modules/header/js/header.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?2e997bd17c59c235884a035e08c45c7f";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script type="text/javascript" src="http://tajs.qq.com/stats?sId=39129504" charset="UTF-8"></script>
+<script src="http://static.moer.cn/staticFile/20161220c/modules/header/js/header.js"></script>
+<!-- <script src="http://static.moer.cn/staticFile/20161220c/widget/bindphone/js/bindphone.js"></script> -->
+<!--     <script src="/ueditor142/ueditor.config.js"></script> -->
+<!-- 	<script src="/ueditor142/ueditor.all.js"></script> -->
+<!-- 	<script> -->
+<!-- 	    var ue = UE.getEditor('editor'); -->
+<!-- 	</script> -->
+</body>
+</html>

@@ -1,0 +1,616 @@
+﻿
+
+
+
+<!DOCTYPE html>
+<html lang="en" ng-app="moerApp">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="renderer" content="webkit">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<title>海兴电力新股研究报告-摩尔金融</title>
+	
+	 
+	<meta name="keywords" content="AP财富管理,沪深/理财/" />
+	 
+	 
+    <meta name="description" content="整体评级：一般（强烈规避 规避 一般 关注 重点关注）
+公司自成立起开始从事电力计量仪表的研发、生产和销售。&nbsp;&nbsp;公司上市发行数量相对较多，根据当前市场对次新股估值判断，预估公司开板价格区间为...." />
+	
+	
+	
+	<script type="text/javascript">
+		var moer = {
+            env: {
+              subdomain: 'www' ,
+              domain: 'moer.cn'
+            }
+          };
+	</script>
+    <script src="http://static.moer.cn/staticFile/20161114a/js/base-all.js"></script>
+	<script type="text/javascript">
+		var createUserId = '101106429';
+		var userId = '';
+		var rmIsopen = '';
+		var userName = '';
+		var realName = '';
+		var imgUrl = 'http://static.moer.cn/staticFile';
+	 	var relatedStockInfo = '';
+	//	var commentAndEvaluateTotal=Number('');
+	//	var commentTotal=Number('');
+	//	var evaluateTotal=Number('');
+	//	var curPage =Number('1');
+	//	var rows = Number('15');
+		var articleId = '155025';
+		var type='';
+		var url="getCommentsByArticle.htm?articleId="+articleId+"&type="+type;
+		var maa_title='海兴电力新股研究报告';
+		var commentRows=Number('');
+		var commentType = '1';
+		var proCopy = Number('2.00');
+		//初始化分页点击事件
+		var urlStr='articleDetails.htm?articleId='+articleId+'&page=';
+		$(function(){
+		$("#strContent img").each(function(){
+			$(this).css("max-width","700px");
+				var imgwidth = $(this).attr("width");
+				var imgheight = $(this).attr("height");
+				if(imgwidth){
+					if(imgwidth>700){
+						$(this).attr("width",700);
+						$(this).attr("height",imgheight*700/imgwidth);
+					}
+				}
+			});
+		});
+		//防copy
+		//if(proCopy > 0) {
+		document.oncontextmenu=function(evt){evt.preventDefault();};
+		document.onselectstart=function(evt){evt.preventDefault();};
+		//}
+	</script>
+	 
+	<link rel="shortcut icon" type="image/x-icon" href="http://static.moer.cn/staticFile/20161114a/images/favicon.ico" />
+	<link rel="stylesheet" href="http://static.moer.cn/staticFile/20161114a/css/newindex.css"/>
+	<link rel="stylesheet" href="http://static.moer.cn/staticFile/20161114a/css/base-all.css"/>
+    <link rel="stylesheet" href="http://static.moer.cn/staticFile/20161114a/modules/article/css/view-all.css"/>
+    <link rel="stylesheet" href="http://static.moer.cn/staticFile/20161114a/widget/popupay/css/popupay.css">
+</head>
+
+<body onselectstart="return false";>
+<!--头部开始-->
+<input id="nav" type="hidden" value="4" />
+
+
+
+<link rel="stylesheet" href="http://static.moer.cn/staticFile/20161114a/modules/header/css/header.css"/>
+
+
+<header class="header">
+    <div class="header-logo">
+        <a href="/"><img src="http://static.moer.cn/staticFile/20161114a/images/moer-new-logo.png" alt="#"/></a>
+    </div>
+    <div class="header-nav">
+           <ul>
+            <li style="margin-right:0;"><a class="navstatus navstatus0" href="/operationIndex.htm">首页</a></li>
+            <li class="headernav-div">
+            	
+	            
+		            <div class="headerhas-dropdown"><a class="navstatus navstatus1" href="javascript:;" onclick="$.moer.login.init();">我的关注</a></div>
+	                <div class="headerhas-dropdown"><a class="navstatus navstatus2" href="javascript:;" onclick="$.moer.login.init();">自选股</a></div>
+	            
+	            <!-- <div class="headerhas-dropdown"><a class="navstatus navstatus1" href="/moernewindex.htm">我的关注</a></div>
+                <div class="headerhas-dropdown"><a class="navstatus navstatus2" href="/stockInit.htm">自选股</a></div> -->
+                <!-- <div class="headerhas-dropdown"><a class="navstatus navstatus3" href="/v1/group/page/show">直播间</a>
+                    <div class="header-dropdown headertzgd-down">
+                        <em></em>
+                        <ul>
+                            <li><a href="/v1/group/page/square">直播发现</a></li>
+                            <li><a href="/v1/group/page/show" class="imbtn">我的订阅</a></li>
+                        </ul>
+                    </div>
+                </div> -->
+                <div class="headerhas-dropdown">
+                    <span class="im-count"></span>
+                    <a class="navstatus navstatus3 imNews" href="http://www.moer.cn//v1/group/page/show">消息</a>
+                </div>
+            </li>
+            <li class="headernav-div">
+                <i></i>
+                <div class="headerhas-dropdown"><a class="navstatus navstatus4" href="/articleIndex_articleIndex.htm">投资观点</a>
+                    <div class="header-dropdown headertzgd-down">
+                        <em></em>
+                        <ul>
+                            <li><a href="/articleIndex_articleIndex.htm?onColumn=TZGD_HUSHEN">沪深</a></li>
+                            <li><a href="/articleIndex_articleIndex.htm?onColumn=TZGD_GANGGU">港股</a></li>
+                            <li><a href="/articleIndex_articleIndex.htm?onColumn=TZGD_MEIGU">美股</a></li>
+                            <li><a href="/investment.htm">最新观点</a></li>
+                            <li><a href="/messageAction_goToWeekNews.htm">7x24小时资讯</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="headerhas-dropdown"><a class="navstatus navstatus8" href="http://www.moer.cn//v1/group/page/square">直播间</a></div>
+                <div class="headerhas-dropdown"><a class="navstatus navstatus5" href="/dp/brief.htm">短评</a>
+                    <div class="header-dropdown headerwd-down">
+                        <em></em>
+                        <ul>
+                            <li><a href="/dp/brief.htm">大V短评</a></li>
+                            <li><a href="/dp/forecast.htm">大盘预测</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- <div class="headerhas-dropdown"><a class="navstatus navstatus6" href="/top50.htm">问答</a>
+                    <div class="header-dropdown headerwd-down">
+                        <em></em>
+                        <ul>
+                            <li><a href="/top50.htm">问答发现</a></li>
+                            <li><a href="/topicSquare.htm">话题广场</a></li>
+                            <li><a href="/showAllMQuestion.htm">所有问题</a></li>
+                        </ul>
+                    </div>
+                </div> -->
+                <a class="navstatus navstatus7" href="/WriterAction_rankingInit.htm">找高手</a>
+            </li>
+        </ul>
+    </div>
+    <div class="header-user headerhas-dropdown">
+        <a id="header-user"></a>
+        <div class="header-dropdown headeruser-down">
+            <em></em>
+            <ul>
+                <li><a id="header-home" target="_blank">我的主页</a></li>
+                <li id="headerMyPublish"><a href="/userCenterRelease.htm" target="_blank">我的发布</a></li>
+<!--                 <li class="header-shopping"><a href="/toShoppingCart.htm" target="_blank">我的购物车<i class="header-count" id="shopCount" style="display:none;">0</i></a></li> -->
+                <li id="headerMyOrder"><a href="/order.htm?type=1" target="_blank">管理订单</a></li>
+                <li><a href="/payRecord.htm" target="_blank">购买记录</a></li>
+                <li><a href="/goToCharge.htm" target="_blank">摩尔帐户</a></li>
+                <li><a href="/userCenterSet_init.htm" target="_blank">帐户设置</a></li>
+                <li id="applyWriter"><a href="/articlefront.htm" target="_blank">申请撰稿人</a></li>
+                <li><a class="logout" href="javascript:;" exit="">退出账号</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="header-menu">
+        <div class="header-search headerhas-dropdown">
+            <div class="search-icon"></div>
+            <div class="headerform-cont">
+                <div class="headersearch-form">
+                    <input type="text" placeholder="找个股/用户/文章/问题" class="headersearch-input" id="headersearch-input"/>
+                    <button type="button"></button>
+                </div>
+            </div>
+            <div class="headersearch-cont" id="searchResult">
+            </div>
+        </div>
+        <ul>
+            <li class="header-app headerhas-dropdown"><a href="javascript:void(0)"></a>
+                <div class="header-dropdown headerapp-down">
+                    <em></em>
+                    <img src="http://static.moer.cn/staticFile/20161114a/images/moerapp-down-1210.png" alt="#"/>
+                    <p>iOS / Android 扫码直接下载</p>
+                    <button onclick="window.open('https://itunes.apple.com/cn/app/id1033149808')">iOS&nbsp;下载</button>
+                    <button onclick="window.open('http://static.moer.cn/staticFile/moer.apk')">Android&nbsp;下载
+                    </button>
+                </div>
+            </li>
+            <li class="header-notice headerhas-dropdown">
+                <a href="/usersysmsg.htm"></a>
+                <i class="header-count" id="noticeCount" style="display:none;"></i>
+                <div class="header-dropdown headernotice-down">
+                    <em></em>
+                    <ul class="headernotice-cont" id="msgList">
+                    </ul>
+                    <a href="/usersysmsg.htm" class="header-notice-more">查看更多</a>
+                </div>
+            </li>
+            <li class="header-msg"><a href="/cs.htm"></a><i class="header-count" id="letterCount" style="display:none;"></i></li>
+        </ul>
+    </div>
+    
+</header>
+<!--头部结束-->
+<!-- new begin -->
+<div class="layout clearfix">
+<div class="left-content">
+        <article class="article-container">
+            <section class="article-header">
+                <h2 class="article-title">海兴电力新股研究报告</h2>
+                <div class="article-summary">
+                    <p class="summary-txt">
+                        <i>[摘要]</i>
+                        <span>整体评级：一般（强烈规避 规避 一般 关注 重点关注）
+公司自成立起开始从事电力计量仪表的研发、生产和销售。&nbsp;&nbsp;公司上市发行数量相对较多，根据当前市场对次新股估值判断，预估公司开板价格区间为......</span>
+                    </p>
+                    <p class="summary-footer">
+                        <span class="float-l">
+                        	<i>浏览：1735次</i>
+                        	<i>时间：2016年11月16日 16:00:53</i>
+                        	
+                        		
+                        		
+	                        		已有<i class="red">0</i>人购买
+                        		
+                        	
+                        </span>
+                        
+                        
+                        
+                        	
+                        	
+                        		
+                        		
+                        			<span class="float-r goOrder">
+                            		<span class="red moerb-icon">
+                            			<strong class="font-lb">
+                            				2.00
+                            			</strong>
+                            		</span>
+                            		<a class="submit-btn" id="articleBuy" href="javascript:;" goodsId="155025" goodsType="1">购买</a>
+                       			</span>
+                        		
+                        	
+                        
+                        
+                      
+                    </p>
+                </div>
+            </section>
+            
+            <section class="article-section" id="relatedStockSection">
+            </section>
+            
+            <section class="article-section">
+                <h3 class="sec-title">
+                    <span>正文</span>
+                </h3>
+                <div class="article-main">
+            	
+            	
+					<p class="red">若您在购买或阅读过程中遇到问题，请联系小秘书或发邮件至yunying@moer.cn。</p>
+           		
+                </div>
+            </section>
+        </article>
+        
+        <div class="article-handler">
+            <div class="article-handler-box clearfix">
+                	<a href="javascript:void(0);" class="like-handler ">
+                	<b>4</b></a>
+                <ul class="handler-list clearfix">
+                	
+                    
+                    	<li class="favor-handler "><a href="javascript:;">收藏</a></li>
+                    
+                    <li class="comment-handler">
+	                    <a href="javascript:;">
+                    		
+                    		
+	                    		评论 
+                    		
+	                    </a>
+                    	
+                    </li>
+                   
+                    <li class="share-handler">
+                        <a href="javascript:;">分享</a>
+                        <ul class="share-list clearfix" id="shareOutside">
+                            <li>
+                                <a href="javascript:;">
+                                    <!-- <img src="http://static.moer.cn/staticFile//modules/article/img/code.png" alt="微信/QQ扫一扫" /> -->
+                                    <i></i>
+                                    <span>微信/QQ扫一扫</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="wb" href="javascript:;">
+                                	<i class="shareWb"></i>
+                                    <span>微博</span>
+                                </a>
+                                <span class="arrow"></span>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!--[if lte IE 8]><div class="article-bg-ie"></div><![endif]-->
+            <div class="comment-area">
+	            
+                <div class="comment-main" buyFlag="false" 
+                	commentFlag="true">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+<aside>
+
+<div class="sidebar">
+        <div class="author">
+        	<a class="author-avatar" href="/authorHome.htm?theId=101106429" target="_blank">
+        		<img src="http://static.moer.cn/staticFile/150*150A/a5b63282aa06a780bd62df85ae290639.png" />
+        	</a>
+        	<div class="author-info">
+        		<h3><a href="/authorHome.htm?theId=101106429">
+        			
+						AP财富管理
+					
+        			
+						</a><i class="userv-red"></i></h3>
+					
+					
+        		<span>关注领域：
+        			
+					
+						沪深/理财/
+					
+        		</span>
+        		<p>
+        			
+        				AP财富团队致力于为高净值客户悉心出具个性化的报告建议，资产配置，心理指导。目前团队上传分...
+        			
+        			
+        		</p>
+        	</div>
+        	<ul class="stats-list">
+        		<li>关注<span>10</span></li>
+        		<li>粉丝<span>233</span></li>
+        		<li><a target="_blank" href="authorHome.htm?theId=101106429">文章<i>104</i></a></li>
+        		<li>问答<span>
+	        		
+	        		
+		        		3
+	        		
+	        	</span>
+        		</li>
+        	</ul>
+        	<div class="follow-qa">
+        	
+        	
+	        	
+	        	
+	        		<a class="follow" href="javascript:void(0);" uid="101106429">+ 关注</a>
+	        	
+	        	
+	        	
+	        		<a class="qa" href="http://www.moer.cn//v1/group/page/show?uid=101106429" uid="101106429" name="AP财富管理">私信</a>
+	        	
+        	
+        	
+        	</div>
+        </div>
+        <div class="article-dp" id="articleDp">
+        	<div class="article-dptitle">
+        		<h3>TA的大盘预测(5月31日)</h3>
+        		<a href="#" target="_blank">更多大V预测</a>
+        	</div>
+        	<div class="article-dpcont">
+        		<div class="article-dpitem">
+        			<em>已有123234人参与</em>
+        			<i></i>
+        			明日多空预测：<span>看涨</span>
+        		</div>
+        		<div class="article-dpitem">
+        			<em>已有123234人参与</em>
+        			<i></i>
+        			明日仓位建议：<span>10%</span>
+        		</div>
+        		<div class="article-dpitem">
+        			<i></i>
+        			明日多空预测：
+        			<p>周二沪市有惯性回补3月11日的缺口2815一带区域的动能。由于连续大幅下跌，短线技术指标已经严重超卖。况且，如果继续向下，将引发更高级别底背离。由于连续大幅下跌，短线技术指标已经严重超卖。</p>
+        		</div>
+        		<a href="#" class="article-dplink">我也要预测</a>
+        	</div>
+        </div> 
+        <div class="author-other">
+	          
+        	<div class="author-title">
+	          <h3>作者其他文章</h3>
+		          
+	          
+	          
+	        </div>
+	        <ul class="artcile-list">
+	        	
+	        	<li>
+					<a target="_blank" href="/articleDetails.htm?articleId=155068" title="丝路视觉新股研究报告">	       		
+					
+						丝路视觉新股研究报告
+					
+					</a>
+					
+						<i class="moerChargeicon"></i>
+					
+					<div class="state">
+						<div class="state-date">
+							18小时前
+						</div>
+						
+					</div>
+				</li>
+				
+	        	<li>
+					<a target="_blank" href="/articleDetails.htm?articleId=155062" title="杭州银行新股研究报告">	       		
+					
+						杭州银行新股研究报告
+					
+					</a>
+					
+						<i class="moerChargeicon"></i>
+					
+					<div class="state">
+						<div class="state-date">
+							20小时前
+						</div>
+						
+					</div>
+				</li>
+				
+	        	<li>
+					<a target="_blank" href="/articleDetails.htm?articleId=155046" title="电魂网络新股研究报告">	       		
+					
+						电魂网络新股研究报告
+					
+					</a>
+					
+						<i class="moerChargeicon"></i>
+					
+					<div class="state">
+						<div class="state-date">
+							20小时前
+						</div>
+						
+					</div>
+				</li>
+				
+	        	<li>
+					<a target="_blank" href="/articleDetails.htm?articleId=155035" title="海天精工新股研究报告">	       		
+					
+						海天精工新股研究报告
+					
+					</a>
+					
+						<i class="moerChargeicon"></i>
+					
+					<div class="state">
+						<div class="state-date">
+							21小时前
+						</div>
+						
+					</div>
+				</li>
+				
+	        	<li>
+					<a target="_blank" href="/articleDetails.htm?articleId=155018" title="富森美新股研究报告">	       		
+					
+						富森美新股研究报告
+					
+					</a>
+					
+						<i class="moerChargeicon"></i>
+					
+					<div class="state">
+						<div class="state-date">
+							22小时前
+						</div>
+						
+					</div>
+				</li>
+				
+          	</ul>
+          	
+        </div>
+        
+        <div class="author-other">
+          
+        </div>
+        
+    </div>
+ 
+ 
+ </aside>
+ 
+    
+
+    <div class="loading-eggs"></div>
+    </div>
+    
+    <script src="http://static.moer.cn/staticFile/20161114a/js/plugin/highcharts.js"></script>
+    <script src="http://static.moer.cn/staticFile/20161114a/js/wd/question_write.js"></script>
+    <script type="text/javascript" src="http://static.moer.cn/staticFile/20161114a/webjs/allergicWordsJs.js"></script> 
+    <script type="text/javascript" src="http://static.moer.cn/staticFile/20161114a/modules/article/js/view-all.js"></script>
+    <script src="http://static.moer.cn/staticFile/20161114a/widget/popupay/js/popupayforart.js"></script>
+    <script src="http://static.moer.cn/staticFile/20161114a/widget/bindphone/js/bindphone.js"></script>
+
+
+
+  <div class="footer">
+    <div class="footer-top">
+      <div class="footertop-cont">
+        <div class="footertop-cont1">
+          <h4>20000<span>篇</span></h4>
+          <p>独家投资观点</p>
+        </div>
+        <div class="footertop-cont2">
+          <h4>1500<span>位</span></h4>
+          <p>顶尖撰稿人加入</p>
+        </div>
+        <div class="footertop-cont3">
+          <h4>24<span>小时</span></h4>
+          <p>24小时更新</p>
+        </div>
+        <div class="footertop-cont4">
+          <h4>89<span>%</span></h4>
+          <p>在摩尔金融讨论的所有股票平均收益为89%</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-cont">
+      <div class="footercont-right">
+        <img src="http://static.moer.cn/staticFile/20161114a/images/moer-footer-logo.png" alt="#"/>
+      </div>
+      <div class="footercont-left">
+        <ul>
+          <li><strong>关于摩尔</strong></li>
+          <li><a href="/websiteContact.htm" target="_blank">联系我们</a></li>
+          <li><a href="/websiteRelief.htm" target="_blank">免责声明</a></li>
+          <li><a href="/websiteCopyright.htm" target="_blank">版权声明</a></li>
+          <li><a href="/websiteSecrecy.htm" target="_blank">隐私声明</a></li>
+          <li><a href="/websiteBecomeAuthor.htm" target="_blank">撰稿人守则</a></li>
+          <li><a href="/investmentPointCode.htm" target="_blank">投资观点守则</a></li>
+        </ul>
+        <ul>
+          <li><strong>投资人</strong></li>
+          <li><a href="http://www.news365.com.cn" target="_blank">上海报业集团</a></li>
+          <li><a href="http://www.mi.com" target="_blank">小米科技</a></li>
+          <li><a href="http://www.360.cn" target="_blank">奇虎360</a></li>
+          <li><a href="http://www.htsec.com" target="_blank">海通证券</a></li>
+          <li><a href="http://www.gtja.com" target="_blank">国泰君安</a></li>
+        </ul>
+        <ul>
+          <li><strong>合作伙伴</strong></li>
+          <li><a href="http://www.cs.ecitic.com" target="_blank">中信证券</a></li>
+          <li><a href="http://www.orient-fund.com" target="_blank">东方基金</a></li>
+          <li><a href="http://www.gjzq.com.cn" target="_blank">国金证券</a></li>
+        </ul>
+        <ul>
+          <li><strong>网站地图</strong></li>
+          <li><a href="/operationIndex.htm" target="_blank">首页</a></li>
+          <li><a href="/optionalStock_getStockSub.htm" target="_blank">自选股</a></li>
+          <li><a href="/articleIndex_articleIndex.htm" target="_blank">投资发现</a></li>
+          <li><a href="/top50.htm" target="_blank">问答发现</a></li>
+          <li><a href="/articlefront.htm" target="_blank">申请撰稿人</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>摩尔星灵（北京）网络科技有限公司 版权所有 Copyright 2016 京ICP备 16018449-1号</span>
+      <span>服务热线：400-803-6208（工作日9：00-18：00）</span>
+    </div>
+  </div>
+<div id="question_writeLocation"></div>
+<script src="http://static.moer.cn/staticFile/20161114a/modules/header/js/header.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?b54c73f5510c10a9726f2873723c0576";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script type="text/javascript" src="http://tajs.qq.com/stats?sId=39129504" charset="UTF-8"></script>
+<script src="http://static.moer.cn/staticFile/20161114a/modules/header/js/header.js"></script>
+<!-- <script src="http://static.moer.cn/staticFile/20161114a/widget/bindphone/js/bindphone.js"></script> -->
+<!--     <script src="/ueditor142/ueditor.config.js"></script> -->
+<!-- 	<script src="/ueditor142/ueditor.all.js"></script> -->
+<!-- 	<script> -->
+<!-- 	    var ue = UE.getEditor('editor'); -->
+<!-- 	</script> -->
+</body>
+</html>	

@@ -1,0 +1,712 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" ng-app="moerApp">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="renderer" content="webkit">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<title>美国900万老人拒绝退休 全球年轻人都越来越穷？-摩尔金融</title>
+	
+	<meta name="keywords" content="上证指数,sh000001,面包财经,沪深/港股/美股/新三板" />
+	 
+	 
+	 
+	
+    <meta name="description" content="年轻人正越来越穷，不光是美国"/>
+	
+	
+	<script type="text/javascript">
+		var moer = {
+            env: {
+              subdomain: 'www' ,
+              domain: 'moer.cn'
+            }
+          };
+	</script>
+    <script src="http://static.moer.cn/staticFile/20161109d/js/base-all.js"></script>
+	<script type="text/javascript">
+		var createUserId = '109193672';
+		var userId = '';
+		var rmIsopen = '';
+		var userName = '';
+		var realName = '';
+		var imgUrl = 'http://static.moer.cn/staticFile';
+	 	var relatedStockInfo = '';
+	//	var commentAndEvaluateTotal=Number('');
+	//	var commentTotal=Number('');
+	//	var evaluateTotal=Number('');
+	//	var curPage =Number('1');
+	//	var rows = Number('15');
+		var articleId = '154419';
+		var type='';
+		var url="getCommentsByArticle.htm?articleId="+articleId+"&type="+type;
+		var maa_title='美国900万老人拒绝退休 全球年轻人都越来越穷？';
+		var commentRows=Number('');
+		var commentType = '1';
+		var proCopy = Number('0.00');
+		//初始化分页点击事件
+		var urlStr='articleDetails.htm?articleId='+articleId+'&page=';
+		$(function(){
+		$("#strContent img").each(function(){
+			$(this).css("max-width","700px");
+				var imgwidth = $(this).attr("width");
+				var imgheight = $(this).attr("height");
+				if(imgwidth){
+					if(imgwidth>700){
+						$(this).attr("width",700);
+						$(this).attr("height",imgheight*700/imgwidth);
+					}
+				}
+			});
+		});
+		//防copy
+		//if(proCopy > 0) {
+		document.oncontextmenu=function(evt){evt.preventDefault();};
+		document.onselectstart=function(evt){evt.preventDefault();};
+		//}
+	</script>
+	 
+	<link rel="shortcut icon" type="image/x-icon" href="http://static.moer.cn/staticFile/20161109d/images/favicon.ico" />
+	<link rel="stylesheet" href="http://static.moer.cn/staticFile/20161109d/css/newindex.css"/>
+	<link rel="stylesheet" href="http://static.moer.cn/staticFile/20161109d/css/base-all.css"/>
+    <link rel="stylesheet" href="http://static.moer.cn/staticFile/20161109d/modules/article/css/view-all.css"/>
+    <link rel="stylesheet" href="http://static.moer.cn/staticFile/20161109d/widget/popupay/css/popupay.css">
+</head>
+
+<body onselectstart="return false";>
+<!--头部开始-->
+<input id="nav" type="hidden" value="4" />
+
+
+
+<link rel="stylesheet" href="http://static.moer.cn/staticFile/20161109d/modules/header/css/header.css"/>
+
+
+<header class="header">
+    <div class="header-logo">
+        <a href="/"><img src="http://static.moer.cn/staticFile/20161109d/images/moer-new-logo.png" alt="#"/></a>
+    </div>
+    <div class="header-nav">
+           <ul>
+            <li style="margin-right:0;"><a class="navstatus navstatus0" href="/operationIndex.htm">首页</a></li>
+            <li class="headernav-div">
+            	
+	            
+		            <div class="headerhas-dropdown"><a class="navstatus navstatus1" href="javascript:;" onclick="$.moer.login.init();">我的关注</a></div>
+	                <div class="headerhas-dropdown"><a class="navstatus navstatus2" href="javascript:;" onclick="$.moer.login.init();">自选股</a></div>
+	            
+	            <!-- <div class="headerhas-dropdown"><a class="navstatus navstatus1" href="/moernewindex.htm">我的关注</a></div>
+                <div class="headerhas-dropdown"><a class="navstatus navstatus2" href="/stockInit.htm">自选股</a></div> -->
+                <!-- <div class="headerhas-dropdown"><a class="navstatus navstatus3" href="/v1/group/page/show">直播间</a>
+                    <div class="header-dropdown headertzgd-down">
+                        <em></em>
+                        <ul>
+                            <li><a href="/v1/group/page/square">直播发现</a></li>
+                            <li><a href="/v1/group/page/show" class="imbtn">我的订阅</a></li>
+                        </ul>
+                    </div>
+                </div> -->
+                <div class="headerhas-dropdown">
+                    <span class="im-count"></span>
+                    <a class="navstatus navstatus3 imNews" href="http://www.moer.cn//v1/group/page/show">消息</a>
+                </div>
+            </li>
+            <li class="headernav-div">
+                <i></i>
+                <div class="headerhas-dropdown"><a class="navstatus navstatus4" href="/articleIndex_articleIndex.htm">投资观点</a>
+                    <div class="header-dropdown headertzgd-down">
+                        <em></em>
+                        <ul>
+                            <li><a href="/articleIndex_articleIndex.htm?onColumn=TZGD_HUSHEN">沪深</a></li>
+                            <li><a href="/articleIndex_articleIndex.htm?onColumn=TZGD_GANGGU">港股</a></li>
+                            <li><a href="/articleIndex_articleIndex.htm?onColumn=TZGD_MEIGU">美股</a></li>
+                            <li><a href="/investment.htm">最新观点</a></li>
+                            <li><a href="/messageAction_goToWeekNews.htm">7x24小时资讯</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="headerhas-dropdown"><a class="navstatus navstatus8" href="http://www.moer.cn//v1/group/page/square">直播间</a></div>
+                <div class="headerhas-dropdown"><a class="navstatus navstatus5" href="/dp/brief.htm">短评</a>
+                    <div class="header-dropdown headerwd-down">
+                        <em></em>
+                        <ul>
+                            <li><a href="/dp/brief.htm">大V短评</a></li>
+                            <li><a href="/dp/forecast.htm">大盘预测</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- <div class="headerhas-dropdown"><a class="navstatus navstatus6" href="/top50.htm">问答</a>
+                    <div class="header-dropdown headerwd-down">
+                        <em></em>
+                        <ul>
+                            <li><a href="/top50.htm">问答发现</a></li>
+                            <li><a href="/topicSquare.htm">话题广场</a></li>
+                            <li><a href="/showAllMQuestion.htm">所有问题</a></li>
+                        </ul>
+                    </div>
+                </div> -->
+                <a class="navstatus navstatus7" href="/WriterAction_rankingInit.htm">找高手</a>
+            </li>
+        </ul>
+    </div>
+    <div class="header-user headerhas-dropdown">
+        <a id="header-user"></a>
+        <div class="header-dropdown headeruser-down">
+            <em></em>
+            <ul>
+                <li><a id="header-home" target="_blank">我的主页</a></li>
+                <li id="headerMyPublish"><a href="/userCenterRelease.htm" target="_blank">我的发布</a></li>
+<!--                 <li class="header-shopping"><a href="/toShoppingCart.htm" target="_blank">我的购物车<i class="header-count" id="shopCount" style="display:none;">0</i></a></li> -->
+                <li id="headerMyOrder"><a href="/order.htm?type=1" target="_blank">管理订单</a></li>
+                <li><a href="/payRecord.htm" target="_blank">购买记录</a></li>
+                <li><a href="/goToCharge.htm" target="_blank">摩尔帐户</a></li>
+                <li><a href="/userCenterSet_init.htm" target="_blank">帐户设置</a></li>
+                <li id="applyWriter"><a href="/articlefront.htm" target="_blank">申请撰稿人</a></li>
+                <li><a class="logout" href="javascript:;" exit="">退出账号</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="header-menu">
+        <div class="header-search headerhas-dropdown">
+            <div class="search-icon"></div>
+            <div class="headerform-cont">
+                <div class="headersearch-form">
+                    <input type="text" placeholder="找个股/用户/文章/问题" class="headersearch-input" id="headersearch-input"/>
+                    <button type="button"></button>
+                </div>
+            </div>
+            <div class="headersearch-cont" id="searchResult">
+            </div>
+        </div>
+        <ul>
+            <li class="header-app headerhas-dropdown"><a href="javascript:void(0)"></a>
+                <div class="header-dropdown headerapp-down">
+                    <em></em>
+                    <img src="http://static.moer.cn/staticFile/20161109d/images/moerapp-down-1210.png" alt="#"/>
+                    <p>iOS / Android 扫码直接下载</p>
+                    <button onclick="window.open('https://itunes.apple.com/cn/app/id1033149808')">iOS&nbsp;下载</button>
+                    <button onclick="window.open('http://static.moer.cn/staticFile/moer.apk')">Android&nbsp;下载
+                    </button>
+                </div>
+            </li>
+            <li class="header-notice headerhas-dropdown">
+                <a href="/usersysmsg.htm"></a>
+                <i class="header-count" id="noticeCount" style="display:none;"></i>
+                <div class="header-dropdown headernotice-down">
+                    <em></em>
+                    <ul class="headernotice-cont" id="msgList">
+                    </ul>
+                    <a href="/usersysmsg.htm" class="header-notice-more">查看更多</a>
+                </div>
+            </li>
+            <li class="header-msg"><a href="/cs.htm"></a><i class="header-count" id="letterCount" style="display:none;"></i></li>
+        </ul>
+    </div>
+    
+</header>
+<!--头部结束-->
+<!-- new begin -->
+<div class="layout clearfix">
+<div class="left-content">
+        <article class="article-container">
+            <section class="article-header">
+                <h2 class="article-title">美国900万老人拒绝退休 全球年轻人都越来越穷？</h2>
+                <div class="article-summary">
+                    <p class="summary-txt">
+                        <i>[摘要]</i>
+                        <span>年轻人正越来越穷，不光是美国</span>
+                    </p>
+                    <p class="summary-footer">
+                        <span class="float-l">
+                        	<i>浏览：376次</i>
+                        	<i>时间：2016年11月14日 08:22:01</i>
+                        	
+                        </span>
+                        
+                        
+                        	
+                        		
+                        	
+                        	
+                        
+                        
+                        
+                      
+                    </p>
+                </div>
+            </section>
+            
+            <section class="article-section" id="relatedStockSection">
+            </section>
+            
+            <section class="article-section">
+                <h3 class="sec-title">
+                    <span>正文</span>
+                </h3>
+                <div class="article-main">
+            	
+                	
+	                	<div class="article-daily article-daily-first">
+	                        <p class="time-stamp">2016年11月14日 08:22:01</p>
+	                        <p><embed id="xunlei_com_thunder_helper_plugin_d462f475-c18e-46be-bd10-327458d045bd" type="application/thunder_download_plugin" width="0" height="0"></p><p style="Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;"><img src="http://static.moer.cn/O/d8aaf7a39711ccd9ebc849b93808d6f8.png?mark=1" title="d8aaf7a39711ccd9ebc849b93808d6f8.jpeg" alt=""></p><p style="Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;">年轻人正变得越来越穷？最近几年，这一说法正被越来越多的证据所验证。</p><p style="Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;">当70岁的特朗普与69岁的希拉里在竞选时，“两个老人抢工作”的戏谑说法在互联网上非常流行。</p><p style="Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;">但“老人抢工作”真的不仅是一句调侃，这件事情正在世界各地发生。只是美国有更为详实的统计数据，让我们可以从宏观上观察这一趋势：过去十几年来，越来越多的老年人正因为各种原因和年轻人抢饭碗——趋势与上个世纪的后三十年完全不同。</p><p style="Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;">最老总统背后：没有更年轻的选择</p><p style="Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;">先从争夺最激烈的职位——美国总统的年龄说起。特朗普当选终结了老布什之后美国总统年轻化的趋势。美国之前三任总统当选的年龄分别是：奥巴马47岁，小布什54岁，克林顿46岁当选。在三任总统中有两任低于50岁，这在最近100年的美国历史中还是第一次出现。</p><p style="Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;">上一次出现这种情况还是1889年。要知道那个时候的人均寿命比现在低的多，当时的50岁差不多相当于现在的六七十岁了。</p><p style="Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;">有数据为证，面包财经整理了历届美国总统的当选年龄。</p><p style="Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;"><img src="http://static.moer.cn/O/38775fe0f3205a2118425a3e0da926fe.png?mark=1" title="38775fe0f3205a2118425a3e0da926fe.jpeg" alt=""></p><p style="Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;"></p><p style="Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;">更糟糕的是，即便不选特朗普，总统当选年龄仍然会创纪录，美国人还真选不出来年轻的总统。今年美国总统大选可以称的上是“老年人俱乐部”。特朗普的竞争对手名不见经传，希拉里主要的竞争对手桑德斯75岁，最年轻的希拉里也有69岁，美国总统大选注定是老年人之间的博弈。<br></p><p style="Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;">美国不倒翁：退休老人正在抢饭碗</p><p style="Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;">突然之间要在69岁和70岁之间做出选择也许带有偶然性，但至少表明2016年美国年轻的政治家们没有获得登顶的机会。其实年轻人无法上位不仅仅发生在政治领域。</p><p style="Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;">70岁的特朗普只是美国900万“不倒翁”中的一个。根据美国官方统计数据，目前美国拥有4776多万65岁以上的老人，占总人口的14.79%。这些老人当中近五分之一，约900万人，仍在工作。老年就业比例创下50年以来的新高。</p><p style="Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;">下图是根据美国劳工部数据绘制的美国65岁以上老人就业人口比例变化情况图：</p><p style="Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;"><img src="http://static.moer.cn/O/1b15241dd348ff185ce80bb35269af3e.png?mark=1" title="1b15241dd348ff185ce80bb35269af3e.jpeg" alt=""></p><p style="Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;"></p><p style="Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;">越来越多的老人继续工作，并不仅仅是由于人均寿命增长带来的结果，甚至也不是劳动力短缺所带来的。二战以后美国和全世界的人均预期寿命持续增长。但从1965年到1985年，65岁以上老人就业人口占比下降了接近一半。</p><p style="Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;">面包财经整理的就业图清晰的显示出：老人就业的大幅增加其实是从上个世纪末才开始的。最近二十年美国65岁以上老人的就业率持续攀升，2016年9月较1995年几乎**：从10.7%增加到了19.2%。</p><p style="Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;">经济是一个相当大的原因。2000年科技泡沫破灭、2008年经济危机将一批美国家庭多年积蓄耗尽，而这批人如今已然老去。</p><p style="Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;">像全世界很多老人一样，他们根本不能退休或放弃福利。根据美国退休人员协会的研究，61％的老人工作者人继续工作是为了医疗保健，59％是为了支付健康费用。2015年全球经济放缓，使美国的就业环境再次遭到重创，这使得老人就业比例较上一年大幅攀升，并创下最近50年的新高。</p><p style="Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;">除了经济原因外，心理因素也是老人不退休的一个重要原因。对于一些老年人来说，工作场所不仅仅是一个支付工资的地方，更是交友，体现身份和地位的途径。在最近一次的跨美国退休投票中，34％的退休人员说他们想继续工作，因为工作为他们带来必要的社交和心理满足。</p><p style="Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;">天花板越来越低 年轻人越来越穷</p><p style="Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;">老人就业率持续攀升，意味着当整体就业率相同时，留给年轻人的机会越来越少。这种状况在很多国家都在发生，只是美国详实的就业数据给了我们一个做算术题的机会。</p><p style="Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;">根据美国劳工部数据，2000年末美国失业率仅为3.9%，当时老年人口的就业率只有11.9%。而在次贷危机爆发后，2009年失业率增加到10%左右，那一年老年人口的就业率增加到了15.9%。这意味着年轻人不仅遭遇经济危机的打击，还被老人挤占掉更多的工作机会。</p><p style="Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;">平均退休年龄的急剧增加，从另一个角度验证了年轻人的就业压力。根据美联社公共事务研究中心的统计，自经济衰退以来，美国平均退休年龄从57岁上升到62岁，到2020年，估计美国工人的25％将达到55岁或以上。</p><p style="Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;">更重要的还是不同年龄段收入差距在扩大，根据美国劳工部统计数据，55岁至64岁工人的工资和薪水中位数是25至34岁工人的三倍。这一比例在持续攀升，老人依旧位于美国社会地位的顶层。</p><p style="Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;">最近两年全球进入低利率甚至负利率时代，以房产为代表的资产价格普遍升，拥有更多资产的老年人和年轻人代季财富差异已经在扩大。再加上不同年龄层薪水差异悬殊，年轻人正普遍遭遇着几十年来最严重的经济压力。“年轻正变的越来越穷”——这早已不是个别人的观感，统计数据早已明白呈现这一趋势——而且找工作越来越难。</p><p style="Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;">理解了这一点，也许就能理解当特朗普提出：要在墨西哥边境筑一面墙以阻止非法移民，并且主张修改贸易协定以保住美国就业时会得到如此强烈的响应。尽管奥巴马任内，就业率比金融危机时大幅降低。</p><p style="Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;">一位寿长83岁的老人曾对年轻人说过：“世界是你们的,也是我们的,但是归根结底是你们的”。但是在2016年，美国总统的宝座属于老年人。</p><p style="Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;">老年人与年轻人抢饭碗，美国并不是唯一出现这种状况的国家。大学生求职难的同时，中国已经在讨论延迟退休年龄了，不是吗？</p><p style="Helvetica Neue', Helvetica, 'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;">本文作者：面包财经</p><p>免责声明：本文仅供信息分享，不构成对任何人的任何投资建议。</p>
+	                    </div>
+	                    <div class="article-statement">
+	                        <p class="statement-warning">
+	                        	作者不持有文中所涉及的股票或其他投资组合，未来5个交易日内也不打算买入或做空。
+	                        </p>
+	                        
+							<p class="red">本文仅代表撰稿人个人观点，不代表摩尔金融平台。</p>
+	                    </div>
+	                    <a id="rewardBtn" class="reward-btn" href="javascript:;">打赏</a>
+            	
+            	
+                </div>
+            </section>
+        </article>
+        
+        <div class="article-handler">
+            <div class="article-handler-box clearfix">
+                	<a href="javascript:void(0);" class="like-handler ">
+                	<b>0</b></a>
+                <ul class="handler-list clearfix">
+                	
+                    
+                    	<li class="favor-handler "><a href="javascript:;">收藏</a></li>
+                    
+                    <li class="comment-handler">
+	                    <a href="javascript:;">
+                    		
+                    		
+	                    		评论 
+                    		
+	                    </a>
+                    	
+                    </li>
+                   
+                    <li class="share-handler">
+                        <a href="javascript:;">分享</a>
+                        <ul class="share-list clearfix" id="shareOutside">
+                            <li>
+                                <a href="javascript:;">
+                                    <!-- <img src="http://static.moer.cn/staticFile//modules/article/img/code.png" alt="微信/QQ扫一扫" /> -->
+                                    <i></i>
+                                    <span>微信/QQ扫一扫</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="wb" href="javascript:;">
+                                	<i class="shareWb"></i>
+                                    <span>微博</span>
+                                </a>
+                                <span class="arrow"></span>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!--[if lte IE 8]><div class="article-bg-ie"></div><![endif]-->
+            <div class="comment-area">
+	            
+                <a name="commentT" id="commentArea" class="target"></a>
+                <h3 class="sec-title">
+                   	 发表评论
+                </h3>
+                <form action="#" method="post" class="comment-box">
+                    <textarea id="commentInput" class="comment-input"></textarea>
+                    <div class="comment-footer clearfix">
+                        <span class="float-l" id="wordsTip">最少输入1个字</span>
+                        <span class="float-r">
+                            <!-- 评论同时分享到：<input id="shareToWeibo" type="checkbox" />
+                            <label for="shareToWeibo" class="share-to-weibo">
+                            </label> -->
+                            <a id="commentCancel" class="cancel-btn" href="javascript:;">取消</a>
+                            <a id="submitCancel" buyflag ="true" price="0.00" maaId="154419"
+                            class="submit-btn" href="javascript:;">评论</a>
+                        </span>
+                    </div>
+                </form>
+		        
+                <div class="comment-main" buyFlag="true" 
+                	commentFlag="true">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+<aside>
+
+<div class="sidebar">
+        <div class="author">
+        	<a class="author-avatar" href="/authorHome.htm?theId=109193672" target="_blank">
+        		<img src="http://static.moer.cn/staticFile/150*150A/b39d86369cc2ea1c0a812786ea4c7e9b.png" />
+        	</a>
+        	<div class="author-info">
+        		<h3><a href="/authorHome.htm?theId=109193672">
+        			
+						面包财经
+					
+        			
+					
+        				</a><i class="userv-blue"></i></h3>
+					
+        		<span>关注领域：
+        			
+						沪深/港股/美股/新三
+					
+					
+        		</span>
+        		<p>
+        			
+        			
+        				研究型财经自媒体团队，为价值而生，原创。
+        			
+        		</p>
+        	</div>
+        	<ul class="stats-list">
+        		<li>关注<span>0</span></li>
+        		<li>粉丝<span>242</span></li>
+        		<li><a target="_blank" href="authorHome.htm?theId=109193672">文章<i>186</i></a></li>
+        		<li>问答<span>
+	        		
+	        			0
+	        		
+	        		
+	        	</span>
+        		</li>
+        	</ul>
+        	<div class="follow-qa">
+        	
+        	
+	        	
+	        	
+	        		<a class="follow" href="javascript:void(0);" uid="109193672">+ 关注</a>
+	        	
+	        	
+	        	
+	        		<a class="qa" href="http://www.moer.cn//v1/group/page/show?uid=109193672" uid="109193672" name="面包财经">私信</a>
+	        	
+        	
+        	
+        	</div>
+        </div>
+        <div class="article-dp" id="articleDp">
+        	<div class="article-dptitle">
+        		<h3>TA的大盘预测(5月31日)</h3>
+        		<a href="#" target="_blank">更多大V预测</a>
+        	</div>
+        	<div class="article-dpcont">
+        		<div class="article-dpitem">
+        			<em>已有123234人参与</em>
+        			<i></i>
+        			明日多空预测：<span>看涨</span>
+        		</div>
+        		<div class="article-dpitem">
+        			<em>已有123234人参与</em>
+        			<i></i>
+        			明日仓位建议：<span>10%</span>
+        		</div>
+        		<div class="article-dpitem">
+        			<i></i>
+        			明日多空预测：
+        			<p>周二沪市有惯性回补3月11日的缺口2815一带区域的动能。由于连续大幅下跌，短线技术指标已经严重超卖。况且，如果继续向下，将引发更高级别底背离。由于连续大幅下跌，短线技术指标已经严重超卖。</p>
+        		</div>
+        		<a href="#" class="article-dplink">我也要预测</a>
+        	</div>
+        </div> 
+        <div class="author-other">
+	          
+        	<div class="author-title">
+	          <h3>作者其他文章</h3>
+		          
+	          
+	          
+	        </div>
+	        <ul class="artcile-list">
+	        	
+	        	<li>
+					<a target="_blank" href="/articleDetails.htm?articleId=153970" title="31省老龄数据出炉：川渝最苦 广东最年轻？">	       		
+					
+						31省老龄数据出炉：川渝最苦 广东最年轻？
+					
+					</a>
+					
+					<div class="state">
+						<div class="state-date">
+							2016-11-11
+						</div>
+						
+					</div>
+				</li>
+				
+	        	<li>
+					<a target="_blank" href="/articleDetails.htm?articleId=153658" title="川普获胜 韩国受伤：经济总量将被广东超越？">	       		
+					
+						川普获胜 韩国受伤：经济总量将被广东超越？
+					
+					</a>
+					
+					<div class="state">
+						<div class="state-date">
+							2016-11-09
+						</div>
+						
+					</div>
+				</li>
+				
+	        	<li>
+					<a target="_blank" href="/articleDetails.htm?articleId=152309" title="库存只够用21天 煤价飙涨 煤老板的好日子又要来了？">	       		
+					
+						库存只够用21天 煤价飙涨 煤老板的好日子又要来了？
+					
+					</a>
+					
+					<div class="state">
+						<div class="state-date">
+							2016-11-03
+						</div>
+						
+					</div>
+				</li>
+				
+	        	<li>
+					<a target="_blank" href="/articleDetails.htm?articleId=152071" title="各省财政收入排行：山西辽宁入不敷出">	       		
+					
+						各省财政收入排行：山西辽宁入不敷出
+					
+					</a>
+					
+					<div class="state">
+						<div class="state-date">
+							2016-11-02
+						</div>
+						
+					</div>
+				</li>
+				
+	        	<li>
+					<a target="_blank" href="/articleDetails.htm?articleId=151788" title="上市银行净利润过万亿 占上市公司半壁江山">	       		
+					
+						上市银行净利润过万亿 占上市公司半壁江山
+					
+					</a>
+					
+					<div class="state">
+						<div class="state-date">
+							2016-11-01
+						</div>
+						
+					</div>
+				</li>
+				
+          	</ul>
+          	
+        </div>
+        
+        <div class="author-other">
+          
+        	<div class="author-title">
+	          <h3>相关文章</h3>
+	        </div>
+	        <ul class="artcile-list">
+	        	
+	        	<li>
+	        		<a target="_blank" href="/articleDetails.htm?articleId=154439" title="A股之龙：【今日股市早评】">	       		
+					
+						A股之龙：【今日股市早评】
+					
+					
+					</a>
+					<div class="state">
+						<div class="state-name">
+							A股之龙
+						</div>
+						<div class="state-date">
+							1小时前
+						</div>
+					</div>
+				</li>
+	        	
+	        	<li>
+	        		<a target="_blank" href="/articleDetails.htm?articleId=154434" title="如何复盘及训练盘感">	       		
+					
+						如何复盘及训练盘感
+					
+					
+					</a>
+					<div class="state">
+						<div class="state-name">
+							壹叶心舟
+						</div>
+						<div class="state-date">
+							1小时前
+						</div>
+					</div>
+				</li>
+	        	
+	        	<li>
+	        		<a target="_blank" href="/articleDetails.htm?articleId=154420" title="【11月14日】盘前观点及热门板块">	       		
+					
+						【11月14日】盘前观点及热门板块
+					
+					
+					</a>
+					<div class="state">
+						<div class="state-name">
+							九公主尼克
+						</div>
+						<div class="state-date">
+							2小时前
+						</div>
+					</div>
+				</li>
+	        	
+	        	<li>
+	        		<a target="_blank" href="/articleDetails.htm?articleId=154386" title="新逻辑想象无限，盘面关注四方向（附股附策略）">	       		
+					
+						新逻辑想象无限，盘面关注四方向（附股附策略）
+					
+					
+					</a>
+					<div class="state">
+						<div class="state-name">
+							股市日日谈
+						</div>
+						<div class="state-date">
+							11小时前
+						</div>
+					</div>
+				</li>
+	        	
+	        	<li>
+	        		<a target="_blank" href="/articleDetails.htm?articleId=154385" title="【盘前鸡毛信】1114题材板块信息早知道，股市一线谍报">	       		
+					
+						【盘前鸡毛信】1114题材板块信息早知道，股市一线谍报
+					
+					
+					</a>
+					<div class="state">
+						<div class="state-name">
+							股市日日谈
+						</div>
+						<div class="state-date">
+							11小时前
+						</div>
+					</div>
+				</li>
+	        	
+          	</ul>
+          	
+        </div>
+        
+    </div>
+ 
+ 
+ </aside>
+ 
+    
+
+    <div class="loading-eggs"></div>
+    </div>
+    
+    <script src="http://static.moer.cn/staticFile/20161109d/js/plugin/highcharts.js"></script>
+    <script src="http://static.moer.cn/staticFile/20161109d/js/wd/question_write.js"></script>
+    <script type="text/javascript" src="http://static.moer.cn/staticFile/20161109d/webjs/allergicWordsJs.js"></script> 
+    <script type="text/javascript" src="http://static.moer.cn/staticFile/20161109d/modules/article/js/view-all.js"></script>
+    <script src="http://static.moer.cn/staticFile/20161109d/widget/popupay/js/popupayforart.js"></script>
+    <script src="http://static.moer.cn/staticFile/20161109d/widget/bindphone/js/bindphone.js"></script>
+
+
+
+  <div class="footer">
+    <div class="footer-top">
+      <div class="footertop-cont">
+        <div class="footertop-cont1">
+          <h4>20000<span>篇</span></h4>
+          <p>独家投资观点</p>
+        </div>
+        <div class="footertop-cont2">
+          <h4>1500<span>位</span></h4>
+          <p>顶尖撰稿人加入</p>
+        </div>
+        <div class="footertop-cont3">
+          <h4>24<span>小时</span></h4>
+          <p>24小时更新</p>
+        </div>
+        <div class="footertop-cont4">
+          <h4>89<span>%</span></h4>
+          <p>在摩尔金融讨论的所有股票平均收益为89%</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-cont">
+      <div class="footercont-right">
+        <img src="http://static.moer.cn/staticFile/20161109d/images/moer-footer-logo.png" alt="#"/>
+      </div>
+      <div class="footercont-left">
+        <ul>
+          <li><strong>关于摩尔</strong></li>
+          <li><a href="/websiteContact.htm" target="_blank">联系我们</a></li>
+          <li><a href="/websiteRelief.htm" target="_blank">免责声明</a></li>
+          <li><a href="/websiteCopyright.htm" target="_blank">版权声明</a></li>
+          <li><a href="/websiteSecrecy.htm" target="_blank">隐私声明</a></li>
+          <li><a href="/websiteBecomeAuthor.htm" target="_blank">撰稿人守则</a></li>
+          <li><a href="/investmentPointCode.htm" target="_blank">投资观点守则</a></li>
+        </ul>
+        <ul>
+          <li><strong>投资人</strong></li>
+          <li><a href="http://www.news365.com.cn" target="_blank">上海报业集团</a></li>
+          <li><a href="http://www.mi.com" target="_blank">小米科技</a></li>
+          <li><a href="http://www.360.cn" target="_blank">奇虎360</a></li>
+          <li><a href="http://www.htsec.com" target="_blank">海通证券</a></li>
+          <li><a href="http://www.gtja.com" target="_blank">国泰君安</a></li>
+        </ul>
+        <ul>
+          <li><strong>合作伙伴</strong></li>
+          <li><a href="http://www.cs.ecitic.com" target="_blank">中信证券</a></li>
+          <li><a href="http://www.orient-fund.com" target="_blank">东方基金</a></li>
+          <li><a href="http://www.gjzq.com.cn" target="_blank">国金证券</a></li>
+        </ul>
+        <ul>
+          <li><strong>网站地图</strong></li>
+          <li><a href="/operationIndex.htm" target="_blank">首页</a></li>
+          <li><a href="/optionalStock_getStockSub.htm" target="_blank">自选股</a></li>
+          <li><a href="/articleIndex_articleIndex.htm" target="_blank">投资发现</a></li>
+          <li><a href="/top50.htm" target="_blank">问答发现</a></li>
+          <li><a href="/articlefront.htm" target="_blank">申请撰稿人</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>摩尔星灵（北京）网络科技有限公司 版权所有 Copyright 2016 京ICP备 16018449-1号</span>
+      <span>服务热线：400-803-6208（工作日9：00-18：00）</span>
+    </div>
+  </div>
+<div id="question_writeLocation"></div>
+<script src="http://static.moer.cn/staticFile/20161109d/modules/header/js/header.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?b54c73f5510c10a9726f2873723c0576";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script type="text/javascript" src="http://tajs.qq.com/stats?sId=39129504" charset="UTF-8"></script>
+<script src="http://static.moer.cn/staticFile/20161109d/modules/header/js/header.js"></script>
+<!-- <script src="http://static.moer.cn/staticFile/20161109d/widget/bindphone/js/bindphone.js"></script> -->
+<!--     <script src="/ueditor142/ueditor.config.js"></script> -->
+<!-- 	<script src="/ueditor142/ueditor.all.js"></script> -->
+<!-- 	<script> -->
+<!-- 	    var ue = UE.getEditor('editor'); -->
+<!-- 	</script> -->
+</body>
+</html>	

@@ -1,0 +1,897 @@
+
+
+
+ 
+
+<div class="filter-item clearfix">
+	<div class="item-avatar moer-card" uid="101955575">
+		<a class="moerUsercard" target="_blank" href="authorHome.htm?theId=101955575">
+			<img src="http://static.moer.cn/staticFile/80*80A/fdaaf8587a051208b70bebeab90d351e.png" alt="">
+		</a>
+	</div>
+	<div class="item-main">
+		<h3><a class="item-title" href="articleDetails.htm?articleId=154459" target="_blank">
+			达利食品深度研究报告
+		</a>
+		
+		</h3>
+		<div class="item-info">
+			<a href="authorHome.htm?theId=101955575" target="_blank">
+				剩者为王6124
+			</a>
+			<em>8分钟前</em>
+			<div class="item-count">
+				
+				
+			</div>
+		</div>
+		<p class="item-content">
+			和旺旺相比，达利食品的产品创新能力更强，运营效率也更高。达利的动态PE为14.9倍，绝对估值较低，**。
+		</p>
+	</div>
+</div>
+
+<div class="filter-item clearfix">
+	<div class="item-avatar moer-card" uid="110029714">
+		<a class="moerUsercard" target="_blank" href="authorHome.htm?theId=110029714">
+			<img src="http://static.moer.cn/staticFile/O/b4b38b8e2c1427eae49102a426ce678a.png" alt="">
+		</a>
+	</div>
+	<div class="item-main">
+		<h3><a class="item-title" href="articleDetails.htm?articleId=154405" target="_blank">
+			年底次新高送转机会分析和如何把握强势填权股二次冲高机会？
+		</a>
+		
+		</h3>
+		<div class="item-info">
+			<a href="authorHome.htm?theId=110029714" target="_blank">
+				四妹
+			</a>
+			<em>15分钟前</em>
+			<div class="item-count">
+				
+				
+			</div>
+		</div>
+		<p class="item-content">
+			从市场K线走势观察：上海综指已突破今年4月中旬的高点3200点，创下新高走势，并走出单边震荡上涨的趋势，而创业板指数距离当时高点2330点仍有一定差距，走势相对较弱，轨迹形态还呈现向下运行态势，可见主创分化的程度目前较为明显。但越是这种行情，主板补跌的机会就越大，而创业板往下超跌...
+		</p>
+	</div>
+</div>
+
+<div class="filter-item clearfix">
+	<div class="item-avatar moer-card" uid="106824310">
+		<a class="moerUsercard" target="_blank" href="authorHome.htm?theId=106824310">
+			<img src="http://static.moer.cn/staticFile/O/133a69a3187ff9a0d1f9af88d6f5f1f6.png" alt="">
+		</a>
+	</div>
+	<div class="item-main">
+		<h3><a class="item-title" href="articleDetails.htm?articleId=154458" target="_blank">
+			【每日一股】
+		</a>
+		
+		</h3>
+		<div class="item-info">
+			<a href="authorHome.htm?theId=106824310" target="_blank">
+				xeee
+			</a>
+			<em>19分钟前</em>
+			<div class="item-count">
+				
+				
+			</div>
+		</div>
+		<p class="item-content">
+			这股也很值钱
+		</p>
+	</div>
+</div>
+
+<div class="filter-item clearfix">
+	<div class="item-avatar moer-card" uid="112697945">
+		<a class="moerUsercard" target="_blank" href="authorHome.htm?theId=112697945">
+			<img src="http://static.moer.cn/staticFile/80*80A/c48d338597c81a9f61fe0a167f049fce.png" alt="">
+		</a>
+	</div>
+	<div class="item-main">
+		<h3><a class="item-title" href="articleDetails.htm?articleId=154346" target="_blank">
+			11月第2周次新股一周总结+下周走势分析预判
+		</a>
+		
+			<i class="moerChargeicon"></i>
+		
+		</h3>
+		<div class="item-info">
+			<a href="authorHome.htm?theId=112697945" target="_blank">
+				魔师庞斑
+			</a>
+			<em>20分钟前</em>
+			<div class="item-count">
+				
+				
+			</div>
+		</div>
+		<p class="item-content">
+			上周推出新栏目《次新股一周总结+下周走势分析》，喜欢的朋友较多，本周起将固定写。此外，听从朋友们的建议，我会在一周总结里加上我付费文章中分享的部分热门个股点评，跟踪它们近期的走势，以便未来大家更好的把握。一周总结固定内容为四大块：1.本周次新股整体走势总结，梳理出强势主线和赚钱逻...
+		</p>
+	</div>
+</div>
+
+<div class="filter-item clearfix">
+	<div class="item-avatar moer-card" uid="110883457">
+		<a class="moerUsercard" target="_blank" href="authorHome.htm?theId=110883457">
+			<img src="http://static.moer.cn/staticFile/80*80A/517a94f9e067611a1737354dbef908e0.png" alt="">
+		</a>
+	</div>
+	<div class="item-main">
+		<h3><a class="item-title" href="articleDetails.htm?articleId=154452" target="_blank">
+			大圣全新个股：地方国资，市盈率40，底部均线上连续几日小阳
+		</a>
+		
+			<i class="moerChargeicon"></i>
+		
+		</h3>
+		<div class="item-info">
+			<a href="authorHome.htm?theId=110883457" target="_blank">
+				大圣股评
+			</a>
+			<em>22分钟前</em>
+			<div class="item-count">
+				
+				
+			</div>
+		</div>
+		<p class="item-content">
+			此股适合中线持有，是市盈率低、相对安全且可以有一定预期的票。
+		</p>
+	</div>
+</div>
+
+<div class="filter-item clearfix">
+	<div class="item-avatar moer-card" uid="112534480">
+		<a class="moerUsercard" target="_blank" href="authorHome.htm?theId=112534480">
+			<img src="http://static.moer.cn/staticFile/80*80A/62f6745641c532bc925dcf39253fe75d.png" alt="">
+		</a>
+	</div>
+	<div class="item-main">
+		<h3><a class="item-title" href="articleDetails.htm?articleId=154454" target="_blank">
+			军工+调整到位+小盘，潜伏再潜伏
+		</a>
+		
+		</h3>
+		<div class="item-info">
+			<a href="authorHome.htm?theId=112534480" target="_blank">
+				仙鹤飞
+			</a>
+			<em>37分钟前</em>
+			<div class="item-count">
+				
+				
+			</div>
+		</div>
+		<p class="item-content">
+			尤洛卡是军工股票，近半年一直在潜伏和调整中，利好刚刚兑现，现价可以潜伏了，等待主升浪
+		</p>
+	</div>
+</div>
+
+<div class="filter-item clearfix">
+	<div class="item-avatar moer-card" uid="105012812">
+		<a class="moerUsercard" target="_blank" href="authorHome.htm?theId=105012812">
+			<img src="http://static.moer.cn/staticFile/80*80A/776cd994c22434de13f4588899ef6564.png" alt="">
+		</a>
+	</div>
+	<div class="item-main">
+		<h3><a class="item-title" href="articleDetails.htm?articleId=154449" target="_blank">
+			重磅题材下的一只短线强势个股
+		</a>
+		
+			<i class="moerChargeicon"></i>
+		
+		</h3>
+		<div class="item-info">
+			<a href="authorHome.htm?theId=105012812" target="_blank">
+				股权投资的践行者
+			</a>
+			<em>1小时前</em>
+			<div class="item-count">
+				
+				
+			</div>
+		</div>
+		<p class="item-content">
+			市场仍是存量资金博弈，行情分化严重。而版块分化行情的特点就是题材指引，版块轮动。除此之外，若再辅以低估值的安全垫和高成长预期，那么股价的爆发力将不可限量，即使在熊市也足以让我们叹为观止。本文挑选的就是这样一个短线重磅题材，该股具备极高的安全垫和极佳的高成长预期。
+		</p>
+	</div>
+</div>
+
+<div class="filter-item clearfix">
+	<div class="item-avatar moer-card" uid="112714300">
+		<a class="moerUsercard" target="_blank" href="authorHome.htm?theId=112714300">
+			<img src="http://static.moer.cn/staticFile/80*80A/b4dbe5f35a301821d000e04972a61ea7.png" alt="">
+		</a>
+	</div>
+	<div class="item-main">
+		<h3><a class="item-title" href="articleDetails.htm?articleId=154447" target="_blank">
+			特朗普反对TPP 可能加盟亚投行
+		</a>
+		
+		</h3>
+		<div class="item-info">
+			<a href="authorHome.htm?theId=112714300" target="_blank">
+				施宏毅BM
+			</a>
+			<em>1小时前</em>
+			<div class="item-count">
+				
+				
+			</div>
+		</div>
+		<p class="item-content">
+			其实特朗普早于竞选时已表明，反对由美国主导的TPP计划。如今胜出了选举，相信亦会兑现竞选承诺，美国将来对亚投行及一带一路等的部署亦会转变，甚至有可能加入亚投行！
+		</p>
+	</div>
+</div>
+
+<div class="filter-item clearfix">
+	<div class="item-avatar moer-card" uid="112685445">
+		<a class="moerUsercard" target="_blank" href="authorHome.htm?theId=112685445">
+			<img src="http://static.moer.cn/staticFile/80*80A/d4f87eeceb396575cc573f2863fa61cc.png" alt="">
+		</a>
+	</div>
+	<div class="item-main">
+		<h3><a class="item-title" href="articleDetails.htm?articleId=154445" target="_blank">
+			【早盘直通车】风格均衡配置，适当保存主板利润
+		</a>
+		
+		</h3>
+		<div class="item-info">
+			<a href="authorHome.htm?theId=112685445" target="_blank">
+				路易十六
+			</a>
+			<em>1小时前</em>
+			<div class="item-count">
+				
+				
+			</div>
+		</div>
+		<p class="item-content">
+			上周A股市场整体依然维持沪强深弱的格局，在经历周中美国大选的短暂冲击后，上证指数在有色、基建、券商板块的带领下，表现强势，周五放量突破股灾以来的高点；题材方面，次新、高送转、股权转让等板块继续受到资金追捧，市场风险偏好继续回升，整体赚钱效应较强。  近期市场运行的主要逻辑仍然是...
+		</p>
+	</div>
+</div>
+
+<div class="filter-item clearfix">
+	<div class="item-avatar moer-card" uid="104907895">
+		<a class="moerUsercard" target="_blank" href="authorHome.htm?theId=104907895">
+			<img src="http://static.moer.cn/staticFile/O/af3c93e37e7475eabf3b09fb03ba56e2.png" alt="">
+		</a>
+	</div>
+	<div class="item-main">
+		<h3><a class="item-title" href="articleDetails.htm?articleId=154444" target="_blank">
+			反弹一触即发，一只短线强势个股
+		</a>
+		
+			<i class="moerChargeicon"></i>
+		
+		</h3>
+		<div class="item-info">
+			<a href="authorHome.htm?theId=104907895" target="_blank">
+				股权背后的逻辑
+			</a>
+			<em>1小时前</em>
+			<div class="item-count">
+				
+				
+			</div>
+		</div>
+		<p class="item-content">
+			目前量能萎缩到了极致，只要稍有风吹草动，反弹可以说是一触即发的，K线渐渐走出底背离的态势，那么接下来就是就是抬头向上，拔地而起，一波强势的中级反弹也该到来了，而反弹中的个股分化严重，康懿为大家精心挑选了一直向下有安全垫，向上空间无限的个股。
+
+ 
+		</p>
+	</div>
+</div>
+
+<div class="filter-item clearfix">
+	<div class="item-avatar moer-card" uid="100258326">
+		<a class="moerUsercard" target="_blank" href="authorHome.htm?theId=100258326">
+			<img src="http://static.moer.cn/staticFile/uploadfiles/personImg/20150306221432660n6vb5pn03.jpg" alt="">
+		</a>
+	</div>
+	<div class="item-main">
+		<h3><a class="item-title" href="articleDetails.htm?articleId=154443" target="_blank">
+			惊天黑色星期五！A股会有影响吗？
+		</a>
+		
+		</h3>
+		<div class="item-info">
+			<a href="authorHome.htm?theId=100258326" target="_blank">
+				揭幕者
+			</a>
+			<em>1小时前</em>
+			<div class="item-count">
+				
+				
+			</div>
+		</div>
+		<p class="item-content">
+			腥风血雨！双十一那晚，期货夜盘惊天黑色星期五，当晚期货市场大波动，从当晚21:41分开始，商品期货突然大跳水，一刹那的时间，PTA、锡、菜粕、橡胶、棕榈油、豆粕、镍、豆一、棉花、豆油、黄金、菜油等12个商品期货盘中触及跌停，其中菜粕、PTA截至当晚夜盘收盘仍封死跌停。
+
+
+		</p>
+	</div>
+</div>
+
+<div class="filter-item clearfix">
+	<div class="item-avatar moer-card" uid="112002661">
+		<a class="moerUsercard" target="_blank" href="authorHome.htm?theId=112002661">
+			<img src="http://static.moer.cn/staticFile/O/1a26713ce5fc2ee5d1b333da06d502fa.png" alt="">
+		</a>
+	</div>
+	<div class="item-main">
+		<h3><a class="item-title" href="articleDetails.htm?articleId=154442" target="_blank">
+			年底必炒概念+大股东“必须”拉高才能减持、短期或有强脉冲
+		</a>
+		
+			<i class="moerChargeicon"></i>
+		
+		</h3>
+		<div class="item-info">
+			<a href="authorHome.htm?theId=112002661" target="_blank">
+				吐奶大湿兄
+			</a>
+			<em>1小时前</em>
+			<div class="item-count">
+				
+				
+			</div>
+		</div>
+		<p class="item-content">
+			中期成本线压制比较明确，而成本线位置与大股东增持位置较近。市场人士强调，若短期借双重利好突破，可考虑中期看高一线。
+		</p>
+	</div>
+</div>
+
+<div class="filter-item clearfix">
+	<div class="item-avatar moer-card" uid="109761377">
+		<a class="moerUsercard" target="_blank" href="authorHome.htm?theId=109761377">
+			<img src="http://static.moer.cn/staticFile/80*80A/7e04cb4271841853ac432adfc6a0811a.png" alt="">
+		</a>
+	</div>
+	<div class="item-main">
+		<h3><a class="item-title" href="articleDetails.htm?articleId=154438" target="_blank">
+			匠心十二金钗 其九、电动汽车核心部件供货商
+		</a>
+		
+			<i class="moerChargeicon"></i>
+		
+		</h3>
+		<div class="item-info">
+			<a href="authorHome.htm?theId=109761377" target="_blank">
+				阿操1985
+			</a>
+			<em>1小时前</em>
+			<div class="item-count">
+				
+				
+			</div>
+		</div>
+		<p class="item-content">
+			多角度挖掘创业板小盘次新成长股。主营电动汽车核心部件供货。不是通合科技。
+		</p>
+	</div>
+</div>
+
+<div class="filter-item clearfix">
+	<div class="item-avatar moer-card" uid="112874421">
+		<a class="moerUsercard" target="_blank" href="authorHome.htm?theId=112874421">
+			<img src="http://static.moer.cn/staticFile/80*80A/43d21f6f3199ce7a9da05e6f36b17e99.png" alt="">
+		</a>
+	</div>
+	<div class="item-main">
+		<h3><a class="item-title" href="articleDetails.htm?articleId=154439" target="_blank">
+			A股之龙：【今日股市早评】
+		</a>
+		
+		</h3>
+		<div class="item-info">
+			<a href="authorHome.htm?theId=112874421" target="_blank">
+				A股之龙
+			</a>
+			<em>1小时前</em>
+			<div class="item-count">
+				
+				
+			</div>
+		</div>
+		<p class="item-content">
+			A股之龙：【今日股市早评】
+		</p>
+	</div>
+</div>
+
+<div class="filter-item clearfix">
+	<div class="item-avatar moer-card" uid="107700449">
+		<a class="moerUsercard" target="_blank" href="authorHome.htm?theId=107700449">
+			<img src="http://static.moer.cn/staticFile/80*80A/e9555a62451c4ef99b179cb13dccabd5.png" alt="">
+		</a>
+	</div>
+	<div class="item-main">
+		<h3><a class="item-title" href="articleDetails.htm?articleId=154437" target="_blank">
+			益学堂：本周走势研究(11.14日-11.18日)
+		</a>
+		
+		</h3>
+		<div class="item-info">
+			<a href="authorHome.htm?theId=107700449" target="_blank">
+				上海益学堂
+			</a>
+			<em>1小时前</em>
+			<div class="item-count">
+				
+				
+			</div>
+		</div>
+		<p class="item-content">
+			本周走势研究(11.14日-11.18日)
+		</p>
+	</div>
+</div>
+
+<div class="filter-item clearfix">
+	<div class="item-avatar moer-card" uid="113139448">
+		<a class="moerUsercard" target="_blank" href="authorHome.htm?theId=113139448">
+			<img src="http://static.moer.cn/staticFile/80*80A/cc67c34332a81143bc933236b4df4993.png" alt="">
+		</a>
+	</div>
+	<div class="item-main">
+		<h3><a class="item-title" href="articleDetails.htm?articleId=154436" target="_blank">
+			11月 第三周操盘策略：助力解套
+		</a>
+		
+		</h3>
+		<div class="item-info">
+			<a href="authorHome.htm?theId=113139448" target="_blank">
+				陈湖平
+			</a>
+			<em>1小时前</em>
+			<div class="item-count">
+				
+				
+			</div>
+		</div>
+		<p class="item-content">
+			上周主要以抄底为主，抄底了次新股（603159上海亚虹、603909合诚股份、002799环球印务），周4高点清仓。周五上证指数逆市大涨，周五晚间期货杀跌。国家队解套意愿强烈，本周精选了国家队未解套的滞涨标的。中线300086康芝药业因为量能异常，涨停当天已经出货，今年3只中线票...
+		</p>
+	</div>
+</div>
+
+<div class="filter-item clearfix">
+	<div class="item-avatar moer-card" uid="109224474">
+		<a class="moerUsercard" target="_blank" href="authorHome.htm?theId=109224474">
+			<img src="http://static.moer.cn/staticFile/O/15ed299490eaa78110b7e73c3aaef8a0.png" alt="">
+		</a>
+	</div>
+	<div class="item-main">
+		<h3><a class="item-title" href="articleDetails.htm?articleId=154433" target="_blank">
+			【泽平宏观】经济轻型滞涨，房债调控利好股市
+		</a>
+		
+		</h3>
+		<div class="item-info">
+			<a href="authorHome.htm?theId=109224474" target="_blank">
+				泽平宏观
+			</a>
+			<em>1小时前</em>
+			<div class="item-count">
+				
+				
+			</div>
+		</div>
+		<p class="item-content">
+			我们在国庆后提出房市债市调控利好股市，&ldquo;按下葫芦浮起瓢&rdquo;，近期股市持续修复。我们此前判断经济从小周期复苏步入轻型滞涨，周期品价格大涨，但是我们也提醒投资者政策基调转向抑泡沫和防风险，以及经济先行指标回落的风险。我们维持货币政策中性、经济轻型滞胀、A股震荡修复、债市调整、房地产小周...
+		</p>
+	</div>
+</div>
+
+<div class="filter-item clearfix">
+	<div class="item-avatar moer-card" uid="102043604">
+		<a class="moerUsercard" target="_blank" href="authorHome.htm?theId=102043604">
+			<img src="http://static.moer.cn/staticFile/80*80A/adde61449e369b4667900b76420b838f.png" alt="">
+		</a>
+	</div>
+	<div class="item-main">
+		<h3><a class="item-title" href="articleDetails.htm?articleId=154435" target="_blank">
+			当前市场韭菜最应该做的是什么
+		</a>
+		
+		</h3>
+		<div class="item-info">
+			<a href="authorHome.htm?theId=102043604" target="_blank">
+				壹叶心舟
+			</a>
+			<em>1小时前</em>
+			<div class="item-count">
+				
+				
+			</div>
+		</div>
+		<p class="item-content">
+			先引用网络一篇趣言:吃着10块钱的炒饭，盯着一两百万的股款。拿着几千块钱的工资，下着几十万的订单。谈着几百万的合同，指点着上千亿的市场&mdash;&mdash;做股票的，就是如此任性。玩着百万计的生意，赚着百元计的钞票! 拿着卖白菜的钱，操着卖百芬的心！生意是高端大气上档次， 利润是低调奢华接地气！做...
+		</p>
+	</div>
+</div>
+
+<div class="filter-item clearfix">
+	<div class="item-avatar moer-card" uid="106813997">
+		<a class="moerUsercard" target="_blank" href="authorHome.htm?theId=106813997">
+			<img src="http://static.moer.cn/staticFile/O/0e45af793dd1c3e4eb43dfe2f1cd39e7.png" alt="">
+		</a>
+	</div>
+	<div class="item-main">
+		<h3><a class="item-title" href="articleDetails.htm?articleId=154417" target="_blank">
+			2016/11/14 - 11月第3周，精选个股和大盘跟踪分析
+		</a>
+		
+		</h3>
+		<div class="item-info">
+			<a href="authorHome.htm?theId=106813997" target="_blank">
+				yglr
+			</a>
+			<em>1小时前</em>
+			<div class="item-count">
+				
+				
+			</div>
+		</div>
+		<p class="item-content">
+			上证主板本周连续放量冲高，本人在直播间里和股有实时交流（象达刚路机(SZ:300103)，贵研铂业(SH:600459)，捕捉到几只突破个股，那么下周是否能持续呢，我们拭目以待。本贴里将跟随市场情况分析大盘和个股。 因此，请及时看我的每日更新市场和个股分析。
+
+周贴服务摘要，...
+		</p>
+	</div>
+</div>
+
+<div class="filter-item clearfix">
+	<div class="item-avatar moer-card" uid="102043604">
+		<a class="moerUsercard" target="_blank" href="authorHome.htm?theId=102043604">
+			<img src="http://static.moer.cn/staticFile/80*80A/adde61449e369b4667900b76420b838f.png" alt="">
+		</a>
+	</div>
+	<div class="item-main">
+		<h3><a class="item-title" href="articleDetails.htm?articleId=154434" target="_blank">
+			如何复盘及训练盘感
+		</a>
+		
+		</h3>
+		<div class="item-info">
+			<a href="authorHome.htm?theId=102043604" target="_blank">
+				壹叶心舟
+			</a>
+			<em>1小时前</em>
+			<div class="item-count">
+				
+				
+			</div>
+		</div>
+		<p class="item-content">
+			复盘就是对当天的走势以及历史周期走势进行的回顾和总结，从中发现问题和蛛丝马迹，并据此确立自己在第二天或者是一段时间内的操作方向，及时修改计划和目标。复盘的重点在浏览个股走势，在过程中留意新的标的。怎么选股在《如何选股以及何时介入》一文已经阐述。
+		</p>
+	</div>
+</div>
+
+<div class="filter-item clearfix">
+	<div class="item-avatar moer-card" uid="101166802">
+		<a class="moerUsercard" target="_blank" href="authorHome.htm?theId=101166802">
+			<img src="http://static.moer.cn/staticFile/O/cb1203b8721f346be1d035dcc0c80306.png" alt="">
+		</a>
+	</div>
+	<div class="item-main">
+		<h3><a class="item-title" href="articleDetails.htm?articleId=154430" target="_blank">
+			玩转周期股
+		</a>
+		
+		</h3>
+		<div class="item-info">
+			<a href="authorHome.htm?theId=101166802" target="_blank">
+				吕健中
+			</a>
+			<em>1小时前</em>
+			<div class="item-count">
+				
+				
+			</div>
+		</div>
+		<p class="item-content">
+			周期股，顾名思义，指的是随着经济周期的盛衰而涨落的股票。这类股票多为确定性投机的股票。不要去谈他合理的价值。因为都是滞后的，等他真正回到合理价值中枢的时候股价早已不是现在的位置。
+		</p>
+	</div>
+</div>
+
+<div class="filter-item clearfix">
+	<div class="item-avatar moer-card" uid="112631450">
+		<a class="moerUsercard" target="_blank" href="authorHome.htm?theId=112631450">
+			<img src="http://static.moer.cn/staticFile/80*80A/a4749cb539383ef8fed6f733fb3e4151.png" alt="">
+		</a>
+	</div>
+	<div class="item-main">
+		<h3><a class="item-title" href="articleDetails.htm?articleId=154429" target="_blank">
+			2016.11.14隔夜利好个股（私募内参）
+		</a>
+		
+		</h3>
+		<div class="item-info">
+			<a href="authorHome.htm?theId=112631450" target="_blank">
+				股锦鲤
+			</a>
+			<em>1小时前</em>
+			<div class="item-count">
+				
+				
+			</div>
+		</div>
+		<p class="item-content">
+			据上市公司公告、财务报表以及市场热点等多方面内容，甄选出部分有望冲刺涨停个股。
+这是我们私募内部每天发给交易员的内参，希望对你有帮助。
+		</p>
+	</div>
+</div>
+
+<div class="filter-item clearfix">
+	<div class="item-avatar moer-card" uid="108434249">
+		<a class="moerUsercard" target="_blank" href="authorHome.htm?theId=108434249">
+			<img src="http://static.moer.cn/staticFile/O/207dcfc26ab4946db0049590febd570a.png" alt="">
+		</a>
+	</div>
+	<div class="item-main">
+		<h3><a class="item-title" href="articleDetails.htm?articleId=154428" target="_blank">
+			杨德龙:年底前A股迎最强反弹
+		</a>
+		
+		</h3>
+		<div class="item-info">
+			<a href="authorHome.htm?theId=108434249" target="_blank">
+				杨德龙
+			</a>
+			<em>1小时前</em>
+			<div class="item-count">
+				
+				
+			</div>
+		</div>
+		<p class="item-content">
+			希望大家在年底之前能够抓住这一波今年以来最好的反弹，在明年能够继续在蓝筹股上找到机会，继续挖掘一些优质的蓝筹股来分享慢牛行情的收益。
+		</p>
+	</div>
+</div>
+
+<div class="filter-item clearfix">
+	<div class="item-avatar moer-card" uid="100722168">
+		<a class="moerUsercard" target="_blank" href="authorHome.htm?theId=100722168">
+			<img src="http://static.moer.cn/staticFile/uploadfiles/personImg/20150308153351654w90n68xh3.jpg" alt="">
+		</a>
+	</div>
+	<div class="item-main">
+		<h3><a class="item-title" href="articleDetails.htm?articleId=154427" target="_blank">
+			密切关注这一点！否则可能赚指数不赚钱！（附股）
+		</a>
+		
+		</h3>
+		<div class="item-info">
+			<a href="authorHome.htm?theId=100722168" target="_blank">
+				小道消息
+			</a>
+			<em>1小时前</em>
+			<div class="item-count">
+				
+				
+			</div>
+		</div>
+		<p class="item-content">
+			市场风格可能要切换
+		</p>
+	</div>
+</div>
+
+<div class="filter-item clearfix">
+	<div class="item-avatar moer-card" uid="110075288">
+		<a class="moerUsercard" target="_blank" href="authorHome.htm?theId=110075288">
+			<img src="http://static.moer.cn/staticFile/80*80A/eab876aa9e9769990d5fff4352aac842.png" alt="">
+		</a>
+	</div>
+	<div class="item-main">
+		<h3><a class="item-title" href="articleDetails.htm?articleId=154426" target="_blank">
+			【中天金马周刊】11月第3周 谁是下一个通用股份！
+		</a>
+		
+			<i class="moerChargeicon"></i>
+		
+		</h3>
+		<div class="item-info">
+			<a href="authorHome.htm?theId=110075288" target="_blank">
+				中天投势
+			</a>
+			<em>2小时前</em>
+			<div class="item-count">
+				
+				
+			</div>
+		</div>
+		<p class="item-content">
+			【金马战绩：前期买入的通用股份601500两星期翻一倍，我们启动点买入！本周又推出绝佳次新票啦~】《中天金马周刊》致力于分享每周短线大涨潜力股，稳健暴力的代表！会持续更新一周。《中天金马周刊》每周推出金马股仅有1&mdash;&mdash;3支，风险小一旦启动却潜力巨大，群友们买入轻松吃大肉，金马股买进...
+		</p>
+	</div>
+</div>
+
+<div class="filter-item clearfix">
+	<div class="item-avatar moer-card" uid="113118073">
+		<a class="moerUsercard" target="_blank" href="authorHome.htm?theId=113118073">
+			<img src="http://static.moer.cn/staticFile/80*80A/11c8e19ba6a73bfda8cbc7664db0cba4.png" alt="">
+		</a>
+	</div>
+	<div class="item-main">
+		<h3><a class="item-title" href="articleDetails.htm?articleId=154424" target="_blank">
+			投资类公号文章集锦：别买那些设局的A股
+		</a>
+		
+		</h3>
+		<div class="item-info">
+			<a href="authorHome.htm?theId=113118073" target="_blank">
+				摩尔精选
+			</a>
+			<em>2小时前</em>
+			<div class="item-count">
+				
+				
+			</div>
+		</div>
+		<p class="item-content">
+			本文精选并整理了股社区等公众号的最新内容，为你呈现最新的市场投资策略，给你提供最有价值的投资观点，分析市场背后的原因。
+		</p>
+	</div>
+</div>
+
+<div class="filter-item clearfix">
+	<div class="item-avatar moer-card" uid="111466309">
+		<a class="moerUsercard" target="_blank" href="authorHome.htm?theId=111466309">
+			<img src="http://static.moer.cn/staticFile/80*80A/45f5db3c0620cdfd72af7188311b56cc.png" alt="">
+		</a>
+	</div>
+	<div class="item-main">
+		<h3><a class="item-title" href="articleDetails.htm?articleId=154423" target="_blank">
+			国企首批混改试点将启动 国资委监管央企望减至102家
+		</a>
+		
+		</h3>
+		<div class="item-info">
+			<a href="authorHome.htm?theId=111466309" target="_blank">
+				摩尔资讯
+			</a>
+			<em>2小时前</em>
+			<div class="item-count">
+				
+				
+			</div>
+		</div>
+		<p class="item-content">
+			多位接受《证券日报》记者采访的业内专家均表示，从今年国企改革取得的成效来看，不仅改革领域正在逐步扩大，改革力度也在逐渐加码。
+		</p>
+	</div>
+</div>
+
+<div class="filter-item clearfix">
+	<div class="item-avatar moer-card" uid="112002565">
+		<a class="moerUsercard" target="_blank" href="authorHome.htm?theId=112002565">
+			<img src="http://static.moer.cn/staticFile/80*80A/689c889fe0917d79714987e2dfbe25ee.png" alt="">
+		</a>
+	</div>
+	<div class="item-main">
+		<h3><a class="item-title" href="articleDetails.htm?articleId=154420" target="_blank">
+			【11月14日】盘前观点及热门板块
+		</a>
+		
+		</h3>
+		<div class="item-info">
+			<a href="authorHome.htm?theId=112002565" target="_blank">
+				九公主尼克
+			</a>
+			<em>2小时前</em>
+			<div class="item-count">
+				
+				
+			</div>
+		</div>
+		<p class="item-content">
+			详见文
+		</p>
+	</div>
+</div>
+
+<div class="filter-item clearfix">
+	<div class="item-avatar moer-card" uid="111466309">
+		<a class="moerUsercard" target="_blank" href="authorHome.htm?theId=111466309">
+			<img src="http://static.moer.cn/staticFile/80*80A/45f5db3c0620cdfd72af7188311b56cc.png" alt="">
+		</a>
+	</div>
+	<div class="item-main">
+		<h3><a class="item-title" href="articleDetails.htm?articleId=154422" target="_blank">
+			海内外期货市场闪跌 部分资金或转战A股
+		</a>
+		
+		</h3>
+		<div class="item-info">
+			<a href="authorHome.htm?theId=111466309" target="_blank">
+				摩尔资讯
+			</a>
+			<em>2小时前</em>
+			<div class="item-count">
+				
+				
+			</div>
+		</div>
+		<p class="item-content">
+			上周末，对于许多人来说，是一段与亲朋好友休闲娱乐的美好时光。但对于期货市场上的投资者来说，却经历了从云端瞬间摔落尘埃的悲情故事。
+		</p>
+	</div>
+</div>
+
+<div class="filter-item clearfix">
+	<div class="item-avatar moer-card" uid="109193672">
+		<a class="moerUsercard" target="_blank" href="authorHome.htm?theId=109193672">
+			<img src="http://static.moer.cn/staticFile/80*80A/b39d86369cc2ea1c0a812786ea4c7e9b.png" alt="">
+		</a>
+	</div>
+	<div class="item-main">
+		<h3><a class="item-title" href="articleDetails.htm?articleId=154419" target="_blank">
+			美国900万老人拒绝退休 全球年轻人都越来越穷？
+		</a>
+		
+		</h3>
+		<div class="item-info">
+			<a href="authorHome.htm?theId=109193672" target="_blank">
+				面包财经
+			</a>
+			<em>2小时前</em>
+			<div class="item-count">
+				
+				
+			</div>
+		</div>
+		<p class="item-content">
+			年轻人正越来越穷，不光是美国
+		</p>
+	</div>
+</div>
+
+
+	<div id="commentPager" class="comment-pager">
+		<span class="navPage prevPage"><i class="icon icon-prev"></i>上一页</span>
+		<div class="navBox" pageid=1 pageCount=2925>
+						<span class="navtext">第<em>1</em>页</span><i class="icon icon-navArrow"></i>
+						<ul class="navList">
+							<i class="icon icon-navListArrow"></i>
+							
+							<li pageid="1"  class="active"  >
+   								第<em>1</em>页
+   							</li>
+   								
+							
+								<li pageid="2"  >
+   								第<em>2</em>页</li>
+							
+								<li pageid="3"  >
+   								第<em>3</em>页</li>
+							
+							
+   									<li>...</li>
+   							
+							<li pageid="2925"  >
+   								第<em>2925</em>页
+   							</li>
+						</ul>
+					</div>
+					<span class="navPage nextPage">下一页<i class="icon icon-next"></i></span>
+</div> 
+
+
