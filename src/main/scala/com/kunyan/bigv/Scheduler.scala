@@ -80,8 +80,6 @@ object Scheduler {
       val moerSendTopic_s = (configFile \ "kafka" \ "moersend_s").text
       val moerSendTopic_h = (configFile \ "kafka" \ "moersend_h").text
       val moerSendTopic_u = (configFile \ "kafka" \ "moersend_u").text
-      val moerTopicsSet = Set[String](moerReceiveTopic_s,moerReceiveTopic_h,moerReceiveTopic_u)
-      val moerSendTopic = (moerSendTopic_s, moerSendTopic_h, moerSendTopic_u)
 
       //雪球的topic
       val xueQiuReceiveTopic_s = (configFile \ "kafka" \ "xueqiureceive_s").text
@@ -90,24 +88,27 @@ object Scheduler {
       val xueQiuSendTopic_s = (configFile \ "kafka" \ "xueqiusend_s").text
       val xueQiuSendTopic_h = (configFile \ "kafka" \ "xueqiusend_h").text
       val xueQiuSendTopic_u = (configFile \ "kafka" \ "xueqiusend_u").text
-      val xueQiuTopicsSet = Set[String](xueQiuReceiveTopic_s,xueQiuReceiveTopic_h,xueQiuReceiveTopic_u)
-      val xueQiuSendTopic = (xueQiuSendTopic_s, xueQiuSendTopic_h, xueQiuSendTopic_u)
+
+
+      val topicsSet = Set[String](moerReceiveTopic_s,moerReceiveTopic_h,moerReceiveTopic_u,xueQiuReceiveTopic_s,xueQiuReceiveTopic_h,xueQiuReceiveTopic_u)
+      val sendTopic = (moerSendTopic_s, moerSendTopic_h, moerSendTopic_u,xueQiuSendTopic_s, xueQiuSendTopic_h, xueQiuSendTopic_u)
 
       val kafkaParams = Map[String, String]("metadata.broker.list" -> brokerList,
       "group.id" -> groupId)
 
-      //摩尔的信息
-      val moerMessages = KafkaUtils.createDirectStream[String, String, StringDecoder, StringDecoder](
-            ssc, kafkaParams, moerTopicsSet)
+      //信息
+      val allMessages = KafkaUtils.createDirectStream[String, String, StringDecoder, StringDecoder](
+            ssc, kafkaParams, topicsSet)
 
-      //摩尔的信息处理
-      moerMessages.map(_._2).filter(_.length > 0).foreachRDD(rdd => {
+      //信息处理
+      allMessages.map(_._2).filter(_.length > 0).foreachRDD(rdd => {
         //
         rdd.foreach(message => {
-
+          //
+          println("get kafka Topic message: " + message)
           analyzer(message,
             connectionsBr.value,
-            moerSendTopic,
+            sendTopic,
             stopWords,
             classModels,
             sentiModelsBr.value,
@@ -117,29 +118,6 @@ object Scheduler {
 
         })
       })
-
-      //雪球的信息
-      //      val xueQiuMessages = KafkaUtils.createDirectStream[String, String, StringDecoder, StringDecoder](
-      //      ssc, kafkaParams, xueQiuTopicsSet)
-      //
-      //      //    雪球的信息处理
-      //      xueQiuMessages.map(_._2).filter(_.length > 0).foreachRDD(rdd => {
-      //        //
-      //        rdd.foreach(message => {
-      //          //
-      //          println("get kafka xueqiuTopic message: " + message)
-      //          analyzer(message,
-      //            connectionsBr.value,
-      //            xueQiuSendTopic,
-      //            stopWords,
-      //            classModels,
-      //            sentiModelsBr.value,
-      //            keyWordDict,
-      //            kyConf,
-      //            summaryExtraction)
-      //
-      //        })
-      //      })
 
       //中金的信息
       //      val zhongJinMessages = KafkaUtils.createDirectStream[String, String, StringDecoder, StringDecoder](
@@ -157,7 +135,7 @@ object Scheduler {
 
   def analyzer(message: String,
                lazyConn: LazyConnections,
-               topic: (String, String, String),
+               topic: (String,String,String,String, String, String),
                stopWords: Array[String],
                classModels: scala.Predef.Map[scala.Predef.String, scala.Predef.Map[scala.Predef.String, scala.Predef.Map[scala.Predef.String, java.io.Serializable]]],
                sentimentModels: scala.Predef.Map[scala.Predef.String, scala.Any],
@@ -242,7 +220,7 @@ object Scheduler {
 
               //解析top100阶段的数据
               case "SELECT" =>
-                SnowballParser.parse(result._1, result._2, lazyConn, topic._1)
+                SnowballParser.parse(result._1, result._2, lazyConn, topic._4)
 
 
               //解析100大V的历史文章
@@ -250,7 +228,7 @@ object Scheduler {
                 SnowballHistoryParser.parse(result._1,
                   result._2,
                   lazyConn,
-                  topic._2,
+                  topic._5,
                   stopWords,
                   classModels,
                   sentimentModels,
@@ -265,7 +243,7 @@ object Scheduler {
                 SnowballUpdateParser.parse(result._1,
                   result._2,
                   lazyConn,
-                  topic._3,
+                  topic._6,
                   stopWords,
                   classModels,
                   sentimentModels,

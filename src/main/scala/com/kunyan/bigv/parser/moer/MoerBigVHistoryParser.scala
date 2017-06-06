@@ -172,7 +172,6 @@ object MoerBigVHistoryParser {
         if(text != ""){
 
           BigVLogger.warn("写入表的数据 => " + url + "  timeStamp => " + timeStamp)
-          println("写入表的数据 => " + url + "  timeStamp => " + timeStamp)
 
           val table = lazyConn.getTable("news_detail")
           val g = new Get(url.getBytes)

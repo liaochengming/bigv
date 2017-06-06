@@ -81,7 +81,7 @@ object MoerFinance {
         }
 
         val profit = "0"
-//
+
         //文章信息
         DBUtil.insert(articleSql, articleId, authorId, buyCnt, readCnt, timeStamp, likeCnt, price, profit)
 
