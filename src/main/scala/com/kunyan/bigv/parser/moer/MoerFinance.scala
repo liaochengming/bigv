@@ -63,7 +63,7 @@ object MoerFinance {
 
       if (flag) {
 
-        var buyCnt = doc.select("div.left-content i.red").text()
+        var buyCnt = doc.select("div.left-content i.red").text().replace(" ","")
 
         if (null == buyCnt || buyCnt == "") {
           buyCnt = "0"

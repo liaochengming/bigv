@@ -176,15 +176,10 @@ object Scheduler {
 
               //解析top100阶段的数据
               case "SELECT" =>
-                println("摩尔，状态==>SELECT" + "\n")
-                BigVLogger.warn("摩尔，状态==>SELECT" + "\n")
                 MoerFinance.parse(result._1, result._2, lazyConn, topic._1)
-              //                lazyConn.sendTask(topic, StringUtil.getUrlJsonString(Platform.MOER.id, "https://www.moer.com/", 0))
 
               //解析100大V的历史文章
               case "HISTORY" =>
-                println("摩尔，状态==>HISTORY" + "\n")
-                BigVLogger.warn("摩尔，状态==>HISTORY" + "\n")
                 MoerBigVHistoryParser.parse(result._1,
                   result._2,
                   lazyConn,
@@ -198,8 +193,6 @@ object Scheduler {
 
               //解析更新的文章
               case "UPDATE" =>
-                println("摩尔，状态==>UPDATE" + "\n")
-                BigVLogger.warn("摩尔，状态==>UPDATE" + "\n")
                 MoerBigVUpdateParser.parse(result._1,
                   result._2,
                   lazyConn,
@@ -239,7 +232,6 @@ object Scheduler {
 
               //解析更新的文章
               case "UPDATE" =>
-                println("雪球，状态==>UPDATE" + "\n")
                 SnowballUpdateParser.parse(result._1,
                   result._2,
                   lazyConn,
