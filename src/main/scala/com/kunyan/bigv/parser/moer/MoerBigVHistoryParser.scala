@@ -157,7 +157,7 @@ object MoerBigVHistoryParser {
 
       } else {
 
-        text=doc.select("div[class=\"article-daily article-daily-first\"] p").text()
+        text=doc.select("div[class=\"article-daily article-daily-first\"] p:not(.time-stamp)").text()
 
         if(text != ""){
 
