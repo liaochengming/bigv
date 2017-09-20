@@ -6,7 +6,7 @@ import com.kunyan.bigv.config.Platform
 import com.kunyan.bigv.db.LazyConnections
 import com.kunyan.bigv.logger.BigVLogger
 import com.kunyan.bigv.util.StringUtil
-import com.kunyandata.nlpsuit.util.KunyanConf
+import com.kunyan.nlp.task.NewsProcesser
 import org.apache.hadoop.hbase.client.Get
 import org.json.JSONObject
 
@@ -22,12 +22,7 @@ object SnowballUpdateParser {
             html: String,
             lazyConn: LazyConnections,
             topic: String,
-            stopWords: Array[String],
-            classModels: scala.Predef.Map[scala.Predef.String, scala.Predef.Map[scala.Predef.String, scala.Predef.Map[scala.Predef.String, java.io.Serializable]]],
-            sentimentModels: scala.Predef.Map[scala.Predef.String, scala.Any],
-            keyWordDict: scala.Predef.Map[scala.Predef.String, scala.Predef.Map[scala.Predef.String, scala.Array[scala.Predef.String]]],
-            kyConf: KunyanConf,
-            summaryExtraction: (String, Int)
+            newsProcesser:NewsProcesser
              ) = {
 
     BigVLogger.warn("雪球 update url => " + url)
@@ -46,12 +41,7 @@ object SnowballUpdateParser {
         html,
         lazyConn,
         topic,
-        stopWords,
-        classModels,
-        sentimentModels,
-        keyWordDict,
-        kyConf,
-        summaryExtraction)
+        newsProcesser)
 
     }
 

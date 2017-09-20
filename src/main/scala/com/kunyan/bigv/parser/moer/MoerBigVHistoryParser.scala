@@ -4,7 +4,7 @@ import com.kunyan.bigv.config.Platform
 import com.kunyan.bigv.db.LazyConnections
 import com.kunyan.bigv.logger.BigVLogger
 import com.kunyan.bigv.util.{DBUtil, StringUtil}
-import com.kunyandata.nlpsuit.util.KunyanConf
+import com.kunyan.nlp.task.NewsProcesser
 import org.apache.hadoop.hbase.client.Get
 import org.jsoup.Jsoup
 
@@ -25,12 +25,7 @@ object MoerBigVHistoryParser {
             html: String,
             lazyConn: LazyConnections,
             topic: String,
-            stopWords: Array[String],
-            classModels: scala.Predef.Map[scala.Predef.String, scala.Predef.Map[scala.Predef.String, scala.Predef.Map[scala.Predef.String, java.io.Serializable]]],
-            sentimentModels: scala.Predef.Map[scala.Predef.String, scala.Any],
-            keyWordDict: scala.Predef.Map[scala.Predef.String, scala.Predef.Map[scala.Predef.String, scala.Array[scala.Predef.String]]],
-            kyConf: KunyanConf,
-            summaryExtraction: (String, Int)) = {
+            newsProcesser:NewsProcesser) = {
 
     BigVLogger.warn("摩尔 history url => " + url)
 
@@ -44,12 +39,7 @@ object MoerBigVHistoryParser {
         parseArticle(url,
           html,
           lazyConn,
-          stopWords,
-          classModels,
-          sentimentModels,
-          keyWordDict,
-          kyConf,
-          summaryExtraction)
+          newsProcesser)
       }
 
 
@@ -129,19 +119,14 @@ object MoerBigVHistoryParser {
   def parseArticle(url: String,
                    html: String,
                    lazyConn: LazyConnections,
-                   stopWords: Array[String],
-                   classModels: scala.Predef.Map[scala.Predef.String, scala.Predef.Map[scala.Predef.String, scala.Predef.Map[scala.Predef.String, java.io.Serializable]]],
-                   sentimentModels: scala.Predef.Map[scala.Predef.String, scala.Any],
-                   keyWordDict: scala.Predef.Map[scala.Predef.String, scala.Predef.Map[scala.Predef.String, scala.Array[scala.Predef.String]]],
-                   kyConf: KunyanConf,
-                   summaryExtraction: (String, Int)
+                   newsProcesser:NewsProcesser
                     ) = {
 
     try{
 
       val cstmt = lazyConn.mysqlVipConn.prepareCall("{call proc_InsertMoerNewArticle(?,?,?,?,?,?,?,?)}")
 
-      val cstmtDigest = lazyConn.mysqlVipConn.prepareCall("{call proc_InsertDigestMoer(?,?,?,?,?,?)}")
+      val cstmtDigest = lazyConn.mysqlVipConn.prepareCall("{call proc_InsertDigestMoer(?,?,?,?)}")
 
       val newsMysqlStatement = lazyConn.mysqlNewsConn.prepareStatement("INSERT INTO news_info (n_id, type, platform, title, url, news_time, industry, section, stock, digest, summary, sentiment, updated_time, source)" +
         " VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)")
@@ -151,19 +136,24 @@ object MoerBigVHistoryParser {
       val platform = Platform.MOER.id.toString
       val doc = Jsoup.parse(html)
       val uid = doc.select("a.follow").attr("uid")
-      val timeStamp = DBUtil.getLongTimeStamp(doc.select("span:matches(时间)").text.substring(3), "yyyy年MM月dd日 HH:mm:ss").toString
+      val timeStamp = DBUtil.getLongTimeStamp(doc.select("span:matches(时间)").text.substring(3), "yyyy年MM月dd日 HH:mm:ss")
       val title = doc.select("h2.article-title").text()
-      val read = StringUtil.getMatch(doc.select("span:matches(浏览)").text(),"(\\d+)")
-      var buyCount = 0
+      val read = StringUtil.getMatch(doc.select("span:matches(浏览)").text(),"(\\d+)").toInt
+      var buyCount = "0"
       var price = 0.0
       var text: String = ""
       val buy = doc.select("a.submit-btn").first().text()
 
       if (buy == "购买") {
 
-        buyCount = doc.select("p.article-other-info i.red").text().replace(" ","").toInt
+        buyCount = doc.select("p.article-other-info i.red").text().replace(" ","")
+        if(buyCount =="500+"){
+          buyCount = "5000"
+        }else if(buyCount == ""){
+          buyCount ="0"
+        }
         price= doc.select("span.now-price").first().text().toDouble
-        DBUtil.insertHbase("news_detail", url, "付费文章", timeStamp, platform, title, lazyConn)
+        DBUtil.insertHbase("news_detail", url, "付费文章", timeStamp.toString, platform, title, lazyConn)
 
       } else {
 
@@ -179,7 +169,8 @@ object MoerBigVHistoryParser {
 
           if (result.isEmpty) {
 
-            val insTrue = DBUtil.insertCall(cstmt, uid, title, read, buyCount, price,url, timeStamp, "")
+            println(s"摩尔文章写入proc_InsertMoerNewArticle,url:$url")
+            val insTrue = DBUtil.insertCall(cstmt, uid, title, read, buyCount.toInt, price,url, timeStamp, "")
 
             if(insTrue){
 
@@ -192,14 +183,9 @@ object MoerBigVHistoryParser {
                 text,
                 Platform.OLD_MOER.id,
                 Platform.OLD_MOER.toString,
-                stopWords,
-                classModels,
-                sentimentModels,
-                keyWordDict,
-                kyConf,
-                summaryExtraction)
+                newsProcesser)
 
-              DBUtil.insertHbase("news_detail", url, text, timeStamp, platform, title, lazyConn)
+              DBUtil.insertHbase("news_detail", url, text, timeStamp.toString, platform, title, lazyConn)
             }
           }
         }

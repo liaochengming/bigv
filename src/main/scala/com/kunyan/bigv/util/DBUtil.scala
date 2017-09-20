@@ -8,9 +8,8 @@ import com.hankcs.hanlp.HanLP
 import com.ibm.icu.text.CharsetDetector
 import com.kunyan.bigv.db.LazyConnections
 import com.kunyan.bigv.logger.BigVLogger
-import com.kunyandata.nlpsuit.classification.Bayes
-import com.kunyandata.nlpsuit.sentiment.PredictWithNb
-import com.kunyandata.nlpsuit.util.{KunyanConf, TextPreprocessing}
+import com.kunyan.nlp.KunLP
+import com.kunyan.nlp.task.NewsProcesser
 import org.apache.hadoop.hbase.client.{Get, Put}
 import org.apache.hadoop.hbase.util.Bytes
 import org.apache.spark.SparkEnv
@@ -39,9 +38,9 @@ object DBUtil {
    * @param format 时间的类型
    * @return long 类型的时间戳
    */
-  def getLongTimeStamp(time:String,format:String):Long={
+  def getLongTimeStamp(time: String, format: String): Long = {
     val loc = new Locale("en")
-    val sdf = new SimpleDateFormat(format,loc)
+    val sdf = new SimpleDateFormat(format, loc)
     val date = sdf.parse(time)
     date.getTime
   }
@@ -64,15 +63,13 @@ object DBUtil {
       val url = table.get(get).getValue(Bytes.toBytes("basic"), Bytes.toBytes("url"))
       val content = table.get(get).getValue(Bytes.toBytes("basic"), Bytes.toBytes("content"))
 
-      if(url == null){
+      if (url == null) {
         println("hbase url == null")
       }
-      if(content == null ){
+      if (content == null) {
         println("hbase content == null")
       }
-      if(content == "" ){
-        println("hbase content == null")
-      }
+
 
       if (url == null && content == null) {
         BigVLogger.error(s"Get empty data by this table: $tableName and rowkey: $rowkey")
@@ -103,8 +100,8 @@ object DBUtil {
    * @param title 标题
    * @param lazyConn 连接
    */
-  def insertHbase(tableName: String, rowKey: String,content: String,publish_time:String,
-                  platform:String,title:String, lazyConn: LazyConnections) = {
+  def insertHbase(tableName: String, rowKey: String, content: String, publish_time: String,
+                  platform: String, title: String, lazyConn: LazyConnections) = {
 
     val table = lazyConn.getTable(tableName)
     val put = new Put(rowKey.getBytes)
@@ -211,12 +208,6 @@ object DBUtil {
    * @param content 文章内容
    * @param platform 平台id
    * @param platformStr 平台字符串
-   * @param stopWords 分词
-   * @param classModels 分类
-   * @param sentimentModels 情感
-   * @param keyWordDict 关键字摘要
-   * @param kyConf 公司配置
-   * @param summaryExtraction 摘要提取
    */
   def inputDataToSql(lazyConn: LazyConnections,
                      cstmtDigest: CallableStatement,
@@ -225,14 +216,9 @@ object DBUtil {
                      title: String,
                      time: Long,
                      content: String,
-                     platform:Int,
-                     platformStr:String,
-                     stopWords: Array[String],
-                     classModels: scala.Predef.Map[scala.Predef.String, scala.Predef.Map[scala.Predef.String, scala.Predef.Map[scala.Predef.String, java.io.Serializable]]],
-                     sentimentModels: scala.Predef.Map[scala.Predef.String, scala.Any],
-                     keyWordDict: scala.Predef.Map[scala.Predef.String, scala.Predef.Map[scala.Predef.String, scala.Array[scala.Predef.String]]],
-                     kyConf: KunyanConf,
-                     summaryExtraction: (String, Int)
+                     platform: Int,
+                     platformStr: String,
+                     newsProcesser: NewsProcesser
                       ): Unit = {
 
     var isOk = true
@@ -241,7 +227,14 @@ object DBUtil {
     var tempDigest = ""
 
     if (content != "") {
-      tempDigest = DBUtil.getDigest(url, content, summaryExtraction)
+
+      try {
+        tempDigest = KunLP.getSummary(title, content)
+      }catch {
+        case e:Exception =>
+          println("提取摘要异常")
+      }
+
     }
 
     if (tempDigest == "") {
@@ -252,70 +245,54 @@ object DBUtil {
 
     val summary = DBUtil.interceptData(tempDigest, 300)
     val newDigest = DBUtil.interceptData(digest, 500)
-    var categories = ("", "", "")
-    var sentiment = ""
+    // 情感
     var senti = 1
+    if (content != "") {
+      val sentiment = KunLP.getSentiment(title, content)
 
-    try {
+      if (sentiment == "neg")
+        senti = 0
 
-      if (tempDigest != "") {
-
-        val words = TextPreprocessing.process(tempDigest, stopWords, kyConf)
-        categories = Bayes.predict(words, classModels, keyWordDict)
-        sentiment = PredictWithNb.predict(words, sentimentModels, stopWords)
-
-        if (sentiment == "neg")
-          senti = 0
-
-      } else {
-        senti = -1
-
-      }
-    } catch {
-
-      case e: Exception =>
-        BigVLogger.exception(e)
-        BigVLogger.error("分词程序异常")
-        isOk = false
+    } else {
+      senti = -1
     }
+    // 行业
+    val industry = newsProcesser.getIndustry(content)
+    // 概念
+    val section = newsProcesser.getSection(content)
+    // 股票
+    val stock = newsProcesser.getStock(content)
 
-    if (isOk) {
+    val newsType = 2
 
-      var stock = ""
+    var digestFlag: Boolean = true
 
-      val newsType = 2
 
-      if (categories._1.length > 0)
-        stock = DBUtil.getNewStock(categories._1, keyWordDict("stockDict"))
+    val t1 = System.currentTimeMillis()
+    digestFlag = DBUtil.insertCall(cstmtDigest, url, newDigest, summary, stock)
+    val t2 = System.currentTimeMillis()
 
-      stock = DBUtil.getLastSignData(DBUtil.interceptData(stock, 500), "&")
-      var digestFlag:Boolean = true // 插入article_info digest and summary and stock
+    //插入news_info 数据
+    if (digestFlag) {
 
-      if(platform == 40003){
+      val n_id = System.currentTimeMillis() * 100 + SparkEnv.get.executorId.toInt
+      val newsFlag = insert(newsMysqlStatement, n_id, newsType, platform, title, url, time, industry, section, stock, newDigest, summary, senti, System.currentTimeMillis(), platformStr)
+      val t3 = System.currentTimeMillis()
 
-        val buy = 0
-        val price = 0.0
-        digestFlag = DBUtil.insertCall(cstmtDigest, url, buy, price,newDigest, summary, stock)
-
+      if (!newsFlag) {
+        BigVLogger.warn(s"$platformStr begins to insert digest to mysql and data to news_info error")
       }else{
-        digestFlag = DBUtil.insertCall(cstmtDigest, url, newDigest, summary, stock)
+
+        val message = KunLP.segment(title, isUseStopWords = false)
+          .map(_.word).mkString(",")
+
+        lazyConn.sendTask("sentiment_title",url+"\t"+message)
       }
 
-      //插入news_info 数据
-      if (digestFlag) {
-
-        val n_id = System.currentTimeMillis() * 100 + SparkEnv.get.executorId.toInt
-        val newsFlag = insert(newsMysqlStatement,n_id, newsType, platform, title, url, time, categories._2, categories._3, categories._1, newDigest, summary, senti, System.currentTimeMillis(), platformStr)
-
-        if (!newsFlag) {
-          BigVLogger.warn(s"$platformStr begins to insert digest to mysql and data to news_info error")
-        }
-
-      } else {
-        BigVLogger.warn(s"$platformStr begins to insert digest to mysql and data to article_info error:$digest,$summary,$stock")
-      }
-
+    } else {
+      BigVLogger.warn(s"$platformStr begins to insert digest to mysql and data to article_info error:$digest,$summary,$stock")
     }
+
 
   }
 
@@ -359,7 +336,6 @@ object DBUtil {
   }
 
 
-
   /**
    * 获取完成字符(获取第一个标识符前的字符串)
    *
@@ -376,13 +352,11 @@ object DBUtil {
   }
 
 
-
   def getDigest(url: String, content: String, extractSummaryConfiguration: (String, Int)): String = {
 
     try {
 
-      //SummaryExtractor.extractSummary(content, extractSummaryConfiguration._1, extractSummaryConfiguration._2)
-      HanLP.getSummary(content,50)
+      HanLP.getSummary(content, 50)
     } catch {
 
       case e: Exception =>

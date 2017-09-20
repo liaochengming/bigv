@@ -9,14 +9,18 @@
     <kafka>
         <zookeeper>61.147.114.85:2181</zookeeper>
         <groupId>two</groupId>
-        <moerreceive>topv100_raw2</moerreceive>
-        <moersend>topv100_ripe2</moersend>
-	    <xueqiureceive_s>snow_ball_topv100_raw_s</xueqiureceive_s>
-        <xueqiusend_s>snow_ball_topv100_ripe_s</xueqiusend_s>
-        <xueqiureceive_h>snow_ball_topv100_raw_h</xueqiureceive_h>
-        <xueqiusend_h>snow_ball_topv100_ripe_h</xueqiusend_h>
-        <xueqiureceive_u>snow_ball_topv100_raw_u</xueqiureceive_u>
-        <xueqiusend_u>snow_ball_topv100_ripe_u</xueqiusend_u>
+        <moerreceive_s>moer_topv100_raw_select</moerreceive_s>
+        <moersend_s>moer_topv100_ripe_select</moersend_s>
+        <moerreceive_h>moer_topv100_raw_history</moerreceive_h>
+        <moersend_h>moer_topv100_ripe_history</moersend_h>
+        <moerreceive_u>moer_topv100_raw_update</moerreceive_u>
+        <moersend_u>moer_topv100_ripe_update</moersend_u>
+        <xueqiureceive_s>snow_ball_topv100_raw_select</xueqiureceive_s>
+        <xueqiusend_s>snow_ball_topv100_ripe_select</xueqiusend_s>
+        <xueqiureceive_h>snow_ball_topv100_raw_history</xueqiureceive_h>
+        <xueqiusend_h>snow_ball_topv100_ripe_history</xueqiusend_h>
+        <xueqiureceive_u>snow_ball_topv100_raw_update</xueqiureceive_u>
+        <xueqiusend_u>snow_ball_topv100_ripe_update</xueqiusend_u>
         <zhongjinreceive>zhong_jin_topv100_raw</zhongjinreceive>
         <zhongjinsend>zhong_jin_topv100_ripe</zhongjinsend>
         <brokerList>61.147.114.85:9092</brokerList>
@@ -42,15 +46,15 @@
         <password>wangzhi</password>
     </mysqlVip>
     <segment>
-        <stopWords>C:\Users\lcm\Documents\conf\dicts\stop_words_CN</stopWords>
-        <keyWords>C:\Users\lcm\Documents\conf\classify</keyWords>
-        <classModelAddress>C:\Users\lcm\Documents\conf\Models\classModel</classModelAddress>
-	<sentimentModelAddress>C:\Users\lcm\Documents\conf\Models\sentimentModel\[8]Feature_2000_kunyan</sentimentModelAddress>
-        <ip>192.168.1.17</ip>
+        <stopWords>/home/liaochengming/bigv/conf/dicts/stop_words_CN</stopWords>
+        <keyWords>/home/liaochengming/bigv/conf/classify</keyWords>
+        <classModelAddress>/home/liaochengming/bigv/conf/Models/classModel</classModelAddress>
+        <sentimentModelAddress>/home/liaochengming/bigv/conf/Models/sentimentModel/[8]Feature_2000_kunyan</sentimentModelAddress>
+        <ip>192.168.1.88</ip>
         <port>16003</port>
     </segment>
     <summaryConfiguration>
-       <ip>192.168.1.17</ip>
-       <port>16002</port>
+        <ip>192.168.1.88</ip>
+        <port>16002</port>
     </summaryConfiguration>
 </xml>

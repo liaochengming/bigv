@@ -4,18 +4,14 @@ import com.kunyan.bigv.db.LazyConnections
 import com.kunyan.bigv.logger.BigVLogger
 import com.kunyan.bigv.parser.moer.{MoerBigVHistoryParser, MoerBigVUpdateParser, MoerFinance}
 import com.kunyan.bigv.parser.xueqiu.{SnowballHistoryParser, SnowballParser, SnowballUpdateParser}
-import com.kunyan.bigv.parser.zhongjin.{ZhonJinBlogParser, ZhongJinBlogHistoryParse, ZhongJinBlogUpdateParse}
 import com.kunyan.bigv.util.DBUtil
-import com.kunyandata.nlpsuit.classification.Bayes
-import com.kunyandata.nlpsuit.sentiment.PredictWithNb
-import com.kunyandata.nlpsuit.util.KunyanConf
+import com.kunyan.nlp.task.NewsProcesser
 import kafka.serializer.StringDecoder
 import org.apache.log4j.{Level, LogManager}
 import org.apache.spark.SparkConf
 import org.apache.spark.streaming.kafka.KafkaUtils
 import org.apache.spark.streaming.{Seconds, StreamingContext}
 
-import scala.io.Source
 import scala.util.parsing.json.JSON
 import scala.xml.XML
 
@@ -33,7 +29,7 @@ object Scheduler {
         .setAppName("BIGV")
         .set("spark.serializer", "org.apache.spark.serializer.KryoSerializer")
         .set("spark.kryoserializer.buffer.max", "2000")
-      //.setMaster("local")
+//      .setMaster("local")
 
       val ssc = new StreamingContext(sparkConf, Seconds(args(1).toInt))
 
@@ -44,29 +40,12 @@ object Scheduler {
       val lazyConn = LazyConnections(configFile)
       val connectionsBr = ssc.sparkContext.broadcast(lazyConn)
 
-      val stopWordsPath = (configFile \ "segment" \ "stopWords").text
-      val modelsPath = (configFile \ "segment" \ "classModelAddress").text
-      val sentiPath = (configFile \ "segment" \ "sentimentModelAddress").text
-      val keyWordDictPath = (configFile \ "segment" \ "keyWords").text
 
-      val kyConf = new KunyanConf()
+      //val jdbcUrl = "jdbc:mysql://61.147.114.88:3306/news?user=news&password=news&useUnicode=true&characterEncoding=utf8"
 
-      kyConf.set((configFile \ "segment" \ "ip").text, (configFile \ "segment" \ "port").text.toInt)
-
-      //val stopWords = null//Bayes.getStopWords(stopWordsPath)
-      val stopWords = Source.fromFile(stopWordsPath).getLines().toArray
-      val classModels = Bayes.initModels(modelsPath)
-      val sentiModels = PredictWithNb.init(sentiPath)
-      val keyWordDict = Bayes.initGrepDicts(keyWordDictPath)
-
-      //val stopWordsBr = ssc.sparkContext.broadcast(stopWords)
-      //val classModelsBr = ssc.sparkContext.broadcast(classModels)
-      val sentiModelsBr = ssc.sparkContext.broadcast(sentiModels)
-      //val keyWordDictBr = ssc.sparkContext.broadcast(keyWordDict)
-
-      val summaryExtraction = ((configFile \ "summaryConfiguration" \ "ip").text, (configFile \ "summaryConfiguration" \ "port").text.toInt)
-
-
+      // 初始化行业、概念、股票字典
+      val newsProcesser = NewsProcesser(ssc.sparkContext, (configFile \ "mysqlSen" \ "url").text)
+      val newsProcesserBr = ssc.sparkContext.broadcast(newsProcesser)
 
       val groupId = (configFile \ "kafka" \ "groupId").text
       val brokerList = (configFile \ "kafka" \ "brokerList").text
@@ -109,12 +88,7 @@ object Scheduler {
           analyzer(message,
             connectionsBr.value,
             sendTopic,
-            stopWords,
-            classModels,
-            sentiModelsBr.value,
-            keyWordDict,
-            kyConf,
-            summaryExtraction)
+            newsProcesserBr.value)
 
         })
       })
@@ -136,12 +110,7 @@ object Scheduler {
   def analyzer(message: String,
                lazyConn: LazyConnections,
                topic: (String,String,String,String, String, String),
-               stopWords: Array[String],
-               classModels: scala.Predef.Map[scala.Predef.String, scala.Predef.Map[scala.Predef.String, scala.Predef.Map[scala.Predef.String, java.io.Serializable]]],
-               sentimentModels: scala.Predef.Map[scala.Predef.String, scala.Any],
-               keyWordDict: scala.Predef.Map[scala.Predef.String, scala.Predef.Map[scala.Predef.String, scala.Array[scala.Predef.String]]],
-               kyConf: KunyanConf,
-               summaryExtraction: (String, Int)
+               newsProcesser:NewsProcesser
                 ): Unit = {
 
     val json: Option[Any] = JSON.parseFull(message)
@@ -184,12 +153,7 @@ object Scheduler {
                   result._2,
                   lazyConn,
                   topic._2,
-                  stopWords,
-                  classModels,
-                  sentimentModels,
-                  keyWordDict,
-                  kyConf,
-                  summaryExtraction)
+                  newsProcesser)
 
               //解析更新的文章
               case "UPDATE" =>
@@ -197,12 +161,7 @@ object Scheduler {
                   result._2,
                   lazyConn,
                   topic._3,
-                  stopWords,
-                  classModels,
-                  sentimentModels,
-                  keyWordDict,
-                  kyConf,
-                  summaryExtraction)
+                  newsProcesser)
 
             }
 
@@ -222,12 +181,7 @@ object Scheduler {
                   result._2,
                   lazyConn,
                   topic._5,
-                  stopWords,
-                  classModels,
-                  sentimentModels,
-                  keyWordDict,
-                  kyConf,
-                  summaryExtraction
+                  newsProcesser
                 )
 
               //解析更新的文章
@@ -236,48 +190,7 @@ object Scheduler {
                   result._2,
                   lazyConn,
                   topic._6,
-                  stopWords,
-                  classModels,
-                  sentimentModels,
-                  keyWordDict,
-                  kyConf,
-                  summaryExtraction)
-
-            }
-          //中金博客
-          case id if id == 60007 =>
-            println("中金，状态==>UPDATE" + "\n")
-            BigVLogger.warn("中金，状态==>UPDATE" + "\n")
-            status match {
-
-              //解析top100阶段的数据
-              case "SELECT" =>
-                println("中金，状态==>SELECT")
-
-                ZhonJinBlogParser.parse(result._1, result._2, lazyConn, topic._1)
-
-              //解析100大V的历史文章
-              case "HISTORY" =>
-                println("中金，状态==>HISTORY")
-                ZhongJinBlogHistoryParse.parse(result._1, result._2, lazyConn, topic._2,
-                  kyConf,
-                  stopWords,
-                  classModels,
-                  sentimentModels,
-                  keyWordDict,
-                  summaryExtraction
-                )
-
-              //解析更新的文章
-              case "UPDATE" =>
-                println("中金，状态==>UPDATE")
-                ZhongJinBlogUpdateParse.parse(result._1, result._2, lazyConn, topic._3,
-                  kyConf,
-                  stopWords,
-                  classModels,
-                  sentimentModels,
-                  keyWordDict,
-                  summaryExtraction)
+                  newsProcesser)
 
             }
         }

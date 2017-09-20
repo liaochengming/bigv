@@ -6,7 +6,7 @@ import com.kunyan.bigv.config.Platform
 import com.kunyan.bigv.db.LazyConnections
 import com.kunyan.bigv.logger.BigVLogger
 import com.kunyan.bigv.util.{DBUtil, StringUtil}
-import com.kunyandata.nlpsuit.util.KunyanConf
+import com.kunyan.nlp.task.NewsProcesser
 import org.apache.hadoop.hbase.client.Get
 import org.json.JSONObject
 import org.jsoup.Jsoup
@@ -24,12 +24,7 @@ object SnowballHistoryParser {
             html: String,
             lazyConn: LazyConnections,
             topic: String,
-            stopWords: Array[String],
-            classModels: scala.Predef.Map[scala.Predef.String, scala.Predef.Map[scala.Predef.String, scala.Predef.Map[scala.Predef.String, java.io.Serializable]]],
-            sentimentModels: scala.Predef.Map[scala.Predef.String, scala.Any],
-            keyWordDict: scala.Predef.Map[scala.Predef.String, scala.Predef.Map[scala.Predef.String, scala.Array[scala.Predef.String]]],
-            kyConf: KunyanConf,
-            summaryExtraction: (String, Int)
+            newsProcesser:NewsProcesser
              ) = {
 
     BigVLogger.warn("雪球 history url => " + url)
@@ -56,17 +51,11 @@ object SnowballHistoryParser {
 
     if (result2.find()) {
 
-      //解析出用户文章页面的最大页面值
       parserArticle(url,
         html,
         lazyConn,
         topic,
-        stopWords,
-        classModels,
-        sentimentModels,
-        keyWordDict,
-        kyConf,
-        summaryExtraction)
+        newsProcesser)
 
     }
   }
@@ -144,12 +133,7 @@ object SnowballHistoryParser {
                     html: String,
                     lazyConn: LazyConnections,
                     topic: String,
-                    stopWords: Array[String],
-                    classModels: scala.Predef.Map[scala.Predef.String, scala.Predef.Map[scala.Predef.String, scala.Predef.Map[scala.Predef.String, java.io.Serializable]]],
-                    sentimentModels: scala.Predef.Map[scala.Predef.String, scala.Any],
-                    keyWordDict: scala.Predef.Map[scala.Predef.String, scala.Predef.Map[scala.Predef.String, scala.Array[scala.Predef.String]]],
-                    kyConf: KunyanConf,
-                    summaryExtraction: (String, Int)
+                    newsProcesser:NewsProcesser
                      ) = {
 
     val tableName = "news_detail"
@@ -197,6 +181,7 @@ object SnowballHistoryParser {
       }
 
       if (content != "") {
+        val t1 = System.currentTimeMillis()
 
         BigVLogger.warn("写入表的数据 => " + url + "  timeStamp => " + time.toLong)
 
@@ -206,7 +191,13 @@ object SnowballHistoryParser {
 
         if (result.isEmpty) {
 
+          val t2 = System.currentTimeMillis()
+          println("hbase查数据用时: " + (t2-t1)/1000 + "s")
+
           val insTrue = DBUtil.insertCall(cstmt, uid, title, retweet, reply, url, time.toLong, "")
+
+          val t3 = System.currentTimeMillis()
+          println("proc_InsertSnowBallNewArticle用时: " + (t3-t2)/1000 + "s")
 
           if (insTrue) {
 
@@ -219,14 +210,14 @@ object SnowballHistoryParser {
               content,
               Platform.OLD_SNOW_BALL.id,
               Platform.OLD_SNOW_BALL.toString,
-              stopWords,
-              classModels,
-              sentimentModels,
-              keyWordDict,
-              kyConf,
-              summaryExtraction)
+              newsProcesser)
+
+            val t4 = System.currentTimeMillis()
+            println("摘要用时: " + (t4-t3)/1000 + "s")
 
             DBUtil.insertHbase(tableName, url, content, time, platform, title, lazyConn)
+            val t5 = System.currentTimeMillis()
+            println("写hbase用时: " + (t5-t4)/1000 + "s")
           }
         }
 
