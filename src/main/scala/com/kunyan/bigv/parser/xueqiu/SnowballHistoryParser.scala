@@ -7,6 +7,7 @@ import com.kunyan.bigv.db.LazyConnections
 import com.kunyan.bigv.logger.BigVLogger
 import com.kunyan.bigv.util.{DBUtil, StringUtil}
 import com.kunyan.nlp.task.NewsProcesser
+import com.nlp.util.EasyParser
 import org.apache.hadoop.hbase.client.Get
 import org.json.JSONObject
 import org.jsoup.Jsoup
@@ -24,7 +25,8 @@ object SnowballHistoryParser {
             html: String,
             lazyConn: LazyConnections,
             topic: String,
-            newsProcesser:NewsProcesser
+            newsProcesser:NewsProcesser,
+            easyParser:EasyParser
              ) = {
 
     BigVLogger.warn("雪球 history url => " + url)
@@ -55,7 +57,8 @@ object SnowballHistoryParser {
         html,
         lazyConn,
         topic,
-        newsProcesser)
+        newsProcesser,
+        easyParser)
 
     }
   }
@@ -133,7 +136,8 @@ object SnowballHistoryParser {
                     html: String,
                     lazyConn: LazyConnections,
                     topic: String,
-                    newsProcesser:NewsProcesser
+                    newsProcesser:NewsProcesser,
+                    easyParser:EasyParser
                      ) = {
 
     val tableName = "news_detail"
@@ -210,7 +214,8 @@ object SnowballHistoryParser {
               content,
               Platform.OLD_SNOW_BALL.id,
               Platform.OLD_SNOW_BALL.toString,
-              newsProcesser)
+              newsProcesser,
+              easyParser)
 
             val t4 = System.currentTimeMillis()
             println("摘要用时: " + (t4-t3)/1000 + "s")

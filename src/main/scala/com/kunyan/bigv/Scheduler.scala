@@ -6,6 +6,7 @@ import com.kunyan.bigv.parser.moer.{MoerBigVHistoryParser, MoerBigVUpdateParser,
 import com.kunyan.bigv.parser.xueqiu.{SnowballHistoryParser, SnowballParser, SnowballUpdateParser}
 import com.kunyan.bigv.util.DBUtil
 import com.kunyan.nlp.task.NewsProcesser
+import com.nlp.util.EasyParser
 import kafka.serializer.StringDecoder
 import org.apache.log4j.{Level, LogManager}
 import org.apache.spark.SparkConf
@@ -46,6 +47,9 @@ object Scheduler {
       // 初始化行业、概念、股票字典
       val newsProcesser = NewsProcesser(ssc.sparkContext, (configFile \ "mysqlSen" \ "url").text)
       val newsProcesserBr = ssc.sparkContext.broadcast(newsProcesser)
+
+      val easyparser = EasyParser.apply()
+      val easyParserBr = ssc.sparkContext.broadcast(easyparser)
 
       val groupId = (configFile \ "kafka" \ "groupId").text
       val brokerList = (configFile \ "kafka" \ "brokerList").text
@@ -88,8 +92,8 @@ object Scheduler {
           analyzer(message,
             connectionsBr.value,
             sendTopic,
-            newsProcesserBr.value)
-
+            newsProcesserBr.value,
+            easyParserBr.value)
         })
       })
 
@@ -110,7 +114,8 @@ object Scheduler {
   def analyzer(message: String,
                lazyConn: LazyConnections,
                topic: (String,String,String,String, String, String),
-               newsProcesser:NewsProcesser
+               newsProcesser:NewsProcesser,
+               easyParser:EasyParser
                 ): Unit = {
 
     val json: Option[Any] = JSON.parseFull(message)
@@ -153,7 +158,8 @@ object Scheduler {
                   result._2,
                   lazyConn,
                   topic._2,
-                  newsProcesser)
+                  newsProcesser,
+                  easyParser)
 
               //解析更新的文章
               case "UPDATE" =>
@@ -161,7 +167,8 @@ object Scheduler {
                   result._2,
                   lazyConn,
                   topic._3,
-                  newsProcesser)
+                  newsProcesser,
+                  easyParser)
 
             }
 
@@ -181,7 +188,8 @@ object Scheduler {
                   result._2,
                   lazyConn,
                   topic._5,
-                  newsProcesser
+                  newsProcesser,
+                  easyParser
                 )
 
               //解析更新的文章
@@ -190,7 +198,8 @@ object Scheduler {
                   result._2,
                   lazyConn,
                   topic._6,
-                  newsProcesser)
+                  newsProcesser,
+                  easyParser)
 
             }
         }

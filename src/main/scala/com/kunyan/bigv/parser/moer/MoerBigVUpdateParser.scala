@@ -5,6 +5,7 @@ import com.kunyan.bigv.db.LazyConnections
 import com.kunyan.bigv.logger.BigVLogger
 import com.kunyan.bigv.util.StringUtil
 import com.kunyan.nlp.task.NewsProcesser
+import com.nlp.util.EasyParser
 import org.apache.hadoop.hbase.client.Get
 import org.jsoup.Jsoup
 
@@ -23,7 +24,8 @@ object MoerBigVUpdateParser {
             html: String,
             lazyConn: LazyConnections,
             topic: String,
-            newsProcesser:NewsProcesser
+            newsProcesser:NewsProcesser,
+            easyParser:EasyParser
              ) = {
 
     BigVLogger.warn("摩尔 update url => " + url)
@@ -36,7 +38,8 @@ object MoerBigVUpdateParser {
         MoerBigVHistoryParser.parseArticle(url,
           html,
           lazyConn,
-          newsProcesser)
+          newsProcesser,
+          easyParser)
       }
 
     } catch {

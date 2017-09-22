@@ -5,6 +5,7 @@ import com.kunyan.bigv.db.LazyConnections
 import com.kunyan.bigv.logger.BigVLogger
 import com.kunyan.bigv.util.{DBUtil, StringUtil}
 import com.kunyan.nlp.task.NewsProcesser
+import com.nlp.util.EasyParser
 import org.apache.hadoop.hbase.client.Get
 import org.jsoup.Jsoup
 
@@ -25,7 +26,8 @@ object MoerBigVHistoryParser {
             html: String,
             lazyConn: LazyConnections,
             topic: String,
-            newsProcesser:NewsProcesser) = {
+            newsProcesser:NewsProcesser,
+            easyParser:EasyParser) = {
 
     BigVLogger.warn("摩尔 history url => " + url)
 
@@ -39,7 +41,8 @@ object MoerBigVHistoryParser {
         parseArticle(url,
           html,
           lazyConn,
-          newsProcesser)
+          newsProcesser,
+          easyParser)
       }
 
 
@@ -119,7 +122,8 @@ object MoerBigVHistoryParser {
   def parseArticle(url: String,
                    html: String,
                    lazyConn: LazyConnections,
-                   newsProcesser:NewsProcesser
+                   newsProcesser:NewsProcesser,
+                   easyParser:EasyParser
                     ) = {
 
     try{
@@ -183,7 +187,8 @@ object MoerBigVHistoryParser {
                 text,
                 Platform.OLD_MOER.id,
                 Platform.OLD_MOER.toString,
-                newsProcesser)
+                newsProcesser,
+                easyParser)
 
               DBUtil.insertHbase("news_detail", url, text, timeStamp.toString, platform, title, lazyConn)
             }

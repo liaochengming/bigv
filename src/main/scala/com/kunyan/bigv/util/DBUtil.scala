@@ -10,6 +10,7 @@ import com.kunyan.bigv.db.LazyConnections
 import com.kunyan.bigv.logger.BigVLogger
 import com.kunyan.nlp.KunLP
 import com.kunyan.nlp.task.NewsProcesser
+import com.nlp.util.EasyParser
 import org.apache.hadoop.hbase.client.{Get, Put}
 import org.apache.hadoop.hbase.util.Bytes
 import org.apache.spark.SparkEnv
@@ -218,7 +219,8 @@ object DBUtil {
                      content: String,
                      platform: Int,
                      platformStr: String,
-                     newsProcesser: NewsProcesser
+                     newsProcesser: NewsProcesser,
+                     easyParser:EasyParser
                       ): Unit = {
 
     var isOk = true
@@ -229,7 +231,7 @@ object DBUtil {
     if (content != "") {
 
       try {
-        tempDigest = KunLP.getSummary(title, content)
+        tempDigest = easyParser.getSummary(title, content)
       }catch {
         case e:Exception =>
           println("提取摘要异常")
