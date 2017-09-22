@@ -23,7 +23,7 @@ object MoerFinance {
 
     try {
 
-      if (pageUrl == "http://www.moer.cn/investment_findPageList.htm?onColumns=all&industrys=all&fieldColumn=all&price=all&authorType=1&sortType=time") {
+      if (pageUrl == "https://www.moer.cn/investment_findPageList.htm?onColumns=all&industrys=all&fieldColumn=all&price=all&authorType=1&sortType=time") {
         sendFirstPatch(pageUrl, html, topic, lazyConn)
       } else if (pageUrl.startsWith(firstUrl)) {
         sendSecondPatch(pageUrl, html, lazyConn, topic)

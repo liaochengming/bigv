@@ -38,7 +38,7 @@ libraryDependencies += "org.scalactic" %% "scalactic" % "2.2.5"
 
 libraryDependencies += "org.scalatest" %% "scalatest" % "2.2.5" % "test"
 
-unmanagedJars in Compile += file("D:/jar/LabelMapping-assembly-1.0(8).jar")
+unmanagedJars in Compile += file("D:/jar/LabelMapping-assembly-1.0(10).jar")
 
 assemblyMergeStrategy in assembly := {
   case PathList("javax", "servlet", xs@_*) => MergeStrategy.last
