@@ -4,8 +4,7 @@ import com.kunyan.bigv.config.Platform
 import com.kunyan.bigv.db.LazyConnections
 import com.kunyan.bigv.logger.BigVLogger
 import com.kunyan.bigv.util.StringUtil
-import com.kunyan.nlp.task.NewsProcesser
-import com.nlp.util.EasyParser
+import com.nlp.util.{EasyParser, NewsProcesser}
 import org.apache.hadoop.hbase.client.Get
 import org.jsoup.Jsoup
 

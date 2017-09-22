@@ -8,10 +8,6 @@ scalaVersion := "2.10.4"
 
 ivyScala := ivyScala.value map { _.copy(overrideScalaVersion = true) }
 
-resolvers += "Releases" at "http://122.225.110.113:9023/nexus/content/repositories/releases/"
-
-libraryDependencies += "com.kunyan" % "kunlp" % "1.0.2"
-
 libraryDependencies += "org.apache.spark" % "spark-core_2.10" % "1.5.2"
 
 libraryDependencies += "org.ansj" % "ansj_seg" % "0.9"
@@ -42,7 +38,7 @@ libraryDependencies += "org.scalactic" %% "scalactic" % "2.2.5"
 
 libraryDependencies += "org.scalatest" %% "scalatest" % "2.2.5" % "test"
 
-unmanagedJars in Compile += file("D:/jar/LabelMapping-assembly-1.0.jar")
+unmanagedJars in Compile += file("D:/jar/LabelMapping-assembly-1.0(8).jar")
 
 assemblyMergeStrategy in assembly := {
   case PathList("javax", "servlet", xs@_*) => MergeStrategy.last

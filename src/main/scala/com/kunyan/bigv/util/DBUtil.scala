@@ -5,12 +5,11 @@ import java.text.SimpleDateFormat
 import java.util.Locale
 
 import com.hankcs.hanlp.HanLP
+import com.hankcs.hanlp.seg.Segment
 import com.ibm.icu.text.CharsetDetector
 import com.kunyan.bigv.db.LazyConnections
 import com.kunyan.bigv.logger.BigVLogger
-import com.kunyan.nlp.KunLP
-import com.kunyan.nlp.task.NewsProcesser
-import com.nlp.util.EasyParser
+import com.nlp.util.{SegmentHan, EasyParser, NewsProcesser}
 import org.apache.hadoop.hbase.client.{Get, Put}
 import org.apache.hadoop.hbase.util.Bytes
 import org.apache.spark.SparkEnv
@@ -247,17 +246,9 @@ object DBUtil {
 
     val summary = DBUtil.interceptData(tempDigest, 300)
     val newDigest = DBUtil.interceptData(digest, 500)
-    // 情感
-    var senti = 1
-    if (content != "") {
-      val sentiment = KunLP.getSentiment(title, content)
+    // 情感 2代表无效情感
+    val senti = 2
 
-      if (sentiment == "neg")
-        senti = 0
-
-    } else {
-      senti = -1
-    }
     // 行业
     val industry = newsProcesser.getIndustry(content)
     // 概念
@@ -270,23 +261,20 @@ object DBUtil {
     var digestFlag: Boolean = true
 
 
-    val t1 = System.currentTimeMillis()
     digestFlag = DBUtil.insertCall(cstmtDigest, url, newDigest, summary, stock)
-    val t2 = System.currentTimeMillis()
 
     //插入news_info 数据
     if (digestFlag) {
 
       val n_id = System.currentTimeMillis() * 100 + SparkEnv.get.executorId.toInt
       val newsFlag = insert(newsMysqlStatement, n_id, newsType, platform, title, url, time, industry, section, stock, newDigest, summary, senti, System.currentTimeMillis(), platformStr)
-      val t3 = System.currentTimeMillis()
 
       if (!newsFlag) {
         BigVLogger.warn(s"$platformStr begins to insert digest to mysql and data to news_info error")
       }else{
 
-        val message = KunLP.segment(title, isUseStopWords = false)
-          .map(_.word).mkString(",")
+        val message = SegmentHan.segment(title, isUseStopWords = false)
+          .mkString(",")
 
         lazyConn.sendTask("sentiment_title",url+"\t"+message)
       }

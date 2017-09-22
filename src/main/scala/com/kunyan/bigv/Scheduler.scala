@@ -5,8 +5,7 @@ import com.kunyan.bigv.logger.BigVLogger
 import com.kunyan.bigv.parser.moer.{MoerBigVHistoryParser, MoerBigVUpdateParser, MoerFinance}
 import com.kunyan.bigv.parser.xueqiu.{SnowballHistoryParser, SnowballParser, SnowballUpdateParser}
 import com.kunyan.bigv.util.DBUtil
-import com.kunyan.nlp.task.NewsProcesser
-import com.nlp.util.EasyParser
+import com.nlp.util.{EasyParser, NewsProcesser}
 import kafka.serializer.StringDecoder
 import org.apache.log4j.{Level, LogManager}
 import org.apache.spark.SparkConf
@@ -44,12 +43,12 @@ object Scheduler {
 
       //val jdbcUrl = "jdbc:mysql://61.147.114.88:3306/news?user=news&password=news&useUnicode=true&characterEncoding=utf8"
 
-      // 初始化行业、概念、股票字典
-      val newsProcesser = NewsProcesser(ssc.sparkContext, (configFile \ "mysqlSen" \ "url").text)
-      val newsProcesserBr = ssc.sparkContext.broadcast(newsProcesser)
+      val easyParser = EasyParser.apply()
+      val easyParserBr = ssc.sparkContext.broadcast(easyParser)
 
-      val easyparser = EasyParser.apply()
-      val easyParserBr = ssc.sparkContext.broadcast(easyparser)
+      // 初始化行业、概念、股票字典
+      val newsProcesser = NewsProcesser()
+      val newsProcesserBr = ssc.sparkContext.broadcast(newsProcesser)
 
       val groupId = (configFile \ "kafka" \ "groupId").text
       val brokerList = (configFile \ "kafka" \ "brokerList").text
